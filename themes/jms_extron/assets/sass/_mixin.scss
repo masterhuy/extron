@@ -1,0 +1,109 @@
+@mixin icon_dropdown($value){
+	a.dropdown-toggle::after{
+		content: "\f107";
+		font-family: "FontAwesome";
+		padding-left: #{$value}px;
+		font-size: 13px;
+		@content;
+	}
+}
+
+// effect1
+@mixin hoverBannerEffect1(){
+	.jms-banner:hover > a img{
+	  transform: scale(1.05);
+	}
+}
+
+// effect2
+@mixin BannerEffect2(){
+	.jms-banner > a::before {
+		content: "";
+	  	bottom: 0;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		transition: all 0.4s;
+		z-index: 1;
+		border: 100px double transparent;
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+@mixin hoverBannerEffect2(){
+	.jms-banner:hover > a::before {
+		opacity: 0;
+		border: 0 double rgba(255, 255, 255, 0.7);
+		visibility: hidden;
+	}
+}
+
+// effect5
+// @mixin BannerEffect5(){
+// 	.jms-banner > a::after {
+// 		background-color: rgba(255, 255, 255, 0.3);
+// 		content: "";
+// 		display: inline-block;
+// 		height: 100%;
+// 		position: absolute;
+// 		right: 200%;
+// 		top: 0;
+// 		transform: skew(-45deg, 0deg);
+// 		vertical-align: middle;
+// 		width: 100%;
+// 	}
+// }
+
+// @mixin hoverBannerEffect5(){
+// 	.jms-banner > a:hover::after {
+// 	  opacity: 1;
+// 	  right: -200%;
+// 	  transition: all 0.6s ease-in-out 0s;
+// 	}
+// }
+
+@mixin borderBottomColor($home, $color){
+	.home_#{$home}{
+		#search_filters .facet .facet-title,
+		.title-block h3,
+		.widget-title, .title_block{
+			border-bottom-color: #{$color};
+		}
+	}
+	@content;
+}
+
+@mixin flex($vCenter, $hCenter) {
+	display: flex;
+	justify-content: #{$vCenter};
+	align-items: #{$hCenter};
+	@content;
+}
+
+@mixin flexVCenter() {
+	display: flex;
+	align-items: center;
+	@content;
+}
+
+@mixin flexHCenter() {
+	display: flex;
+	justify-content: center;
+	@content;
+}
+
+@mixin imgBeforeTitle() {
+	content: url("../img/leaf.png");
+	position: absolute;
+	left: 50%;
+	top: -47px;
+	transform: translateX(-50%);
+	@content;
+}
+
+
+
+
+

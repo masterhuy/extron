@@ -1,0 +1,40 @@
+.topbar .right .addon-box {
+  margin-right: 44px;
+  margin-left: 0;
+}
+.topbar .right .addon-box:not(:first-child)::before {
+  right: -21px;
+  left: auto;
+}
+.header .right .addon-box {
+  margin-right: 40px;
+  margin-left: 0;
+}
+.header .right .addon-box:last-child {
+  margin-right: 40px;
+}
+.header .right .addon-box:not(:last-child)::after {
+  left: -20px;
+  right: auto;
+}
+.intro .right p {
+  margin-left: 15px;
+  margin-right: 0;
+}
+.intro .left p {
+  margin-right: 18px;
+  margin-left: 0;
+}
+.blog .blog-item .post-thumb {
+  margin-left: 30px;
+  margin-right: 0;
+}
+
+.newsletter #newsletter_block_left .textnews_h2 {
+  margin-left: 40px;
+  margin-right: 0;
+}
+.newsletter .newsletter-btn.btn-popup {
+  margin-right: 20px;
+  margin-left: 0;
+}

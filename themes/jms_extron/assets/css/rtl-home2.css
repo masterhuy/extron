@@ -1,0 +1,54 @@
+.page-index #wrapper .addon-title h3 {
+  text-align: center !important;
+}
+.header .left .addon-box {
+  margin-left: 52px;
+  margin-right: 0;
+}
+.header .left .addon-box:not(:first-child)::before {
+  right: -27px;
+  left: auto;
+}
+.header .center .features {
+  padding-left: 335px;
+  padding-right: 22px;
+}
+.header .right .addon-box {
+  margin-right: 52px;
+  margin-left: 0;
+}
+.header .right .addon-box:last-child {
+  margin-left: 0;
+  margin-right: 52px;
+}
+.header .right .addon-box:not(:last-child)::after {
+  left: -23px;
+  right: auto;
+}
+.deal .countdown-box .countdown-section:not(:last-child) {
+  margin-left: 71px;
+  margin-right: 0;
+}
+.deal .countdown-box .countdown.is-countdown {
+  text-align: right;
+}
+.deal .countdown-box .countdown-section:not(:last-child)::after {
+  left: -40px;
+  right: auto;
+}
+
+.newsletter #newsletter_block_left .textnews_h2 {
+  margin-left: 40px;
+  margin-right: 0;
+}
+.newsletter .newsletter-btn.btn-popup {
+  margin-right: 20px;
+  margin-left: 0;
+}
+.cates .owl-theme .owl-controls {
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  display: inline-flex !important;
+  right: auto;
+}

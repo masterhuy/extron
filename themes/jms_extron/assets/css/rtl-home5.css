@@ -1,0 +1,67 @@
+.topbar .left span {
+  margin-left: 36px;
+  float: right;
+  margin-right: 0;
+}
+.topbar .left span::after {
+  left: -21px;
+  top: 0;
+  right: auto;
+}
+.topbar .right .addon-box {
+  margin-right: 44px;
+  margin-left: 0;
+}
+.topbar .right .addon-box:not(:first-child)::before {
+  right: -21px;
+  left: auto;
+}
+.header .center .features {
+  padding-left: 320px;
+  padding-right: 22px;
+}
+.header .right .addon-box {
+  margin-right: 52px;
+  margin-left: 0;
+}
+.header .right .addon-box:last-child {
+  margin-right: 52px;
+}
+.header .right .addon-box:not(:last-child)::after {
+  left: -27px;
+  right: auto;
+}
+.addon-title h3 {
+  text-align: right !important;
+}
+.owl-theme .owl-controls {
+  right: auto;
+  left: 15px;
+}
+.owl-theme .owl-controls div {
+  margin-left: 0 !important;
+  margin-right: 5px !important;
+}
+.addon-title h3::after {
+  right: 0;
+  left: auto;
+}
+
+.newsletter #newsletter_block_left .textnews_h2 {
+  margin-left: 40px;
+  margin-right: 0;
+}
+.newsletter .newsletter-btn.btn-popup {
+  margin-right: 20px;
+  margin-left: 0;
+}
+.blog .owl-theme .owl-controls {
+  right: auto;
+  left: 0;
+}
+.two_column .blog .owl-dots {
+  text-align: right;
+}
+.two_column .product-box .flexbox {
+  margin-left: 10px;
+}

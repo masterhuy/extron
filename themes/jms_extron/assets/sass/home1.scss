@@ -1,0 +1,154 @@
+@import "mixin";
+@import "varians";
+
+//topbar
+.topbar{
+	font-size: 14px;
+	border-bottom: 1px solid #e1e1e1;
+	p{
+		margin-bottom: 0;
+	}
+	#_desktop_user_info{
+		.type1, .type2{
+			display: none;
+		}
+		.type3{
+			display: block;
+		}
+	}
+	.languages-info{
+		&.type1, &.type3, &.type4{
+			display: none;
+		}
+		&.type2{
+			display: block;
+		}
+		@include icon_dropdown(4);
+		.dropdown-menu{
+			min-width: 140px;
+		}
+	}
+	#_desktop_currency_selector{
+		&.type3, &.type2{
+			display: none;
+		}
+		&.type1{
+			display: block;
+		}
+		@include icon_dropdown(7);
+		.dropdown-menu{
+			min-width: 100px;
+		}
+	}
+	.left{
+		line-height: 41px;
+		ul{
+			margin-bottom: 0;
+			li{
+				display: inline-block;
+				position: relative;
+				color: #444;
+				&:not(:last-child){
+					margin-right: 34px;
+				}
+				&.hl{
+					color: #ff8400;
+					font-weight: 700;
+				}
+				&:not(:first-child)::before{
+					content: "";
+					height: 42px;
+					width: 1px;
+					background: #e1e1e1;
+					position: absolute;
+					left: -21px;
+					top: 0;
+				}
+			}
+		}
+	}
+	.right{
+		display: flex;
+		justify-content: flex-end;
+		.dropdown-menu{
+			left: -21px;
+			border-top: 0;
+			&::before{
+				display: none;
+			}
+		}
+		.addon-box{
+			margin-left: 42px;
+			position: relative;
+			line-height: 41px;
+			&:not(:first-child)::before{
+				content: "";
+				height: 42px;
+				width: 1px;
+				background: #e1e1e1;
+				position: absolute;
+				left: -23px;
+				top: 0;
+			}
+		}
+		.title{
+			letter-spacing: 0.5px;
+		}
+	}
+}
+
+//header
+.header{
+	padding: 32px 0;
+	.container > .row{
+		@include flexVCenter();
+	}
+	#jms_ajax_search .searchbox::before{
+		display: none;
+	}
+	#ajax_search{
+		height: 47px;
+		border-color: $active;
+		border-radius: 30px 0 0 30px;
+		padding-left: 25px;
+		width: 415px;
+	}
+	.text-custom {
+		display: block;
+	}
+	#cart_block{
+		display: flex;
+		justify-content: flex-end;
+		padding-right: 8px;
+		.ajax_cart_quantity{
+			right: -4px;
+			top: 15px;
+		}
+		.cart-icon {
+			&::before{
+				top: -3px;
+				position: relative;
+			}
+		}
+	}
+	.center{
+		@include flexHCenter();
+	}
+	.right{
+		@include flex(flex-end, center);
+		p{
+			margin-bottom: 0;
+		}
+		.addon-box:not(:first-child){
+			margin-left: 26px;
+		}
+		.wishlist_top.home_page {
+			top: -3px;
+			left: -6px;
+			position: relative;
+		}
+	}
+	#cart_block .shoppingcart-box::before {
+		right: 56px;
+	}
+}

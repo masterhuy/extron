@@ -1,0 +1,16 @@
+.header .left .addon-box {
+  margin-left: 52px;
+  margin-right: 0;
+}
+.header .left .addon-box:not(:first-child)::before {
+  right: -27px;
+  left: auto;
+}
+.header .right .addon-box:last-child {
+  margin-left: 0;
+  margin-right: 0;
+}
+.header .right .addon-box:not(:last-child)::after {
+  left: -20px;
+  right: auto;
+}
