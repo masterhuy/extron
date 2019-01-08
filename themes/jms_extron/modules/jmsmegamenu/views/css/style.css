@@ -1,12 +1,8 @@
-
 #jms-megamenu-container {
     border: medium none;
     margin-bottom: 0;
     min-height: auto;
 	position:static;
-}
-.home_1 #jms-megamenu-container, .home_3 #jms-megamenu-container{
-	position:relative;
 }
 .image-menu img {
     width: 100%;
@@ -40,24 +36,21 @@
 .jms-megamenu .img-first img {
     padding: 0;
 }
-.jms-megamenu .item-fullwidth img{
-    width: 100%;
-}
 .jms-megamenu .nav > li {
     display: inline-block;
     float: inherit;
     margin: 0;
-    padding: 0 22px;
+    padding: 0 15px;
     vertical-align: top;
 }
 .jms-megamenu .nav > .menu-item.mega.new{
 	top:0 !important;
 } 
 .jms-megamenu .nav > li > a {
-    font-size: 16px;
-    font-family: "Poppins";
-    font-weight:600;
-    line-height: 60px;
+    font-size: 15px;
+    font-family: "Roboto";
+    font-weight: 700;
+    line-height: 54px;
     padding: 0;
     position: relative;
     text-transform: uppercase;
@@ -93,7 +86,7 @@ div.jms-megamenu .dropdown-menu::before{
 }
 .jms-megamenu .open > .dropdown-menu {
     opacity: 1;
-    top: calc(100% - 1px);
+    top: 100%;
     visibility: visible;
 }
 .jms-megamenu .nav .open .mega-nav .dropdown-menu {
@@ -118,18 +111,14 @@ div.jms-megamenu .dropdown-menu::before{
 .jms-megamenu .mega-nav li > a {
     border-radius: 0;
     display: block;
-    font-weight:400;
-    font-family: Cabin;
+    font-weight: 400;
+    font-family: PT Sans;
     font-size: 15px;
     line-height: 23px;
-    padding: 3.5px 22px;
+    padding: 3.5px 30px;
     position: relative;
     text-transform: capitalize;
-    color: #907459;
     letter-spacing: 0.3px;
-}
-.jms-megamenu .mega-nav li > a:hover{
-    color: #fb943b;
 }
 .jms-megamenu .mega-nav li:last-child > a:hover {
     border: medium none;
@@ -179,7 +168,7 @@ div.jms-megamenu .dropdown-menu::before{
     font-size: 14px;
 }
 .jms-megamenu .item-fullwidth .mega-nav > li > ul > li.group, .jms-megamenu .item-fullwidth .mega-nav > li.group {
-    margin-bottom: 17px;
+    margin-bottom: 14px;
     position: relative;
     vertical-align: top;
 }
@@ -210,12 +199,8 @@ div.jms-megamenu .dropdown-menu::before{
     left: 0;
     margin-left: 0;
 }
-.jms-megamenu .menu-align-left > .dropdown-menu {
-    left: 0;
-}
-.jms-megamenu .menu-align-right > .dropdown-menu {
-    left: auto;
-    right: 0;
+.jms-megamenu .dropdown-menu {
+    left: -30px;
 }
 .jms-megamenu .nav > li.menu-align-center.open > .dropdown-menu {
     -webkit-transform: translateX(-50%);
@@ -255,7 +240,7 @@ div.jms-megamenu .dropdown-menu::before{
 }
 .jms-megamenu .dropdown-menu {
     background: #fff !important;
-    padding: 12px 0px !important;
+    padding: 22px 0px !important;
 }
 .jms-megamenu .mega-col-nav.col-sm-3:first-child {
 	border-left:0;
@@ -281,6 +266,13 @@ div.jms-megamenu .dropdown-menu::before{
 .jms-megamenu .nav > li.open > a{
     color: #fb943b;
 }
+.jms-megamenu .mobile > .dropdown-menu{
+    padding: 0 18px !important;
+}
+.jms-megamenu .mobile > .dropdown-menu .mega-col-nav:not(:last-child){
+    padding-top: 22px;
+    padding-bottom: 14px;
+}
 .jms-megamenu .nav > li > a::after {
     content: "";
     left: 50%;
@@ -291,8 +283,9 @@ div.jms-megamenu .dropdown-menu::before{
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-bottom: 5px solid #fb943b;
+    border-bottom: 5px solid #fff;
     transform: translateX(-50%);
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
 }
 .jms-megamenu .nav > li.open > a::after {
     opacity: 1;
@@ -317,7 +310,8 @@ div.jms-megamenu .dropdown-menu::before{
     border-bottom: medium none;
     line-height: 25px;
     padding: 0;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
+    letter-spacing: 0;
 }
 .jms-megamenu .home img:hover {
     top: -3px;
@@ -333,11 +327,11 @@ div.jms-megamenu .dropdown-menu::before{
     box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 .jms-megamenu .nav .mega-nav li.group > a {
-    color: #603813;
+    color: #000;
     display: block;
-    font-family: "Poppins";
-    font-size: 22px;
-    font-weight: 500;
+    font-family: "Roboto";
+    font-size: 17px;
+    font-weight: 700;
     line-height: 32px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -345,6 +339,7 @@ div.jms-megamenu .dropdown-menu::before{
     white-space: nowrap;
     width: 100%;
     letter-spacing: 0;
+    text-transform: uppercase;
 }
 .jms-megamenu .nav .item-fullwidth .mega-nav li.group > a{
 	padding-left:0;
@@ -484,7 +479,7 @@ div.jms-megamenu .dropdown-menu::before{
     font-weight:600;
 }
 .img-bottom.wrapper-banner .box-content h4 + h4 {
-    font-family: "Poppins"; 
+    font-family: "PT Sans"; 
     font-weight:400; 
 	padding-top: 10px;
 }

@@ -123,7 +123,7 @@
 /** PAGER **/
 
 .fs-pager-wrapper {
-    bottom: 13px;
+    bottom: 8px;
     position: absolute;
     text-align: center;
     width: 100%;
@@ -134,22 +134,24 @@
 	color: #fff !important;
 }
 .fs-pager-wrapper a, .fs-custom-pager-wrapper a {
-	margin: 0 5px;
+	margin: 0 4px;
 	font-family: "Poppins";
 	font-weight: 600;
 	font-size: 10px;
 	position: relative;
-	width: 10px;
-	height: 10px;
+	width: 11px;
+	height: 11px;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	color: #fff;
-	background: rgba(251,148,59,0.4);
+	background: #ccc;
 	border-radius: 50%;
 	text-indent: -100px;
 	overflow: hidden;
 }
 .fs-pager-wrapper a.active {
-	background: rgba(251,148,59,1);
+	background: #ff4c65;
+	width: 26px;
+	border-radius: 5px;
 }

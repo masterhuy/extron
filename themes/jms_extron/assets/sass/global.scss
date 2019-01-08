@@ -5,21 +5,21 @@
 @include BannerEffect2();
 @include hoverBannerEffect2();
 
-@media (min-width: 992px){
-	.jms-row.header.fixed,
-	.jms-row.menu.fixed{
-		top: 0;
-		position: fixed;
-		width: 100%;
-		box-shadow: 0 0 11px rgba(0,0,0,0.15);
-		background-color: #fff;
-	  	z-index: 99;
-	  	animation-duration: 0.8s;
-		animation-name: slideDown;
-		animation-timing-function: ease;
-		margin-right: 0 !important;
-	}
-}
+// @media (min-width: 992px){
+// 	.jms-row.header.fixed,
+// 	.jms-row.menu.fixed{
+// 		top: 0;
+// 		position: fixed;
+// 		width: 100%;
+// 		box-shadow: 0 0 11px rgba(0,0,0,0.15);
+// 		background-color: #fff;
+// 	  	z-index: 99;
+// 	  	animation-duration: 0.8s;
+// 		animation-name: slideDown;
+// 		animation-timing-function: ease;
+// 		margin-right: 0 !important;
+// 	}
+// }
 
 @keyframes slideDown {
   0% {
@@ -1314,48 +1314,56 @@ a.wishlist_top{
 
 //cart
 #cart_block .ajax_cart_quantity {
-	background: $active none repeat scroll 0 0;
+	background: #ff8400 none repeat scroll 0 0;
 	border-radius: 50%;
 	color: #fff;
-	font-size: 11px;
-	height: 17px;
+	font-size: 14px;
+	height: 20px;
+	line-height: 20px;
 	position: absolute;
 	text-align: center;
-	width: 17px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	width: 20px;
 	top: 18px;
 	right: -13px;
-	font-family: Lato;
 }
 .text-custom{
 	display: none;
+	font-size: 16px;
+	font-weight: 700;
+	color: #000;
+	padding-top: 10px;
+	padding-left: 6px;
+}
+.cart_block_total.ajax_block_cart_total {
+	letter-spacing: 0px;
 }
 .cart-icon{
-	width: 30px;
-	height: 24px;
+	width: 35px;
+	height: 35px;
 	display: inline-block;
+	position: relative;
+	color: #000;
 	&::before{
 		content: "\f2fa";
 		font-family: 'LineAwesome';
 		font-size: 38px;
-		color: #000;
 		display: inline-block;
-
 	}
 }
 
 // wishlist
 .wishlist_top.home_page{
-	width: 30px;
-	height: 24px;
+	width: 35px;
+	height: 35px;
 	display: inline-block;
+	color: #000;
+	&:hover{
+		color: $active;
+	}
 	&::before{
 		content: "\f234";
 		font-family: 'LineAwesome';
 		font-size: 31px;
-		color: #000;
 		display: inline-block;
 	}
 }
@@ -1471,20 +1479,33 @@ a.wishlist_top{
 	}
 }
 .ver_menu {
-	background: #fb943b;
-	color: #fff;
-	line-height: 60px;
+	background: #fff;
+	color: #010101;
+	line-height: 50px;
 	margin-bottom: 0;
-	padding: 0 20px;
-	font-size: 18px;
+	padding: 0 17px;
+	font-size: 15px;
 	text-transform: uppercase;
-	font-weight: 600;
+	font-weight: 700;
 	letter-spacing: 0.2px;
 	cursor: pointer;
+	font-family: Roboto;
+	border-radius: 3px;
+	position: relative;
 	img{
-		margin-right: 6px;
-		margin-top: -2px;
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		transform: translateY(-50%);
 	}
+}
+.buy-theme{
+	font-family: Roboto;
+	color: #fff !important;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: block;
+	text-align: right;
 }
 
 //service

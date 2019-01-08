@@ -102,11 +102,10 @@
     display: flex;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
-    justify-content: flex-end;
-    padding-right: 8px; }
+    justify-content: flex-end; }
     .header #cart_block .ajax_cart_quantity {
-      right: -4px;
-      top: 15px; }
+      right: -9px;
+      top: -7px; }
     .header #cart_block .cart-icon::before {
       top: -3px;
       position: relative; }
@@ -130,10 +129,44 @@
     .header .right p {
       margin-bottom: 0; }
     .header .right .addon-box:not(:first-child) {
-      margin-left: 26px; }
+      margin-left: 15px; }
     .header .right .wishlist_top.home_page {
-      top: -3px;
-      left: -6px;
+      top: 1px;
       position: relative; }
   .header #cart_block .shoppingcart-box::before {
     right: 56px; }
+
+.menu {
+  background: #ff4c65; }
+  .menu .container > .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .menu p {
+    margin-bottom: 0; }
+  .menu .jms-megamenu .nav > li:first-child {
+    padding-left: 0; }
+  .menu .jms-megamenu .nav > li > a {
+    color: #fff; }
+  .menu .center {
+    position: unset;
+    text-align: left; }
+  .menu #jms-vermegamenu-container {
+    margin-top: 2px; }
+
+.slides .text-1 {
+  font-weight: 700;
+  letter-spacing: 0.5px; }
+
+.slides .text-2 {
+  font-family: Roboto;
+  letter-spacing: 0.4px;
+  line-height: 1.3; }
+  .slides .text-2 span {
+    font-weight: 700; }
+    .slides .text-2 span + span {
+      font-weight: 900;
+      padding-left: 10px; }

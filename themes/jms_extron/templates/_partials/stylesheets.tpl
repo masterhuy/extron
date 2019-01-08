@@ -23,16 +23,14 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <link rel="stylesheet" type="text/css" href="{$urls.theme_assets}css/linearicon.css" />
+<link rel="stylesheet" type="text/css" href="{$urls.theme_assets}css/digitalicon.css" />
 <link rel="stylesheet" type="text/css" href="{$urls.theme_assets}css/typo-icon.css" />
-<link rel="stylesheet" type="text/css" href="{$urls.theme_assets}css/pe-icon-set-food.css" />
 <link rel="stylesheet" type="text/css" href="{$urls.theme_assets}css/helper.css" />
 <link rel="stylesheet" href="//maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|Roboto:300,400,400i,500,500i,700,700i,900,900i" rel="stylesheet"> 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="{$urls.theme_assets}/css/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
-<link rel="stylesheet" type="text/css" href="{$urls.theme_assets}/fonts/storm/storm.css" />
 <link rel="stylesheet" type="text/css" href="{$urls.theme_assets}css/global.css" />
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 {foreach $stylesheets.external as $stylesheet}
