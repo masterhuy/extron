@@ -1,9 +1,9 @@
 @import "mixin";
 @import "varians";
 
-@include hoverBannerEffect1();
-@include BannerEffect2();
-@include hoverBannerEffect2();
+// @include hoverBannerEffect1();
+// @include BannerEffect2();
+// @include hoverBannerEffect2();
 
 // @media (min-width: 992px){
 // 	.jms-row.header.fixed,
@@ -1239,14 +1239,96 @@ a.wishlist_top{
 	}
 }
 .jms-banner{
-	img{
-		width: 100%;
+	&.vcenter{
+		.banner-content{
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+	&.hcenter{
+		.banner-content{
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	&.center{
+		.banner-content{
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
 	}
 	.banner-content{
 		p{
 			margin-bottom: 0;
 		}
 	}
+}
+
+//flashsale
+.jmsflashsales{
+	.title{
+		display: flow-root;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #eee;
+	}
+	.flashsales-carousel {
+		padding-top: 30px;
+	}
+	.countdown-row {
+		position: relative;
+		&::before{
+			content: "end in:";
+			text-transform: uppercase;
+			color: #fff;
+			font-weight: 700;
+			font-size: 14px;
+			padding-right: 4px;
+			padding-left: 7px;
+		}
+	}
+	.countdown-period{
+		display: none;
+	}
+	.flashsales-countdown {
+		background: #ff8400;
+		border-radius: 5px;
+		padding: 8px 10px;
+		margin-left: 79px;
+	}
+	.countdown-section{
+		background: transparent;
+		margin: 0;
+		border-radius: 0;
+		min-width: 31px;
+		padding: 0;
+		position: relative;
+		&:not(:last-child)::after{
+			content: ":";
+			color: #fff;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: -2px;
+		}
+	}
+	.countdown-section .countdown-amount{
+		margin-bottom: 0;
+		font-size: 16px;
+	}
+}
+
+.view-all{
+  font-size: 14px;
+  padding-right: 20px;
+  position: relative;
+  text-transform: uppercase;
+  &::after{
+  	content: url("../img/icon/icon-left.png");
+	position: relative;
+	top: 2px;
+	left: 4px;
+  }
 }
 
 
@@ -1408,17 +1490,6 @@ a.wishlist_top{
 			background-position: center top;
 			background-repeat: no-repeat;
 			transition: .4s all;
-		}
-	}
-}
-
-.page-index{
-	#wrapper{
-		.addon-title h3{
-			text-align: center;
-			&::before{
-				@include imgBeforeTitle();
-			}
 		}
 	}
 }

@@ -43,29 +43,40 @@
 }
 .owl-theme .owl-controls div.owl-prev, .owl-theme .owl-controls div.owl-next {
 	display: inline-block;
-	height: 26px;
-	margin: 0 2.5px;
+	height: 37px;
 	text-align: center;
-	width: 48px;
+	width: 20px;
 	cursor: pointer;
 	z-index: 2;
 }
 
+.owl-theme .owl-controls div{
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	transition: .4s all;
+	top: 50%; 
+	transform: translateY(-50%);
+}
+.jms-row:hover .owl-theme .owl-controls div{
+	opacity: 1;
+	visibility: visible;
+}
 .owl-theme .owl-controls  div.owl-prev {
     background: url("../../../../assets/img/icon/left.png") no-repeat center;
-    border: 1px solid #e1e1e1;
-    border-radius: 30px;
+	left: -70px;
 }
 .owl-theme .owl-controls div.owl-next {
 	background: url("../../../../assets/img/icon/right.png") no-repeat center ;
-	border: 1px solid #e1e1e1;
-    border-radius: 30px;
+	right: -70px;
 }
-.owl-theme .owl-controls div.owl-prev:hover {
+.jms-row:hover .owl-theme .owl-controls div.owl-prev {
     background: url("../../../../assets/img/icon/left_hover.png") no-repeat center;
+    left: -50px;
 }
-.owl-theme .owl-controls div.owl-next:hover {
+.jms-row:hover .owl-theme .owl-controls div.owl-next {
     background: url("../../../../assets/img/icon/right_hover.png") no-repeat center;
+    right: -50px;
 }
 .owl-dot > span {
     background: #d7d7d7;
@@ -102,10 +113,6 @@
 .owl-theme .owl-controls {
 	margin-bottom: 0;
 	margin-top: 0;
-	position: absolute;
-	top: -5px;
-	left: 50%;
-	transform: translateX(-50%);
 }
 .owl-theme .owl-controls .owl-page {
 	display:inline-block;

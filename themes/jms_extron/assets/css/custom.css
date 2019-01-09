@@ -344,7 +344,7 @@ address {
   margin-bottom: 20px;
   font-style: normal;
   line-height: 20px;
-  font-family: Cabin;
+  font-family: PT Sans;
   font-size: 16px;
 }
 
@@ -988,7 +988,6 @@ table td[class*="col-"], table table th[class*="col-"] {
 .dropdown-menu {
   top: calc(100% + 1px);
   border: 0;
-  /*transform: translateY(10px);*/
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease 0s, visibility 0s ease 0.3s, transform 0.3s ease 0s;
@@ -1126,7 +1125,7 @@ fieldset[disabled] .btn-default {
   color: #fff !important;
   letter-spacing: 0.7px;
   margin-bottom: 0;
-  border-radius: 3px;
+  border-radius: 5px;
   background: #ff4c65;
 }
 .btn-shopnow:hover{
@@ -1326,8 +1325,8 @@ ul#order_step li {
 #cart_block .shoppingcart-box {
   background: #fff none repeat scroll 0 0;
   border-radius: 0;
-  -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.12);
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   display: block;
   width: 330px;
   opacity: 0;
@@ -1340,16 +1339,15 @@ ul#order_step li {
   top: calc(100% + 28px);
   left: auto;
   visibility: hidden; }
-#cart_block .shoppingcart-box::before{
+#cart_block .shoppingcart-box::before {
   content: "";
-  left: 0;
-  top: -7px;
+  box-shadow: -5px -6px 12px rgba(0,0,0,0.2);
+  background: #fff;
+  width: 8px;
+  height: 8px;
   position: absolute;
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid #fb943b;
+  transform: rotate(45deg) translateX(-50%);
+  top: -2px;
 }
 #cart_block .shoppingcart-box::before{
   left: auto;
@@ -1409,7 +1407,7 @@ ul#order_step li {
   float: right;
   padding-top: 6px;
   font-size: 18px;
-  font-family: Cabin;
+  font-family: PT Sans;
   font-weight: 700;
   color: #7cbb2c;
 }
@@ -1422,7 +1420,7 @@ ul#order_step li {
   width: calc(100% - 80px); }
 .cart-wrap .description > a {
   display: block;
-  font-family: "Cabin";
+  font-family: "PT Sans";
   font-size: 16px;
   position: relative;
   text-transform: capitalize;
@@ -1455,7 +1453,7 @@ ul#order_step li {
   font-weight: 700;
   line-height: 30px;
   color: #7cbb2c;
-  font-family: Cabin;
+  font-family: PT Sans;
 }
 
 .cart-wrap .remove_link {
@@ -1475,7 +1473,7 @@ ul#order_step li {
 }
 .checkout-info .label {
   color: #907459;
-  font-family: "Cabin";
+  font-family: "PT Sans";
   font-size: 15px;
   font-weight: 500;
   line-height: 33px;
@@ -1627,12 +1625,13 @@ ul#order_step li {
 /*End ps shoppingcart-box*/
 /* ------ */
 /* Product Preview */
-.product_box, .testimonial_box{
+
+/*.product_box, .testimonial_box{
   margin: 0 -15px;
 }
 .product_box .item, .testimonial_box .item {
   padding: 15px;
-}
+}*/
 .product-preview {
   position: relative;
   background: #fff;
@@ -1661,7 +1660,7 @@ ul#order_step li {
   line-height: 15px;
   padding: 6.5px 10px;
   position: relative;
-  font-family: Cabin;
+  font-family: PT Sans;
   text-transform: capitalize;
   width: 50px;
   height: 50px;
@@ -1692,16 +1691,16 @@ ul#order_step li {
 
 .product-link {
   display: block;
-  font-family: "Cabin";
-  font-size: 18px;
+  font-family: "PT Sans";
+  font-size: 15px;
   overflow: hidden;
   text-transform: capitalize;
   width: 100%;
   font-weight: 500;
-  text-align: center;
+  text-align: left;
   line-height: 1.45;
-  padding: 0 15px;
   margin-bottom: 6px;
+  color: #0062bd;
 }
 
 .product_action {
@@ -1864,9 +1863,8 @@ ul#order_step li {
 
 .product-preview .product-info {
   position: relative;
-  padding-top: 17px;
   min-height: 92px;
-  padding-bottom: 18px;
+  padding: 20px;
 }
   .product-preview .product-info::before{
     content: "";
@@ -1936,32 +1934,29 @@ ul#order_step li {
 }
 .content_price {
   line-height: 33px;
-  text-align: center;
+  text-align: left;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s; }
 
 .price {
-  font-family: "Cabin";
   margin: 0; }
 
 .content_price .price.new {
-  color: #7cbb2c;
-  font-size: 20px;
+  color: #000;
+  font-size: 16px;
   font-weight: 700;
 }
 .ajax_cart_no_product {
   font-size: 15px;
-  font-family: Cabin;
   color: #907459;
   font-weight: 500;
 }
 .content_price .price.old {
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 30px;
   text-decoration: line-through;
-  color: #a7a7a7;
   margin-right: 18px;
   position: relative;
   bottom: 1px;
@@ -2124,7 +2119,7 @@ ul#order_step li {
   margin-top: 13px;
 }
 .product-name {
-  font-family: Cabin;
+  font-family: PT Sans;
   text-transform: capitalize;
   font-weight: 500;
   line-height: 1.45;
@@ -2273,7 +2268,7 @@ li.product-flag {
   white-space: nowrap;
   font-weight: 500;
   width: calc(90% - 12px);
-  font-family: Cabin;
+  font-family: PT Sans;
 }
 
 .products-sort-order.dropdown i {
@@ -2285,7 +2280,7 @@ li.product-flag {
 
 .sort-by {
   color: #907459;
-  font-family: Cabin;
+  font-family: PT Sans;
 }
 
 .products-sort-order .dropdown-menu {
@@ -2320,7 +2315,7 @@ li.product-flag {
 .pagination div.left-pagination{
   padding: 5px 0 0 0;
    color: #907459;
-  font-family: Cabin;
+  font-family: PT Sans;
   font-size: 15px;
 }
   .pagination li {
@@ -2331,7 +2326,7 @@ li.product-flag {
   border: medium none;
   display: inline-block;
   float: none;
-  font-family: "Cabin";
+  font-family: "PT Sans";
   font-weight: 700;
   height: 30px;
   font-size: 16px;
@@ -2451,19 +2446,19 @@ li.product-flag {
 }
 .products-list-in-row .product-description p{
   font-size: 16px;
-  font-family: Cabin;
+  font-family: PT Sans;
   color: #907459;
   line-height: 1.88;
 }
 .products-list-in-row .product-quantities span{
-  font-family: Cabin;
+  font-family: PT Sans;
   color: #7cbb2c;
 }
 .products-list-in-row .content_price .price.new {
   font-size: 27px;
 }
 .products-list-in-row .product-info .label {
-  font-family: Cabin;
+  font-family: PT Sans;
   font-size: 14px;
   color: #b29c86;
   padding: 0;
@@ -2973,7 +2968,7 @@ ul.footer_links {
   line-height: normal;
   margin-top: -6px;
   padding-bottom: 20px;
-  font-family: Cabin;
+  font-family: PT Sans;
   letter-spacing: 0.5px;
 }
   .modal-dialog.cover_product1 .content_prices {
@@ -3221,7 +3216,7 @@ ul.footer_links {
 .footer_t a, 
 .footer_t p{
   color: #907459;
-  font-family: Cabin;
+  font-family: PT Sans;
   font-size: 15px;
   line-height: 2;
 }
@@ -3229,7 +3224,7 @@ ul.footer_links {
   display: inline-block;
 }
 .footer_b ul li a {
-  font-family: Cabin;
+  font-family: PT Sans;
   color: #907459;
   margin-right: 25px;
   letter-spacing: 0.4px;
@@ -3255,10 +3250,14 @@ ul.footer_links {
 
 
 .addon-title h3 {
-  font-weight: 500;
-  font-size: 32px;
+  font-weight: 700;
+  font-size: 20px;
   position: relative;
-  text-transform: capitalize; }
+  text-transform: uppercase;
+  font-family: Roboto;
+  color: #000;
+}
+
 
 /*HEADER*/
 .topbar .dropdown-menu {
@@ -3329,7 +3328,7 @@ ul.footer_links {
   top: -35px;
 }
 .top_menu_second {
-  font-family: Cabin;
+  font-family: PT Sans;
   text-align: center;
   background: #fff none repeat scroll 0 0;
   float: left;
@@ -3850,7 +3849,7 @@ footer .blog-carousel {
 .testimonial-comment {
   font-size: 16px;
   color: #907459;
-  font-family: Cabin;
+  font-family: PT Sans;
   line-height: 1.85;
   position: relative;
   padding-left: 19px;
@@ -3874,7 +3873,7 @@ footer .blog-carousel {
 .show_office {
   font-size: 14px;
   color: #888;
-  font-family: Cabin;
+  font-family: PT Sans;
   letter-spacing: 0.3px;
 }
 
@@ -3927,7 +3926,7 @@ footer .blog-carousel {
 #newsletter-input {
   height: 52px;
   border-radius: 30px;
-  font-family: Cabin;
+  font-family: PT Sans;
   color: #7d7d7d;
   padding-left: 28px;
   width: 490px;
@@ -3987,7 +3986,7 @@ footer .blog-carousel {
 
 .countdown-section .countdown-amount {
   display: block;
-  font-family: "Cabin";
+  font-family: "PT Sans";
   font-weight: 700;
   font-size: 30px;
   position: relative;
@@ -3999,7 +3998,7 @@ footer .blog-carousel {
   display: block;
   font-size: 15px;
   text-transform: capitalize;
-  font-family: "Cabin";
+  font-family: "PT Sans";
   color: #fff;
   font-weight: 500;
 }
@@ -4046,7 +4045,7 @@ footer .blog-carousel {
   margin-bottom: 10px;
 }
 .blog-carousel .post-meta li{
-  font-family: Cabin;
+  font-family: PT Sans;
 }
 .blog-carousel .btn-readmore:hover{
   color: #fff;
@@ -4135,7 +4134,7 @@ sup.required {
   left: 5px;
 }
 .post-fulltext{
-  font-family: Cabin;
+  font-family: PT Sans;
 }
 .post-fulltext .cmt p {
   transform: skewX(-10deg);
@@ -5522,7 +5521,7 @@ sup.required {
 .jms-banner{
   position: relative;
 }
-.jms-banner img{
+.jms-banner > a > img{
   width: 100%;
 }
 /*Owl carousel*/
@@ -5862,7 +5861,7 @@ sup.required {
 .jms-tab ul .nav-item a{
   padding: 8px 19px;
   position: relative;
-  font-family: Cabin;
+  font-family: PT Sans;
   top: 1px;
   color: #b29c86;
   border: 1px solid transparent;
@@ -5890,6 +5889,7 @@ sup.required {
 }
 .jms-banner{
   overflow: hidden;
+  letter-spacing: 0;
 }
 .jms-banner a img{
   transition: 1s all;
@@ -5897,8 +5897,30 @@ sup.required {
 .jms-advsearch .input-group-addon.input-group-search {
     background: url("../img/icon/search.png") no-repeat center;
 }
-
-
+.rbt{
+  font-family: "Roboto", sans-serif;
+}
+.pt-s{
+  font-family: "PT Sans", sans-serif;
+}
+.fw-light{
+  font-weight: 300;
+}
+.fw-regular{
+  font-weight: 400;
+}
+.fw-medium{
+  font-weight: 500;
+}
+.fw-semibold{
+  font-weight: 600;
+}
+.fw-bold{
+  font-weight: 700;
+}
+.fw-black{
+  font-weight: 900;
+}
 
 
 

@@ -63,7 +63,7 @@ class JmsflashsalesFlashsalesModuleFrontController extends ModuleFrontController
 			//print_r($sql); exit;	
 			$products[] = Product::getProductProperties($id_lang, $row);	
 		}	
-		$this->context->smarty->assign(array(			
+		$this->context->smarty->assign(array(	
 			'products' => JmsFlashSales::returnSearch($products),
 			'items_show' => Configuration::get('JMS_FLASHSALES_ITEMS_SHOW'),
 			'items' => Configuration::get('JMS_FLASHSALES_TOTAL'),

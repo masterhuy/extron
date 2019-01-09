@@ -129,10 +129,6 @@
     width: 100%;
     z-index: 999;
 }
-.fs-pager-wrapper a:hover{
-	background: rgba(251,148,59,1);
-	color: #fff !important;
-}
 .fs-pager-wrapper a, .fs-custom-pager-wrapper a {
 	margin: 0 4px;
 	font-family: "Poppins";

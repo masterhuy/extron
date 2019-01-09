@@ -155,6 +155,42 @@ jQuery(function ($) {
 		});
 	}
 
+	if($(".flashsales-carousel").length) {		
+		var flashsalesCarousel = $(".flashsales-carousel");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		flashsalesCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:5
+				},
+				991:{
+					items:4
+				},
+				768:{
+					items:3
+				},
+				481:{
+					items:2
+				},
+				361:{
+					items:1
+				},
+				0:{
+					items:1
+				}
+			},
+			rtl: rtl,
+			margin:0,
+			nav: true,
+			dots: false,
+			autoplay: false,
+			loop: true,
+			slideSpeed: 800,
+		});
+	}
+
 	if($(".testimonial-carousel").length) {
 		var testimonialCarousel = $(".testimonial-carousel");		
 		var rtl = false;

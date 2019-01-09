@@ -213,6 +213,7 @@ class JmsAddonProductCarousel extends JmsAddonBase
 			array(
 				'link' => $this->context->link,
 				'products_slides' => $products,
+                'allproductslink' => Context::getContext()->link->getCategoryLink(2),
 				'icon_class' => $icon_class,
 				'addon_title' => $fields[0]->value->$id_lang,
 				'addon_desc' => $fields[1]->value->$id_lang,
