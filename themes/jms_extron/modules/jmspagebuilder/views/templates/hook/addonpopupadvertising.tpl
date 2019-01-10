@@ -31,22 +31,38 @@
 		</h2>
 		{/if}
 		<div class="jms-popup-content">
-			<div>
-				{$popup_content nofilter}
-			</div>
+			<img class="img-popup" src="{$urls.base_url}themes/jms_extron/assets/img/icon/mail.png" alt="">
+			<h2>
+				{l s='SUBSCRIBE & GET' d='Shop.Theme.Global'}
+				<span>20%</span>
+				{l s=' DISCOUNT!' d='Shop.Theme.Global'}
+			</h2>
+			<p class="text-1">{l s='Get the first offers and events from our store' d='Shop.Theme.Global'}</p>
+			
+			{$popup_content nofilter}
+
+			<p class="text-2">
+				{l s='We respect your privacy. We will never share or sell your information.' d='Shop.Theme.Global'}
+			</p>
 		</div>			
-		<div id="social_block">
-			<ul class="find-us">
-		       <li class="divider"><a href="#" class="facebook"><span class="fa fa-facebook"></span></a></li>       <li class="divider"><a href="#" class="twitter"><span class="fa fa-twitter"></span></a></li>                     <li class="divider"><a href="#" class="gplus"><span class="fa fa-google-plus"></span></a></li>		   <li class="divider"><a href="#" class="pinterest"><span class="fa fa-pinterest"></span></a></li>            
-				   <li class="divider"><a href="#" class="instagram"><span class="fa fa-instagram"></span></a></li>  </ul>
-		</div>	
 		<div class="dontshow">
 			<input type="checkbox" name="dontshowagain" value="1" id="dontshowagain" /> 
-			<label>{l s="Don't show this popup again" d='Shop.Theme'}</label>
+			<label>{l s="Don't show this popup again" d='Shop.Theme.Global'}</label>
 		</div>		
 		<a class="popup-close"></a>
 		<input type="hidden" name="width_default" id="width-default" value="{$popup_width|escape:'htmlall':'UTF-8'}" />
 		<input type="hidden" name="height_default" id="height-default" value="{$popup_height|escape:'htmlall':'UTF-8'}" />
 		<input type="hidden" name="loadtime" id="loadtime" value="{$loadtime|escape:'htmlall':'UTF-8'}" />
+		
+		<div id="social_block">
+			<h3>{l s='MORE WAYS TO STAY CONNECTED:' d='Shop.Theme.Global'}</h3>
+			<ul class="find-us">
+		        <li class="divider"><a href="#" class="facebook"><span class="fa fa-facebook"></span></a>      
+		        <li class="divider"><a href="#" class="twitter"><span class="fa fa-twitter"></span></a>                     
+		        <li class="divider"><a href="#" class="gplus"><span class="fa fa-google"></span></a>		   
+		        <li class="divider"><a href="#" class="pinterest"><span class="fa fa-pinterest"></span></a>            
+				<li class="divider"><a href="#" class="instagram"><span class="fa fa-instagram"></span></a> 
+			</ul>
+		</div>	
 	</div>
 </div>

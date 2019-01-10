@@ -3,12 +3,12 @@
 		<img alt="{$product.name|escape:'html':'UTF-8'}" src="{$product.cover.bySize.cart_default.url}" class="preview img-responsive" data-full-size-image-url = "{$product.cover.large.url}">
 	</a>
 	<div class="description"> 
-		<a href="" title="{$product.name|escape:'html':'UTF-8'}">
+		<a class="product-link" href="" title="{$product.name|escape:'html':'UTF-8'}">
 			{$product.name}
 		</a>
 		<div class="line">
-			<div class="price-quantity">
-				<span class="price">
+			<div class="content_price">
+				<span class="price new">
 					{$product.price}
 				</span>
 			</div>

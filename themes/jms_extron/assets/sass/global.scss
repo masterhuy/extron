@@ -1267,13 +1267,19 @@ a.wishlist_top{
 
 //flashsale
 .jmsflashsales{
+	.addon-title{
+		h3{
+			padding: 0;
+			line-height: 36px;
+		}
+	}
 	.title{
 		display: flow-root;
-		padding-bottom: 20px;
+		padding-bottom: 10px;
 		border-bottom: 1px solid #eee;
 	}
 	.flashsales-carousel {
-		padding-top: 30px;
+		padding-top: 36px;
 	}
 	.countdown-row {
 		position: relative;

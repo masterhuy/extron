@@ -61,9 +61,6 @@
 			<h3>{l s='Follow Us' d='Shop.Theme.Global'}</h3>
 			<span>{l s='Sign up our newsletter & get 20 percent off for your next purchase!' d='Shop.Theme.Global'}</span>
 		</div>
-		<div class="popup addon-title">
-			<p class="text-1">{l s='Sign up our newsletter & get 20 percent off for your next purchase!' d='Shop.Theme.Global'}</p>
-		</div>
 		<div class="news_content">
         	<div  class="block_c_right">
 				<form action="{$urls.pages.index}#footer" method="post">
@@ -73,7 +70,7 @@
 						<button type="submit" name="submitNewsletter" class="newsletter-btn buttonh1 btn-active">
 							<img src="{$urls.base_url}themes/jms_freshy/assets/img/icon/btn-right.png" alt="">
 						</button>
-						<button type="submit" name="submitNewsletter" class="newsletter-btn btn-popup btn-shopnow1 btn-effect1">
+						<button type="submit" name="submitNewsletter" class="newsletter-btn btn-popup">
 							{l s='Subscribe' d='Shop.Theme'}
 						</button>
 						<input type="hidden" name="action" value="0" />

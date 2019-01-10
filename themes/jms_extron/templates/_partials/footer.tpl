@@ -23,7 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
  <div class="back-to-top" id="back-to-top" title="Back to top">
-	<span class="fa fa-arrow-up"></span>
+	<span class="la la-chevron-up"></span>
 </div>
 {hook h='displayFooter'}
 

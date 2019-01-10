@@ -1022,13 +1022,17 @@ a.wishlist_top {
 .jms-banner .banner-content p {
   margin-bottom: 0; }
 
+.jmsflashsales .addon-title h3 {
+  padding: 0;
+  line-height: 36px; }
+
 .jmsflashsales .title {
   display: flow-root;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #eee; }
 
 .jmsflashsales .flashsales-carousel {
-  padding-top: 30px; }
+  padding-top: 36px; }
 
 .jmsflashsales .countdown-row {
   position: relative; }

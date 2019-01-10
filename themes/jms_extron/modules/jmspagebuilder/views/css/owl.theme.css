@@ -71,12 +71,16 @@
 	right: -70px;
 }
 .jms-row:hover .owl-theme .owl-controls div.owl-prev {
-    background: url("../../../../assets/img/icon/left_hover.png") no-repeat center;
     left: -50px;
 }
+.owl-theme .owl-controls div.owl-prev:hover {
+    background: url("../../../../assets/img/icon/left_hover.png") no-repeat center;
+}
 .jms-row:hover .owl-theme .owl-controls div.owl-next {
-    background: url("../../../../assets/img/icon/right_hover.png") no-repeat center;
     right: -50px;
+}
+.owl-theme .owl-controls div.owl-next:hover {
+    background: url("../../../../assets/img/icon/right_hover.png") no-repeat center;
 }
 .owl-dot > span {
     background: #d7d7d7;
