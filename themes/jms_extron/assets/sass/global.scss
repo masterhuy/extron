@@ -220,11 +220,6 @@ a.wishlist_top{
 	#content-wrapper {
 		margin-bottom: 0px;
 	}
-	#content-hook-order-confirmation-footer{
-		.owl-stage-outer{
-			padding-bottom: 150px;
-		}
-	}
 }
 .ps-shown-by-js button {
 	cursor: pointer;
@@ -466,9 +461,6 @@ a.wishlist_top{
 	}
 }
 #more_info_block + .featured-products{
-	.owl-stage-outer{
-		padding-bottom: 150px;
-	}
 	.product-link{
 		min-height: auto;
 		text-overflow: ellipsis;
@@ -1188,13 +1180,6 @@ a.wishlist_top{
 .cat-post-list.more-columns{
 	margin: 0 -15px;
 }
-#cart{
-	.featured-products{
-		.owl-stage-outer{
-			padding-bottom: 60px;
-		}
-	}
-}
 .wlp_bought img{
 	width: 100%;
 }
@@ -1265,12 +1250,41 @@ a.wishlist_top{
 	}
 }
 
-//flashsale
+//category link
+.categories-carousel2-no-carousel{
+	text-align: right;
+	position: absolute;
+	right: 15px;
+	top: 2px;
+	.categories-wrapper{
+		border: 0;
+		.cat-name {
+			font-size: 15px;
+			font-family: PT Sans;
+			text-transform: capitalize;
+			color: #555;
+			font-weight: 400;
+			display: block;
+			margin-bottom: 0;
+		}
+		.c_item-info {
+			width: auto;
+			padding-top: 0;
+		}
+	}
+	.block_category{
+		display: inline-block;
+		margin-left: 24px;
+	}
+}
+
+//flashsales
 .jmsflashsales{
 	.addon-title{
 		h3{
 			padding: 0;
 			line-height: 36px;
+			border: 0;
 		}
 	}
 	.title{
@@ -1326,9 +1340,12 @@ a.wishlist_top{
 
 .view-all{
   font-size: 14px;
-  padding-right: 20px;
+  padding-right: 5px;
   position: relative;
   text-transform: uppercase;
+  &.link{
+  	margin-left: 70px;
+  }
   &::after{
   	content: url("../img/icon/icon-left.png");
 	position: relative;
@@ -1459,46 +1476,24 @@ a.wishlist_top{
 // cates tab
 .cates_tab{
 	.addon-title{
-		margin-bottom: 67px;
+		position: relative;
 	}
-	.categorytab-carousel{
-		padding-top: 18px;
-	}
-	.jms-tab ul .nav-item{
-		margin: 0 16px;
-		&.Bread.\&.Eggs a::before{
-			background-image: url("../img/icon/bread_eggs_.png");
-		}
-		&.Fresh.Fruits a::before{
-			background-image: url("../img/icon/fresh_fruits_.png");
-		}
-		&.Fresh.Tubers a::before{
-			background-image: url("../img/icon/fresh_tubers_.png");
-		}
-		&.Vegetables a::before{
-			background-image: url("../img/icon/vegetables_.png");
-		}
-		&.Seafoods a::before{
-			background-image: url("../img/icon/seafood_.png");
-		}
-		&.active a::before, a.active::before{
-			background-position: center bottom;
-		}
-		a::before{
-			content: "";
-			left: 50%;
-			position: absolute;
-			top: -50px;
-			transform: translateX(-50%);
-			width: 65px;
-			height: 47px;
-			display: block;
-			background-position: center top;
-			background-repeat: no-repeat;
-			transition: .4s all;
+	.jms-tab{
+		position: absolute;
+		top: 3px;
+		right: 0;
+		ul .nav-item:not(:first-child){
+			margin-left: 31px;
 		}
 	}
 }
+.categorytab-carousel .categoryname{
+	display: none;
+}
+.tab-content .tab-pane.active ~ .tab-pane .owl-controls{
+	display: none;
+}
+
 
 // category show2
 .categories-wrapper {
@@ -1586,34 +1581,32 @@ a.wishlist_top{
 }
 
 //service
-.service{
-	.feature-box{
-		@include flex(center, center);
-		border-radius: 8px;
-		padding: 30.5px 0;
-	}
+.feature-box{
+	@include flex(center, center);
+	border-radius: 8px;
+	padding: 30.5px 0;
 	.include_content_s{
 		margin-left: 22px;
 		.text-1{
-			font-size: 24px;
-			font-weight: 600;
+			font-size: 16px;
+			font-family: Roboto;
+			color: #000;
+			font-weight: 500;
 			letter-spacing: 0.4px;
 			margin-bottom: 6px;
 		}
 		.text-2{
-			color: #907459;
-			font-family: PT Sans;
-			font-size: 16px;
-			margin-bottom: 8px;
+
 		}
+	}
+	i{
+		font-size: 48px;
+		color: #ff4c65;
 	}
 }
 
-.product-carousel, .categorytab-carousel, .hotdeal-carousel{
-	.owl-stage-outer{
-		padding-bottom: 60px;
-	}
-}
+
+
 .menu .features .image img {
 	width: 100%;
 }

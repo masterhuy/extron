@@ -133,8 +133,6 @@
     .header .right .wishlist_top.home_page {
       top: 1px;
       position: relative; }
-  .header #cart_block .shoppingcart-box::before {
-    right: 56px; }
 
 .menu {
   background: #ff4c65; }
@@ -172,7 +170,6 @@
       padding-left: 10px; }
 
 .jmsflashsales .view-all {
-  padding-right: 4px;
   line-height: 36px; }
 
 .banner .container > .row {
@@ -183,7 +180,8 @@
 
 .banner1 .banner-content {
   max-width: 145px;
-  right: 36px; }
+  right: 36px;
+  left: auto; }
   .banner1 .banner-content .text-1 {
     font-size: 20px;
     margin-bottom: 4px; }
@@ -277,3 +275,74 @@
       color: #ff4c65; }
   .categories-wrapper .child li {
     padding-bottom: 6px; }
+
+.banner4 .banner-content {
+  left: 50px; }
+  .banner4 .banner-content .text-1 {
+    font-size: 18px;
+    letter-spacing: 1.6px;
+    margin-bottom: 5px; }
+  .banner4 .banner-content .text-2 {
+    font-size: 26px;
+    color: #000;
+    letter-spacing: 1.2px;
+    margin-bottom: 22px; }
+  .banner4 .banner-content .text-3 {
+    font-size: 16px;
+    color: #fff;
+    background: #ff4c65;
+    padding: 8px 16px;
+    display: inline-block;
+    border-radius: 3px; }
+
+.banner5 .banner-content {
+  left: 50px;
+  margin-top: -5px; }
+  .banner5 .banner-content .text-1 {
+    font-size: 24px;
+    letter-spacing: -0.1px; }
+  .banner5 .banner-content .text-2 {
+    font-size: 24px;
+    margin-bottom: 20px; }
+  .banner5 .banner-content .text-3 {
+    font-size: 16px;
+    color: #fff;
+    background: #ff4c65;
+    padding: 8px 16px;
+    display: inline-block;
+    border-radius: 3px; }
+
+#newsletter_block_left {
+  padding: 0 100px; }
+  #newsletter_block_left .addon-title h3 {
+    border-bottom: 0; }
+  #newsletter_block_left .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  #newsletter_block_left .textnews_h1 > span {
+    margin-top: 4px;
+    display: block;
+    letter-spacing: 0.2px;
+    max-width: 365px;
+    line-height: 1.85; }
+  #newsletter_block_left .news_content {
+    margin-top: 16px; }
+
+.newsletter #social_block a {
+  border: 0; }
+
+.newsletter .addon-box:first-child {
+  background: url("../img/h1-newsletter-bg.jpg") no-repeat top center;
+  background-size: cover;
+  padding: 47px 0 74px; }
+
+.newsletter #social_block {
+  position: absolute;
+  left: 115px;
+  bottom: 40px; }
+  .newsletter #social_block a {
+    font-size: 22px;
+    background: transparent;
+    width: auto;
+    margin-right: 16px; }

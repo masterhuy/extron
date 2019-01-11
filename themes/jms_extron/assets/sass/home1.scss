@@ -146,9 +146,6 @@
 			position: relative;
 		}
 	}
-	#cart_block .shoppingcart-box::before {
-		right: 56px;
-	}
 }
 
 //menu
@@ -199,7 +196,6 @@
 
 .jmsflashsales{
 	.view-all{
-		padding-right: 4px;
 		line-height: 36px;
 	}
 }
@@ -218,6 +214,7 @@
 	.banner-content{
 		max-width: 145px;
 		right: 36px;
+		left: auto;
 		.text-1{
 			font-size: 20px;
 			margin-bottom: 4px;
@@ -340,5 +337,97 @@
 	}
 	.child li{
 		padding-bottom: 6px;
+	}
+}
+
+.banner4{
+	.banner-content{
+		left: 50px;
+		.text-1{
+			font-size: 18px;
+			letter-spacing: 1.6px;
+			margin-bottom: 5px;
+		}
+		.text-2{
+			font-size: 26px;
+			color: #000;
+			letter-spacing: 1.2px;
+			margin-bottom: 22px;
+		}
+		.text-3{
+			font-size: 16px;
+			color: #fff;
+			background: #ff4c65;
+			padding: 8px 16px;
+			display: inline-block;
+			border-radius: 3px;
+		}
+	}
+}
+
+.banner5{
+	.banner-content{
+		left: 50px;
+		margin-top: -5px;
+		.text-1{
+			font-size: 24px;
+			letter-spacing: -0.1px;
+		}
+		.text-2{
+			font-size: 24px;
+			margin-bottom: 20px;
+		}
+		.text-3{
+			font-size: 16px;
+			color: #fff;
+			background: #ff4c65;
+			padding: 8px 16px;
+			display: inline-block;
+			border-radius: 3px;
+		}
+	}
+}
+
+//newsletter
+#newsletter_block_left{
+	padding: 0 100px;
+	.addon-title{
+		h3{
+			border-bottom: 0;
+		}
+	}
+	.form-group{
+		display: flex;
+	}
+	.textnews_h1 > span{
+		margin-top: 4px;
+		display: block;
+		letter-spacing: 0.2px;
+		max-width: 365px;
+		line-height: 1.85;
+	}
+	.news_content {
+		margin-top: 16px;
+	}
+}
+.newsletter{
+	#social_block a{
+		border: 0;
+	}
+	.addon-box:first-child{
+		background: url("../img/h1-newsletter-bg.jpg") no-repeat top center;
+		background-size: cover;
+		padding: 47px 0 74px;
+	}
+	#social_block {
+		position: absolute;
+		left: 115px;
+		bottom: 40px;
+		a{
+			font-size: 22px;
+			background: transparent;
+			width: auto;
+			margin-right: 16px;
+		}
 	}
 }

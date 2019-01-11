@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-09 03:45:13
+/* Smarty version 3.1.33, created on 2019-01-11 00:02:38
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\modules\jmsflashsales\views\templates\hook\jmsflashsales.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c35b4997abb11_60156082',
+  'unifunc' => 'content_5c38236e791245_27914443',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1a5a0e9fba318830331678c25fa7cd2accdde67d' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_extron\\themes\\jms_extron\\modules\\jmsflashsales\\views\\templates\\hook\\jmsflashsales.tpl',
-      1 => 1547023422,
+      1 => 1547182956,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product.tpl' => 1,
   ),
 ),false)) {
-function content_5c35b4997abb11_60156082 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c38236e791245_27914443 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jmsflashsales">
 	<div class="product_box">
 		<div class="title">
@@ -32,7 +32,7 @@ function content_5c35b4997abb11_60156082 (Smarty_Internal_Template $_smarty_tpl)
 			<div class="flashsales-countdown pull-left"><?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['expiretime']->value,'htmlall','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 </div>
 			<div class="pull-right">
-				<a href="index.php?id_category=2&controller=category&id_lang=1" class="view-all pt-s fw-bold">view all</a>
+				<a href="index.php?id_category=2&controller=category&id_lang=1" class="view-all fw-bold">view all</a>
 			</div>
 		</div>
 		<div class="flashsales-carousel">	

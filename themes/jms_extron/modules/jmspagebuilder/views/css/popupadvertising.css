@@ -54,13 +54,6 @@
 .jms-popup #newsletter_block_left {
   margin-bottom: 10px;
 }
-.newsletter #newsletter_block_left .popup.addon-title,
-.newsletter .input_popup,
-.newsletter .btn-popup,
-.jms-popup .inputNew,
-.jms-popup .buttonh1{
-  display: none;
-}
 .jms-popup .alert.alert-danger{
   position: absolute;
 width: 100%;

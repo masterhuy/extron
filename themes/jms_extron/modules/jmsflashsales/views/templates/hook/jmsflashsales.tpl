@@ -31,7 +31,7 @@
 			</div>
 			<div class="flashsales-countdown pull-left">{$expiretime|escape:'htmlall':'UTF-8'}</div>
 			<div class="pull-right">
-				<a href="index.php?id_category=2&controller=category&id_lang=1" class="view-all pt-s fw-bold">view all</a>
+				<a href="index.php?id_category=2&controller=category&id_lang=1" class="view-all fw-bold">view all</a>
 			</div>
 		</div>
 		<div class="flashsales-carousel">	

@@ -22,7 +22,7 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<div class="product-miniature js-product-miniature product-box flex-box" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}">
+<div class="product-miniature js-product-miniature product-preview product-box flex-box" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}">
 	<div class="preview flexbox">
 		{block name='product_thumbnail'}
 		  <a href="{$product.url}" class="product-image {if isset($jpb_phover) && $jpb_phover == 'image_swap'}image_swap{else}image_blur{/if}">
@@ -44,7 +44,7 @@
 
     <div class="product-info">
 	    {block name='product_name'}
-			<a href="{$product.link|escape:'html'}" class="product-name">{$product.name|truncate:25:'...'|escape:'html':'UTF-8'}</a>
+			<a href="{$product.link|escape:'html'}" class="product-link">{$product.name|truncate:40:'...'|escape:'html':'UTF-8'}</a>
 	    {/block}
 		    {block name='product_price_and_shipping'}
 		        {if $product.show_price}
@@ -64,7 +64,20 @@
 		          </div>
 		        {/if}
 		    {/block}
-	   
+	    <div class="product_button">
+			<button {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Out of Stock' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}" class="ajax-add-to-cart product-btn cart-button {if $product.quantity < 1}disabled{/if}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
+				<span class="la la-spin la-spinner"></span>
+				<span class="la la-check"></span>
+				<span class="text-addcart">
+					<i class="la la-cart-plus"></i>
+					<span>{l s='Add to cart' d='Shop.Theme.Actions'}</span>
+				</span>		
+				<span class="text-outofstock">
+					<i class="la la-ban"></i>
+					<span>{l s='Out of stock' d='Shop.Theme.Actions'}</span>
+				</span>								   
+			</button>
+		</div>
     </div>
    
 </div>
