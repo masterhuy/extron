@@ -56,7 +56,7 @@
     text-transform: uppercase;
 }
 .jms-megamenu .nav > li > a:hover, .jms-megamenu .nav > li > a:focus {
-    color: #fb943b;
+    color: #ff4c65;
 }
 .jms-megamenu .nav > li:hover, .jms-megamenu .nav > li.open {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
@@ -252,7 +252,7 @@ div.jms-megamenu .dropdown-menu::before{
 .jms-megamenu .dropdown-menu {
     background: #fff !important;
     padding: 22px 0px !important;
-    box-shadow: 0 8px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 0px 8px rgba(0,0,0,0.2);
 }
 .jms-megamenu .mega-col-nav.col-sm-3:first-child {
 	border-left:0;
@@ -276,7 +276,7 @@ div.jms-megamenu .dropdown-menu::before{
     width: 100%;
 }
 .jms-megamenu .nav > li.open > a{
-    color: #fb943b;
+    color: #ff4c65;
 }
 .jms-megamenu .mobile > .dropdown-menu,
 .jms-megamenu .computer > .dropdown-menu{
@@ -290,20 +290,18 @@ div.jms-megamenu .dropdown-menu::before{
 .jms-megamenu .nav > li > a::after {
     content: "";
     left: 50%;
-    opacity: 0;
-    bottom: 0;
+    bottom: -7px;
+    box-shadow: -5px -6px 12px rgba(0,0,0,0.2);
+    background: #fff;
+    width: 8px;
+    height: 8px;
     position: absolute;
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 5px solid #fff;
-    transform: translateX(-50%);
-    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    transform: rotate(45deg) translateX(-50%);
+    opacity: 0;
+    z-index: 9999;
 }
 .jms-megamenu .nav > li.open > a::after {
     opacity: 1;
-    bottom: 0;
 }
 .jms-megamenu .nav > li > a::after {
     transition: .4s all;

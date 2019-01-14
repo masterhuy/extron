@@ -43,6 +43,7 @@
 <p class="addon-desc">{$addon_desc nofilter}</p>
 {/if}
 <div class="jms-hotdeal">
+	<div class="label">hot offer</div>
 	<div class="product_box">
 		<div class="hotdeal-carousel">
 			{foreach from=$products item=product key=k}	
@@ -58,12 +59,27 @@
 								>
 						 	</a>				 
 						 </div>
+						 <div class="block-label">
+						  	{block name='product_flags'}
+								{if $product.has_discount}
+									{if $product.discount_type === 'percentage'}
+				                	<span class="label label-discount discount-percentage discount-product">{$product.discount_percentage}</span>
+									{/if}
+								{/if}
+						   {/block}	
+						</div>
 						{/block}
 						<a class="addToWishlist product-btn" onclick="WishlistCart('wishlist_block_list', 'add', '26', false, 1); return false;" data-id-product="26" title="Add to Wishlist"></a>
 
 
 						<div class="product-info hotdeal">
-							<div class="countdown" id="countdown-{$hotdeals[$k].id_hotdeals nofilter}">{$hotdeals[$k].deals_time nofilter}</div>
+							{if isset($jpb_categoryname) && $jpb_categoryname}
+							    <span class="categoryname">
+									<a href="{url entity='category' id=$product.id_category_default}">
+									{$product.category|escape:'html':'UTF-8'}</a>
+								</span>
+						    {/if}
+							
 							{block name='product_name'}
 							   	<a href="{$product.url nofilter}" class="product-link">{$product.name nofilter}</a>
 							{/block}
@@ -87,6 +103,26 @@
 									</div>
 								{/if}
 							{/block}
+							<div class="product-sold">
+					        	<div class="sold-quantyties">
+					        		<div class="already_sold pull-left">Sold: 
+					        			<span>
+					        				{if $product.sold != "" }
+					        					{$product.sold}
+					        				{else}
+					        					0
+					        				{/if}
+					        			</span>
+					        		</div>
+					        		<div class="available pull-right">Qty: <span>{$product.quantity_all_versions}</span></div>
+					        	</div>
+
+						        <div class="proces-bars">
+						        	<span style="width:{($product.sold/$product.quantity_all_versions)*100}%;"></span>
+						        </div>
+						    </div>
+
+							<div class="countdown" id="countdown-{$hotdeals[$k].id_hotdeals nofilter}">{$hotdeals[$k].deals_time nofilter}</div>
 						</div>
 
 						<div class="product_action">

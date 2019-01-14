@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-07 04:57:49
+/* Smarty version 3.1.33, created on 2019-01-13 21:58:51
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\modules\jmspagebuilder\views\templates\hook\jmspagebuilder_footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c33229db2ab52_36041469',
+  'unifunc' => 'content_5c3bfaeb46e562_84068410',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '76185ef91e60b60fec3120712dc5c9b9442d095a' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_extron\\themes\\jms_extron\\modules\\jmspagebuilder\\views\\templates\\hook\\jmspagebuilder_footer.tpl',
-      1 => 1546847037,
+      1 => 1547434722,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c33229db2ab52_36041469 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c3bfaeb46e562_84068410 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['rows']->value, 'row');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['row']->value) {
@@ -85,7 +85,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
 if ($_smarty_tpl->tpl_vars['settingpanel']->value) {?>
 <div id="jmstools" class="jmsclose hidden-xs hidden-sm">
-	<a id="jmstools-arrow" class="pull-right"><i class="fa fa-cog"></i></a>
+	<a id="jmstools-arrow" class="pull-right"><i class="la la-cog"></i></a>
 	<div id="jmstools-content" class="pull-left">
 		<form action="index.php" method="POST">
 			<?php if (count($_smarty_tpl->tpl_vars['themeskins']->value) > 0) {?>

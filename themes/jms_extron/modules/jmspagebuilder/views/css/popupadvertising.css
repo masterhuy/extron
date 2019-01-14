@@ -53,6 +53,7 @@
 }
 .jms-popup #newsletter_block_left {
   margin-bottom: 10px;
+  padding: 0;
 }
 .jms-popup .alert.alert-danger{
   position: absolute;
@@ -219,6 +220,7 @@ line-height: 1.64;
 .jms-popup-content .block_c_right .form-group {
   margin-bottom: 0;
   margin-top: 32px;
+  display: block !important;
 }
 .jms-popup-content .block_c_right #newsletter-input {
   border-radius: 3px;

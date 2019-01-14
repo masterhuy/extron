@@ -175,7 +175,7 @@
 }
 
 //slide
-.slides{
+.jms-slider-wrapper{
 	.text-1{
 		font-weight: 700;
 		letter-spacing: 0.5px;
@@ -388,6 +388,10 @@
 	}
 }
 
+.best_seller .categoryname{
+	display: none;
+}
+
 //newsletter
 #newsletter_block_left{
 	padding: 0 100px;
@@ -430,4 +434,9 @@
 			margin-right: 16px;
 		}
 	}
+}
+
+//footer
+#footer{
+	background: #f9f9f9;
 }

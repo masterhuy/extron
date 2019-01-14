@@ -43,6 +43,12 @@
 	</div>
 
     <div class="product-info">
+    	{if isset($jpb_categoryname) && $jpb_categoryname}
+		    <span class="categoryname">
+				<a href="{url entity='category' id=$product.id_category_default}">
+				{$product.category|escape:'html':'UTF-8'}</a>
+			</span>
+	    {/if}
 	    {block name='product_name'}
 			<a href="{$product.link|escape:'html'}" class="product-link">{$product.name|truncate:40:'...'|escape:'html':'UTF-8'}</a>
 	    {/block}
@@ -56,8 +62,6 @@
 		          	{hook h='displayProductPriceBlock' product=$product type="before_price"}
 		            <span class="price new">{$product.price}</span>
 		            
-		            
-
 		            {hook h='displayProductPriceBlock' product=$product type='unit_price'}
 
 		            {hook h='displayProductPriceBlock' product=$product type='weight'}

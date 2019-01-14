@@ -118,6 +118,42 @@ jQuery(function ($) {
 		});
 	}
 
+	if($(".product-carousel-col1").length) {		
+		var productCarouselCol1 = $(".product-carousel-col1");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		productCarouselCol1.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:p1_itemsDesktop
+				},
+				991:{
+					items:p1_itemsDesktopSmall
+				},
+				768:{
+					items:p1_itemsTablet
+				},
+				481:{
+					items:p1_itemsMobile
+				},
+				361:{
+					items:1
+				},
+				0:{
+					items:1
+				}
+			},
+			rtl: rtl,
+			margin:0,
+			nav: p1_nav,
+			dots: p1_pag,
+			autoplay: p1_auto_play_carousel,
+			loop: true,
+			slideSpeed: 800,
+		});
+	}
+
 	if($(".product-carousel2").length) {		
 		var productCarousel2 = $(".product-carousel2");			
 		var rtl = false;
