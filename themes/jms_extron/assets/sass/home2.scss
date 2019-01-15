@@ -39,12 +39,12 @@
 	.right{
 		text-align: right;
 		ul{
-			margin-bottom: 0;
 			li{
-				display: inline-block;
-				position: relative;
 				a{
 					color: #fff;
+					&:hover{
+						color: $active;
+					}
 				}
 				&.hotline{
 					color: #ffd200;
@@ -95,46 +95,31 @@
 		height: 50px;
 		background: #ff4c65;
 		color: #fff;
-		border-radius: 3px;
+		border-radius: 3px !important;
 		text-align: right;
 		padding: 0 16px;
 		float: right;
 		&::before{
-			position: relative;
-			top: 3px;
-			left: 5px;
+			display: none;
 		}
-		&::after{
-			content: "cart";
-			position: absolute;
-			left: 17px;
-			top: 15px;
-			text-transform: uppercase;
-			font-size: 16px;
-			font-weight: 700;
+		&.type1{
+			display: none;
+		}
+		&.type2{
+			display: inline-flex;
+		}
+		.la-shopping-cart{
+			font-size: 38px;
 		}
 	}
 	#cart_block{
-		display: flow-root;
 		.ajax_cart_quantity{
-			position: relative;
-			top: -27px;
-			left: 40px;
+			position: unset;
 			background: transparent;
 			font-size: 16px;
 			font-weight: 700;
-			&::before, &::after{
-				position: absolute;
-				top: -1px;
-			}
-			&::before{
-				content: "(";
-				left: 0;
-			}
-			&::after{
-				content: ")";
-				right: 0;
-			}
+			margin-left: 2px;
+			width: auto;
 		}
 	}
 	.ver_menu{
@@ -266,10 +251,79 @@
 	}
 }
 @media (min-width: 1367px){
-	.left, .right{
-		width: 32.2%;
+	.special_deal{
+		.left, .right{
+			width: 32.2%;
+		}
+		.center{
+			width: 35.6%;
+		}
 	}
-	.center{
-		width: 35.6%;
+}
+
+//banner2
+.banner2, .banner3{
+	.banner-content{
+		left: 50px;
+		p{
+			letter-spacing: 0;
+		}
+		.text-1{
+			font-size: 28px;
+			color: #000;
+			max-width: 206px;
+			margin-bottom: 13px;
+			letter-spacing: -0.4px;
+		}
+		.text-2{
+			font-size: 20px;
+			color: #0062bd;
+		}
+	}
+}
+
+.banner3{
+	.banner-content{
+		.text-2{
+			font-size: 18px;
+			color: #ff8400;
+			span{
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+//banner
+.banner{
+	.container > .row{
+		margin: 0 -2px;
+	}
+	.layout-column{
+		padding: 0 2px;
+	}
+}
+
+//footer
+.page-index #footer{
+	margin-top: 56px;
+}
+.footer_t {
+	padding: 65px 0 49px;
+}
+#footer{
+	border-top-width: 2px;
+	.newsletter{
+		padding-left: 26px;
+	}
+	.footer_b{
+		text-align: center;
+		background-color: #f4f4f4;
+		.container{
+			border: 0;
+			p{
+				letter-spacing: 0;
+			}
+		}
 	}
 }

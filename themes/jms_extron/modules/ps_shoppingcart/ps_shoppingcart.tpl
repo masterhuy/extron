@@ -1,6 +1,11 @@
 <div class="btn-group compact-hidden blockcart cart-preview {if $cart.products_count > 0}active{else}inactive{/if} dropdown {if isset($jpb_addtocart) && $jpb_addtocart == 'ajax_cartbottom'}shoppingcart-bottom{/if}" id="cart_block" data-refresh-url="{$refresh_url}">
-	<a href="#" class="dropdown-toggle cart-icon" data-toggle="dropdown">	
+	<a href="#" class="dropdown-toggle cart-icon type1" data-toggle="dropdown">	
 		<span class="ajax_cart_quantity">{$cart.products_count}</span>
+	</a>
+	<a href="#" class="dropdown-toggle cart-icon type2 {if $cart.products_count > 99}center{/if} " data-toggle="dropdown">
+		<span class="text {if $cart.products_count > 99}hidden{/if}">{l s='Cart' d='Shop.Theme.Actions'}</span>
+		<span class="ajax_cart_quantity">({$cart.products_count})</span>
+		<i class="la la-shopping-cart"></i>
 	</a>
 	<div class="text-custom">
 		<span class="cart_block_total ajax_block_cart_total">{$cart.totals.total.value}</span>

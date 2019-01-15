@@ -32,30 +32,27 @@
     left: -20px; }
   .topbar .right {
     text-align: right; }
-    .topbar .right ul {
-      margin-bottom: 0; }
-      .topbar .right ul li {
-        display: inline-block;
-        position: relative; }
-        .topbar .right ul li a {
-          color: #fff; }
-        .topbar .right ul li.hotline {
-          color: #ffd200; }
-          .topbar .right ul li.hotline a {
-            color: #ffd200; }
-        .topbar .right ul li:not(:first-child) {
-          margin-left: 34px; }
-          .topbar .right ul li:not(:first-child)::before {
-            content: "";
-            height: 18px;
-            width: 1px;
-            position: absolute;
-            left: -20px;
-            top: 50%;
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-            background: rgba(255, 255, 255, 0.2); }
+    .topbar .right ul li a {
+      color: #fff; }
+      .topbar .right ul li a:hover {
+        color: #ff4c65; }
+    .topbar .right ul li.hotline {
+      color: #ffd200; }
+      .topbar .right ul li.hotline a {
+        color: #ffd200; }
+    .topbar .right ul li:not(:first-child) {
+      margin-left: 34px; }
+      .topbar .right ul li:not(:first-child)::before {
+        content: "";
+        height: 18px;
+        width: 1px;
+        position: absolute;
+        left: -20px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        background: rgba(255, 255, 255, 0.2); }
 
 .header {
   padding: 29px 0; }
@@ -81,41 +78,28 @@
   height: 50px;
   background: #ff4c65;
   color: #fff;
-  border-radius: 3px;
+  border-radius: 3px !important;
   text-align: right;
   padding: 0 16px;
   float: right; }
   .menu .cart-icon::before {
-    position: relative;
-    top: 3px;
-    left: 5px; }
-  .menu .cart-icon::after {
-    content: "cart";
-    position: absolute;
-    left: 17px;
-    top: 15px;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 700; }
+    display: none; }
+  .menu .cart-icon.type1 {
+    display: none; }
+  .menu .cart-icon.type2 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
+  .menu .cart-icon .la-shopping-cart {
+    font-size: 38px; }
 
-.menu #cart_block {
-  display: flow-root; }
-  .menu #cart_block .ajax_cart_quantity {
-    position: relative;
-    top: -27px;
-    left: 40px;
-    background: transparent;
-    font-size: 16px;
-    font-weight: 700; }
-    .menu #cart_block .ajax_cart_quantity::before, .menu #cart_block .ajax_cart_quantity::after {
-      position: absolute;
-      top: -1px; }
-    .menu #cart_block .ajax_cart_quantity::before {
-      content: "(";
-      left: 0; }
-    .menu #cart_block .ajax_cart_quantity::after {
-      content: ")";
-      right: 0; }
+.menu #cart_block .ajax_cart_quantity {
+  position: unset;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 2px;
+  width: auto; }
 
 .menu .ver_menu {
   background: #3d4b63;
@@ -211,7 +195,51 @@
     margin-top: 43px; }
 
 @media (min-width: 1367px) {
-  .left, .right {
+  .special_deal .left, .special_deal .right {
     width: 32.2%; }
-  .center {
+  .special_deal .center {
     width: 35.6%; } }
+
+.banner2 .banner-content, .banner3 .banner-content {
+  left: 50px; }
+  .banner2 .banner-content p, .banner3 .banner-content p {
+    letter-spacing: 0; }
+  .banner2 .banner-content .text-1, .banner3 .banner-content .text-1 {
+    font-size: 28px;
+    color: #000;
+    max-width: 206px;
+    margin-bottom: 13px;
+    letter-spacing: -0.4px; }
+  .banner2 .banner-content .text-2, .banner3 .banner-content .text-2 {
+    font-size: 20px;
+    color: #0062bd; }
+
+.banner3 .banner-content .text-2 {
+  font-size: 18px;
+  color: #ff8400; }
+  .banner3 .banner-content .text-2 span {
+    font-size: 20px; }
+
+.banner .container > .row {
+  margin: 0 -2px; }
+
+.banner .layout-column {
+  padding: 0 2px; }
+
+.page-index #footer {
+  margin-top: 56px; }
+
+.footer_t {
+  padding: 65px 0 49px; }
+
+#footer {
+  border-top-width: 2px; }
+  #footer .newsletter {
+    padding-left: 26px; }
+  #footer .footer_b {
+    text-align: center;
+    background-color: #f4f4f4; }
+    #footer .footer_b .container {
+      border: 0; }
+      #footer .footer_b .container p {
+        letter-spacing: 0; }

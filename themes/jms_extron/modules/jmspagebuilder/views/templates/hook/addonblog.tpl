@@ -36,6 +36,9 @@
 {if $addon_title}
 <div class="addon-title">
 	<h3>{$addon_title|escape:'htmlall':'UTF-8'}</h3>
+	<div class="pull-right">
+		<a href="index.php?fc=module&module=jmsblog&controller=categories" class="view-all link fw-bold">view all</a>
+	</div>
 </div>
 {/if}
 {if $addon_desc}
@@ -59,6 +62,9 @@
 				</div>
 			{/if}	
 			<div class="post-info">
+				<h4 class="post-title">
+					<a class="blog-title" href="{jmsblog::getPageLink('jmsblog-post', $params)|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}" title="{$post.title}">{$post.title|truncate:40:'...'|escape:'htmlall':'UTF-8'}</a>
+				</h4>
 				<ul class="post-meta">
 					{if $show_category == '1'}
 						<li>
@@ -71,34 +77,44 @@
 					{if $show_time == '1'}
 						<li class="time">
 							<span class="post-created">
-								{$post.created|escape:'html':'UTF-8'|date_format:'%B %e, %Y'}
+								{l s='Posted' d='Modules.JmsPagebuilder'}: 
+								{$post.created|escape:'html':'UTF-8'|date_format:'%b %e, %Y'}
 							</span>
 						</li>
 					{/if}
 					{if $show_nviews == '1'}
 						<li>
 							<span>
-								<i class="fa fa-eye" aria-hidden="true" style="font-size: 15px;"></i>
-								{$post.views|escape:'html':'UTF-8'} {l s='Views' d='Modules.JmsPagebuilder'}
+								{$post.views|escape:'html':'UTF-8'}
+								{if $post.views > 0}
+									{l s='Views' d='Modules.JmsPagebuilder'}
+								{else}
+									{l s='View' d='Modules.JmsPagebuilder'}
+								{/if}
 							</span>
 						</li>
 					{/if}
 					{if $show_ncomments == '1'}		
-						<li class="comment">
+						<li>
 							<span>
-								{$post.comment_count|escape:'html':'UTF-8'} {l s='Comment(s)' d='Modules.JmsPagebuilder'}
+								{$post.comment_count|escape:'html':'UTF-8'} 
+								{if $post.comment_count > 0}
+									{l s='Comments' d='Modules.JmsPagebuilder'}
+								{else}
+									{l s='Comment' d='Modules.JmsPagebuilder'}
+								{/if}
 							</span>
 						</li>
 					{/if}
 				</ul>
-				<h4 class="post-title">
-					<a href="{jmsblog::getPageLink('jmsblog-post', $params)|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}" title="{$post.title}">{$post.title|truncate:40:'...'|escape:'htmlall':'UTF-8'}</a>
-				</h4>
+				
 				{if $show_introtext == '1'}	
 					<div class="post-intro">{$post.introtext nofilter}</div>	
 				{/if}
 				{if $show_readmore == '1'}	
-					<a class="post-readmore btn-effect1" href="{jmsblog::getPageLink('jmsblog-post', $params)|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}">{l s='Read more' d='Modules.JmsPagebuilder'}</a>	
+					<a class="post-readmore" href="{jmsblog::getPageLink('jmsblog-post', $params)|escape:'htmlall':'UTF-8'|replace:'&amp;':'&'}">
+						{l s='Read more' d='Modules.JmsPagebuilder'}
+					</a>	
 				{/if}
 			</div>
 		</div>		

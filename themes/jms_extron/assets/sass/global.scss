@@ -1258,15 +1258,14 @@ a.wishlist_top{
 	top: 2px;
 	.categories-wrapper{
 		border: 0;
-		.cat-name {
-			font-size: 15px;
-			font-family: PT Sans;
-			text-transform: capitalize;
-			color: #555;
-			font-weight: 400;
-			display: block;
-			margin-bottom: 0;
-		}
+		// .cat-name {
+		// 	text-transform: capitalize;
+		// 	display: block;
+		// 	margin-bottom: 0;
+		// 	font-size: 15px;
+		// 	font-weight: 400;
+		// 	color: #555;
+		// }
 		.c_item-info {
 			width: auto;
 			padding-top: 0;
@@ -1508,12 +1507,26 @@ a.wishlist_top{
 .cart_block_total.ajax_block_cart_total {
 	letter-spacing: 0px;
 }
+#cart_block{
+	display: flow-root;
+}
 .cart-icon{
 	width: 35px;
 	height: 35px;
 	display: inline-block;
 	position: relative;
 	color: #000;
+	&.center{
+		justify-content: center;
+	}
+	&.type2{
+		display: none;
+		align-items: center;
+		font-size: 16px;
+		text-transform: uppercase;
+		font-weight: 700;
+		border-radius: 3px;
+	}
 	&::before{
 		content: "\f2fa";
 		font-family: 'LineAwesome';
@@ -1536,6 +1549,17 @@ a.wishlist_top{
 		font-family: 'LineAwesome';
 		font-size: 31px;
 		display: inline-block;
+	}
+}
+
+//topbar
+.topbar{
+	ul{
+		margin-bottom: 0;
+		li{
+			display: inline-block;
+			position: relative;
+		}
 	}
 }
 
@@ -1720,9 +1744,45 @@ a.wishlist_top{
 		min-width: 100px;
 	}
 }
+.text-footer{
+	display: none;
+}
 
 #footer{
 	border-top: 1px solid #ebebeb;
+	.find-us{
+		text-align: center;
+	}
+	.footer_m{
+		.container{
+			padding: 24px 0 70px;
+			border-top: 1px solid #ebebeb;
+		}
+		p{
+			margin-bottom: 0;
+		}
+		.container > .row{
+			display: flex;
+			align-items: center;
+		}
+	}
+	#social_block{
+		ul li{
+			margin: 0 2.5px !important;
+		}
+		a{
+			font-size: 19px;
+			width: 37px;
+			height: 37px;
+			border-radius: 3px;
+			border-color: #ebebeb;
+			&:hover{
+				background-color: #ff4c65;
+				border-color: #ff4c65;
+				color: #fff;
+			}
+		}
+	}
 	.contact ul li{
 		line-height: 2.22;
 		letter-spacing: 0;
@@ -1737,6 +1797,36 @@ a.wishlist_top{
 	}
 	.quick-link{
 		padding-left: 27px;
+	}
+	#newsletter_block_left{
+		.textnews_h1{
+			display: none;
+		}
+		.text-footer{
+			display: block;
+			> span{
+				font-style: italic;
+				line-height: 1.85;
+				letter-spacing: 0.2px;
+				display: inline-block;
+				padding-right: 15px;
+			}
+		}
+		#newsletter-input {
+			height: 36px;
+			border-radius: 3px;
+			width: 100%;
+			padding: 0 13px;
+			margin-top: 10px;
+		}
+		.newsletter-btn {
+			font-size: 16px;
+			border-radius: 3px;
+			margin-top: 12px;
+			height: 36px;
+			width: 100%;
+			margin-left: 0;
+		}
 	}
 }
 .footer_b{
