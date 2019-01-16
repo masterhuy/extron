@@ -4,7 +4,7 @@
 //topbar
 .topbar{
 	font-size: 14px;
-	border-bottom: 1px solid #e1e1e1;
+	background-color: #000;
 	p{
 		margin-bottom: 0;
 	}
@@ -41,13 +41,16 @@
 		}
 	}
 	.left{
-		line-height: 41px;
+		line-height: 42px;
 		ul{
 			margin-bottom: 0;
 			li{
 				display: inline-block;
 				position: relative;
-				color: #444;
+				color: #cecece;
+				a{
+					color: #cecece;
+				}
 				&:not(:last-child){
 					margin-right: 34px;
 				}
@@ -57,12 +60,13 @@
 				}
 				&:not(:first-child)::before{
 					content: "";
-					height: 42px;
+					height: 18px;
 					width: 1px;
-					background: #e1e1e1;
+					background: #2d2d2d;
 					position: absolute;
 					left: -21px;
-					top: 0;
+					top: 50%;
+					transform: translateY(-50%);
 				}
 			}
 		}
@@ -83,23 +87,25 @@
 			line-height: 41px;
 			&:not(:first-child)::before{
 				content: "";
-				height: 42px;
+				height: 18px;
 				width: 1px;
-				background: #e1e1e1;
+				background: #2d2d2d;
 				position: absolute;
 				left: -23px;
-				top: 0;
+				top: 50%;
+				transform: translateY(-50%);
 			}
 		}
 		.title{
 			letter-spacing: 0.5px;
+			color: #cecece;
 		}
 	}
 }
 
 //header
 .header{
-	padding: 32px 0;
+	padding: 33px 0;
 	.container > .row{
 		@include flexVCenter();
 	}
@@ -113,63 +119,162 @@
 		padding-left: 25px;
 		width: 415px;
 	}
-	.text-custom {
-		display: block;
-	}
-	#cart_block{
-		display: flex;
-		justify-content: flex-end;
-		.ajax_cart_quantity{
-			right: -9px;
-			top: -7px;
-		}
-		.cart-icon {
-			&::before{
-				top: -3px;
-				position: relative;
-			}
-		}
-	}
 	.center{
 		@include flexHCenter();
 	}
-	.right{
-		@include flex(flex-end, center);
-		p{
-			margin-bottom: 0;
+	.cart-icon{
+		&.type1{
+			display: none;
 		}
-		.addon-box:not(:first-child){
-			margin-left: 15px;
+		&.type2{
+			display: inline-flex;
+			color: $active;
+			background: #fff;
+			border: 2px solid $active;
+			.ajax_cart_quantity{
+				color: $active;
+			}
 		}
-		.wishlist_top.home_page {
-			top: 1px;
-			position: relative;
-		}
+	}
+	.jms-advsearch #searchbox{
+		border-color: $active;
 	}
 }
 
 //menu
 .menu{
-	background: $active;
+	border-top: 1px solid #ebebeb;
 	.container > .row{
 		@include flexVCenter();
 	}
 	p{
 		margin-bottom: 0;
 	}
-	.jms-megamenu .nav > li{
-		&:first-child{
-			padding-left: 0;
-		}
-		> a{
-			color: #fff;
-		}
-	}
 	.center{
 		position: unset;
 		text-align: left;
 	}
-	#jms-vermegamenu-container{
-		margin-top: 2px;
+}
+#jms-vermegamenu-container{
+	margin-top: 0;
+}
+.jms-megamenu .nav > li{
+	&.open > a{
+		color: $active;
+	}
+	&:first-child{
+		padding-left: 0;
+	}
+	> a{
+		color: #000;
+	}
+}
+.ver_menu{
+	background: #ff4c65;
+	color: #fff;
+	border-radius: 0;
+	line-height: 55px;
+}
+
+//slider
+.jms-slider-wrapper{
+	.text-2{
+		font-weight: 300;
+		letter-spacing: 0;
+		strong{
+			font-weight: 900;
+			font-size: 40px;
+		}
+	}
+	.fs-pager-wrapper {
+		bottom: 3px;
+		width: auto;
+		left: 36.95%;
+	}
+}
+
+//banner
+.banner{
+	.container > .row{
+		margin: 0 -3px;
+	}
+	.layout-column{
+		padding: 0 3px;
+	}
+}
+.banner-content{
+	top: 39px;
+	width: 100%;
+	padding: 0 20px;
+}
+
+//banner1
+.banner1{
+	.banner-content{
+		.text-1{
+			font-size: 30px;
+			color: #000;
+			margin-bottom: 12px;
+		}
+		.text-2{
+			font-size: 20px;
+			color: #000;
+			margin-bottom: 25px;
+		}
+	}
+}
+
+//banner2
+.banner2, .banner3{
+	.banner-content{
+		top: 44px;
+		p{
+			font-size: 25px;
+			color: #000;
+		}
+		.text-1{
+			margin-bottom: 9px;
+		}
+		.text-2{
+			margin-bottom: 14px;
+		}
+	}
+}
+
+//smartphone
+.smartphone{
+	padding: 67px 0;
+	.addon-title h3{
+		border-bottom-color: #e3e3e3;
+	}
+	.product-preview{
+		border-radius: 0;
+		&:hover{
+			border-color: transparent;
+		}
+	}
+	.categoryname{
+		display: none;
+	}
+}
+
+//category
+.categories-wrapper{
+	display: flex;
+	align-items: center;
+	border: 1px solid #ebebeb;
+	padding: 2px 0;
+	&:not(:last-child){
+		margin-bottom: 30px;
+	}
+	.categoy-image{
+		width: 55%;
+	}
+	.c_item-info{
+		width: 45%;
+		padding-top: 5px;
+	}
+	.child li{
+		padding-bottom: 6px;
 	}
 }

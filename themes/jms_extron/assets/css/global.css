@@ -1013,6 +1013,35 @@ a.wishlist_top {
 .jms-banner .banner-content p {
   margin-bottom: 0; }
 
+.jms-banner .banner-content .btn-shopnow-banner {
+  font-size: 13px; }
+
+.categorytab-carousel2 .categoryname {
+  display: none; }
+
+.big_save .addon-box {
+  background: url("../img/big_save_bg.png") no-repeat top center;
+  background-size: cover;
+  padding: 68px 0 36px; }
+  .big_save .addon-box ul {
+    margin-bottom: 0;
+    margin-left: 50px; }
+    .big_save .addon-box ul li {
+      font-size: 20px;
+      display: inline-block;
+      letter-spacing: 0; }
+      .big_save .addon-box ul li strong {
+        color: #000; }
+      .big_save .addon-box ul li.code {
+        padding: 11.5px 19px;
+        background: #ff4c65;
+        border-radius: 30px;
+        padding: 11.5px 19px;
+        font-size: 18px;
+        margin-left: 55px; }
+        .big_save .addon-box ul li.code strong {
+          color: #fff; }
+
 .categories-carousel2-no-carousel {
   text-align: right;
   position: absolute;
@@ -1061,6 +1090,72 @@ a.wishlist_top {
 .countdown-section .countdown-amount {
   margin-bottom: 0;
   font-size: 16px; }
+
+.jmsflashsales-tab {
+  border-top: 1px solid #ebebeb;
+  padding-top: 36px;
+  display: flow-root; }
+  .jmsflashsales-tab .flashsales-countdown {
+    margin-top: 15px; }
+  .jmsflashsales-tab .countdown-row::before {
+    display: none; }
+  .jmsflashsales-tab .countdown-period {
+    display: block;
+    font-size: 14px;
+    padding-top: 6px; }
+  .jmsflashsales-tab .countdown-section .countdown-amount {
+    background: #ff8400;
+    min-width: 45px;
+    line-height: 45px;
+    border-radius: 3px; }
+  .jmsflashsales-tab .countdown-section::after {
+    display: none; }
+  .jmsflashsales-tab .countdown-section:not(:last-child) {
+    margin-right: 5px; }
+  .jmsflashsales-tab .countdown-section .countdown-amount {
+    font-size: 20px;
+    font-weight: 700; }
+  .jmsflashsales-tab .addon-title h3 {
+    border-bottom: 0;
+    padding-bottom: 36px; }
+  .jmsflashsales-tab .tabpanel {
+    width: 20%;
+    float: left;
+    position: relative; }
+  .jmsflashsales-tab .tab-content {
+    width: 80%;
+    float: left;
+    position: relative; }
+  .jmsflashsales-tab ul li.active a {
+    background: #ff4c65;
+    color: #fff; }
+    .jmsflashsales-tab ul li.active a::after {
+      opacity: 1; }
+  .jmsflashsales-tab ul li a {
+    padding: 10.5px 15px;
+    letter-spacing: 0.2px;
+    display: inline-block;
+    padding-right: 23px;
+    -webkit-transition: unset;
+    -o-transition: unset;
+    transition: unset; }
+    .jmsflashsales-tab ul li a::after {
+      content: "";
+      opacity: 0;
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 0;
+      right: -20px;
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+      border-left: 20px solid #ff4c65;
+      z-index: 999; }
+    .jmsflashsales-tab ul li a.active {
+      background: #ff4c65;
+      color: #fff; }
+      .jmsflashsales-tab ul li a.active::after {
+        opacity: 1; }
 
 .jmsflashsales .addon-title h3 {
   padding: 0;
@@ -1191,7 +1286,7 @@ a.wishlist_top {
     .btn-groupmodule + .dropdown-menu ul {
       margin-bottom: 0; }
 
-#cart_block .ajax_cart_quantity {
+.ajax_cart_quantity {
   background: #ff8400 none repeat scroll 0 0;
   border-radius: 50%;
   color: #fff;
@@ -1204,7 +1299,7 @@ a.wishlist_top {
   top: 18px;
   right: -13px;
   display: block; }
-  #cart_block .ajax_cart_quantity + span {
+  .ajax_cart_quantity + span {
     display: none; }
 
 .text-custom {
@@ -1239,7 +1334,25 @@ a.wishlist_top {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 700;
-    border-radius: 3px; }
+    width: 125px;
+    height: 50px;
+    background: #ff4c65;
+    color: #fff;
+    border-radius: 3px !important;
+    text-align: right;
+    padding: 0 16px;
+    float: right; }
+    .cart-icon.type2::before {
+      display: none; }
+    .cart-icon.type2 .la-shopping-cart {
+      font-size: 38px; }
+    .cart-icon.type2 .ajax_cart_quantity {
+      position: unset;
+      background: transparent;
+      font-size: 16px;
+      font-weight: 700;
+      margin-left: 2px;
+      width: auto; }
   .cart-icon::before {
     content: "\f2fa";
     font-family: 'LineAwesome';
@@ -1258,12 +1371,6 @@ a.wishlist_top {
     font-family: 'LineAwesome';
     font-size: 31px;
     display: inline-block; }
-
-.topbar ul {
-  margin-bottom: 0; }
-  .topbar ul li {
-    display: inline-block;
-    position: relative; }
 
 .cates_tab .addon-title {
   position: relative; }

@@ -180,6 +180,42 @@ jQuery(function ($) {
 		});
 	}
 
+	if($(".product-carousel-col6").length) {		
+		var productCarouselCol6 = $(".product-carousel-col6");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		productCarouselCol6.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:p6_itemsDesktop
+				},
+				991:{
+					items:p6_itemsDesktopSmall
+				},
+				768:{
+					items:p6_itemsTablet
+				},
+				481:{
+					items:p6_itemsMobile
+				},
+				361:{
+					items:1
+				},
+				0:{
+					items:1
+				}
+			},
+			rtl: rtl,
+			margin:0,
+			nav: p6_nav,
+			dots: p6_pag,
+			autoplay: p6_auto_play_carousel,
+			loop: true,
+			slideSpeed: 800,
+		});
+	}
+
 	if($(".product-carousel2").length) {		
 		var productCarousel2 = $(".product-carousel2");			
 		var rtl = false;
@@ -284,6 +320,43 @@ jQuery(function ($) {
 			    nav: cattab_nav,
 		        dots: cattab_pag,
 				autoplay: cattab_auto_play_carousel,
+				loop:true,
+			    navigationText: ["", ""],
+			    slideSpeed: 200
+		});
+	}
+
+	if($(".categorytab-carousel2").length) {
+		var categorytabCarousel2 = $(".categorytab-carousel2");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		categorytabCarousel2.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:cattab2_itemsDesktop
+				},
+				991:{
+					items:cattab2_itemsDesktopSmall
+				},
+				768:{
+					items:cattab2_itemsTablet
+				},
+				481:{
+					items:cattab2_itemsMobile
+				},
+				361:{
+					items:1
+				},
+				0: {
+					items:1
+				}
+			},
+			rtl: rtl,
+				margin: 0,
+			    nav: cattab2_nav,
+		        dots: cattab2_pag,
+				autoplay: cattab2_auto_play_carousel,
 				loop:true,
 			    navigationText: ["", ""],
 			    slideSpeed: 200
@@ -455,6 +528,39 @@ jQuery(function ($) {
 			rtl: rtl,
 			margin:0,
 			nav: true,
+			dots: false,
+			autoplay: false,
+			loop: true,
+			slideSpeed: 800,
+		});
+	}
+
+	if($(".flashsales-tab-carousel").length) {		
+		var flashsalesTabCarousel = $(".flashsales-tab-carousel");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		flashsalesTabCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:4
+				},
+				991:{
+					items:3
+				},
+				768:{
+					items:2
+				},
+				481:{
+					items:2
+				},
+				0:{
+					items:1
+				}
+			},
+			rtl: rtl,
+			margin:0,
+			nav: false,
 			dots: false,
 			autoplay: false,
 			loop: true,

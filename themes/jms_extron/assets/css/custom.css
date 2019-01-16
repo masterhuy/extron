@@ -169,33 +169,6 @@ small {
 cite {
   font-style: normal; }
 
-.text-muted {
-  color: #555; }
-
-.text-primary {
-  color: #f2735a; }
-
-.text-warning {
-  color: #c09853; }
-
-.text-danger {
-  color: #b94a48; }
-
-.text-success {
-  color: #468847; }
-
-.text-info {
-  color: #3a87ad; }
-
-.text-left {
-  text-align: left; }
-
-.text-right {
-  text-align: right; }
-
-.text-center {
-  text-align: center; }
-
 .highlight {
   background-color: #FFC;
   font-weight: bold;
@@ -3652,7 +3625,7 @@ footer .post-title {
   display: -webkit-flex; }
 
 /*Carousel*/
-.producttab-carousel, .product-carousel, .product-carousel1, .categorytab-carousel, .hotdeal-carousel, .customs-carousel-product, .custom_carousel {
+.producttab-carousel, .product-carousel, .product-carousel1, .categorytab-carousel, .categorytab-carousel2, .hotdeal-carousel, .customs-carousel-product, .custom_carousel {
   padding-top: 35px;
 }
 

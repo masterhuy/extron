@@ -274,39 +274,6 @@
 	}
 }
 
-//bigsave
-.big_save{
-	.addon-box{
-		background: url("../img/big_save_bg.png") no-repeat top center;
-		background-size: cover;
-		padding: 68px 0 36px;
-		ul{
-			margin-bottom: 0;
-			margin-left: 50px;
-			li{
-				font-size: 20px;
-				display: inline-block;
-				letter-spacing: 0;
-				strong{
-					color: #000;
-				}
-				&.code{
-					padding: 11.5px 19px;
-					background: #ff4c65;
-					border-radius: 30px;
-					padding: 11.5px 19px;
-					font-size: 18px;
-					margin-left: 55px;
-					strong{
-						color: #fff;
-
-					}
-				}
-			}
-		}
-	}
-}
-
 //category
 .categories-wrapper{
 	display: flex;

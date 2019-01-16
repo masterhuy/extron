@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-11 03:39:53
+/* Smarty version 3.1.33, created on 2019-01-16 04:01:01
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\modules\jmspagebuilder\views\templates\hook\addoncategorytab.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c385659c31139_36301931',
+  'unifunc' => 'content_5c3ef2cdd5ac02_76758423',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e4a19b2fa12e0d4460a763b5c83c39935a553888' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_extron\\themes\\jms_extron\\modules\\jmspagebuilder\\views\\templates\\hook\\addoncategorytab.tpl',
-      1 => 1547195990,
+      1 => 1547626017,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product.tpl' => 1,
   ),
 ),false)) {
-function content_5c385659c31139_36301931 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c3ef2cdd5ac02_76758423 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
 var cattab_items = <?php if ($_smarty_tpl->tpl_vars['cols']->value) {
@@ -56,7 +56,7 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars['category']->value) {
 ?>
-				<li class="nav-item<?php if ($_smarty_tpl->tpl_vars['k']->value == 0) {?> active<?php }?>">
+				<li class="nav-item <?php if ($_smarty_tpl->tpl_vars['k']->value == 0) {?> active<?php }?>">
 					<a class="" data-toggle="tab" href="#category-<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['category']->value['id_category'],'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>
 ">
 						<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['category']->value['name'], ENT_QUOTES, 'UTF-8');?>

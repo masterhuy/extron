@@ -224,29 +224,6 @@
     font-size: 18px;
     color: #ff8400; }
 
-.big_save .addon-box {
-  background: url("../img/big_save_bg.png") no-repeat top center;
-  background-size: cover;
-  padding: 68px 0 36px; }
-  .big_save .addon-box ul {
-    margin-bottom: 0;
-    margin-left: 50px; }
-    .big_save .addon-box ul li {
-      font-size: 20px;
-      display: inline-block;
-      letter-spacing: 0; }
-      .big_save .addon-box ul li strong {
-        color: #000; }
-      .big_save .addon-box ul li.code {
-        padding: 11.5px 19px;
-        background: #ff4c65;
-        border-radius: 30px;
-        padding: 11.5px 19px;
-        font-size: 18px;
-        margin-left: 55px; }
-        .big_save .addon-box ul li.code strong {
-          color: #fff; }
-
 .categories-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

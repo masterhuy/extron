@@ -32,27 +32,32 @@
     left: -20px; }
   .topbar .right {
     text-align: right; }
-    .topbar .right ul li a {
-      color: #fff; }
-      .topbar .right ul li a:hover {
-        color: #ff4c65; }
-    .topbar .right ul li.hotline {
-      color: #ffd200; }
-      .topbar .right ul li.hotline a {
-        color: #ffd200; }
-    .topbar .right ul li:not(:first-child) {
-      margin-left: 34px; }
-      .topbar .right ul li:not(:first-child)::before {
-        content: "";
-        height: 18px;
-        width: 1px;
-        position: absolute;
-        left: -20px;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        background: rgba(255, 255, 255, 0.2); }
+    .topbar .right ul {
+      margin-bottom: 0; }
+      .topbar .right ul li {
+        display: inline-block;
+        position: relative; }
+        .topbar .right ul li a {
+          color: #fff; }
+          .topbar .right ul li a:hover {
+            color: #ff4c65; }
+        .topbar .right ul li.hotline {
+          color: #ffd200; }
+          .topbar .right ul li.hotline a {
+            color: #ffd200; }
+        .topbar .right ul li:not(:first-child) {
+          margin-left: 34px; }
+          .topbar .right ul li:not(:first-child)::before {
+            content: "";
+            height: 18px;
+            width: 1px;
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.2); }
 
 .header {
   padding: 29px 0; }
@@ -73,33 +78,13 @@
   .menu .right .addon-box {
     width: 100%; }
 
-.menu .cart-icon {
-  width: 125px;
-  height: 50px;
-  background: #ff4c65;
-  color: #fff;
-  border-radius: 3px !important;
-  text-align: right;
-  padding: 0 16px;
-  float: right; }
-  .menu .cart-icon::before {
-    display: none; }
-  .menu .cart-icon.type1 {
-    display: none; }
-  .menu .cart-icon.type2 {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex; }
-  .menu .cart-icon .la-shopping-cart {
-    font-size: 38px; }
+.menu .cart-icon.type1 {
+  display: none; }
 
-.menu #cart_block .ajax_cart_quantity {
-  position: unset;
-  background: transparent;
-  font-size: 16px;
-  font-weight: 700;
-  margin-left: 2px;
-  width: auto; }
+.menu .cart-icon.type2 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
 
 .menu .ver_menu {
   background: #3d4b63;
