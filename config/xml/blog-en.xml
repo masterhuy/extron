@@ -6,6 +6,14 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>The E-commerce Calendar: a free tool to help make 2019 a success!</title>
+    <link>https://www.prestashop.com/en/blog/2019-e-commerce-calendar</link>
+    <description>You were all eagerly awaiting it and now it’s available...</description>
+     <pubDate>Tue, 15 Jan 2019 16:01:51 +0100</pubDate>
+ <dc:creator>MLNielsen</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/2019-e-commerce-calendar</guid>
+  </item>
+  <item>
     <title>PrestaShop 1.7.5.0: the features you&amp;#039;ve been waiting for are now available!</title>
     <link>https://www.prestashop.com/en/blog/features-prestashop-1-7-5-0</link>
     <description> </description>
@@ -77,14 +85,6 @@ ERP is a central tool in the Enterprise Information System. This management soft
      <pubDate>Tue, 23 Oct 2018 09:45:24 +0200</pubDate>
  <dc:creator>recolize_en</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/save-money-on-advertising-with-automated-personalization</guid>
-  </item>
-  <item>
-    <title>How to use the price comparison for an online shop? </title>
-    <link>https://www.prestashop.com/en/blog/how-to-use-the-price-comparison</link>
-    <description>Still don´t know the big advantages of using a price comparer for your business site?</description>
-     <pubDate>Fri, 19 Oct 2018 14:47:30 +0200</pubDate>
- <dc:creator>Priceindx</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/how-to-use-the-price-comparison</guid>
   </item>
   </channel>
 </rss>

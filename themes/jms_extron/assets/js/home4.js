@@ -12,16 +12,14 @@ jQuery(document).ready(function($) {
 	var menu = $(".jms-row.menu");
 
 	$("#jms-vermegamenu-container").addClass('collapse');
-	$("#mobile-vermegamenu").addClass('collapse');
-	$(".page-index #jms-vermegamenu-container").addClass('collapse in');
 
-	$(window).scroll(function () {
-    	if ($(window).scrollTop() > 300){
-			menu.addClass("fixed");
-			$(".page-index #jms-vermegamenu-container").removeClass('in');
-    	} else {
-			menu.removeClass("fixed");
-			$(".page-index #jms-vermegamenu-container").addClass('in');
-    	}
-    });
+	// $(window).scroll(function () {
+ //    	if ($(window).scrollTop() > 300){
+	// 		menu.addClass("fixed");
+	// 		$(".page-index #jms-vermegamenu-container").removeClass('in');
+ //    	} else {
+	// 		menu.removeClass("fixed");
+	// 		$(".page-index #jms-vermegamenu-container").addClass('in');
+ //    	}
+ //    });
 });

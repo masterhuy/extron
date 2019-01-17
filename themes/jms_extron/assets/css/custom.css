@@ -3459,9 +3459,6 @@ ul.footer_links {
   margin: 0;
 }
 
-#footer #social_block ul li {
-  margin-right: 4px; }
-
 .list_footer .addon-box a {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -3625,8 +3622,12 @@ footer .post-title {
   display: -webkit-flex; }
 
 /*Carousel*/
-.producttab-carousel, .product-carousel, .product-carousel1, .categorytab-carousel, .categorytab-carousel2, .hotdeal-carousel, .customs-carousel-product, .custom_carousel {
+.producttab-carousel, .product-carousel, .product-carousel1, .categorytab-carousel, .hotdeal-carousel, .customs-carousel-product, .custom_carousel {
   padding-top: 35px;
+}
+
+.categorytab-carousel2{
+  padding-top: 20px;
 }
 
 .product-carousel2{

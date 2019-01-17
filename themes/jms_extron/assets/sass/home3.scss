@@ -253,6 +253,8 @@
 			border-color: transparent;
 		}
 	}
+}
+.product-carousel, .product-carousel-col6{
 	.categoryname{
 		display: none;
 	}
@@ -276,5 +278,46 @@
 	}
 	.child li{
 		padding-bottom: 6px;
+	}
+}
+
+//brand
+.brand{
+	background-color: #f7f7f7;
+}
+
+#footer{
+	border-top: 0;
+	margin-top: 0;
+	.company, .quick-link{
+		padding-left: 15px;
+	}
+	.footer_t{
+		padding-bottom: 49px;
+	}
+	.footer_b{
+		.container{
+			padding: 21px 0;
+		}
+		.find-us{
+			text-align: left;
+		}
+	}
+	#social_block{
+		ul{
+			li{
+				margin: 0 !important;
+				a{
+					margin-right: 20px;
+					border: 0;
+					width: auto;
+					font-size: 22px;
+					&:hover{
+						background: transparent;
+						color: $active;
+					}
+				}
+			}
+		}
 	}
 }
