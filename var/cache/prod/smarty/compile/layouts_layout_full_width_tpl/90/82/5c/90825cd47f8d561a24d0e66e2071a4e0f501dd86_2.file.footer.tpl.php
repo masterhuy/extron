@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-15 04:00:46
+/* Smarty version 3.1.33, created on 2019-01-18 03:43:09
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\templates\_partials\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c3da13eb03984_25434980',
+  'unifunc' => 'content_5c41919da834a3_46870991',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c3da13eb03984_25434980 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c41919da834a3_46870991 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <div class="btn-default back-to-top" id="back-to-top" title="Back to top">
 	<span class="la la-arrow-up"></span>
 </div>

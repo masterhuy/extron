@@ -1243,6 +1243,10 @@ a.wishlist_top{
 			transform: translate(-50%, -50%);
 		}
 	}
+	.btn-shopnow{
+		font-size: 15px;
+		padding: 10px 21px;
+	}
 	.banner-content{
 		p{
 			margin-bottom: 0;
@@ -1290,6 +1294,40 @@ a.wishlist_top{
 				}
 			}
 		}
+	}
+}
+
+//category type2
+.home_categories2.type2{
+	border-top: 1px solid #ebebeb;
+	.c_item-info{
+		text-align: center;
+		position: relative;
+		&::after{
+			content: "";
+			width: 1px;
+			height: 150px;
+			position: absolute;
+			background: #ebebeb;
+			top: 0;
+			right: -15px;
+		}
+		ul li{
+			padding: 3px 0px;
+		}
+	}
+}
+.cat-name2{
+	text-transform: capitalize;
+	font-style: italic;
+	font-weight: 700;
+	color: #555;
+	margin-bottom: 0;
+	margin-top: 8px;
+	letter-spacing: 0.6px;
+	display: block;
+	span{
+		font-weight: 400;
 	}
 }
 

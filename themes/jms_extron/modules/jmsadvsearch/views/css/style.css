@@ -17,6 +17,7 @@
     float: left;
     padding-left: 22px;
     letter-spacing: 0;
+    background: transparent;
 }
 #ajax_advsearch::-moz-placeholder{
     color: #777;

@@ -326,6 +326,43 @@ jQuery(function ($) {
 		});
 	}
 
+	if($(".megatab-carousel").length) {
+		var megatabCarousel = $(".megatab-carousel");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		megatabCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:megtab_itemsDesktop
+				},
+				991:{
+					items:megtab_itemsDesktopSmall
+				},
+				768:{
+					items:megtab_itemsTablet
+				},
+				481:{
+					items:megtab_itemsMobile
+				},
+				361:{
+					items:1
+				},
+				0: {
+					items:1
+				}
+			},
+			rtl: rtl,
+				margin: 0,
+			    nav: megtab_nav,
+		        dots: megtab_pag,
+				autoplay: megtab_auto_play_carousel,
+				loop:false,
+			    navigationText: ["", ""],
+			    slideSpeed: 200
+		});
+	}
+
 	if($(".categorytab-carousel2").length) {
 		var categorytabCarousel2 = $(".categorytab-carousel2");			
 		var rtl = false;

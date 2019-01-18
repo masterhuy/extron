@@ -44,7 +44,7 @@ class JmsAddonAlert extends JmsAddonBase
                 'label' => $this->l('Alert Type'),
                 'lang' => '0',
                 'desc' => 'Alert Box Type',
-                'options' => array('success', 'info','warning','danger'),
+                'options' => array('normal', 'success', 'info','warning','danger'),
                 'default' => 'info'
             ),
             array(

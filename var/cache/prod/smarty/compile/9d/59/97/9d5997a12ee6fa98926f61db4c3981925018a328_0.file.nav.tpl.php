@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-07 04:57:27
+/* Smarty version 3.1.33, created on 2019-01-18 03:43:07
   from 'D:\xamppp\htdocs\jms_extron\admin953iqmwgj\themes\default\template\nav.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c332287d5c3a5_15564751',
+  'unifunc' => 'content_5c41919be4ba52_58223904',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c332287d5c3a5_15564751 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c41919be4ba52_58223904 (Smarty_Internal_Template $_smarty_tpl) {
 ?><nav class="nav-bar d-none d-md-block" role="navigation" id="nav-sidebar">
 	<span class="menu-collapse">
 		<i class="material-icons">chevron_left</i>

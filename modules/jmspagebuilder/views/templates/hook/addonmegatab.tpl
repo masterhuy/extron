@@ -70,8 +70,8 @@ jQuery(function ($) {
 <p class="addon-desc">{$addon_desc|escape:'htmlall':'UTF-8'}</p>
 {/if}
 {assign var="box_template" "{$addon_tpl_dir}productbox.tpl"}
-<div class="jms-tab1">
-	<ul class="nav nav-tabs" role="tablist">
+<div class="jms-tab">
+	<ul class="nav">
 		{foreach from = $categories key = k item = category}
 			<li class="{if $k == 0}active{/if}"><a class="button" data-toggle="tab" href="#category-{$category.id_category nofilter}">{$category.name|escape:'htmlall':'UTF-8'}</a></li>					
 		{/foreach}	
@@ -84,7 +84,7 @@ jQuery(function ($) {
 				{foreach from = $category.products item = products_slide}				
 					<div class="item">
 						{foreach from = $products_slide item = product}
-							{include file={$box_template nofilter} product=$product}	
+							{include file={$box_template nofilter} product=$product}
 						{/foreach}
 					</div>
 				{/foreach}
