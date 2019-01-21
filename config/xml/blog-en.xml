@@ -6,14 +6,6 @@
     <language>en</language>
      <atom:link href="https://www.prestashop.com/en/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
-    <title>E-commerce Best Practices in Native Advertising: Trends to Follow in 2019</title>
-    <link>https://www.prestashop.com/en/blog/e-commerce-best-practices-in-native-advertising</link>
-    <description>Heading into the new year, online merchants looking to increase their visibility may well consider native advertising, which is growing at an exponential pace.</description>
-     <pubDate>Fri, 18 Jan 2019 10:38:42 +0100</pubDate>
- <dc:creator>prestashop-partners</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/en/blog/e-commerce-best-practices-in-native-advertising</guid>
-  </item>
-  <item>
     <title>The E-commerce Calendar: a free tool to help make 2019 a success!</title>
     <link>https://www.prestashop.com/en/blog/2019-e-commerce-calendar</link>
     <description>You were all eagerly awaiting it and now it’s available...</description>
@@ -85,6 +77,14 @@ ERP is a central tool in the Enterprise Information System. This management soft
      <pubDate>Wed, 24 Oct 2018 11:30:13 +0200</pubDate>
  <dc:creator>MLNielsen</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/en/blog/ambassador-toky-madagascar</guid>
+  </item>
+  <item>
+    <title>How To Save $$$ on Advertising With Automated Personalization?</title>
+    <link>https://www.prestashop.com/en/blog/save-money-on-advertising-with-automated-personalization</link>
+    <description>Every online marketer has to make sure that the flow of new visitors into your PrestaShop is not ending.</description>
+     <pubDate>Tue, 23 Oct 2018 09:45:24 +0200</pubDate>
+ <dc:creator>recolize_en</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/en/blog/save-money-on-advertising-with-automated-personalization</guid>
   </item>
   </channel>
 </rss>

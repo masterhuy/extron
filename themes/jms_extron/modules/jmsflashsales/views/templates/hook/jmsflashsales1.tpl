@@ -23,23 +23,38 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<div class="jmsflashsales">
-	<div class="product_box">
-		<div class="title">
-			<div class="addon-title pull-left">
-				<h3>{l s='week deals limited' d='Shop.Theme.Catalog'}</h3>
-			</div>
-			<div class="flashsales-countdown pull-left">{$expiretime|escape:'htmlall':'UTF-8'}</div>
-			<div class="pull-right">
-				<a href="index.php?id_category=2&controller=category&id_lang=1" class="view-all fw-bold">view all</a>
-			</div>
+<div class="jmsflashsales-tab">
+	<div class="tabpanel">
+		<div class="addon-title">
+			<h3>{l s='HOT SELLING' d='Shop.Theme.Catalog'}</h3>
 		</div>
-		<div class="flashsales-carousel">	
-			{foreach from=$products item=product key=k}	
-				<div class="item ajax_block_product">		
-					{include file="catalog/_partials/miniatures/product.tpl" product=$product}
-				</div>
+		<ul class="nav">
+			{foreach from = $categories item = category key = k}
+				{$cat_products = $products[$k]}
+				{if !empty($cat_products)}
+				<li class="nav-item {if $k == 0}active{/if}">
+					<a href="#category-{$k}" data-toggle="tab">
+						{$category.title|escape:'htmlall':'UTF-8'}
+					</a>
+				</li>	
+				{/if}	
 			{/foreach}
-		</div>
+		</ul>
+		<div class="flashsales-countdown">{$expiretime|escape:'htmlall':'UTF-8'}</div>
+	</div>
+	<div class="tab-content">
+		{foreach from=$products item=cat_products key=k}
+			{if !empty($cat_products)}
+			<div class="tab-pane {if $k == 0}active{/if}" id="category-{$k}">	
+				<div class="flashsales-tab-carousel2">
+					{foreach from = $cat_products item = product}	
+						<div class="item ajax_block_product">		
+							{include file="catalog/_partials/miniatures/product_flashsale2.tpl" product=$product}
+						</div>	
+					{/foreach}
+				</div>	
+			</div>
+			{/if}	
+		{/foreach}
 	</div>
 </div>

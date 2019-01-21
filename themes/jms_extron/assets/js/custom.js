@@ -357,7 +357,44 @@ jQuery(function ($) {
 			    nav: megtab_nav,
 		        dots: megtab_pag,
 				autoplay: megtab_auto_play_carousel,
-				loop:false,
+				loop:true,
+			    navigationText: ["", ""],
+			    slideSpeed: 200
+		});
+	}
+
+	if($(".megatab-carousel2").length) {
+		var megatabCarousel2 = $(".megatab-carousel2");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		megatabCarousel2.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:megtab2_itemsDesktop
+				},
+				991:{
+					items:megtab2_itemsDesktopSmall
+				},
+				768:{
+					items:megtab2_itemsTablet
+				},
+				481:{
+					items:megtab2_itemsMobile
+				},
+				361:{
+					items:1
+				},
+				0: {
+					items:1
+				}
+			},
+			rtl: rtl,
+				margin: 0,
+			    nav: megtab2_nav,
+		        dots: megtab2_pag,
+				autoplay: megtab2_auto_play_carousel,
+				loop:true,
 			    navigationText: ["", ""],
 			    slideSpeed: 200
 		});
@@ -590,6 +627,39 @@ jQuery(function ($) {
 				},
 				481:{
 					items:2
+				},
+				0:{
+					items:1
+				}
+			},
+			rtl: rtl,
+			margin:0,
+			nav: false,
+			dots: false,
+			autoplay: false,
+			loop: true,
+			slideSpeed: 800,
+		});
+	}
+
+	if($(".flashsales-tab-carousel2").length) {		
+		var flashsalesTabCarousel2 = $(".flashsales-tab-carousel2");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		flashsalesTabCarousel2.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:1
+				},
+				991:{
+					items:1
+				},
+				768:{
+					items:1
+				},
+				481:{
+					items:1
 				},
 				0:{
 					items:1

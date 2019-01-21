@@ -1094,6 +1094,21 @@ fieldset[disabled] .btn-default {
   border-radius: 5px;
   background: #ff4c65;
 }
+.btn-shopnow-h5{
+  border: 0;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  color: #ff4c65 !important;
+  letter-spacing: 0.7px;
+  margin-bottom: 0;
+  border-radius: 5px;
+  background: #fff;
+  padding: 9px 21px;
+}
 .btn-shopnow:hover{
   background: #fb3551;
 }
@@ -3629,10 +3644,15 @@ footer .post-title {
   display: -webkit-flex; }
 
 /*Carousel*/
-.producttab-carousel, .product-carousel, .product-carousel1, .categorytab-carousel, .hotdeal-carousel, .customs-carousel-product, .custom_carousel {
+.producttab-carousel, .megatab-carousel, .megatab-carousel2, .product-carousel, .product-carousel1, .categorytab-carousel, .hotdeal-carousel, .customs-carousel-product, .custom_carousel {
   padding-top: 35px;
 }
 
+.megatab-carousel .categoryname,
+.megatab-carousel2 .categoryname,
+.producttab-carousel2 .categoryname{
+  display: none;
+}
 .categorytab-carousel2{
   padding-top: 20px;
 }
@@ -3846,6 +3866,9 @@ footer .blog-carousel {
 }
 
 /*_newletter*/
+#newsletter_block_left .textnews_h5{
+  display: none;
+}
 #newsletter-input {
   height: 48px;
   border-radius: 3px;

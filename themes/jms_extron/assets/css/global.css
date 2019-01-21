@@ -1020,6 +1020,18 @@ a.wishlist_top {
 .jms-banner .banner-content .btn-shopnow-banner {
   font-size: 13px; }
 
+.banner_html {
+  text-align: center;
+  color: #fff; }
+  .banner_html ul {
+    margin-bottom: 0;
+    padding: 21.5px 0; }
+    .banner_html ul li {
+      display: inline-block;
+      padding: 0 47px;
+      font-size: 19px;
+      letter-spacing: 0.23px; }
+
 .categorytab-carousel2 .categoryname {
   display: none; }
 
@@ -1404,15 +1416,25 @@ a.wishlist_top {
     font-size: 31px;
     display: inline-block; }
 
-.cates_tab .addon-title {
-  position: relative; }
+.flashsales-tab-carousel2 .product-miniature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-color: transparent !important; }
 
-.cates_tab .jms-tab {
-  position: absolute;
-  top: 3px;
-  right: 0; }
-  .cates_tab .jms-tab ul .nav-item:not(:first-child) {
-    margin-left: 31px; }
+.flashsales-tab-carousel2 .product-preview .product-info .product-description {
+  display: block; }
+
+.cates_tab {
+  overflow: hidden; }
+  .cates_tab .addon-title {
+    position: relative; }
+  .cates_tab .jms-tab {
+    position: absolute;
+    top: 3px;
+    right: 0; }
+    .cates_tab .jms-tab ul .nav-item:not(:first-child) {
+      margin-left: 31px; }
 
 .categorytab-carousel .categoryname {
   display: none; }

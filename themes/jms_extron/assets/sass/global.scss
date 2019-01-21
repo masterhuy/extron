@@ -1257,6 +1257,22 @@ a.wishlist_top{
 	}
 }
 
+//banner html
+.banner_html{
+	text-align: center;
+	color: #fff;
+	ul{
+		margin-bottom: 0;
+		padding: 21.5px 0;
+		li{
+			display: inline-block;
+			padding: 0 47px;
+			font-size: 19px;
+			letter-spacing: 0.23px;
+		}
+	}
+}
+
 //categorytab2
 .categorytab-carousel2{
 	.categoryname{
@@ -1735,8 +1751,20 @@ a.wishlist_top{
 	}
 }
 
+//flashsale type2
+.flashsales-tab-carousel2{
+	.product-miniature{
+		display: flex;
+		border-color: transparent !important;
+	}
+	.product-preview .product-info .product-description {
+		display: block;
+	}
+}
+
 // cates tab
 .cates_tab{
+	overflow: hidden;
 	.addon-title{
 		position: relative;
 	}

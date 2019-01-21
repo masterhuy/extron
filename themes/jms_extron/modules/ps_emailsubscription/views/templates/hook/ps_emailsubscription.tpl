@@ -56,6 +56,13 @@
 				{l s='off for your next purchase!' d='Shop.Theme.Global'}
 			</span>
 		</div>
+		<div class="textnews_h5 addon-title">
+			<h3>{l s='OUR NEWSLETTER' d='Shop.Theme.Global'}</h3>
+			<span>{l s='Sign up for get offers and get' d='Shop.Theme.Global'}
+				<span>20%</span> 
+				{l s='off for your next purchase!' d='Shop.Theme.Global'}
+			</span>
+		</div>
 		<div class="text-footer addon-title">
 			<h3>{l s='NEWSLETTER' d='Shop.Theme.Global'}</h3>
 			<span>{l s='For get offers from our favorite brands & get' d='Shop.Theme.Global'}

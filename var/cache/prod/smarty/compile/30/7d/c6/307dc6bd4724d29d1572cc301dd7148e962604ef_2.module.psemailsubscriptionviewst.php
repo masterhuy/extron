@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-15 02:19:54
+/* Smarty version 3.1.33, created on 2019-01-21 01:59:40
   from 'module:psemailsubscriptionviewst' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c3d899a755881_50642289',
+  'unifunc' => 'content_5c456ddc497a47_15379296',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '307dc6bd4724d29d1572cc301dd7148e962604ef' => 
     array (
       0 => 'module:psemailsubscriptionviewst',
-      1 => 1547536583,
+      1 => 1548053761,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c3d899a755881_50642289 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c456ddc497a47_15379296 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Block Newsletter module-->
 <div id="newsletter_block_left" class="block">	
 	<div class="block_content">
@@ -28,6 +28,16 @@ function content_5c3d899a755881_50642289 (Smarty_Internal_Template $_smarty_tpl)
 			<h3><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'SIGN UP OUR NEWSLETTER','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
 </h3>
 			<span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'For get offers from our favorite brands and get','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+
+				<span>20%</span> 
+				<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'off for your next purchase!','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+
+			</span>
+		</div>
+		<div class="textnews_h5 addon-title">
+			<h3><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'OUR NEWSLETTER','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
+</h3>
+			<span><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Sign up for get offers and get','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
 
 				<span>20%</span> 
 				<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'off for your next purchase!','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
