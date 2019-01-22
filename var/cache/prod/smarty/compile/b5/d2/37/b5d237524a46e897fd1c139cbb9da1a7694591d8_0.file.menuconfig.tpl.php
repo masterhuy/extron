@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-08 01:35:15
+/* Smarty version 3.1.33, created on 2019-01-21 21:27:09
   from 'D:\xamppp\htdocs\jms_extron\modules\jmsvermegamenu\views\templates\admin\jmsvermegamenu_manager\menuconfig.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c3444a37d9a89_88223989',
+  'unifunc' => 'content_5c467f7df02f46_53492903',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c3444a37d9a89_88223989 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c467f7df02f46_53492903 (Smarty_Internal_Template $_smarty_tpl) {
 ?><form action="<?php echo $_smarty_tpl->tpl_vars['link']->value->getAdminLink('AdminJmsvermegamenuManager');?>
 &configure=jmsvermegamenu" method="post">
 <div class="menu-config">

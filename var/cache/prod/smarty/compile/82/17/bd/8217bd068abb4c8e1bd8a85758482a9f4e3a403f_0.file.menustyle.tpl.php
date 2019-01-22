@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-08 02:12:36
+/* Smarty version 3.1.33, created on 2019-01-21 21:27:57
   from 'D:\xamppp\htdocs\jms_extron\modules\jmsvermegamenu\views\templates\admin\jmsvermegamenu_style\menustyle.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c344d647f95f1_22004897',
+  'unifunc' => 'content_5c467fadd6bb04_47484877',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c344d647f95f1_22004897 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c467fadd6bb04_47484877 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="info-config jms-config">
 	<h3>Megamenu Toolbox</h3>
 	This toolbox includes all settings of megamenu, just select menu then configure. There are 3 level of configuration: sub-megamenu setting, column setting and menu item setting.

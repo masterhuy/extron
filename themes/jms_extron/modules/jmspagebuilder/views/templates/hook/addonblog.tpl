@@ -77,7 +77,7 @@
 					{if $show_time == '1'}
 						<li class="time">
 							<span class="post-created">
-								{l s='Posted' d='Modules.JmsPagebuilder'}: 
+								<span class="posted">{l s='Posted' d='Modules.JmsPagebuilder'}:</span> 
 								{$post.created|escape:'html':'UTF-8'|date_format:'%b %e, %Y'}
 							</span>
 						</li>

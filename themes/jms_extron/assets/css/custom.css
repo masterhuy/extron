@@ -3944,10 +3944,6 @@ footer .blog-carousel {
   color: #fff;
 }
 
-.countdown-period {
-  display: none;
-}
-
 .flashdeal .btn-shopnow.btn-font {
   padding: 8px 28px; }
 
@@ -3966,8 +3962,7 @@ footer .blog-carousel {
   margin-top: 14px;
 }
 .blog-carousel .post-intro p{
-  color: #666;
-  line-height: 1.45;
+  line-height: 1.4;
 }
 .blog-carousel .post-meta li:not(:last-child){
   font-weight: 400;
@@ -5824,6 +5819,9 @@ sup.required {
 .fw-light{
   font-weight: 300;
 }
+.fw-regular{
+  font-weight: 400;
+}
 .fw-medium{
   font-weight: 500;
 }
@@ -5836,7 +5834,9 @@ sup.required {
 .fw-black{
   font-weight: 900;
 }
-
+.more_cates{
+  display: none;
+}
 
 
 

@@ -33,40 +33,43 @@ var megtab_nav = {if $navigation == 1}true{else}false{/if};
 var megtab_pag = {if $pagination == 1}true{else}false{/if};
 var megtab_auto_play_carousel = {if $autoplay == 1}true{else}false{/if};
 </script>
-<div class="addon-title">
-	{if $addon_title}
-		<h3>{$addon_title|escape:'htmlall':'UTF-8'}</h3>
-	{/if}
-	<div class="jms-tab">
-		<ul class="nav">
-			{foreach from = $categories key = k item = category}
-				<li class="nav-item {if $k == 0} active{/if}">
-					<a class="" data-toggle="tab" href="#mega-category-{$category.id_category|escape:'html':'UTF-8'}">
-						{$category.name}
-					</a>
-				</li>
-			{/foreach}	
-		</ul>
-	</div>
-</div>
-{if $addon_desc}
-	<p class="addon-desc">{$addon_desc nofilter}</p>
-{/if}
 
-<div class="tab-content">
-	{foreach from = $categories key = k item = category}
-		<div role="tabpanel" class="tab-pane {if $k == 0}active {/if}" id="mega-category-{$category.id_category|escape:'html':'UTF-8'}">
-			<div class="product_box">
-				<div class="megatab-carousel">	
-					{foreach from = $category.products item = products_slide}				
-						<div class="item">
-							{foreach from = $products_slide item = product}
-								{include file="catalog/_partials/miniatures/product.tpl" product=$product}
-							{/foreach}
-						</div>
-					{/foreach}
-				</div>
-		 	</div>
-		</div>		
-	{/foreach}	
+<div class="mega_cates_tab">
+	<div class="addon-title">
+		{if $addon_title}
+			<h3>{$addon_title|escape:'htmlall':'UTF-8'}</h3>
+		{/if}
+		<div class="jms-tab">
+			<ul class="nav">
+				{foreach from = $categories key = k item = category}
+					<li class="nav-item {if $k == 0} active{/if}">
+						<a class="" data-toggle="tab" href="#mega-category-{$category.id_category|escape:'html':'UTF-8'}">
+							{$category.name}
+						</a>
+					</li>
+				{/foreach}	
+			</ul>
+		</div>
+	</div>
+	{if $addon_desc}
+		<p class="addon-desc">{$addon_desc nofilter}</p>
+	{/if}
+
+	<div class="tab-content">
+		{foreach from = $categories key = k item = category}
+			<div role="tabpanel" class="tab-pane {if $k == 0}active {/if}" id="mega-category-{$category.id_category|escape:'html':'UTF-8'}">
+				<div class="product_box">
+					<div class="megatab-carousel">	
+						{foreach from = $category.products item = products_slide}				
+							<div class="item">
+								{foreach from = $products_slide item = product}
+									{include file="catalog/_partials/miniatures/product.tpl" product=$product}
+								{/foreach}
+							</div>
+						{/foreach}
+					</div>
+			 	</div>
+			</div>		
+		{/foreach}	
+	</div>
 </div>

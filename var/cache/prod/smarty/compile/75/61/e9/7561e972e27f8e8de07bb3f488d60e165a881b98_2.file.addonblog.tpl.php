@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-20 23:59:39
+/* Smarty version 3.1.33, created on 2019-01-22 04:32:36
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\modules\jmspagebuilder\views\templates\hook\addonblog.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c4551bb74e476_99016770',
+  'unifunc' => 'content_5c46e334c874a4_68129449',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7561e972e27f8e8de07bb3f488d60e165a881b98' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_extron\\themes\\jms_extron\\modules\\jmspagebuilder\\views\\templates\\hook\\addonblog.tpl',
-      1 => 1547547996,
+      1 => 1548149554,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c4551bb74e476_99016770 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c46e334c874a4_68129449 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_extron\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),1=>array('file'=>'D:\\xamppp\\htdocs\\jms_extron\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.date_format.php','function'=>'smarty_modifier_date_format',),));
 echo '<script'; ?>
  type="text/javascript">	
@@ -103,8 +103,8 @@ echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'mo
 					<?php if ($_smarty_tpl->tpl_vars['show_time']->value == '1') {?>
 						<li class="time">
 							<span class="post-created">
-								<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Posted','d'=>'Modules.JmsPagebuilder'),$_smarty_tpl ) );?>
-: 
+								<span class="posted"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Posted','d'=>'Modules.JmsPagebuilder'),$_smarty_tpl ) );?>
+:</span> 
 								<?php echo htmlspecialchars(smarty_modifier_date_format(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['post']->value['created'],'html','UTF-8' )),'%b %e, %Y'), ENT_QUOTES, 'UTF-8');?>
 
 							</span>
