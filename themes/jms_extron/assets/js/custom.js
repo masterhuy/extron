@@ -780,9 +780,9 @@ jQuery(function ($) {
     "use strict";
     
     var bodyEl = $("body"),
-		content = $('.top_menu_second .first'),
-		openbtn = $('.setting-img'),
-		closebtn = $('.top_menu_second .first' ),
+		content = $('.close_menu'),
+		openbtn = $('.mega_menu'),
+		closebtn = $('.close_menu' ),
 		isOpen = false;
 
 	function init() {
