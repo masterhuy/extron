@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-23 05:27:46
+/* Smarty version 3.1.33, created on 2019-01-23 20:59:24
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\modules\jmspagebuilder\views\templates\hook\addonsliderlayer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c4841a208c131_62583249',
+  'unifunc' => 'content_5c491bfce5c356_81965147',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'eb71185e158630bd84e8ba94ed49f84fb3d3b381' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_extron\\themes\\jms_extron\\modules\\jmspagebuilder\\views\\templates\\hook\\addonsliderlayer.tpl',
-      1 => 1548239262,
+      1 => 1548295160,
       2 => 'file',
     ),
   ),
@@ -20,28 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c4841a208c131_62583249 (Smarty_Internal_Template $_smarty_tpl) {
-echo '<script'; ?>
->
-    const second = 1000,
-        minute = second * 60,
-        hour = minute * 60,
-        day = hour * 24;
-
-    let countDown = new Date("May 29, 2019 15:37:25").getTime(),
-    x = setInterval(function() {
-
-    let now = new Date().getTime(),
-        distance = countDown - now;
-
-        document.getElementById('s-days').innerText = Math.floor(distance / (day)),
-        document.getElementById('s-hours').innerText = Math.floor((distance % (day)) / (hour)),
-        document.getElementById('s-minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-        document.getElementById('s-seconds').innerText = Math.floor((distance % (minute)) / second);
-    }, second)
-<?php echo '</script'; ?>
->
-<div class="jms-slider-wrapper">
+function content_5c491bfce5c356_81965147 (Smarty_Internal_Template $_smarty_tpl) {
+?><div class="jms-slider-wrapper">
 	<div class="responisve-container">
 		<div class="slider" >
 		<div class="fs_loader"></div>

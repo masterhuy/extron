@@ -1442,6 +1442,96 @@ a.wishlist_top {
 .tab-content .tab-pane.active ~ .tab-pane .owl-controls {
   display: none; }
 
+.jms-hotdeal.type2 {
+  border: 1px solid #ff4c65;
+  border-radius: 5px; }
+  .jms-hotdeal.type2 .hotdeal-carousel {
+    padding-top: 0; }
+  .jms-hotdeal.type2 > .label {
+    font-size: 18px;
+    left: auto;
+    right: 35px;
+    top: -7px;
+    border-radius: 0 0 3px 3px;
+    padding: 11px 18px; }
+    .jms-hotdeal.type2 > .label::before {
+      top: 2px;
+      left: -5px;
+      border-left: 5px solid transparent;
+      border-top: 5px solid #dc263f;
+      border-right: 5px solid transparent;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+    .jms-hotdeal.type2 > .label::after {
+      content: "";
+      width: 0;
+      height: 0;
+      top: 0px;
+      right: -3px;
+      border-bottom: 5px solid transparent;
+      border-right: 5px solid #dc263f;
+      border-top: 5px solid transparent;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      position: absolute;
+      z-index: 8; }
+  .jms-hotdeal.type2 .product-preview .product-info .product-description {
+    display: block;
+    line-height: 1.85; }
+  .jms-hotdeal.type2 .product-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 0;
+    padding: 4.5px 0; }
+  .jms-hotdeal.type2 .img-hotdeal {
+    width: 50%; }
+  .jms-hotdeal.type2 .product-info {
+    width: 50%;
+    text-align: left;
+    padding: 0 85px 0 15px; }
+  .jms-hotdeal.type2 .product_button {
+    position: unset;
+    -webkit-transform: unset;
+    -ms-transform: unset;
+    transform: unset;
+    margin-top: 27px; }
+  .jms-hotdeal.type2 .product-preview button.cart-button {
+    width: auto;
+    padding: 0 15px; }
+  .jms-hotdeal.type2 .text-addcart, .jms-hotdeal.type2 .text-outofstock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .jms-hotdeal.type2 .product-link {
+    font-size: 21px;
+    letter-spacing: 0; }
+  .jms-hotdeal.type2 .content_price {
+    margin-bottom: 6px; }
+    .jms-hotdeal.type2 .content_price .price.new {
+      font-size: 24px; }
+  .jms-hotdeal.type2 .proces-bars {
+    border-color: #ff8400; }
+    .jms-hotdeal.type2 .proces-bars span {
+      background-color: #ff8400; }
+  .jms-hotdeal.type2 .label.label-discount {
+    font-size: 17px;
+    border-radius: 0;
+    margin-bottom: 11px;
+    width: 64px;
+    height: 28px;
+    position: unset;
+    -webkit-box-pack: unset;
+    -ms-flex-pack: unset;
+    justify-content: unset;
+    padding-left: 8px;
+    background: url("../img/sale-bg-type2.png") no-repeat center; }
+
 .categories-wrapper {
   position: relative; }
   .categories-wrapper .category-info {

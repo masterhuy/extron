@@ -107,6 +107,78 @@ $(document).ready(function () {
 
 jQuery(function ($) {
     "use strict";
+    if($(".category-custom-carousel").length) {		
+		var categoryCustomCarousel = $(".category-custom-carousel");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		categoryCustomCarousel.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:6
+				},
+				991:{
+					items:5
+				},
+				768:{
+					items:4
+				},
+				481:{
+					items:3
+				},
+				361:{
+					items:2
+				},
+				0:{
+					items:2
+				}
+			},
+			rtl: rtl,
+			margin: 30,
+			nav: true,
+			dots: false,
+			autoplay: false,
+			loop: true,
+			slideSpeed: 800,
+		});
+	}
+
+	if($(".category-custom-carousel2").length) {		
+		var categoryCustomCarousel2 = $(".category-custom-carousel2");			
+		var rtl = false;
+		if ($("body").hasClass("rtl")) rtl = true;				
+		categoryCustomCarousel2.owlCarousel({
+			responsiveClass:true,
+			responsive:{			
+				1199:{
+					items:8
+				},
+				991:{
+					items:6
+				},
+				768:{
+					items:4
+				},
+				481:{
+					items:3
+				},
+				361:{
+					items:2
+				},
+				0:{
+					items:2
+				}
+			},
+			rtl: rtl,
+			margin: 0,
+			nav: true,
+			dots: false,
+			autoplay: false,
+			loop: true,
+			slideSpeed: 800,
+		});
+	}
+
     if($(".product-carousel").length) {		
 		var productCarousel = $(".product-carousel");			
 		var rtl = false;

@@ -23,24 +23,6 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<script>
-    const second = 1000,
-        minute = second * 60,
-        hour = minute * 60,
-        day = hour * 24;
-
-    let countDown = new Date("May 29, 2019 15:37:25").getTime(),
-    x = setInterval(function() {
-
-    let now = new Date().getTime(),
-        distance = countDown - now;
-
-        document.getElementById('s-days').innerText = Math.floor(distance / (day)),
-        document.getElementById('s-hours').innerText = Math.floor((distance % (day)) / (hour)),
-        document.getElementById('s-minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-        document.getElementById('s-seconds').innerText = Math.floor((distance % (minute)) / second);
-    }, second)
-</script>
 <div class="jms-slider-wrapper">
 	<div class="responisve-container">
 		<div class="slider" >
