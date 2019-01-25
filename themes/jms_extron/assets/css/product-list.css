@@ -5,7 +5,7 @@
 	margin: 28px 0 40px;
 }
 #search_filters .facet {
-    margin-bottom: 19px;
+    margin-bottom: 28px;
     padding-bottom: 0;
 	margin-right:0px;
 }
@@ -14,22 +14,15 @@
     margin-bottom: 0;
 }
 #search_filters .facet .facet-title {
-	line-height: 26px;
-	padding-bottom: 4px;
-	font-size: 22px;
-	font-weight: 500;
-	display: inline-block;
-	margin-bottom: 17px;
+	padding-bottom: 6px;
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 20px;
 	position: relative;
-}
-#search_filters .facet .facet-title::before {
-	bottom: -6px;
-	content: "";
-	height: 2px;
-	left: 0;
-	position: absolute;
-	width: 35px;
-	background: #fb943b;
+	font-family: Roboto;
+	text-transform: uppercase;
+	color: #000;
+	border-bottom: 1px solid #eee;
 }
 #search_filters .facet.size ul li a {
 	background: transparent;
@@ -49,35 +42,18 @@
 	display:none;
 }
 #search_filters .facet li {
-	padding: 6px 0;
-}
-#search_filters .facet.price li {
-	padding: 7px 0;
-}
-#search_filters .facet li:not(:last-child) {
-	border-bottom: 1px solid #e6e6e6;
-}
-#search_filters .facet.color li {
-	padding: 6px 0;
+	padding: 4.5px 0;
+	position: relative;
 }
 #search_filters .facet.size ul li {
 	margin-right:10px;
 	float: left;
-}
-#category .product-preview .preview,
-#category .product-preview .product-info {
-	z-index: 9;
-	position: relative;
-	min-height: 112px;
 }
 .products-list-in-column.item-gutter-40 .js-product-miniature:hover::after {
 	width: calc(100% - 40px);
 }
 .products-list-in-column.item-gutter-60 .js-product-miniature:hover::after {
 	width: calc(100% - 60px);
-}
-#category .products-list-in-column .product-preview .product-info .product-link{
-	padding: 0 10px;
 }
 .filters-panel .view-mode > a > span {
 	font-size: 18px;
@@ -216,17 +192,12 @@
   float:left;
   width:100%;
 }
+#search_filters .custom-checkbox {
+	margin-right: 8px;
+}
 #category .facet .facet-label {
 	margin-bottom: 0;
 	display: block;
-}
-#category .facet ul li a {
-	color: #907459;
-	font-size: 15px;
-	font-family: Cabin;
-}
-#category .facet ul li a:hover{
-	color: #fb943b;
 }
 #category .facet.size ul li a .magnitude {
 	position: absolute;
@@ -236,29 +207,16 @@
 #category .facet.size ul li{
 	border-bottom: 0;
 }
-#category .facet ul li a .magnitude {
-	display: none;
-}
-#category .custom-checkbox {
-	padding-right: 5px;
-	position: relative;
-	top: 1px;
-}
-#category .color-style .custom-checkbox {
-	padding-right:10px;
-}
-#category .color-style .custom-checkbox input {
-	display:none;
-}
 #category .color-style .custom-checkbox .color {
 	border-radius: 50%;
 	display: block;
-	height: 26px;
-	width: 26px;
+	height: 15px;
+	width: 15px;
 	cursor: pointer;
-	margin-right: 10px;
-	position: relative;
-	box-shadow: 0 0 2px rgba(0,0,0,0.5);
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
 }
 #category .color-style .custom-checkbox .color::after{
 	left: 10px;
@@ -294,19 +252,7 @@
 }
 #category .facet .color-style .facet-label {
 	width:100%;
-}
-#category .color-style .custom-checkbox {
-	padding: 0;
-}
-.best-sellers_block_right .title-block h3{
-	margin-bottom: 25px;
-}
-.best-sellers_block_right .product-box{
-	padding: 1.5px 0;
-	margin-bottom: 20px;
-}
-.best-sellers_block_right .title-block h3::before{
-	bottom: 5px;
+	display: flex;
 }
 
 /* Pagination css */

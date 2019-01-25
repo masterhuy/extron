@@ -61,6 +61,7 @@
 			{/block}
 			{if isset($jpb_wishlist) && $jpb_wishlist}							
 				<a class="addToWishlist product-btn" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}" title="{l s='Add to Wishlist'}">
+					<i class="la la-heart-o"></i>
 				</a>
 			{/if}
 
@@ -123,16 +124,11 @@
 			</div>
 	        <div class="product_button">
 				<button {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Out of Stock' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}" class="ajax-add-to-cart product-btn cart-button {if $product.quantity < 1}disabled{/if}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
-					<span class="fa fa-spin fa-spinner"></span>
-					<span class="fa fa-check"></span>
-					<span class="text-addcart">{l s='Add to cart' d='Shop.Theme.Actions'}</span>		
-					<span class="text-outofstock">{l s='Out of stock' d='Shop.Theme.Actions'}</span>								   
+					<span class="la la-spin la-spinner"></span>
+					<span class="la la-check"></span>
+					<span class="text-addcart"><i class="la la-cart-plus"></i></span>		
+					<span class="text-outofstock"><i class="la la-ban"></i></span>								   
 				</button>
-				{if isset($jpb_wishlist) && $jpb_wishlist}							
-				<a class="addToWishlist product-btn" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}" title="{l s='Add to Wishlist'}">
-					<i class="storm-heart"></i>
-				</a>
-			{/if}
 			</div>
 		</div>
 		<div class="product_action">

@@ -51,6 +51,9 @@ jQuery(function ($) {
 jQuery(document).ready(function($) {
 	var header = $(".jms-row.header");
 
+	$("#jms-vermegamenu-container").addClass('collapse');
+	$(".page-index #jms-vermegamenu-container").addClass('collapse in');
+
 	$(window).scroll(function () {
     	if ($(window).scrollTop() > 300){
 			header.addClass("fixed");

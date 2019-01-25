@@ -207,6 +207,8 @@
   border: 1px solid #e1e1e1;
   border-top: 0;
   border-radius: 0 0 3px 3px; }
+  #jms-vermegamenu-container .menu-item.more_cates.no-icon {
+    display: block; }
 
 .jms-slider-wrapper .text-2 {
   letter-spacing: 0; }
@@ -431,11 +433,13 @@
 .product-carousel {
   padding-top: 23px; }
 
-#footer {
-  display: inline-block;
-  width: 100%;
+.page-index #footer {
   border-top: 0;
   margin-top: 0; }
+
+#footer {
+  display: inline-block;
+  width: 100%; }
   #footer .company, #footer .quick-link {
     padding-left: 15px; }
   #footer .footer_t {

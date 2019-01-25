@@ -282,13 +282,15 @@
 }
 
 //brand
-.brand{
+.jms-row.brand{
 	background-color: #f7f7f7;
 }
 
-#footer{
+.page-index #footer{
 	border-top: 0;
 	margin-top: 0;
+}
+#footer{
 	.company, .quick-link{
 		padding-left: 15px;
 	}

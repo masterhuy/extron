@@ -8,7 +8,7 @@
 	display: inline-block;
 }
 #contact .btn_submit{
-	color: #fb943b;
+	color: #ff4c65;
 }
 #contact .btn_submit:hover{
 	color: #fff;
@@ -103,9 +103,6 @@
 	background: #f9f9f9 url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAAPklEQVR4Ae3TwREAEBQD0V/6do4SXPZg7EsBhsQ8IEmSMOsiuEfg3gL3oXC7wK0bd1G4o8X9F4yIkyQfSrIByQBjp7QuND8AAAAASUVORK5CYII=") no-repeat scroll right 0.5rem center / 2.25rem 2.25rem !important;
 	padding-right: 30px;
 	color: #907459;
-}
-#contact .form-footer .btn_submit:hover{
-	background: #fb943b;
 }
 #contact #wrapper #left-column {
 	border: 1px solid #ebebeb;

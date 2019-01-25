@@ -28,7 +28,7 @@
 			<h3 class="hidden-sm-down">{l s='Filter By' d='Shop.Theme.Actions'}</h3>
 		</div>
 		<div id="_desktop_search_filters_clear_all" class="hidden-sm-down clear-all-wrapper">
-		  <button data-search-url="{$clear_all_link}" class="btn-default btn-tertiary js-search-filters-clear-all button-small btn-effect btn-active">
+		  <button data-search-url="{$clear_all_link}" class="btn-default btn-tertiary js-search-filters-clear-all">
 				{l s='Clear all' d='Shop.Theme.Actions'}
 		  </button>
 		</div>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-07 22:37:09
+/* Smarty version 3.1.33, created on 2019-01-25 04:55:05
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\templates\catalog\_partials\facets.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c341ae580e708_51645902',
+  'unifunc' => 'content_5c4adcf9675a85_17141307',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2188717db504c95b1532631a0200c548c90368ae' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_extron\\themes\\jms_extron\\templates\\catalog\\_partials\\facets.tpl',
-      1 => 1546847038,
+      1 => 1548410036,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c341ae580e708_51645902 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c4adcf9675a85_17141307 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_extron\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),));
 ?>
   <div id="search_filters">
@@ -31,7 +31,7 @@ $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_extr
 		</div>
 		<div id="_desktop_search_filters_clear_all" class="hidden-sm-down clear-all-wrapper">
 		  <button data-search-url="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['clear_all_link']->value, ENT_QUOTES, 'UTF-8');?>
-" class="btn-default btn-tertiary js-search-filters-clear-all button-small btn-effect btn-active">
+" class="btn-default btn-tertiary js-search-filters-clear-all">
 				<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Clear all','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 
 		  </button>

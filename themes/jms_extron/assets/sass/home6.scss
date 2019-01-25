@@ -215,6 +215,9 @@
 	border: 1px solid #e1e1e1;
 	border-top: 0;
 	border-radius: 0 0 3px 3px;
+	.menu-item.more_cates.no-icon {
+		display: block;
+	}
 }
 
 
@@ -507,11 +510,13 @@
 
 
 //footer
+.page-index #footer{
+	border-top: 0;
+	margin-top: 0;
+}
 #footer{
 	display: inline-block;
 	width: 100%;
-	border-top: 0;
-	margin-top: 0;
 	.company, .quick-link{
 		padding-left: 15px;
 	}

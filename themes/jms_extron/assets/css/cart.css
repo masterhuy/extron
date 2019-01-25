@@ -125,9 +125,6 @@
 	text-align: left;
 	white-space: normal;
 }
-.product-line-info .label.product-name:hover{
-	color: #fb943b;
-}
 .product-line-grid {
 	display: flex;
 	align-items: center;

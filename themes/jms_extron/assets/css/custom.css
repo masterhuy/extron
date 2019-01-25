@@ -1102,12 +1102,15 @@ fieldset[disabled] .btn-default {
   cursor: pointer;
   display: inline-block;
   position: relative;
-  color: #ff4c65 !important;
+  color: #ff4c65;
   letter-spacing: 0.7px;
   margin-bottom: 0;
   border-radius: 5px;
   background: #fff;
   padding: 9px 21px;
+}
+.btn-shopnow-h5:hover{
+
 }
 .btn-shopnow:hover{
   background: #fb3551;
@@ -1726,9 +1729,6 @@ ul#order_step li {
 .product-preview:hover .preview{
   border-radius: 10px 10px 0 0;
 }
-#category .product-preview:hover .preview{
-  z-index: 10 !important;
-}
 .product-preview:hover .product_action {
   border-radius: 0 0 10px 10px;
   margin-top: -5px;
@@ -1791,7 +1791,9 @@ ul#order_step li {
   cursor: pointer;
   font-size: 21px;
 }
-
+#category .categoryname{
+  display: none;
+}
 #category .products-list-in-column .addToWishlist.product-btn {
   right: 20px; }
 
@@ -2195,7 +2197,10 @@ li.product-flag {
 /*VIEW MODE*/
 .filters-panel .view-mode .view-grid {
   margin-right: 5px; }
-
+.sort-by {
+  font-family: Roboto;
+  font-size: 13px;
+}
 
 .inlude_sort_by {
   display: -webkit-inline-box;
@@ -2213,9 +2218,8 @@ li.product-flag {
 .products-sort-order .select-title span {
   cursor: pointer;
   display: block;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 31px;
-  min-width: 94px;
   overflow: hidden;
   padding-left: 10px;
   padding-right: 20px;
@@ -2223,7 +2227,7 @@ li.product-flag {
   text-overflow: ellipsis;
   white-space: nowrap;
   font-weight: 500;
-  width: calc(90% - 12px);
+  color: #000;
 }
 
 .products-sort-order.dropdown i {
@@ -2335,24 +2339,24 @@ li.product-flag {
 .js-product-list .product-preview{
   margin-bottom: 30px;
 }
+.products-list-in-column .products.row{
+  display: flex;
+  flex-wrap: wrap;
+}
 .products-list-in-column .js-product-miniature {
   float: left;
   margin-left: 0;
   margin-right: 0;
   padding: 0 15px;
-  width: 33.33%;
-  box-shadow: unset; }
+  width: calc(100% / 3);
+  margin-bottom: 12px; }
 
-.products-list-in-column .js-product-miniature:hover::after {
-  content: "";
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: calc(100% - 30px);
-  box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.1);
-  position: absolute;
-  height: 100%;
-  z-index: 1;
+.products-list-in-column .addToWishlist {
+  transform: scale(0);
+}
+
+.products-list-in-column .product-preview:hover .addToWishlist {
+  transform: scale(1);
 }
 
 .products-list-in-column .product_action{
@@ -2681,9 +2685,6 @@ li.product-flag {
 #product_list.item-gutter-0 .product-preview:hover .product_action {
   left: 0;
 }
-#product_list.item-gutter-0 .product-preview:hover .border{
-  box-shadow: 0 2px 10px rgba(0,0,0,0.16);
-}
 
 
 .content_scene_cat_bg {
@@ -2723,9 +2724,8 @@ li.product-flag {
 /* HTML Left Banner */
 .html_left {
   position: relative;
-  float: left;
-  margin-top: 28px;
-  margin-bottom: 60px; }
+  margin-top: 31px;
+  margin-bottom: 47px; }
   .html_left:hover img {
     -webkit-animation: 0.6s ease 0s normal forwards 1 running pulse;
     animation: 0.6s ease 0s normal forwards 1 running pulse; }
@@ -3052,7 +3052,7 @@ ul.footer_links {
 .breadcrumb {
   background: url("../img/breadcrumb_bg.jpg") no-repeat scroll;
   background-size: cover;
-  padding: 45px 0;
+  padding: 48.5px 0;
   margin-bottom: 86px;
   border-radius: 0;
 }
@@ -3064,20 +3064,28 @@ ul.footer_links {
 
 .title_meta {
   float: left;
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 32px;
-  padding-bottom: 0; }
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 0;
+  font-family: Roboto;
+  text-transform: uppercase;
+  color: #000;
+}
 
 .breadcrumb-inner ol {
   margin-bottom: 0;
   display: inline-block; }
   .breadcrumb-inner ol li {
-    display: inline-block; }
+    position: relative;
+    display: inline-block;
+    margin-left: 20px; }
     .breadcrumb-inner ol li::after {
   content: "/";
   font-family: FontAwesome;
-  margin: 0 3px;
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
   font-weight: 600;
 }
     .breadcrumb-inner ol li:last-child:after {
@@ -5857,6 +5865,9 @@ sup.required {
 }
 .fw-black{
   font-weight: 900;
+}
+.border-e8{
+  border: 1px solid #e8e8e8;
 }
 .more_cates{
   display: none;
