@@ -23,46 +23,54 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div class="product-add-to-cart">
-  {if isset($configuration.is_catalog) && !$configuration.is_catalog}
-    {block name='product_quantity'}
-      <div class="product-quantity">
-      		<span class="text">Qty:</span>
-			<div class="qty">
-			  <input
-				type="text"
-				name="qty"
-				id="quantity_wanted"
-				value="{$product.quantity_wanted}"
-				class="input-group"
-				min="{$product.minimal_quantity}"
-			  />
-			</div>
-        <div class="add">
-				<button class="btn-effect1 product-btn add-to-cart cart-button btn-shopnow1 {if $product.quantity < 1}disabled{/if}" data-button-action="add-to-cart" type="submit" 
-        {if !$product.add_to_cart_url}
-          disabled
-        {/if}>
-					<span class="fa fa-spin fa-spinner"></span>
-					<span class="fa fa-check"></span>
-					<span class="text-addcart">{l s='Add to cart' d='Shop.Theme.Actions'}</span>		
-					<span class="text-outofstock">{l s='Out of stock' d='Shop.Theme.Actions'}</span>
-				</button>
-			
-        </div>
-      </div>
-      <div class="clearfix"></div>
-    {/block}
+    {if isset($configuration.is_catalog) && !$configuration.is_catalog}
+        {block name='product_quantity'}
+            <div class="product-quantity">
+                <div class="customs">
+                    <span class="control-label">Quantity:</span>
+                    <div class="qty">
+                      <input
+                        type="text"
+                        name="qty"
+                        id="quantity_wanted"
+                        value="{$product.quantity_wanted}"
+                        class="input-group"
+                        min="{$product.minimal_quantity}"
+                      />
+                    </div>
+                    {block name='product_variants'}
+                        {include file='catalog/_partials/product-variants.tpl'}
+                    {/block}
+                </div>
+      		    
+                <div class="add">
+    				<button title="{if $product.quantity < 1}{l s='Out of Stock' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}" class="product-btn add-to-cart cart-button {if $product.quantity < 1}disabled{/if}" data-button-action="add-to-cart" type="submit" 
+                        {if !$product.add_to_cart_url}
+                          disabled
+                        {/if}>
+    					<span class="text-addcart">{l s='Add to cart' d='Shop.Theme.Actions'}</span>		
+    					<span class="text-outofstock">{l s='Out of stock' d='Shop.Theme.Actions'}</span>
+    				</button>
+                    {if isset($jpb_wishlist) && $jpb_wishlist}                          
+                        <a class="addToWishlist product-btn" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}" title="{l s='Add to Wishlist'}">
+                            <i class="la la-heart-o"></i>
+                        </a>
+                    {/if}
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        {/block}
 
-    {block name='product_minimal_quantity'}
-      <p class="product-minimal-quantity">
-        {if $product.minimal_quantity > 1}
-          {l
-          s='The minimum purchase order quantity for the product is %quantity%.'
-          d='Shop.Theme.Checkout'
-          sprintf=['%quantity%' => $product.minimal_quantity]
-          }
-        {/if}
-      </p>
-    {/block}
-  {/if}
+        {block name='product_minimal_quantity'}
+            <p class="product-minimal-quantity">
+                {if $product.minimal_quantity > 1}
+                    {l
+                        s='The minimum purchase order quantity for the product is %quantity%.'
+                        d='Shop.Theme.Checkout'
+                        sprintf=['%quantity%' => $product.minimal_quantity]
+                    }
+                {/if}
+            </p>
+        {/block}
+    {/if}
 </div>

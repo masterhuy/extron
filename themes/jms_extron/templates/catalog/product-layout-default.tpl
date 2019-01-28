@@ -87,7 +87,7 @@
       
 			<div class="product-information">
 				{block name='product_description_short'}
-					<div id="product-description-short-{$product.id}" class="product-desc"itemprop="description">{$product.description_short|strip_tags|truncate:250:"..."}</div>
+					<div id="product-description-short-{$product.id}" class="product-desc">{$product.description_short|truncate:350:"..." nofilter}</div>
 				{/block}
 			
 				{if $product.is_customizable && count($product.customizations.fields)}
@@ -103,10 +103,6 @@
 							<input type="hidden" name="token" value="{$static_token}">
 							<input type="hidden" name="id_product" value="{$product.id}" id="product_page_product_id">
 							<input type="hidden" name="id_customization" value="{$product.id_customization}" id="product_customization_id">
-
-							{block name='product_variants'}
-								{include file='catalog/_partials/product-variants.tpl'}
-							{/block}
 
 							{block name='product_pack'}
 							{if $packItems}
@@ -137,13 +133,6 @@
 					{/block}
 				</div>
 				{hook h='displayReassurance'}
-        {if isset($jpb_wishlist) && $jpb_wishlist}
-        <div class="wish_list">
-          <a class="addToWishlist product-btn" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}" title="{l s='Add to Wishlist'}">
-            ADD TO WISHLIST
-          </a>
-        </div>            
-        {/if}
 				<ul class="other-info">
             {if $product.reference}
                         <!-- number of item in stock -->
@@ -173,7 +162,7 @@
               <label>{l s='Shipping tax:'}</label><span class="shipping_cost">{l s=' Free'}</span>
             {/if}
           </li>
-          </ul>
+        </ul>
 			</div>
           <!-- Go to www.addthis.com/dashboard to customize your tools -->
           <div class="addthis_inline_share_toolbox_ld1s"></div>

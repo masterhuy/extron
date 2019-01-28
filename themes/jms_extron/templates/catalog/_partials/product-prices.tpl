@@ -77,7 +77,7 @@
         <span id="product-availability">
           {if $product.availability == 'available'}
           
-          <img src="{$urls.base_url}themes/jms_freshy/assets/img/icon/available.png" alt="">
+          <img src="{$urls.base_url}themes/jms_extron/assets/img/icon/available.png" alt="">
           {elseif $product.availability == 'last_remaining_items'}
           <i class="material-icons product-last-items">&#xE002;</i>
           {else}

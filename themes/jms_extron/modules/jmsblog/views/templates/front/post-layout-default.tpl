@@ -165,7 +165,7 @@
 							<input id="item_id_comment_send" name="post_id" type="hidden" value="{$post.post_id|escape:'html':'UTF-8'}" />
 							<input id="item_id_comment_reply" name="post_id_comment_reply" type="hidden" value="" />
 							<p class="">
-								<button id="submitComment" class="btn-submitcm btn-shopnow1 btn-effect1" name="submitComment" type="submit">{l s='Submit' d='Modules.JmsBlog'}</button>
+								<button id="submitComment" class="btn-submitcm" name="submitComment" type="submit">{l s='Submit' d='Modules.JmsBlog'}</button>
 							</p>
 						</div>
 					</form>

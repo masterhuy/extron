@@ -95,7 +95,7 @@
         </style>
         <input type="text" name="url" value=""/>
         <input type="hidden" name="token" value="{$token}" />
-        <input class="btn_submit btn-effect1 btn-shopnow1" type="submit" name="submitMessage" value="{l s='Submit' d='Shop.Theme.Actions'}">
+        <input class="btn_submit" type="submit" name="submitMessage" value="{l s='Submit' d='Shop.Theme.Actions'}">
       </footer>
     {/if}
   </form>

@@ -120,9 +120,9 @@
 		
 			
 			<div class="product-description">
-				{$product.description_short|truncate:120:'...' nofilter}
+				{$product.description_short|truncate:150:'...' nofilter}
 			</div>
-	        <div class="product_button">
+			<div class="product_button">
 				<button {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Out of Stock' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}" class="ajax-add-to-cart product-btn cart-button {if $product.quantity < 1}disabled{/if}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
 					<span class="la la-spin la-spinner"></span>
 					<span class="la la-check"></span>
@@ -130,36 +130,27 @@
 					<span class="text-outofstock"><i class="la la-ban"></i></span>								   
 				</button>
 			</div>
-		</div>
-		<div class="product_action">
-			{block name='product_price_and_shipping'}
-				{if $product.show_price}
-				  <div class="content_price">
-				  	{hook h='displayProductPriceBlock' product=$product type="before_price"}
-					{if $product.has_discount}
-					 	{hook h='displayProductPriceBlock' product=$product type="old_price"}
-					  	<span class="old price">{$product.regular_price}</span>
-					{/if}
-
-					<span class="price new">{$product.price}</span>
-
-					{hook h='displayProductPriceBlock' product=$product type='unit_price'}
-
-					{hook h='displayProductPriceBlock' product=$product type='weight'}
-				  </div>
+			<div class="product_action">
+				<button {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Out of Stock' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}" class="ajax-add-to-cart product-btn cart-button {if $product.quantity < 1}disabled{/if}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
+					<span class="la la-spin la-spinner"></span>
+					<span class="la la-check"></span>
+					<span class="text-addcart">
+						<i class="la la-cart-plus"></i>
+						<span>{l s='Add to cart' d='Shop.Theme.Actions'}</span>
+					</span>		
+					<span class="text-outofstock">
+						<i class="la la-ban"></i>
+						<span>{l s='Out of stock' d='Shop.Theme.Actions'}</span>
+					</span>								   
+				</button>
+			   	{if isset($jpb_wishlist) && $jpb_wishlist}							
+					<a class="addToWishlist product-btn" onclick="WishlistCart('wishlist_block_list', 'add', '{$product.id_product|escape:'html'}', false, 1); return false;" data-id-product="{$product.id_product|escape:'html'}" title="{l s='Add to Wishlist'}">
+						<i class="la la-heart-o"></i>
+					</a>
 				{/if}
-			{/block}
-
-			<button {if $product.quantity < 1}disabled{/if} title="{if $product.quantity < 1}{l s='Out of Stock' d='Shop.Theme.Actions'}{else}{l s='Add to Cart' d='Shop.Theme.Actions'}{/if}" class="ajax-add-to-cart btn-effect1 product-btn cart-button {if $product.quantity < 1}disabled{/if}" data-id-product="{$product.id}" data-minimal-quantity="{$product.minimal_quantity}" data-token="{if isset($static_token) && $static_token}{$static_token}{/if}">
-				<span class="fa fa-spin fa-spinner"></span>
-				<span class="fa fa-check"></span>
-				<span class="text-addcart">{l s='Add to cart' d='Shop.Theme.Actions'}</span>		
-				<span class="text-outofstock">{l s='Out of stock' d='Shop.Theme.Actions'}</span>			
-		   	</button>
-		   	<a data-link-action="quickview" class="quick-view product-btn hidden-xs" title="{l s='Quick view' d='Shop.Theme.Actions'}">
-				Quick view
-			</a>
-	    </div>
+		    </div>
+		</div>
+		
 	</div>
 </div>
 
