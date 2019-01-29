@@ -195,6 +195,13 @@
 #search_filters .custom-checkbox {
 	margin-right: 8px;
 }
+#category .banner-and-desc {
+	width: 60%;
+	text-align: center;
+}
+#category .image-banner-category {
+	margin-bottom: 40px;
+}
 #category .facet .facet-label {
 	margin-bottom: 0;
 	display: block;

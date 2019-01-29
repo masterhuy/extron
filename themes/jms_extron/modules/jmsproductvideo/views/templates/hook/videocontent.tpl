@@ -9,8 +9,10 @@
 {if $product_videos}
 <div class="jms-videos" id="jmsproductvideo">
 	{foreach $product_videos as $video}	
-		<div class="jms-video {if $video_show == '1'}popup-active{/if}">	
-			<h3>{$video.title}</h3>
+		<div class="jms-video {if $video_show == '1'}popup-active{/if}">
+			<div class="addon-title">
+				<h3>{$video.title}</h3>
+			</div>
 			{if $video_show == '1'}
 				<div class="jms-popup-box">				
 					<div class="jms-popup-wrap">						

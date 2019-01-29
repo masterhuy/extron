@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-21 03:14:24
+/* Smarty version 3.1.33, created on 2019-01-28 23:37:45
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\templates\catalog\product.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c457f605e5872_87045487',
+  'unifunc' => 'content_5c4fd89928dcc3_74684428',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c457f605e5872_87045487 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c4fd89928dcc3_74684428 (Smarty_Internal_Template $_smarty_tpl) {
 ?> 
 <?php if ($_smarty_tpl->tpl_vars['sidebar']->value == 'left') {?> 
 	<?php $_smarty_tpl->_assignInScope('layout', "layouts/layout-left-column.tpl");

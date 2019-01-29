@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-20 20:48:14
+/* Smarty version 3.1.33, created on 2019-01-29 05:03:46
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\modules\jmsflashsales\views\templates\hook\jmsflashsales.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c4524deb6ed57_66473744',
+  'unifunc' => 'content_5c5025027b26a2_67851082',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product.tpl' => 1,
   ),
 ),false)) {
-function content_5c4524deb6ed57_66473744 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c5025027b26a2_67851082 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jmsflashsales">
 	<div class="product_box">
 		<div class="title">

@@ -86,7 +86,7 @@
             {/block}
 			<div class="product-information">
 				{block name='product_description_short'}
-					<div id="product-description-short-{$product.id}" class="product-desc"itemprop="description">{$product.description_short|strip_tags|truncate:100:"..."}</div>
+					<div id="product-description-short-{$product.id}" class="product-desc"itemprop="description">{$product.description_short|truncate:800:"..." nofilter}</div>
 				{/block}
 			
 				{if $product.is_customizable && count($product.customizations.fields)}
@@ -141,9 +141,6 @@
 							<input type="hidden" name="id_product" value="{$product.id}" id="product_page_product_id">
 							<input type="hidden" name="id_customization" value="{$product.id_customization}" id="product_customization_id">
 
-							{block name='product_variants'}
-								{include file='catalog/_partials/product-variants.tpl'}
-							{/block}
 
 							{block name='product_pack'}
 							{if $packItems}

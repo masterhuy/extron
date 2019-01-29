@@ -28,9 +28,10 @@
     <section id="products">
 			{if $page.page_name=="category"}
 				{if isset($category.image.bySize.category_default.url) && {$category.image.bySize.category_default.url} != ""}
-					<div style="background:transparent url('{$category.image.bySize.category_default.url}')
-						no-repeat scroll center center / cover; height: 229px" class="content_scene_cat_bg">	
-					</div>
+					
+          <div class="image-banner-category">
+            <img class="img-responsive" src="{$category.image.bySize.category_default.url}" alt="">
+          </div>
 				{/if}
 			{/if}
       {if $listing.products|count}

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-28 02:01:15
+/* Smarty version 3.1.33, created on 2019-01-29 05:22:30
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\templates\errors\page-not-found.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c4ea8bb56b2f8_70248482',
+  'unifunc' => 'content_5c5029665cb3c8_53510479',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c4ea8bb56b2f8_70248482 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c5029665cb3c8_53510479 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -35,19 +35,19 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 "><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Back to homepage','d'=>'Shop.Theme'),$_smarty_tpl ) );?>
 </a>
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1753925055c4ea8bb567473_72792102', 'hook_not_found');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_722241945c5029665cb3c7_36208746', 'hook_not_found');
 ?>
 
 	</div>
 </section>
 <?php }
 /* {block 'hook_not_found'} */
-class Block_1753925055c4ea8bb567473_72792102 extends Smarty_Internal_Block
+class Block_722241945c5029665cb3c7_36208746 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'hook_not_found' => 
   array (
-    0 => 'Block_1753925055c4ea8bb567473_72792102',
+    0 => 'Block_722241945c5029665cb3c7_36208746',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

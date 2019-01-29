@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-25 04:55:05
+/* Smarty version 3.1.33, created on 2019-01-29 03:18:33
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\templates\catalog\_partials\facets.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c4adcf9675a85_17141307',
+  'unifunc' => 'content_5c500c59cb36a3_71720204',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c4adcf9675a85_17141307 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c500c59cb36a3_71720204 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_extron\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),));
 ?>
   <div id="search_filters">

@@ -1510,12 +1510,14 @@ ul#order_step li {
     display: inline-block; }
 
 #cart_block.shoppingcart-bottom .tab-title .box-cart.ajax_cart_quantity {
-  border-radius: 0;
+  border-radius: 50%;
   height: auto;
   left: 0;
   position: relative;
   top: auto;
-  width: auto; }
+  display: inline-block;
+  width: 20px;
+}
 
 #cart_block.shoppingcart-bottom .shoppingcart-box {
   bottom: 0 !important;
@@ -1545,7 +1547,7 @@ ul#order_step li {
   margin-right: 0px;
   padding: 0 !important;
   position: relative;
-  width: 100px;
+  min-width: 175px;
   border-bottom: 0; }
 
 #cart_block.shoppingcart-bottom .cart_block_list .description a, #cart_block.shoppingcart-bottom .cart_block_list .description .price-quantity .price, #cart_block.shoppingcart-bottom .cart_block_list .description .quantity-formated::before {
@@ -2099,16 +2101,13 @@ ul#order_step li {
   display: none;
 }
 .add-to-cart[disabled] .text-outofstock {
-  display: block;
+  display: block !important;
 }
 .add-to-cart .text-outofstock {
   display: none; }
 
 .add-to-cart[disabled] .text-addcart {
   display: none; }
-
-.add-to-cart[disabled] .text-outofstock {
-  display: block; }
 
 .product-flags {
   margin-bottom: 0; }
@@ -2384,9 +2383,10 @@ li.product-flag {
 .js-product-list .product-preview{
   margin-bottom: 30px;
 }
-.products-list-in-column .products.row{
+.products-list-in-column .products.row {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
 }
 .products-list-in-column .js-product-miniature {
   float: left;
@@ -2506,9 +2506,14 @@ li.product-flag {
   border-radius: 30px;
   width: 126px;
 }
+.products-list-in-row .pagination{
+  margin-top: 20px;
+}
+.products-list-in-row .product-info .product-description {
+  display: block; }
 
-.product_list.products-list-in-row .product_button, .product_list.products-list-in-row .product-description {
-  display: inline-flex; }
+.products-list-in-row .product-info .product-description ul{
+  display: none; }
 
 .products-list-in-row .product-preview:hover .product_button .quick-view.product-btn, .products-list-in-row .product-preview:hover .product_button .addToWishlist.product-btn {
   opacity: 1; }
@@ -2523,6 +2528,19 @@ li.product-flag {
 .products-list-in-row .content_price .price {
   margin-left: 0;
   margin-right: 10px; }
+.products-list-in-column .product-preview{
+  border: 0;
+}
+.products-list-in-column .product-info{
+  border-radius: 5px;
+}
+.products-list-in-column .product-preview .border{
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+.products-list-in-column .product-preview:hover .border{
+  border-color: #ebebeb;
+}
 
 /*Product Box Gutter*/
 .products-list-in-column .product_button .addToWishlist{
@@ -2734,14 +2752,8 @@ li.product-flag {
 .product-layout-3columns .product-add-to-cart .text {
   margin-bottom: 10px;
 }
-.product-layout-3columns .product-quantity .qty {
-  margin-bottom: 20px;
-}
 .product-layout-3columns .pb-right-column .product-add-to-cart {
   margin-top: 6px;
-}
-.product-layout-3columns .images-container .product-images > li.thumb-container > .thumb {
-  width: 107px;
 }
 #product_list.item-gutter-0 .product-preview:hover .product_action {
   left: 0;
@@ -2761,8 +2773,11 @@ li.product-flag {
     padding: 0 7.5%; }
 
 #category-description > p {
-  font-size: 13px;
+  font-size: 14px;
   margin-bottom: 0;
+  letter-spacing: 0;
+  line-height: 1.85;
+  color: #555;
 }
 
 #category-description strong {
@@ -4156,6 +4171,7 @@ sup.required {
 .post-fulltext .cmt p {
   transform: skewX(-10deg);
   line-height: 1.6;
+  color: #888;
 }
 .post-fulltext .info .name {
   font-weight: 600;
@@ -4189,15 +4205,6 @@ sup.required {
   margin-bottom: 16px;
   color: #555;
 }
-.post-fulltext .cmt::before {
-  content: "";
-  width: 3px;
-  height: 125px;
-  background: #ff4c65;
-  position: absolute;
-  left: 0;
-  top: 19px;
-}
 .post-introtext p {
   font-size: 16px;
   font-weight: 500;
@@ -4207,8 +4214,16 @@ sup.required {
 }
 .post-fulltext p {
   margin-bottom: 17px;
-  font-size: 16px;
-  line-height: 1.88;
+  line-height: 2;
+  letter-spacing: 0;
+}
+.post-fulltext .images {
+  margin: 41px 0 45px;
+}
+.post-fulltext h3 {
+  font-size: 24px;
+  color: #000;
+  letter-spacing: -0.1px;
 }
 
 /**** Preload *****/
@@ -5933,7 +5948,6 @@ sup.required {
 .more_cates{
   display: none;
 }
-
 
 
 a,

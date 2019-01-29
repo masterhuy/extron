@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-20 20:58:33
+/* Smarty version 3.1.33, created on 2019-01-28 23:28:55
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\modules\jmsproductvideo\views\templates\hook\jmsproductvideo.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c45274902c008_47010826',
+  'unifunc' => 'content_5c4fd687a0aa66_96129926',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c68bb418c4db8bfe965bc2956b35548c624e91e8' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_extron\\themes\\jms_extron\\modules\\jmsproductvideo\\views\\templates\\hook\\jmsproductvideo.tpl',
-      1 => 1546847037,
+      1 => 1548735849,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c45274902c008_47010826 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c4fd687a0aa66_96129926 (Smarty_Internal_Template $_smarty_tpl) {
 ?><h3><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Video\'s Product','mod'=>'jmsproductvideo'),$_smarty_tpl ) );?>
 </h3>
 <input type = "hidden" id="edit" value="0" name="edit" />
@@ -44,8 +44,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['language']->value) {
 " type="text" class="form-control" name="videotitle[<?php echo intval($_smarty_tpl->tpl_vars['language']->value['id_lang']);?>
 ]" value="<?php ob_start();
 echo intval($_smarty_tpl->tpl_vars['language']->value['id_lang']);
-$_prefixVariable1 = ob_get_clean();
-echo (($tmp = @smarty_modifier_htmlentitiesUTF8($_smarty_tpl->tpl_vars['videos']->value[$_prefixVariable1]['title']))===null||$tmp==='' ? '' : $tmp);?>
+$_prefixVariable2 = ob_get_clean();
+echo (($tmp = @smarty_modifier_htmlentitiesUTF8($_smarty_tpl->tpl_vars['videos']->value[$_prefixVariable2]['title']))===null||$tmp==='' ? '' : $tmp);?>
 " />
 			<?php if (count($_smarty_tpl->tpl_vars['languages']->value) > 1) {?>
 			</div>													
@@ -76,8 +76,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['language']->value) {
 " type="text" class="form-control" name="videolink[<?php echo intval($_smarty_tpl->tpl_vars['language']->value['id_lang']);?>
 ]" value="<?php ob_start();
 echo intval($_smarty_tpl->tpl_vars['language']->value['id_lang']);
-$_prefixVariable2 = ob_get_clean();
-echo (($tmp = @smarty_modifier_htmlentitiesUTF8($_smarty_tpl->tpl_vars['videos']->value[$_prefixVariable2]['link']))===null||$tmp==='' ? '' : $tmp);?>
+$_prefixVariable3 = ob_get_clean();
+echo (($tmp = @smarty_modifier_htmlentitiesUTF8($_smarty_tpl->tpl_vars['videos']->value[$_prefixVariable3]['link']))===null||$tmp==='' ? '' : $tmp);?>
 " />
 			<?php if (count($_smarty_tpl->tpl_vars['languages']->value) > 1) {?>
 			</div>													

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-18 03:43:09
+/* Smarty version 3.1.33, created on 2019-01-29 05:22:29
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\modules\jmspagebuilder\views\templates\hook\addonhtml.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c41919d337fe0_15065377',
+  'unifunc' => 'content_5c502965bab019_00615996',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c41919d337fe0_15065377 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c502965bab019_00615996 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['addon_title']->value) {?>
 <div class="addon-title">
 	<h3><?php echo $_smarty_tpl->tpl_vars['addon_title']->value;?>

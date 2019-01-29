@@ -48,8 +48,13 @@
 				</li>
 			{/if}
 			<li>
-				<span>{$post.created|escape:'html':'UTF-8'|date_format:"%B %e, %Y"}</span>
+				<span>{l s='Posted:' d='Modules.JmsBlog'} {$post.created|escape:'html':'UTF-8'|date_format:"%b %e, %Y"}</span>
 			</li>
+			{if $jmsblog_setting.JMSBLOG_SHOW_VIEWS}
+				<li>
+					<span>{$post.views|escape:'html':'UTF-8'} {l s='view(s)' d='Modules.JmsBlog'}</span>
+				</li>
+			{/if}
 			{if $jmsblog_setting.JMSBLOG_SHOW_COMMENTS}
 				<li>
 					<span>{$comments|@count}{l s=' Comment(s)' d='Modules.JmsBlog'}</span>
