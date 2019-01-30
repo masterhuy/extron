@@ -32,7 +32,7 @@
 			{assign var=params value=['post_id' => $post.post_id, 'category_slug' => $post.category_alias, 'slug' => $post.alias]}			
 			{assign var=catparams value=['category_id' => $post.category_id, 'slug' => $post.category_alias]}
 			<article class="blog-post">
-				<h4 class="post-title"><a href="{jmsblog::getPageLink('jmsblog-post', $params) nofilter}">{$post.title nofilter}</a></h4>
+				<h4 class="post-title"><a class="blog-title" href="{jmsblog::getPageLink('jmsblog-post', $params) nofilter}">{$post.title nofilter}</a></h4>
 				<ul class="post-meta">
 					{if $jmsblog_setting.JMSBLOG_SHOW_CATEGORY}
 					<li class="post-category"><span>{l s='Category' d='Modules.JmsBlog'} :</span> <a href="{jmsblog::getPageLink('jmsblog-category', $catparams) nofilter}">{$post.category_name nofilter}</a></li>

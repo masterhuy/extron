@@ -224,10 +224,13 @@ h6 {
   font-weight: 400; }
 
 .page-heading {
+  color: #000;
   font-size: 22px;
   line-height: 24px;
   padding-bottom: 30px;
-  font-weight: 500; }
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
 .page-subheading {
   font-size: 0.86em;
@@ -1031,6 +1034,7 @@ table td[class*="col-"], table table th[class*="col-"] {
   border-color: #ff4c65;
 }
 .btn-default {
+  display: inline-block;
   color: #555;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -4158,9 +4162,11 @@ footer .blog-carousel {
 }
 .post-fulltext .cmt {
   position: relative;
-  padding-left: 33px;
-  margin-bottom: 29px;
-  margin-top: -10px;
+  padding: 9px 37px 24px 37px;
+  margin: 40px 0;
+  background: #f7f7f7;
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
 }
 sup.required {
   color: #f66e6e;
@@ -4170,21 +4176,21 @@ sup.required {
 }
 .post-fulltext .cmt p {
   transform: skewX(-10deg);
-  line-height: 1.6;
+  line-height: 1.53;
   color: #888;
 }
 .post-fulltext .info .name {
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 17px;
   margin-left: 9px;
+  color: #000;
 }
 .post-fulltext .info .job {
-  font-size: 13px;
+  font-size: 14px;
+  color: #888;
 }
 .post-fulltext .info {
   position: relative;
-  top: 7px;
-  left: -4px;
 }
 .post-fulltext .info img {
   width: 55px;
@@ -4192,7 +4198,6 @@ sup.required {
 }
 .post-fulltext .cmt p::before {
   content: '“';
-  color: #7cbb2c;
   font-size: 28px;
   position: relative;
   top: 6px;
@@ -4219,6 +4224,13 @@ sup.required {
 }
 .post-fulltext .images {
   margin: 41px 0 45px;
+}
+.post-fulltext .images .container{
+  max-width: 1170px;
+  width: 100%;
+}
+.post-fulltext .images img{
+  width: 100%;
 }
 .post-fulltext h3 {
   font-size: 24px;
@@ -5626,6 +5638,13 @@ sup.required {
   margin-bottom: 3px;
   letter-spacing: 0;
 }
+.hotdeal-carousel {
+  border: 2px solid #ff4c65;
+  border-radius: 5px;
+}
+.hotdeal-carousel .product-preview:hover {
+  border-color: transparent;
+}
 .jms-hotdeal .sold-quantyties span {
   color: #000;
 }
@@ -5639,7 +5658,6 @@ sup.required {
 .jms-hotdeal .product-box {
   display: block;
   position: relative;
-  border: 2px solid #ff4c65;
 }
 .jms-hotdeal{
   position: relative;
@@ -5948,6 +5966,7 @@ sup.required {
 .more_cates{
   display: none;
 }
+
 
 
 a,

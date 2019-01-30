@@ -7,11 +7,6 @@
 	font-size:26px;
 	padding:0;
 }
- .page-content.card-block {
-	border:1px solid #ebebeb;
-	box-shadow:2px 2px 11px 0 rgba(0, 0, 0, 0.1);
-	padding:30px 20px;
-}
 #my-account .wishlist_top.home_page{
 	display: none;
 }
@@ -53,9 +48,4 @@
 }
 #block-history table.std td, #block-history table.table_block td {
     text-align: center;
-}
-#form_wishlist .inputTxt {
-	border: 1px solid #ebebeb;
-	margin-left: 20px;
-	height: 40px;
 }

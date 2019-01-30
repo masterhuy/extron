@@ -9,7 +9,6 @@
 	text-transform: capitalize;
 	font-weight: 700;
 	font-size: 220px;
-	font-family: Cabin;
 	padding-bottom: 11px;
 }
 .page-not-found p.text-1 {
@@ -19,9 +18,7 @@
 	margin-bottom: 21px;
 }
 .page-not-found p.text-2 {
-	font-family: Cabin;
 	font-size: 16px;
-	color: #907459;
 	margin-bottom: 88px;
 }
 .page-not-found .search-box {
@@ -37,7 +34,6 @@
 }
 #search .h2 {
 	font-size:26px;
-	color:rgba(17,17,17,0.9);
 	text-transform:uppercase;
 }
 #pagenotfound .large-text, #search .large-text {

@@ -11,28 +11,23 @@
       </div>
     {/if}
     {if !$notifications || $notifications.nw_error}
-    <section class="form-fields">
+    <section class="form-fields row">
 
-      <div class="form-group row">
-        <div class="col-md-9 col-md-offset-3">
-          <h3>{l s='Get In Touch With Us' d='Shop.Theme'}</h3>
-        </div>
+      <div class="form-group col-lg-12 col-md-12 col-sm-12 col-sm-12">
+          <div class="addon-title">
+            <h3>{l s='Get In Touch' d='Shop.Theme.Global'}</h3>
+          </div>
       </div>
 
-      <div class="form-group row">
-        <label class="col-md-3 form-control-label">{l s='Subject' d='Shop.Forms.Labels'}</label>
-        <div class="col-md-6">
+      <div class="form-group col-md-6">
           <select name="id_contact" class="form-control form-control-select">
             {foreach from=$contact.contacts item=contact_elt}
               <option value="{$contact_elt.id_contact}">{$contact_elt.name}</option>
             {/foreach}
           </select>
-        </div>
       </div>
 
-      <div class="form-group row">
-        <label class="col-md-3 form-control-label">{l s='Email address' d='Shop.Forms.Labels'}</label>
-        <div class="col-md-6">
+      <div class="form-group col-md-6">
           <input
             class="form-control"
             name="from"
@@ -40,48 +35,32 @@
             value="{$contact.email}"
             placeholder="{l s='Your@email.com' d='Shop.Forms.Help'}"
           >
-        </div>
       </div>
 
       {if $contact.orders}
-        <div class="form-group row">
-          <label class="col-md-3 form-control-label">{l s='Order reference' d='Shop.Forms.Labels'}</label>
-          <div class="col-md-6">
+        <div class="form-group col-md-6">
             <select name="id_order" class="form-control form-control-select">
               <option value="">{l s='Select reference' d='Shop.Forms.Help'}</option>
               {foreach from=$contact.orders item=order}
                 <option value="{$order.id_order}">{$order.reference}</option>
               {/foreach}
             </select>
-          </div>
-          <span class="col-md-3 form-control-comment">
-            {l s='optional' d='Shop.Forms.Help'}
-          </span>
         </div>
       {/if}
 
       {if $contact.allow_file_upload}
-        <div class="form-group row">
-          <label class="col-md-3 form-control-label">{l s='Attachment' d='Shop.Forms.Labels'}</label>
-          <div class="col-md-6">
+        <div class="form-group col-md-6">
             <input type="file" name="fileUpload" class="filestyle" data-buttonText="{l s='Choose file' d='Shop.Theme.Actions'}">
-          </div>
-          <span class="col-md-3 form-control-comment">
-            {l s='optional' d='Shop.Forms.Help'}
-          </span>
         </div>
       {/if}
 
-      <div class="form-group row">
-        <label class="col-md-3 form-control-label">{l s='Message' d='Shop.Forms.Labels'}</label>
-        <div class="col-md-9">
+      <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <textarea
             class="form-control"
             name="message"
             placeholder="{l s='How can we help?' d='Shop.Forms.Help'}"
             rows="3"
           >{if $contact.message}{$contact.message}{/if}</textarea>
-        </div>
       </div>
 
     </section>

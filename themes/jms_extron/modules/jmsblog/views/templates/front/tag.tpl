@@ -59,6 +59,11 @@
 							<li>
 								{$post.created|escape:'html':'UTF-8'|date_format:"%b %d, %Y"}
 							</li>
+							{if $jmsblog_setting.JMSBLOG_SHOW_VIEWS}
+								<li>
+									<span>{$post.views|escape:'html':'UTF-8'} {l s='view(s)' d='Modules.JmsBlog'}</span>
+								</li>
+							{/if}
 							{if $jmsblog_setting.JMSBLOG_SHOW_COMMENTS}
 								<li>
 									<span>{$comments|@count}{l s=' Comment(s)' d='Modules.JmsBlog'}</span>
@@ -66,7 +71,7 @@
 							{/if}
 						</ul>
 						<h4 class="post-title">
-							<a href="{jmsblog::getPageLink('jmsblog-post', $params)}" alt="{l s='Blog Images' d='Modules.JmsBlog'}">{$post.title|escape:'htmlall':'UTF-8'}</a>
+							<a class="blog-title" href="{jmsblog::getPageLink('jmsblog-post', $params)}" alt="{l s='Blog Images' d='Modules.JmsBlog'}">{$post.title|escape:'htmlall':'UTF-8'}</a>
 						</h4>
 						<div class="post-intro">
 							{$post.introtext|truncate:200:'...' nofilter}

@@ -26,7 +26,7 @@
 	<h3>{l s='404' d='Shop.Theme'}</h3>
 	<p class="text-1">{l s='Oops! This page Could Not Be Found!' d='Shop.Theme'}</p>
 	<p class="text-2">{l s='Sorry bit the page you are looking for does not exist, have been removed or name changed' d='Shop.Theme'}</p>
-	<a class="btn-effect1" href="{$urls.base_url}">{l s='Back to homepage' d='Shop.Theme'}</a>
+	<a class="btn-default" href="{$urls.base_url}">{l s='Back to homepage' d='Shop.Theme'}</a>
     {block name='hook_not_found'}
       {hook h='displayNotFound'}
     {/block}

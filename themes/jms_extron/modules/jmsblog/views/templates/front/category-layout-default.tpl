@@ -68,7 +68,7 @@
 							{/if}
 						</ul>
 						<h4 class="post-title">
-							<a href="{jmsblog::getPageLink('jmsblog-post', $params)}" alt="{l s='Blog Images' d='Modules.JmsBlog'}">{$post.title|escape:'htmlall':'UTF-8'}</a>
+							<a class="blog-title" href="{jmsblog::getPageLink('jmsblog-post', $params)}" alt="{l s='Blog Images' d='Modules.JmsBlog'}">{$post.title|escape:'htmlall':'UTF-8'}</a>
 						</h4>
 						<div class="post-intro">
 							{$post.introtext|truncate:200:'...' nofilter}

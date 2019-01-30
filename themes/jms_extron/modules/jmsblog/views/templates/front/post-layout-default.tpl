@@ -143,7 +143,9 @@
 				</div>
 				{if $jmsblog_setting.JMSBLOG_ALLOW_GUEST_COMMENT || (!$jmsblog_setting.JMSBLOG_ALLOW_GUEST_COMMENT && $logged)}	
 				<div class="commentForm">
-					<h3>{l s='Leave A Comment' d='Modules.JmsBlog'}</h3>
+					<div class="addon-title">
+						<h3>{l s='Comments' d='Modules.JmsBlog'}</h3>
+					</div>
 					<form id="commentForm" enctype="multipart/form-data" method="post" action="index.php?fc=module&module=jmsblog&controller=post&post_id={$post.post_id|escape:'html':'UTF-8'}&action=submitComment">	
 						<div class="row">
 							<div class="col-lg-4 col-md-4 col-sm-12">
@@ -164,13 +166,13 @@
 						</div>
 						
 						<div class="form-group">
-							<textarea id="comment" placeholder="Your comments *" class="form-control" name="comment" rows="4" required></textarea>
+							<textarea id="comment" placeholder="Your message *" class="form-control" name="comment" rows="2" required></textarea>
 						</div>
 						<div id="new_comment_form_footer">
 							<input id="item_id_comment_send" name="post_id" type="hidden" value="{$post.post_id|escape:'html':'UTF-8'}" />
 							<input id="item_id_comment_reply" name="post_id_comment_reply" type="hidden" value="" />
 							<p class="">
-								<button id="submitComment" class="btn-submitcm" name="submitComment" type="submit">{l s='Submit' d='Modules.JmsBlog'}</button>
+								<button id="submitComment" class="btn-default btn-active" name="submitComment" type="submit">{l s='Submit' d='Modules.JmsBlog'}</button>
 							</p>
 						</div>
 					</form>
