@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-14 02:44:46
+/* Smarty version 3.1.33, created on 2019-01-31 03:36:47
   from 'D:\xamppp\htdocs\jms_extron\pdf\invoice.style-tab.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c3c3dee07f867_21933624',
+  'unifunc' => 'content_5c52b39f983ac3_63067204',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c3c3dee07f867_21933624 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c52b39f983ac3_63067204 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_assignInScope('color_header', "#F0F0F0");
 $_smarty_tpl->_assignInScope('color_border', "#000000");
 $_smarty_tpl->_assignInScope('color_border_lighter', "#CCCCCC");

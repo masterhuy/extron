@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-30 05:30:11
+/* Smarty version 3.1.33, created on 2019-01-31 04:02:01
   from 'module:pscontactinfopscontactinf' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c517cb3933c05_60191046',
+  'unifunc' => 'content_5c52b98976ed02_99475605',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c517cb3933c05_60191046 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c52b98976ed02_99475605 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="contact-rich">
   <h4> <i class="fa fa-map-marker"></i> <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Store information','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>

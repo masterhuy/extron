@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-21 04:19:07
+/* Smarty version 3.1.33, created on 2019-01-31 05:29:06
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\modules\jmsflashsales\views\templates\hook\jmsflashsales1.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c458e8ba6a378_00695632',
+  'unifunc' => 'content_5c52cdf216b169_81785284',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a4400ff103a1c051fb0b2fa1a33b74b1bf10f37d' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_extron\\themes\\jms_extron\\modules\\jmsflashsales\\views\\templates\\hook\\jmsflashsales1.tpl',
-      1 => 1548062344,
+      1 => 1548928121,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product_flashsale2.tpl' => 1,
   ),
 ),false)) {
-function content_5c458e8ba6a378_00695632 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c52cdf216b169_81785284 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jmsflashsales-tab">
 	<div class="tabpanel">
 		<div class="addon-title">
@@ -63,9 +63,9 @@ foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars[
 ">	
 				<div class="flashsales-tab-carousel2">
 					<?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['cat_products']->value, 'product');
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['cat_products']->value, 'product', false, 'k');
 if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['product']->value) {
+foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars['product']->value) {
 ?>	
 						<div class="item ajax_block_product">		
 							<?php $_smarty_tpl->_subTemplateRender("file:catalog/_partials/miniatures/product_flashsale2.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('product'=>$_smarty_tpl->tpl_vars['product']->value), 0, true);

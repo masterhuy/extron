@@ -1,16 +1,31 @@
+#contact #content-wrapper{
+	width: 66.66666667%;
+}
+#contact #right-column{
+	width: 33.33333333%;
+}
 #contact .block-categories,
 #contact .html_left,
 #contact .best-sellers_block_right{
 	display: none;
 }
+#contact .block-contact .label{
+	font-size: 15px;
+	font-family: Roboto;
+	color: #ff4c65;
+	font-weight: 700;
+	padding: 0;
+}
+#contact .block-contact .section {
+	line-height: 1.85;
+	letter-spacing: 0;
+	margin-bottom: 20px;
+}
+#contact .block-contact .address.section {
+	margin-top: 22px;
+}
 #contact #wrapper {
 	background:#fff;
-}
-#contact .btn_submit{
-	color: #ff4c65;
-}
-#contact .btn_submit:hover{
-	color: #fff;
 }
 #contact .contact-form .alert-danger{
 	margin-bottom: 50px;
@@ -30,11 +45,17 @@
 #contact .form-group {
 	margin-bottom: 30px;
 }
+#contact .form-fields textarea{
+	padding-bottom: 21px;
+}
 #contact .form-fields select,
 #contact .form-fields input,
 #contact .form-fields textarea{
 	border-radius: 5px;
 	background: #f9f9f9;
+}
+#contact .form-fields select,
+#contact .form-fields input{
 	height: 38px;
 }
 #contact #wrapper #left-column .contact-rich h4 .fa-envelope {
@@ -49,8 +70,10 @@
 	border: 1px solid #ebebeb;
 	border-radius: 0;
 	font-size: 12px;
-	line-height: 18px;
+	line-height: 15px;
 	border-radius: 0 5px 5px 0;
+	margin-left: -3px;
+	z-index: 999;
 }
 #contact #wrapper #content-wrapper .contact-form .form-fields .bootstrap-filestyle .group-span-filestyle label:hover{
 	color: #fff;
@@ -68,13 +91,15 @@
 	text-transform: capitalize;
 }
 #contact #wrapper #content-wrapper .contact-form .form-footer input {
-	padding: 0 30px;
-	margin-top: 20px;
-	border-radius: 30px;
-	height: 40px;
+	padding: 0 19px;
+	margin-top: 5px;
+	height: 36px;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 0.4px;
 }
 #contact #wrapper #content-wrapper .contact-form .form-footer {
-	text-align:right;
+	text-align: left;
 }
 #contact .form-control.form-control-select {
 	height: 38px;

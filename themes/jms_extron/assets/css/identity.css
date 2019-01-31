@@ -2,3 +2,7 @@
   border-radius: 0;
   height: 40px;
 }
+#customer-form .form-footer{
+	width: 75%;
+	float: right;
+}

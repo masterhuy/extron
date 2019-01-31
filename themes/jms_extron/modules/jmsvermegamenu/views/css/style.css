@@ -168,7 +168,6 @@
 	min-height:20px;
 }
 .jms-vermegamenu .mega-nav li > a, .jms-vermegamenu .mega-nav li > span {
-    font-family: "Cabin",serif;
     background: #fff none repeat scroll 0 0;
     border-radius: 0;
     color: #907459;
@@ -258,7 +257,6 @@
     font-size: 22px;
     font-weight: 500;
     color: #603813;
-    font-family: Poppins;
 }
 .jms-vermegamenu .mega-nav li.group.all{
     margin-bottom: 0;
@@ -266,7 +264,6 @@
 .jms-vermegamenu .mega-nav li.group.all > a {
     font-size: 15px;
     color: #907459;
-    font-family: Cabin;
     font-weight: 400;
     margin-top: 17px;
     padding-top: 11px;
@@ -276,7 +273,6 @@
 .jms-vermegamenu .mega-nav li.more > a {
     font-size: 13px;
     color: #cab39c;
-    font-family: Cabin;
     font-weight: 400;
     letter-spacing: 0.3px;
     text-transform: initial;

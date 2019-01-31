@@ -36,7 +36,7 @@
                 data-id-customization     = "{$product.id_customization|escape:'javascript'}"
             >
             {if !isset($product.is_gift) || !$product.is_gift}
-                <i class="pull-xs-left fa fa-times"></i>
+                <i class="pull-xs-left la la-times"></i>
             {/if}
             </a>
             {hook h='displayCartExtraProductActions' product=$product}
@@ -47,7 +47,7 @@
         <span class="product-image media-middle">
             <img src="{$product.cover.bySize.large_default.url}" alt="{$product.name|escape:'quotes'}">
             <div class="product-line-info">
-                <a class="label product-name" href="{$product.url}" data-id_customization="{$product.id_customization|intval}">{$product.name}</a>
+                <a class="product-link" href="{$product.url}" data-id_customization="{$product.id_customization|intval}">{$product.name}</a>
                 {foreach from=$product.attributes key="attribute" item="value"}
                     <div class="product-line-info">
                         <span class="value">{$value}</span>

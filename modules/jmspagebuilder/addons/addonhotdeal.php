@@ -195,7 +195,6 @@ class JmsAddonHotdeal extends JmsAddonBase
                 $product_img = $pr->getImages($id_lang);
                 $products[$k]['images']=$product_img;
                 $products[$k]['sold'] = JmsPageBuilderHelper::getNbOfSales($product['id_product']);
-
             }
         }
         //print_r($products); exit;
@@ -228,21 +227,21 @@ class JmsAddonHotdeal extends JmsAddonBase
         $addon_tpl_dir = $this->loadTplDir();
         $this->context->smarty->assign(
             array(
-                'link' => $this->context->link,
-                'hotdeals' => $hotdeals,
-                'products' => $products_for_template,
-                'addon_title' => JmsPageBuilderHelper::decodeHTML($addon->fields[0]->value->$id_lang),
-                'addon_desc' => JmsPageBuilderHelper::decodeHTML($addon->fields[1]->value->$id_lang),
-                'items_show' => $addon->fields[3]->value,
+                'link'          => $this->context->link,
+                'hotdeals'      => $hotdeals,
+                'products'      => $products_for_template,
+                'addon_title'   => JmsPageBuilderHelper::decodeHTML($addon->fields[0]->value->$id_lang),
+                'addon_desc'    => JmsPageBuilderHelper::decodeHTML($addon->fields[1]->value->$id_lang),
+                'items_show'    => $addon->fields[3]->value,
                 'items_show_md' => $addon->fields[4]->value,
                 'items_show_sm' => $addon->fields[5]->value,
                 'items_show_xs' => $addon->fields[6]->value,
-                'navigation' => $addon->fields[7]->value,
-                'pagination' => $addon->fields[8]->value,
-                'autoplay' => $addon->fields[9]->value,
-                'rewind' => $addon->fields[10]->value,
-                'slidebypage' => $addon->fields[11]->value,
-                'showall_link' => $addon->fields[12]->value,
+                'navigation'    => $addon->fields[7]->value,
+                'pagination'    => $addon->fields[8]->value,
+                'autoplay'      => $addon->fields[9]->value,
+                'rewind'        => $addon->fields[10]->value,
+                'slidebypage'   => $addon->fields[11]->value,
+                'showall_link'  => $addon->fields[12]->value,
                 'addon_tpl_dir' => $addon_tpl_dir
             )
         );

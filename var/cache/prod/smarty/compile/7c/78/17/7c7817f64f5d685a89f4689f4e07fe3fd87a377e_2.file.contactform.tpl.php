@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-30 05:30:11
+/* Smarty version 3.1.33, created on 2019-01-31 04:02:01
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\modules\contactform\views\templates\widget\contactform.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c517cb39ef436_76441796',
+  'unifunc' => 'content_5c52b98985d1c4_14766536',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7c7817f64f5d685a89f4689f4e07fe3fd87a377e' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_extron\\themes\\jms_extron\\modules\\contactform\\views\\templates\\widget\\contactform.tpl',
-      1 => 1548843040,
+      1 => 1548902673,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c517cb39ef436_76441796 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c52b98985d1c4_14766536 (Smarty_Internal_Template $_smarty_tpl) {
 ?><section class="contact-form">
   <form action="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['contact'], ENT_QUOTES, 'UTF-8');?>
 " method="post" <?php if ($_smarty_tpl->tpl_vars['contact']->value['allow_file_upload']) {?>enctype="multipart/form-data"<?php }?>>
@@ -52,7 +52,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
           </div>
       </div>
 
-      <div class="form-group col-md-6">
+      <div class="form-group col-md-6 col-sx-12">
           <select name="id_contact" class="form-control form-control-select">
             <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['contact']->value['contacts'], 'contact_elt');
@@ -69,7 +69,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
           </select>
       </div>
 
-      <div class="form-group col-md-6">
+      <div class="form-group col-md-6 col-sx-12">
           <input
             class="form-control"
             name="from"
@@ -82,7 +82,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
       </div>
 
       <?php if ($_smarty_tpl->tpl_vars['contact']->value['orders']) {?>
-        <div class="form-group col-md-6">
+        <div class="form-group col-md-6 col-sx-12">
             <select name="id_order" class="form-control form-control-select">
               <option value=""><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Select reference','d'=>'Shop.Forms.Help'),$_smarty_tpl ) );?>
 </option>
@@ -103,7 +103,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
       <?php }?>
 
       <?php if ($_smarty_tpl->tpl_vars['contact']->value['allow_file_upload']) {?>
-        <div class="form-group col-md-6">
+        <div class="form-group col-md-6 col-sx-12">
             <input type="file" name="fileUpload" class="filestyle" data-buttonText="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Choose file','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 ">
         </div>
@@ -133,7 +133,7 @@ echo htmlspecialchars($_smarty_tpl->tpl_vars['contact']->value['message'], ENT_Q
         <input type="text" name="url" value=""/>
         <input type="hidden" name="token" value="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['token']->value, ENT_QUOTES, 'UTF-8');?>
 " />
-        <input class="btn_submit" type="submit" name="submitMessage" value="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Submit','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
+        <input class="btn-default btn-active" type="submit" name="submitMessage" value="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Send message','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 ">
       </footer>
     <?php }?>

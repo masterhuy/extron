@@ -61,7 +61,7 @@
 							</a>
 						</div>
 						<div class="product_infos">
-							<p id="s_title" class="product-link">{$product.name|truncate:40:'...'|escape:'html':'UTF-8'}</p>
+							<p id="s_title" class="product-link" title="{$product.name}">{$product.name|truncate:30:'...'|escape:'html':'UTF-8'}</p>
 							<span class="wishlist_product_detail">
 								{if isset($product.attributes_small)}
 								<a href="{$link->getProductlink($product.id_product, $product.link_rewrite, $product.category_rewrite)|escape:'html'}" title="{l s='Product detail' d='Shop.Theme'}">{$product.attributes_small|escape:'html':'UTF-8'}</a>

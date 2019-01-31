@@ -47,7 +47,7 @@
 			{if !empty($cat_products)}
 			<div class="tab-pane {if $k == 0}active{/if}" id="category-{$k}">	
 				<div class="flashsales-tab-carousel2">
-					{foreach from = $cat_products item = product}	
+					{foreach from = $cat_products item = product key=k}	
 						<div class="item ajax_block_product">		
 							{include file="catalog/_partials/miniatures/product_flashsale2.tpl" product=$product}
 						</div>	

@@ -36,7 +36,6 @@
     display: block;
 }
 #off-canvas-menu .dropdown-menu > li > a {
-    font-family: "Cabin"; 
     font-weight:400;
     line-height: 35px;
     padding: 3px 0px 3px 50px;
@@ -65,14 +64,12 @@
 #off-canvas-menu li a {
     border-radius: 0;
     display: block;
-    font-family: Poppins;
     font-weight: 600;
     text-align: left;
     text-transform: uppercase;
     padding: 10px 30px;
 }
 #off-canvas-menu .user-info li a, #off-canvas-menu .languages-info li a,  #off-canvas-menu .currency-info li a{
-    font-family: "Poppins"; 
     font-weight:400;
     text-transform: capitalize;
 }
@@ -133,7 +130,6 @@
     padding: 0 30px;
 }
 #off-canvas-menu .btn-group > ul li span, #off-canvas-menu .btn-group > ul li a {
-    font-family: "Poppins";
     font-size: 13px;
 }
 #off-canvas-menu .btn-group.open .dropdown-menu::before {

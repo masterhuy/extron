@@ -114,9 +114,6 @@ hr {
 .table td.center, .table th.center {
   text-align: center; }
 
-table th {
-  font-weight: 500 !important; }
-
 .success {
   background: none repeat scroll 0 0 #43B754;
   border: 1px solid #43B754;
@@ -1120,18 +1117,17 @@ fieldset[disabled] .btn-default {
   background: #fb3551;
 }
 
-.btn-checkout {
+.btn-continue {
   height: 46px;
-  color: #ff4c65;
-  border: 2px solid #ff4c65 !important;
-  border-radius: 30px;
+  color: #000;
+  border: 2px solid #ebebeb !important;
+  border-radius: 5px;
   display: inline-flex !important;
   align-items: center;
-  padding: 0 38px;
   font-size: 16px;
   text-transform: uppercase;
-  font-weight: 500;
-  background: transparent;
+  font-weight: 700;
+  background: #f9f9f9;
   letter-spacing: 0.4px;
   cursor: pointer;
 }
@@ -2202,6 +2198,9 @@ li.product-flag {
 .product-price {
   display: none;
 }
+.product-line-grid .product-price {
+  display: block;
+}
 
 .jms-videos {
   position: relative;}
@@ -3108,7 +3107,7 @@ ul.footer_links {
   margin-bottom: 30px;
 }
 .wlp_bought_list .product-box{
-  border: 1px solid #ebebeb;
+  border: 2px solid #ebebeb;
   border-radius: 5px;
   padding: 1%;
 }
@@ -3120,7 +3119,7 @@ ul.footer_links {
   text-align: center;
 }
 #s_title {
-  margin-top: 10px;
+  margin: 0;
 }
 .delete-action {
   margin-left: 10px; }
@@ -5706,11 +5705,12 @@ sup.required {
   z-index: 8;
   position: absolute;
 }
-
-
-.jms-hotdeal .product-info{
+.jms-hotdeal .product-info,
+.jms-hotdeal .product-info .categoryname{
   text-align: center;
 }
+
+
 /*right column*/
 #suppliers_block_left div.selector span {
   display: block; }
@@ -5966,7 +5966,12 @@ sup.required {
 .more_cates{
   display: none;
 }
-
+.blog-readmore::after {
+  content: url("../img/icon/icon-left.png");
+  position: absolute;
+  right: -22px;
+  top: 1px;
+}
 
 
 a,
@@ -5979,7 +5984,7 @@ button,
 .jms-banner,
 .arrows.js-arrows i, 
 .scroll-box-arrows i,
-.images-container .product-images > li.thumb-container > .thumb {
+.images-container .product-images > li.thumb-container > .thumb{
   transition: all 400ms ease 0s;
   -webkit-transition: all 400ms ease 0s;
   -moz-transition: all 400ms ease 0s;

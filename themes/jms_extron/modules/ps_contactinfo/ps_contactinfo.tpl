@@ -30,48 +30,60 @@
                 {l s='Our Store' d='Shop.Theme.Global'}
             </h3>
         </div>
-        <div class="address">
-            {$contact_infos.address.formatted nofilter}
+        <div class="address section">
+            {$contact_infos.company nofilter} {$contact_infos.address.address1 nofilter}
         </div>
         {if $contact_infos.phone}
-            <div class="phone">
+            <div class="phone section">
+                <div class="label">{l s='Hotline:' d='Shop.Theme.Global'}</div>
                 {* [1][/1] is for a HTML tag. *}
-                {l s='Call us: [1]%phone%[/1]'
+                <p>
+                {l s='[1]%phone%[/1]'
                     sprintf=[
                     '[1]' => '<span>',
                     '[/1]' => '</span>',
                     '%phone%' => $contact_infos.phone
                     ]
                 d='Shop.Theme.Global'}
+                </p>
             </div>
         {/if}
 
         {if $contact_infos.fax}
-            <div class="fax">
+            <div class="fax section">
+                <div class="label">{l s='Fax:' d='Shop.Theme.Global'}</div>
                 {* [1][/1] is for a HTML tag. *}
-                {l
-                    s='Fax: [1]%fax%[/1]'
-                    sprintf=[
-                    '[1]' => '<span>',
-                    '[/1]' => '</span>',
-                    '%fax%' => $contact_infos.fax
-                    ]
-                d='Shop.Theme.Global'}
+                <p>
+                    {l
+                        s='[1]%fax%[/1]'
+                        sprintf=[
+                        '[1]' => '<span>',
+                        '[/1]' => '</span>',
+                        '%fax%' => $contact_infos.fax
+                        ]
+                    d='Shop.Theme.Global'}
+                </p>
             </div>
         {/if}
 
         {if $contact_infos.email}
-            <div class="email">
+            <div class="career section">
+                <div class="label">{l s='Career:' d='Shop.Theme.Global'}</div>
                 {* [1][/1] is for a HTML tag. *}
-                {l
-                    s='Email us: [1]%email%[/1]'
-                    sprintf=[
-                    '[1]' => '<span>',
-                    '[/1]' => '</span>',
-                    '%email%' => $contact_infos.email
-                    ]
-                d='Shop.Theme.Global'}
+                <p>
+                    {l s='If you’re interested in employment opportunities at' d='Shop.Theme.Global'} {$contact_infos.company nofilter}, {l s='please email us:' d='Shop.Theme.Global'}
+                    <br>
+                    {l
+                        s='[1]%email%[/1]'
+                        sprintf=[
+                        '[1]' => '<span>',
+                        '[/1]' => '</span>',
+                        '%email%' => $contact_infos.email
+                        ]
+                    d='Shop.Theme.Global'}
+                </p>
             </div>
       {/if}
   </div>
 </div>
+

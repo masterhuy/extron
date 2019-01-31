@@ -176,8 +176,10 @@
       border-color: transparent; }
   .special_deal .product-carousel2 {
     padding-top: 35px; }
-  .special_deal .center .product-preview .product-info {
-    margin-top: 43px; }
+  .special_deal .center {
+    text-align: left; }
+    .special_deal .center .product-preview .product-info {
+      margin-top: 43px; }
 
 @media (min-width: 1367px) {
   .special_deal .left, .special_deal .right {

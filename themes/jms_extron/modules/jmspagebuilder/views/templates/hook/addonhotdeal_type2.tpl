@@ -104,7 +104,7 @@
 								{/if}
 							{/block}
 							<div class="product-description">
-								{$product.description_short|truncate:145:'...' nofilter}
+								{$product.description_short|truncate:350:'...' nofilter}
 							</div>
 							<div class="product-sold">
 					        	<div class="sold-quantyties">

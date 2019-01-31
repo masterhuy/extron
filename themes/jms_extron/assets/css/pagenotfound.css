@@ -7,19 +7,32 @@
 }
 .page-not-found h3 {
 	text-transform: capitalize;
-	font-weight: 700;
+	font-weight: 900;
 	font-size: 220px;
-	padding-bottom: 11px;
+	padding-bottom: 0;
+	color: #000;
+	font-family: Roboto;
+	letter-spacing: 11px;
+	margin-top: 13px;
+}
+.page-not-found .back-to-home {
+	font-size: 18px;
+	font-weight: 700;
+	padding: 13px 96px;
+	letter-spacing: 0.4px;
+	margin-bottom: 130px;
 }
 .page-not-found p.text-1 {
-	font-weight: 500;
-	font-size: 25px;
-	letter-spacing: 0.4px;
-	margin-bottom: 21px;
+	margin-top: -10px;
+	font-weight: 700;
+	font-size: 28px;
+	letter-spacing: 0.65px;
+	margin-bottom: 56px;
+	color: #000;
 }
 .page-not-found p.text-2 {
-	font-size: 16px;
-	margin-bottom: 88px;
+	margin-bottom: 136px;
+	letter-spacing: 0;
 }
 .page-not-found .search-box {
 	display:flex;

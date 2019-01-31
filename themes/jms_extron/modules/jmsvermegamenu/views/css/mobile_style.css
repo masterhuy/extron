@@ -40,7 +40,6 @@
 	text-overflow: ellipsis;
 	color: #907459;
 	font-weight: 400;
-	font-family: Cabin;
 	font-size: 14px;
 }
 #mobile-vermegamenu .open > .dropdown-menu .dropdown-menu {
@@ -83,7 +82,6 @@
 	justify-content: flex-start;
 }
 #mobile-vermegamenu li a {
-	font-family: "Cabin",serif;
 	font-size: 16px;
 	padding: 7.25px 0px;
 	line-height: 30px;

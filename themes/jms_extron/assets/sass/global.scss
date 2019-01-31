@@ -933,15 +933,7 @@ a.wishlist_top{
 	margin-top: -3px;
 	form{
 		position: relative;
-		&::before{
-			content: "\e92d";
-			font-family: 'typo-icon';
-			font-size: 18px;
-			display: inline-block;
-			position: absolute;
-			top: 5px;
-			right: 0;
-		}
+		background: url("../img/icon/search.png") no-repeat right;
 	}	
 	input {
 		font-size: 13px;
@@ -951,6 +943,7 @@ a.wishlist_top{
 		padding: 0;
 		width: 100%;
 		border-bottom: 1px solid #eee;
+		background: transparent;
 	}
 	button{
 		display: none;
@@ -1387,6 +1380,15 @@ a.wishlist_top{
 
 }
 
+//flashsaletab2
+.flashsales-tab-carousel2{
+	.product-description{
+		ul{
+			display: none;
+		}
+	}
+}
+
 //flashsales
 .jmsflashsales{
 	.addon-title{
@@ -1735,6 +1737,9 @@ a.wishlist_top{
 	.product-preview .product-info .product-description {
 		display: block;
 		line-height: 1.85;
+		ul{
+			display: none;
+		}
 	}
 	.product-box{
 		display: flex;
@@ -1932,7 +1937,7 @@ a.wishlist_top{
 	color: #fff !important;
 	font-weight: 700;
 	text-transform: uppercase;
-	display: block;
+	display: inline-block;
 	text-align: right;
 }
 

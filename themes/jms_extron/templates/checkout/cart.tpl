@@ -40,7 +40,7 @@
 					</div>
 
 					{block name='continue_shopping'}
-			  			<a class="btn-shopping button-small btn-effect1 btn-checkout" href="{$urls.pages.index}">
+			  			<a class="btn-shopping btn-continue" href="{$urls.pages.index}">
 							{l s='Continue shopping' d='Shop.Theme.Actions'}
 			  			</a>
 					{/block}
