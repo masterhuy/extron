@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-15 23:36:44
+/* Smarty version 3.1.33, created on 2019-01-31 22:25:56
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\modules\jmspagebuilder\views\templates\hook\addonsliderlayer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c3eb4dc68e7c4_42353576',
+  'unifunc' => 'content_5c53bc44269531_92070384',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'eb71185e158630bd84e8ba94ed49f84fb3d3b381' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_extron\\themes\\jms_extron\\modules\\jmspagebuilder\\views\\templates\\hook\\addonsliderlayer.tpl',
-      1 => 1546847037,
+      1 => 1548295160,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c3eb4dc68e7c4_42353576 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c53bc44269531_92070384 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jms-slider-wrapper">
 	<div class="responisve-container">
 		<div class="slider" >

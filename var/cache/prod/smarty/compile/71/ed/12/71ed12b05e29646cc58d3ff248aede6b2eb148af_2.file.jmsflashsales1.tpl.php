@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-17 04:12:49
+/* Smarty version 3.1.33, created on 2019-01-31 22:22:01
   from 'D:\xamppp\htdocs\jms_extron\modules\jmsflashsales\views\templates\hook\jmsflashsales1.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c4047110ea6b6_23173158',
+  'unifunc' => 'content_5c53bb59b8f7c2_35003487',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c4047110ea6b6_23173158 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c53bb59b8f7c2_35003487 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
 jQuery(function ($) {

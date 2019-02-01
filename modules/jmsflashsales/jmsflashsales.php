@@ -968,7 +968,11 @@ class JmsFlashSales extends Module
 					 AND product_shop.`active` = 1'
 					.' GROUP BY product_shop.id_product';
 			$row = Db::getInstance(_PS_USE_SQL_SLAVE_)->getRow($sql);
-			$result[] = Product::getProductProperties($id_lang, $row);			
+			$result[] = Product::getProductProperties($id_lang, $row);	
+			foreach ($result as $k => $product) {
+                $result[$k]['sold'] = $this->getNbOfSales($product['id_product']);
+            }	
+			
 		}
 		
 		$assembler = new ProductAssembler($this->context);
@@ -997,6 +1001,15 @@ class JmsFlashSales extends Module
         return $products_for_template;
 
 	}
+
+	public static function getNbOfSales($id_product)
+    {
+        $res = Db::getInstance()->getRow('
+            SELECT quantity FROM `'._DB_PREFIX_.'product_sale`
+            WHERE `id_product` = '.(int)$id_product);
+            return $res['quantity'];
+    }
+
 	public function hookFooter($params)
 	{								
 		$categories = $this->getCategories();		
@@ -1024,7 +1037,7 @@ class JmsFlashSales extends Module
 		foreach ($categories as $key => $category)
 		{
 			$products[$key] = $this->getProducts($category['category_id']);
-		}	
+		}
 		
 		$this->smarty->assign(array(
 			'categories' => $categories,		
@@ -1035,7 +1048,7 @@ class JmsFlashSales extends Module
 			'expiretime' => Configuration::get('JMS_FLASHSALES_EXPIRETIME'),
 			'image_baseurl' => $this->_path.'views/img/',
 		));		
-		return $this->display(__FILE__, 'jmsflashsales1.tpl');
+		return $this->display(__FILE__, 'jmsflashsales-tab2.tpl');
 	}
 	public function returnSearch($result)
 	{

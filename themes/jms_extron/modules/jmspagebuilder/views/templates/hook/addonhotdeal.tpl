@@ -103,6 +103,7 @@
 									</div>
 								{/if}
 							{/block}
+							
 							<div class="product-sold">
 					        	<div class="sold-quantyties">
 					        		<div class="already_sold pull-left">Sold: 

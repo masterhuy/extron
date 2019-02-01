@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-31 05:29:10
+/* Smarty version 3.1.33, created on 2019-02-01 04:53:46
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\modules\jmsadvsearch\views\templates\hook\jmsadvsearch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c52cdf64daf03_05386740',
+  'unifunc' => 'content_5c54172a4a38f3_46454503',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c52cdf64daf03_05386740 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c54172a4a38f3_46454503 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jms-advsearch">
 	<form method="get" action="<?php echo $_smarty_tpl->tpl_vars['link']->value->getPageLink('search');?>
 " class="input-group" id="searchbox">

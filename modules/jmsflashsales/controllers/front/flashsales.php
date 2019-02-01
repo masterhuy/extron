@@ -61,17 +61,7 @@ class JmsflashsalesFlashsalesModuleFrontController extends ModuleFrontController
 					.' GROUP BY product_shop.id_product';
 			$row = Db::getInstance(_PS_USE_SQL_SLAVE_)->getRow($sql);
 			//print_r($sql); exit;	
-			if (isset($row['id_product'])) {
-                $products[] = Product::getProductProperties($id_lang, $row);
-            }
-            $product_img = array();
-
-            foreach ($products as $k => $product) {
-                $pr = new Product($product['id_product']);
-                $product_img = $pr->getImages($id_lang);
-                $products[$k]['images']=$product_img;
-                $products[$k]['sold'] = JmsPageBuilderHelper::getNbOfSales($product['id_product']);
-            }	
+            $products[] = Product::getProductProperties($id_lang, $row);
 
 		}	
 		$this->context->smarty->assign(array(	

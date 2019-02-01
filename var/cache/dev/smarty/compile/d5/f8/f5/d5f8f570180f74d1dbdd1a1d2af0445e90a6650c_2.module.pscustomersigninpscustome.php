@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-15 23:36:45
+/* Smarty version 3.1.33, created on 2019-01-31 22:26:01
   from 'module:pscustomersigninpscustome' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c3eb4dd0aad04_30101547',
+  'unifunc' => 'content_5c53bc4955c648_62025569',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c3eb4dd0aad04_30101547 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c53bc4955c648_62025569 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin D:\xamppp\htdocs\jms_extron/themes/jms_extron/modules/ps_customersignin/ps_customersignin.tpl --><div id="_desktop_user_info">
 	<div class="user-info btn-group compact-hidden type1 ">
 		<?php if ($_smarty_tpl->tpl_vars['logged']->value) {?> 

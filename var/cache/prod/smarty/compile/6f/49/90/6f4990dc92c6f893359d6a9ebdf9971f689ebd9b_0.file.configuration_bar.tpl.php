@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-30 03:52:34
+/* Smarty version 3.1.33, created on 2019-02-01 04:04:45
   from 'D:\xamppp\htdocs\jms_extron\admin953iqmwgj\themes\default\template\controllers\modules\configuration_bar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c5165d2dcb989_11815865',
+  'unifunc' => 'content_5c540badb07889_96223677',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c5165d2dcb989_11815865 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c540badb07889_96223677 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_extron\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.regex_replace.php','function'=>'smarty_modifier_regex_replace',),));
 ?>
 

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-31 05:29:06
+/* Smarty version 3.1.33, created on 2019-01-31 22:24:04
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\modules\jmsflashsales\views\templates\hook\jmsflashsales1.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c52cdf216b169_81785284',
+  'unifunc' => 'content_5c53bbd46e43e1_79234410',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a4400ff103a1c051fb0b2fa1a33b74b1bf10f37d' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_extron\\themes\\jms_extron\\modules\\jmsflashsales\\views\\templates\\hook\\jmsflashsales1.tpl',
-      1 => 1548928121,
+      1 => 1548991441,
       2 => 'file',
     ),
   ),
@@ -21,11 +21,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product_flashsale2.tpl' => 1,
   ),
 ),false)) {
-function content_5c52cdf216b169_81785284 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c53bbd46e43e1_79234410 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jmsflashsales-tab">
 	<div class="tabpanel">
 		<div class="addon-title">
-			<h3><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'HOT SELLING','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
+			<h3><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'WEEK DEALS LIMITED','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
 </h3>
 		</div>
 		<ul class="nav">
