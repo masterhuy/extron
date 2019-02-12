@@ -1788,6 +1788,10 @@ ul#order_step li {
   right: 11px;
   cursor: pointer;
   font-size: 21px;
+  transform: scale(0);
+}
+.product-preview:hover .addToWishlist{
+  transform: scale(1);
 }
 #category .categoryname{
   display: none;
@@ -3456,6 +3460,13 @@ ul.footer_links {
 
 .close_menu{
   cursor: pointer;
+}
+.close-button::after {
+  content: " \f191";
+  font-family: LineAwesome;
+  font-size: 18px;
+  position: absolute;
+  right: 30px;
 }
 
 .btn-group {
@@ -5558,6 +5569,27 @@ sup.required {
   overflow: hidden;
   letter-spacing: 0;
 }
+.jms-banner > a::after {
+  background-color: rgba(255, 255, 255, 0.3);
+  content: "";
+  display: inline-block;
+  height: 100%;
+  position: absolute;
+  right: 200%;
+  transform: skew(-35deg, 0deg);
+  transition: all .8s;
+  top: 0;
+  vertical-align: middle;
+  width: 100%;
+}
+.jms-banner:hover a::after {
+  
+  opacity: 1;
+  right: -200%;
+}
+.jms-banner:hover a > img{
+  transform: scale(1.15);
+}
 .jms-banner a img{
   transition: 1s all;
 }
@@ -5847,6 +5879,19 @@ sup.required {
 .footer_t ul li a{
   position: relative;
 }
+.footer_t ul li a:hover::before{
+  opacity: 1;
+  margin-left: 0;
+}
+.footer_t ul li a::before {
+  content: "\f227";
+  font-family: LineAwesome;
+  margin-left: -18px;
+  opacity: 0;
+  display: inline-block;
+  width: 18px;
+  transition: .4s all;
+}
 #social_block a {
   font-size: 15px;
   width: 38px;
@@ -5962,6 +6007,9 @@ sup.required {
 }
 .border-e8{
   border: 1px solid #e8e8e8;
+}
+.ov-hd{
+  overflow: hidden;
 }
 .more_cates{
   display: none;

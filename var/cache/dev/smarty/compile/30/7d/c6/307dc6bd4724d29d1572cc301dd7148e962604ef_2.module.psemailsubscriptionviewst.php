@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-31 22:25:57
+/* Smarty version 3.1.33, created on 2019-02-10 22:43:50
   from 'module:psemailsubscriptionviewst' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c53bc45f2f447_14792898',
+  'unifunc' => 'content_5c60ef76e4c040_07967246',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c53bc45f2f447_14792898 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c60ef76e4c040_07967246 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin D:\xamppp\htdocs\jms_extron/themes/jms_extron/modules/ps_emailsubscription/views/templates/hook/ps_emailsubscription.tpl --><!-- Block Newsletter module-->
 <div id="newsletter_block_left" class="block">	
 	<div class="block_content">

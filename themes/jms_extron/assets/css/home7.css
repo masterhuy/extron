@@ -311,6 +311,19 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  .category-custom-carousel2 .jms-banner:hover img {
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px); }
+  .category-custom-carousel2 .jms-banner > a::after {
+    display: none; }
+  .category-custom-carousel2 .jms-banner > a img {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: .3s all;
+    -o-transition: .3s all;
+    transition: .3s all; }
   .category-custom-carousel2 .jms-banner::after {
     content: "";
     width: 1px;

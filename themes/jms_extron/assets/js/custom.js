@@ -633,7 +633,7 @@ jQuery(function ($) {
 					items:cs_itemsTablet
 				},
 				481:{
-					items:2
+					items:cs_itemsMobile
 				},
 				0: {
 					items:1
@@ -788,6 +788,35 @@ jQuery(function ($) {
 		});
 	}
 
+	$('.flashsales-slick').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        rows: 3,
+        responsive: [
+		    {
+		      breakpoint: 1199,
+		      settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 1,
+		      }
+		    },
+		    {
+		      breakpoint: 768,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 2
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1
+		      }
+		    }
+		]
+    });
+
 	if($(".flashsales-tab-carousel").length) {		
 		var flashsalesTabCarousel = $(".flashsales-tab-carousel");			
 		var rtl = false;
@@ -817,6 +846,8 @@ jQuery(function ($) {
 			dots: false,
 			autoplay: false,
 			loop: true,
+			multipleRow: true,
+			row: 2,
 			slideSpeed: 800,
 		});
 	}

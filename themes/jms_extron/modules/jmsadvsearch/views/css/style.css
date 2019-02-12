@@ -123,12 +123,6 @@
     top: 0;
     background: #ebebeb;
 }
-.jms-advsearch .storm-zoom {
-    font-size: 23px;
-    border: 0;
-    background: #ed2b2b;
-    color: #fff;
-}
 .jms-advsearch .input-group-addon.input-group-search button{
     background: transparent;
     border: 0;

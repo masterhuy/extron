@@ -27,18 +27,27 @@
 		{block name='product_thumbnail'}
 		  <a href="{$product.url}" class="product-image {if isset($jpb_phover) && $jpb_phover == 'image_swap'}image_swap{else}image_blur{/if}">
 			<img class="img-responsive product-img1 replace-2x"
-			  src = "{$product.cover.bySize.medium_default.url}"
+			  src = "{$product.cover.bySize.large_default.url}"
 			  alt = "{$product.cover.legend}"
 			  data-full-size-image-url = "{$product.cover.large.url}"
 			/>
 			{if isset($jpb_phover) && $jpb_phover == 'image_swap' && $product.images.1}
 				<img class="img-responsive product-img2 replace-2x"
-				  src = "{$product.images.1.bySize.medium_default.url}"
+				  src = "{$product.images.1.bySize.large_default.url}"
 				  alt = "{$product.images.1.legend}"
 				  data-full-size-image-url = "{$product.images.1.large.url}"
 				/>
 			{/if}
 		  </a>
+		  <div class="block-label">
+			  	{block name='product_flags'}
+					{if $product.has_discount}
+						{if $product.discount_type === 'percentage'}
+	                	<span class="label label-discount discount-percentage discount-product">{$product.discount_percentage}</span>
+						{/if}
+					{/if}
+			   {/block}	
+			</div>
 		{/block}				
 	</div>
 

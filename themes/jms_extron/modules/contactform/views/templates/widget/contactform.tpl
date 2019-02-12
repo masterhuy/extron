@@ -38,7 +38,7 @@
       </div>
 
       {if $contact.orders}
-        <div class="form-group col-md-6 col-sx-12">
+        <div class="form-group col-md-12 col-sx-12">
             <select name="id_order" class="form-control form-control-select">
               <option value="">{l s='Select reference' d='Shop.Forms.Help'}</option>
               {foreach from=$contact.orders item=order}

@@ -23,7 +23,6 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <link rel="stylesheet" type="text/css" href="{$urls.theme_assets}css/digitalicon.css" />
-<link rel="stylesheet" type="text/css" href="{$urls.theme_assets}css/helper.css" />
 <link rel="stylesheet" href="//maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i|Roboto:300,400,500,700,900" rel="stylesheet"> 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
@@ -33,9 +32,10 @@
 {foreach $stylesheets.external as $stylesheet}
 <link rel="stylesheet" href="{$stylesheet.uri}" type="text/css" media="{$stylesheet.media}">
 {/foreach}
-
 {foreach $stylesheets.inline as $stylesheet}
 <style>
 {$stylesheet.content}
 </style>
 {/foreach}
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/>

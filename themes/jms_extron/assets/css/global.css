@@ -362,7 +362,7 @@ a.wishlist_top {
   text-align: center; }
   #off-canvas-menu #_desktop_currency_selector ul li a {
     text-align: center;
-    padding: 0; }
+    padding: 5px 0; }
   #off-canvas-menu #_desktop_currency_selector.type1, #off-canvas-menu #_desktop_currency_selector.type2 {
     display: none; }
   #off-canvas-menu #_desktop_currency_selector.type3 {
@@ -632,6 +632,8 @@ a.wishlist_top {
       margin: 5px 0; } }
 
 @media (max-width: 991px) {
+  .footer_t .layout-column {
+    margin-bottom: 10px; }
   div.modal-dialog.cover_product1 {
     width: 750px; }
   div.modal-dialog.cover_product1 .product-add-to-cart {
@@ -754,8 +756,7 @@ a.wishlist_top {
   padding: 0;
   margin-top: -3px; }
   #search_widget form {
-    position: relative;
-    background: url("../img/icon/search.png") no-repeat right; }
+    position: relative; }
   #search_widget input {
     font-size: 13px;
     height: 34px;
@@ -1265,7 +1266,8 @@ a.wishlist_top {
       font-size: 17px;
       font-weight: 700;
       border: 1px solid #ebebeb;
-      padding: 8px 15px; }
+      padding: 8px 15px;
+      min-width: 180px; }
       .jmsflashsales-tab2 .nav li a::after {
         content: "";
         width: 0;
@@ -1294,15 +1296,44 @@ a.wishlist_top {
 .flashsales-tab-carousel2 .product-description ul {
   display: none; }
 
+.flex-box.product-box .block-label {
+  display: none !important; }
+
+.jmsflashsales .view-all {
+  line-height: 36px; }
+
+.jmsflashsales .flashsales-slick {
+  display: none;
+  padding-top: 35px; }
+  .jmsflashsales .flashsales-slick .product-box .flexbox {
+    width: 40%; }
+  .jmsflashsales .flashsales-slick .product-preview .flexbox + .product-info {
+    width: 60%; }
+  .jmsflashsales .flashsales-slick .product_button {
+    display: none; }
+  .jmsflashsales .flashsales-slick .flexbox + .product-info {
+    padding-right: 30px; }
+  .jmsflashsales .flashsales-slick .slick-active:nth-child(2n + 1) > div:not(:first-child) {
+    display: none; }
+  .jmsflashsales .flashsales-slick .slick-active:nth-child(2n + 1) .product-info {
+    padding: 0 20px; }
+  .jmsflashsales .flashsales-slick .slick-active:nth-child(2n + 1) .block-label {
+    display: block !important; }
+  .jmsflashsales .flashsales-slick .slick-active:nth-child(2n + 1) .flex-box.product-box {
+    display: block;
+    border: 1px solid #ff4c65; }
+    .jmsflashsales .flashsales-slick .slick-active:nth-child(2n + 1) .flex-box.product-box .flexbox, .jmsflashsales .flashsales-slick .slick-active:nth-child(2n + 1) .flex-box.product-box .product-info {
+      width: 100%; }
+
 .jmsflashsales .addon-title h3 {
   padding: 0;
   line-height: 36px;
   border: 0; }
 
 .jmsflashsales .title {
-  display: flow-root;
   padding-bottom: 10px;
-  border-bottom: 1px solid #eee; }
+  border-bottom: 1px solid #eee;
+  position: relative; }
 
 .jmsflashsales .flashsales-carousel {
   padding-top: 36px; }
@@ -1547,12 +1578,12 @@ a.wishlist_top {
   display: none; }
 
 .jms-hotdeal.type2 {
-  border: 1px solid #ff4c65;
   border-radius: 5px; }
   .jms-hotdeal.type2 .owl-stage-outer {
     border-radius: 5px; }
   .jms-hotdeal.type2 .hotdeal-carousel {
-    padding-top: 0; }
+    padding-top: 0;
+    border-width: 1px; }
   .jms-hotdeal.type2 > .label {
     font-size: 18px;
     left: auto;
@@ -1839,6 +1870,12 @@ a.wishlist_top {
 .text-footer {
   display: none; }
 
+@media (min-width: 1366px) {
+  .company {
+    padding-left: 70px; }
+  .quick-link {
+    padding-left: 27px; } }
+
 #footer {
   border-top: 1px solid #ebebeb; }
   #footer .find-us {
@@ -1874,10 +1911,6 @@ a.wishlist_top {
       line-height: 1.86;
       padding-bottom: 5px;
       padding-right: 30px; }
-  #footer .company {
-    padding-left: 70px; }
-  #footer .quick-link {
-    padding-left: 27px; }
   #footer #newsletter_block_left .textnews_h1 {
     display: none; }
   #footer #newsletter_block_left .text-footer {
@@ -1909,10 +1942,6 @@ a.wishlist_top {
 .footer_b .left p {
   font-size: 16px;
   letter-spacing: 0; }
-
-@media (max-width: 1366px) {
-  .jms-megamenu .menu-align-center > .dropdown-menu {
-    width: 991px !important; } }
 
 @media (max-width: 1199px) {
   .jms-megamenu .menu-align-center > .dropdown-menu {

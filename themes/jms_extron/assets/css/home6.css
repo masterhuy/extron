@@ -323,7 +323,8 @@
   display: none; }
 
 .hotdeal .hotdeal-carousel {
-  padding-top: 7px; }
+  padding-top: 7px;
+  border: 0; }
   .hotdeal .hotdeal-carousel .product-info {
     padding: 0; }
 
@@ -396,6 +397,12 @@
 
 .categories .jms-banner {
   border: 1px solid #ebebeb; }
+  .categories .jms-banner > a::after {
+    display: none; }
+  .categories .jms-banner > a img {
+    -webkit-transform: unset;
+    -ms-transform: unset;
+    transform: unset; }
   .categories .jms-banner:hover {
     border-color: #ff4c65; }
 

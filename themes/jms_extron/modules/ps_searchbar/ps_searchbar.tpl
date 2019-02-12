@@ -28,7 +28,7 @@
 		<input type="hidden" name="controller" value="search">
 		<input type="text" name="s" value="{$search_string}" placeholder="{l s='Search...' d='Shop.Theme.Catalog'}">
 		<button type="submit">
-			<i class="storm-zoom"></i>
+			<i class="la la-search"></i>
 		</button>
 	</form>
 </div>

@@ -63,6 +63,7 @@
     text-overflow: ellipsis;
     letter-spacing: 0.2px;
     font-weight: 400;
+    overflow: hidden;
 }
 .jms-vermegamenu .nav > li.no-icon > a {
     font-size: 17px;
@@ -324,11 +325,6 @@
   left: 0;
   margin-left: 0;
   top: auto;
-}
-@media (max-width: 991px) {
-	#jms-vermegamenu-container {
-		display:none;
-	}			
 }
 @media (min-width: 992px) {
 	.responsive #off-canvas-menu {

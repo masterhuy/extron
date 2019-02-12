@@ -1,10 +1,6 @@
 @import "mixin";
 @import "varians";
 
-// @include hoverBannerEffect1();
-// @include BannerEffect2();
-// @include hoverBannerEffect2();
-
 // @media (min-width: 992px){
 // 	.jms-row.header.fixed,
 // 	.jms-row.menu.fixed{
@@ -12,8 +8,7 @@
 // 		position: fixed;
 // 		width: 100%;
 // 		box-shadow: 0 0 11px rgba(0,0,0,0.15);
-// 		background-color: #fff;
-// 	  	z-index: 99;
+// 	  	z-index: 99999;
 // 	  	animation-duration: 0.8s;
 // 		animation-name: slideDown;
 // 		animation-timing-function: ease;
@@ -433,7 +428,7 @@ a.wishlist_top{
 			li{
 				a{
 					text-align: center;
-					padding: 0;
+					padding: 5px 0;
 				}
 			}
 		}
@@ -777,6 +772,11 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 991px){
+	.footer_t{
+		.layout-column{
+			margin-bottom: 10px;
+		}
+	}
 	div.modal-dialog.cover_product1 {
 		width: 750px;
 	}
@@ -933,7 +933,6 @@ a.wishlist_top{
 	margin-top: -3px;
 	form{
 		position: relative;
-		background: url("../img/icon/search.png") no-repeat right;
 	}	
 	input {
 		font-size: 13px;
@@ -1529,6 +1528,7 @@ a.wishlist_top{
 				font-weight: 700;
 				border: 1px solid #ebebeb;
 				padding: 8px 15px;
+				min-width: 180px;
 				&::after {
 					content: "";
 					width: 0;
@@ -1566,8 +1566,51 @@ a.wishlist_top{
 	}
 }
 
+.flex-box.product-box{
+	.block-label{
+		display: none !important;
+	}
+}
+
 //flashsales
 .jmsflashsales{
+	.view-all {
+		line-height: 36px;
+	}
+	.flashsales-slick{
+		display: none;
+		padding-top: 35px;
+		.product-box .flexbox {
+			width: 40%;
+		}
+		.product-preview .flexbox + .product-info{
+			width: 60%;
+		}
+		.product_button{
+			display: none;
+		}
+		.flexbox + .product-info{
+			padding-right: 30px;
+		}
+		.slick-active:nth-child(2n + 1){
+			> div:not(:first-child){
+				display: none;
+			}
+			.product-info{
+				padding: 0 20px;
+			}
+			.block-label{
+				display: block !important;
+			}
+			.flex-box.product-box{
+				display: block;
+				border: 1px solid #ff4c65;
+				.flexbox, .product-info{
+					width: 100%;
+				}
+			}
+		}
+	}
 	.addon-title{
 		h3{
 			padding: 0;
@@ -1576,9 +1619,9 @@ a.wishlist_top{
 		}
 	}
 	.title{
-		display: flow-root;
 		padding-bottom: 10px;
 		border-bottom: 1px solid #eee;
+		position: relative;
 	}
 	.flashsales-carousel {
 		padding-top: 36px;
@@ -1874,13 +1917,13 @@ a.wishlist_top{
 
 //hotdeal type2
 .jms-hotdeal.type2{
-	border: 1px solid $active;
 	border-radius: 5px;
 	.owl-stage-outer{
 		border-radius: 5px;
 	}
 	.hotdeal-carousel{
 		padding-top: 0;
+		border-width: 1px;
 	}
 	> .label{
 		font-size: 18px;
@@ -2190,7 +2233,14 @@ a.wishlist_top{
 .text-footer{
 	display: none;
 }
-
+@media (min-width: 1366px){
+	.company{
+		padding-left: 70px;
+	}
+	.quick-link{
+		padding-left: 27px;
+	}
+}
 #footer{
 	border-top: 1px solid #ebebeb;
 	.find-us{
@@ -2235,12 +2285,6 @@ a.wishlist_top{
 			padding-right: 30px;
 		}
 	}
-	.company{
-		padding-left: 70px;
-	}
-	.quick-link{
-		padding-left: 27px;
-	}
 	#newsletter_block_left{
 		.textnews_h1{
 			display: none;
@@ -2282,13 +2326,6 @@ a.wishlist_top{
 			font-size: 16px;
 			letter-spacing: 0;
 		}
-	}
-}
-
-
-@media (max-width: 1366px){
-	.jms-megamenu .menu-align-center > .dropdown-menu{
-		width: 991px !important;
 	}
 }
 

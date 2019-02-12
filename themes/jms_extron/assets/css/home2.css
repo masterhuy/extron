@@ -130,6 +130,12 @@
   border: 1px solid #e1e1e1; }
   .cates .jms-banner:hover {
     border-color: #ff4c65; }
+  .cates .jms-banner a > img {
+    -webkit-transform: unset;
+    -ms-transform: unset;
+    transform: unset; }
+  .cates .jms-banner a::after {
+    display: none; }
   .cates .jms-banner .banner-content {
     position: absolute;
     bottom: 15px;
@@ -151,6 +157,11 @@
 
 .best_seller .product-carousel {
   padding-top: 22px; }
+
+.best_seller .jms-banner {
+  border: 1px solid #eaeaea; }
+  .best_seller .jms-banner .banner-content {
+    left: 36px; }
 
 .special_deal {
   background-color: #f4f4f4;

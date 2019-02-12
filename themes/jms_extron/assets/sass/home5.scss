@@ -262,6 +262,15 @@
 	border: 0;
 }
 
+//flashsales tab
+.flashsale_tab{
+	background: #f8f8f8;
+	padding-top: 66px;
+	.product-preview{
+		background: transparent;
+	}
+}
+
 //banner
 .banner{
 	.container > .row{

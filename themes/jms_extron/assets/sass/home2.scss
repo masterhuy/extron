@@ -155,6 +155,14 @@
 		&:hover{
 			border-color: $active;
 		}
+		a{
+			> img{
+				transform: unset;
+			}
+			&::after{
+				display: none;
+			}
+		}
 		.banner-content {
 			position: absolute;
 			bottom: 15px;
@@ -186,6 +194,12 @@
 	}
 	.product-carousel{
 		padding-top: 22px;
+	}
+	.jms-banner{
+		border: 1px solid #eaeaea;
+		.banner-content{
+			left: 36px;
+		}
 	}
 }
 

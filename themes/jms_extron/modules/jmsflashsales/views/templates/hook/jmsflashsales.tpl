@@ -33,11 +33,20 @@
 			<div class="pull-right">
 				<a href="index.php?id_category=2&controller=category&id_lang=1" class="view-all fw-bold">view all</a>
 			</div>
+			<div class="clearfix"></div>
 		</div>
+
 		<div class="flashsales-carousel">	
 			{foreach from=$products item=product key=k}	
 				<div class="item ajax_block_product">		
 					{include file="catalog/_partials/miniatures/product.tpl" product=$product}
+				</div>
+			{/foreach}
+		</div>
+		<div class="flashsales-slick">	
+			{foreach from=$products item=product key=k}	
+				<div class="item ajax_block_product">		
+					{include file="catalog/_partials/miniatures/product2.tpl" product=$product}
 				</div>
 			{/foreach}
 		</div>

@@ -252,6 +252,12 @@
   border: 1px solid #ebebeb; }
   .cates .jms-banner:hover {
     border-color: #ff4c65; }
+  .cates .jms-banner > a > img {
+    -webkit-transform: unset;
+    -ms-transform: unset;
+    transform: unset; }
+  .cates .jms-banner > a::after {
+    display: none; }
 
 .cates .banner-content {
   left: auto;
@@ -261,6 +267,20 @@
   .cates .banner-content p {
     font-size: 17px;
     line-height: 1.65; }
+
+.jmsflashsales .flashsales-carousel {
+  display: none; }
+
+.jmsflashsales .flashsales-slick {
+  display: block; }
+
+.jmsflashsales .flashsales-countdown {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
 
 .intro .addon-box {
   background: url("../img/intro-bg.jpg") no-repeat center top;

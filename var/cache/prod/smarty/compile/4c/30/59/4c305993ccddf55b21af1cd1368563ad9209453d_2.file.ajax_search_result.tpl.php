@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-27 23:43:38
+/* Smarty version 3.1.33, created on 2019-02-12 02:02:16
   from 'D:\xamppp\htdocs\jms_extron\modules\jmsadvsearch\views\templates\hook\ajax_search_result.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c4e887ae168a4_69442275',
+  'unifunc' => 'content_5c626f78c18706_05991333',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4c305993ccddf55b21af1cd1368563ad9209453d' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_extron\\modules\\jmsadvsearch\\views\\templates\\hook\\ajax_search_result.tpl',
-      1 => 1542078179,
+      1 => 1548905232,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c4e887ae168a4_69442275 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c626f78c18706_05991333 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="result_div">
 <?php if ($_smarty_tpl->tpl_vars['products']->value) {?>
@@ -44,10 +44,10 @@ foreach ($_from as $_smarty_tpl->tpl_vars['product']->value) {
 			</div>
 		<?php }?>
 			<div class="right-info">
-				<a href="<?php echo $_smarty_tpl->tpl_vars['product']->value['link'];?>
+				<a class="product-link" href="<?php echo $_smarty_tpl->tpl_vars['product']->value['link'];?>
 " title="<?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'truncate' ][ 0 ], array( $_smarty_tpl->tpl_vars['product']->value['name'],50,'...' ));?>
 ">
-					<?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'truncate' ][ 0 ], array( $_smarty_tpl->tpl_vars['product']->value['name'],35,'...' ));?>
+					<?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'truncate' ][ 0 ], array( $_smarty_tpl->tpl_vars['product']->value['name'],90,'...' ));?>
 
 				</a>
 				<?php if ($_smarty_tpl->tpl_vars['description']->value) {?>
@@ -55,8 +55,10 @@ foreach ($_from as $_smarty_tpl->tpl_vars['product']->value) {
 </p>
 				<?php }?>
 				<?php if ($_smarty_tpl->tpl_vars['show_price']->value) {?>
-					<span class="price"><?php echo $_smarty_tpl->tpl_vars['product']->value['price'];?>
+				<div class="content_price">
+					<span class="price new"><?php echo $_smarty_tpl->tpl_vars['product']->value['price'];?>
 </span>
+				</div>
 				<?php }?>
 			</div>
 		</div>

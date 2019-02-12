@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-31 22:26:00
+/* Smarty version 3.1.33, created on 2019-02-10 22:43:49
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\templates\_partials\stylesheets.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c53bc488c7380_07567434',
+  'unifunc' => 'content_5c60ef75821940_70494736',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd6c73d4ec431374251aeea631c777d9c2294d502' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_extron\\themes\\jms_extron\\templates\\_partials\\stylesheets.tpl',
-      1 => 1548925304,
+      1 => 1549855670,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c53bc488c7380_07567434 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c60ef75821940_70494736 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>
 css/digitalicon.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['theme_assets'], ENT_QUOTES, 'UTF-8');?>
@@ -57,6 +57,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['stylesheet']->value) {
 <?php
 }
 }
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
-}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/>
+<?php }
 }

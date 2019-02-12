@@ -36,18 +36,23 @@
 	}
 }
 @media (max-width: 1199px){
+	#jms-vermegamenu-container{
+		max-width: 220px;
+	}
 	#cart_block .shoppingcart-box{
 		max-width: 490px;
+		right: 0;
 	}
-	.btn-group.open .dropdown-menu::before {
-		right: 10px;
+	#cart_block .shoppingcart-box::before {
+		right: 53px;
 	}
 	.home .nav-child.dropdown-menu.mega-dropdown-menu.fullwidth {
 		width: 624px !important;
 	}
 	.jms-megamenu .mega-col-nav.col-sm-4{
-		padding-top:0;
-		margin-top:0;
+		padding-top: 0;
+		margin-top: 0;
+		overflow: hidden;
 	}
 	.img-bottom.wrapper-banner .box-content h4 {
 		font-size: 12px;
@@ -69,28 +74,36 @@
 		padding-left: 15px;
 	}
 	.products-list-in-column.products-list-4 .js-product-miniature{
-		width:33.33%;
+		width: 33.33%;
 	}
-	
 	.products-list-in-column.products-list-5 .js-product-miniature, .products-list-in-column.products-list-6 .js-product-miniature{
-		width:25%;
+		width: 25%;
 	}
 }
 @media (max-width: 991px){
-	div#cart_block .shoppingcart-box{
-		right: -12px;
+	div#jms-vermegamenu-container {
+		max-width: 360px;
+	}
+	#cart_block{
+		position: unset;
+	}
+	div#cart_block .shoppingcart-box {
+		left: 50%;
+		transform: translateX(-50%);
 	}
 	div#cart_block .shoppingcart-box::before {
-		left: auto;
-		right: 17px;
+		left: 50%;
+	}
+	div#cart_block.open .shoppingcart-box {
+		top: calc(100% + 15px);
 	}
    #open-button::before {
-		background: transparent url("../img/icon/iconmenu.png") no-repeat scroll 0 0;
-		content: "";
+		content: "\f131";
 		cursor: pointer;
 		display: block;
-		height: 16px;
-		width: 44px;
+		font-family: LineAwesome;
+		font-size: 32px;
+		color: #fff;
 	}
 	.product_list .item.ajax_block_product{
 		width:50%;
@@ -101,8 +114,9 @@
 	.include_right_sort {
 		width: 59%;
 	}
-	 #open-button{
-		display:block;
+	#open-button {
+		display: inline-block;
+		float: right;
 	}
 	#open-button span{
 		display: none;
@@ -169,6 +183,9 @@
 	}
 }
 @media (max-width: 767px){
+	div#jms-vermegamenu-container{
+		max-width: calc(100% - 30px);
+	}
 	.service .left, .service .center{
 		margin-bottom: 15px;
 	}

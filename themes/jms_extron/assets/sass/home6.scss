@@ -313,7 +313,6 @@
 
 }
 
-
 //main column
 .main_column {
 	padding: 0 15px;
@@ -380,6 +379,7 @@
 	}
 	.hotdeal-carousel{
 		padding-top: 7px;
+		border: 0;
 		.product-info{
 			padding: 0;
 		}
@@ -467,6 +467,14 @@
 .categories{
 	.jms-banner{
 		border: 1px solid #ebebeb;
+		> a{
+			&::after{
+				display: none;
+			}
+			img{
+				transform: unset;
+			}
+		}
 		&:hover{
 			border-color: $active;
 		}
