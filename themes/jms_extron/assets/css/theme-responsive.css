@@ -34,11 +34,6 @@
 	.cart_block_list {
 		max-height: 238px;
 	}
-}
-@media (max-width: 1199px){
-	#jms-vermegamenu-container{
-		max-width: 220px;
-	}
 	#cart_block .shoppingcart-box{
 		max-width: 490px;
 		right: 0;
@@ -46,6 +41,12 @@
 	#cart_block .shoppingcart-box::before {
 		right: 53px;
 	}
+}
+@media (max-width: 1199px){
+	#jms-vermegamenu-container{
+		max-width: 220px;
+	}
+	
 	.home .nav-child.dropdown-menu.mega-dropdown-menu.fullwidth {
 		width: 624px !important;
 	}
@@ -428,7 +429,11 @@
 		font-size: 4.5vw;
 	}
 	.fs-pager-wrapper a, .fs-custom-pager-wrapper a{
-		font-size:12px;
+		width: 6px;
+		height: 6px;
+	}
+	.fs-pager-wrapper a.active{
+		width: 16px;
 	}
 	.fs-pager-wrapper {
         bottom: 2px

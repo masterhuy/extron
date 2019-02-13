@@ -192,7 +192,7 @@
     .special_deal .center .product-preview .product-info {
       margin-top: 43px; }
 
-@media (min-width: 1367px) {
+@media (min-width: 1200px) {
   .special_deal .left, .special_deal .right {
     width: 32.2%; }
   .special_deal .center {
@@ -230,10 +230,12 @@
 .footer_t {
   padding: 65px 0 49px; }
 
+@media (min-width: 992px) {
+  .newsletter {
+    padding-left: 26px; } }
+
 #footer {
   border-top-width: 2px; }
-  #footer .newsletter {
-    padding-left: 26px; }
   #footer .footer_b {
     text-align: center;
     background-color: #f4f4f4; }
@@ -241,3 +243,114 @@
       border: 0; }
       #footer .footer_b .container p {
         letter-spacing: 0; }
+
+@media (max-width: 1366px) {
+  .jms-megamenu li.sub-blog > .dropdown-menu {
+    width: 170px !important;
+    left: -100px; }
+  .jms-megamenu li.sub-blog .mega-nav > .mega > .dropdown-menu {
+    width: 162px;
+    min-width: auto; }
+  .jms-megamenu li.sub-blog .mega-nav a {
+    padding: 3.5px 20px; }
+  .jms-megamenu .nav > li.menu-align-center.open.computer > .dropdown-menu {
+    right: 15px; }
+  .jms-megamenu .nav > li.menu-align-center.open > .dropdown-menu {
+    width: 870px !important; } }
+
+@media (max-width: 1199px) {
+  .jms-megamenu .nav > li.menu-align-center > .dropdown-menu {
+    right: 15px;
+    left: auto;
+    -webkit-transform: unset !important;
+    -ms-transform: unset !important;
+    transform: unset !important; }
+  .menu .jms-advsearch #searchbox {
+    width: 565px; }
+  .special_deal .center .product-preview .product-info {
+    margin-top: 63px; } }
+
+@media (max-width: 991px) {
+  .menu .jms-advsearch #searchbox {
+    width: 595px; }
+  div#cart_block {
+    position: relative; }
+  #open-button::before {
+    color: #000 !important; }
+  .ver_mobile {
+    margin-top: 20px; }
+  #mobile-vermegamenu {
+    -webkit-box-shadow: 0 4px 11px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 11px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    position: absolute;
+    width: calc(100% - 30px);
+    z-index: 9999; }
+  div#cart_block.btn-group .shoppingcart-box {
+    left: auto;
+    -webkit-transform: unset;
+    -ms-transform: unset;
+    transform: unset; }
+    div#cart_block.btn-group .shoppingcart-box::before {
+      left: auto; }
+  .img-hotdeal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .best_seller {
+    margin-top: 50px; }
+  .special_deal .center .product-preview .product-info {
+    margin-top: 33px; }
+  .special_deal .product-link {
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; }
+  .banner2 .banner-content, .banner3 .banner-content {
+    left: 20px; }
+  .banner2 .banner-content .text-1, .banner3 .banner-content .text-1 {
+    font-size: 21px; }
+  #footer .contact {
+    margin-bottom: 6px; }
+  #footer .footer_m .container > .row {
+    display: block; }
+  #footer .footer_m .center {
+    margin: 20px 0; }
+  #footer .footer_m .layout-column {
+    text-align: center; } }
+
+@media (max-width: 767px) {
+  .banner2 {
+    margin-bottom: 15px; }
+  .special_deal .categories-carousel2-no-carousel {
+    position: unset;
+    text-align: left;
+    margin: 10px 0; }
+    .special_deal .categories-carousel2-no-carousel .block_category {
+      margin-left: 0;
+      margin-right: 15px; }
+  .menu .jms-advsearch .input-group-addon.icon-drop-down,
+  .menu .jms-advsearch #searchbox #selector_cat {
+    width: 130px; }
+  .menu #searchbox .input-group-addon.icon-drop-down::after {
+    right: 5px; }
+  .menu .cart-icon.type2 {
+    width: 90px; }
+    .menu .cart-icon.type2 .text {
+      display: none; }
+  .menu .jms-advsearch #searchbox {
+    width: 100%; }
+  .menu .right .addon-box:first-child {
+    width: 80%; }
+  .menu .right .addon-box:last-child {
+    width: 20%;
+    margin-left: 30px; } }
+
+@media (max-width: 481px) {
+  .menu .jms-advsearch .input-group-addon.input-group-search button {
+    width: 30px; }
+  .menu .jms-advsearch .input-group-addon.icon-drop-down,
+  .menu .jms-advsearch #searchbox #selector_cat {
+    width: 90px; } }

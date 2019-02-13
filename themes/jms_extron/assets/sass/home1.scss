@@ -432,7 +432,8 @@
 			}
 		}
 		.center{
-			padding: 15px 0;
+			padding-top: 15px;
+			padding-bottom: 15px;
 		}
 		.right{
 			justify-content: center;
@@ -517,7 +518,13 @@
 }
 
 @media (max-width: 767px){
-	.banner1, .banner2{
+	#newsletter_block_left {
+		padding: 0 30px;
+	}
+	.newsletter #social_block {
+		left: 45px;
+	}
+	.banner1, .banner2, .banner4{
 		margin-bottom: 15px;
 	}
 	.jmsflashsales .title{
@@ -556,6 +563,18 @@
 }
 
 @media (max-width: 481px){
+	#newsletter_block_left .form-group{
+		display: block;
+	}
+	#newsletter-input{
+		width: 100%;
+	}
+	.newsletter-btn{
+		width: 100%;
+		margin: 0;
+		height: 40px;
+		margin-top: 15px;
+	}
 	.best_seller{
 		.categories-carousel2-no-carousel{
 			.categories-wrapper .c_item-info{
@@ -566,6 +585,67 @@
 			.block_category {
 				display: block;
 			}
+		}
+	}
+	.banner1{
+		.banner-content {
+			right: 15px;
+			.text-1{
+				font-size: 16px;
+			}
+			.text-2{
+				font-size: 17px;
+			}
+			.text-3{
+				font-size: 14px;
+			}
+		}
+	}
+	.banner2{
+		.banner-content{
+			top: 15px;
+			.text-1{
+				font-size: 14px;
+			}
+		}
+	}
+	.banner3{
+		.banner-content{
+			left: 15px;
+			p{
+				font-size: 16px !important;
+			}
+		}
+	}
+	.banner4{
+		.banner-content {
+			left: 20px;
+			.text-1{
+				font-size: 15px;
+			}
+			.text-2{
+				font-size: 18px;
+			}
+			.text-3{
+				font-size: 14px;
+			}
+		}
+	}
+	.banner5{
+		.banner-content {
+			left: 20px;
+			.text-1, .text-2{
+				font-size: 16px;
+			}
+			.text-3{
+				font-size: 14px;
+			}
+		}
+	}
+	.big_save .addon-box ul{
+		margin-left: 20px;
+		li{
+			font-size: 16px;
 		}
 	}
 }

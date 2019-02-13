@@ -17,6 +17,8 @@
 		event: jmmm_event,
 		duration: jmmm_duration
 	});
+
+	$('#mobile-vermegamenu').addClass('collapse');
 });
 $(window).load(function(){
 	if($('.slider').length > 0)

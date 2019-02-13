@@ -755,6 +755,13 @@
         display: none;
     }
 }
+@media (max-width: 767px){
+    .product-carousel2 .owl-item.active .product-box::after,
+    .categorytab-carousel2 .owl-item.active .product-box::after,
+    .megatab-carousel2 .owl-item.active .product-box::after{
+        display: none;
+    }
+}
 .flex-box .product_button{
     position: unset;
     transform: unset !important;
