@@ -595,6 +595,9 @@ a.wishlist_top{
 	display: none;
 	background: #ff4c65;
 	padding: 2px 0;
+	p{
+		margin-bottom: 0;
+	}
 }
 @media (max-width: 1199px){
 	#product{
@@ -621,6 +624,12 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 481px){
+	.megatab-carousel2{
+		.product-link{
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+	}
 	form#searchbox #selector_cat{
 		padding-right: 38px;
 		text-overflow: ellipsis;
@@ -779,6 +788,12 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 991px){
+	#mobile-vermegamenu {
+		position: absolute;
+		width: calc(100% - 30px);
+		background: #fff;
+		z-index: 9999;
+	}
 	.footer_t{
 		.layout-column{
 			margin-bottom: 10px;
@@ -857,6 +872,11 @@ a.wishlist_top{
 		}
 		.right .addon-box p {
 			justify-content: center;
+		}
+	}
+	.footer_t{
+		.contact{
+			margin-bottom: 5px;
 		}
 	}
 }

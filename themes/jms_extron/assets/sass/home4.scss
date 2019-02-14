@@ -363,11 +363,15 @@
 .footer_t {
 	padding: 65px 0 49px;
 }
+@media (min-width: 1200px){
+	#footer{
+		.newsletter{
+			padding-left: 26px;
+		}
+	}
+}
 #footer{
 	background: #f9f9f9;
-	.newsletter{
-		padding-left: 26px;
-	}
 	.footer_b{
 		text-align: center;
 		background-color: #ebebeb;
@@ -376,6 +380,68 @@
 			p{
 				letter-spacing: 0;
 			}
+		}
+	}
+}
+
+@media (max-width: 991px){
+	.header{
+		padding: 15px 0;
+		.container > .row{
+			display: block;
+		}
+		.left{
+			.addon-box{
+				display: flex;
+				justify-content: center;
+			}
+		}
+		.center{
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+		.right{
+			justify-content: center;
+		}
+	}
+	.ver_menu{
+		width: 100%;
+		background: #fff;
+		color: #555;
+		text-align: left;
+		padding: 0 17px;
+		border-radius: 3px;
+		img{
+			position: absolute;
+			transform: translateY(-50%);
+		}
+	}
+	#footer{
+		.contact{
+			margin-bottom: 6px;
+		}
+		.footer_m{
+			.container > .row{
+				display: block;
+			}
+			.center{
+				margin: 20px 0;
+			}
+			.layout-column {
+				text-align: center;
+			}
+		}
+	}
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+	.banner .banner-content {
+		left: 20px;
+		.text-1 {
+			font-size: 16px;
+		}
+		.text-2 {
+			font-size: 14px;
 		}
 	}
 }

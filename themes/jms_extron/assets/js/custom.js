@@ -798,22 +798,24 @@ jQuery(function ($) {
 		    {
 		      breakpoint: 1199,
 		      settings: {
-		        slidesToShow: 3,
+		        slidesToShow: 2,
 		        slidesToScroll: 1,
 		      }
 		    },
 		    {
 		      breakpoint: 768,
+		      row: 2,
 		      settings: {
-		        slidesToShow: 2,
-		        slidesToScroll: 2
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
 		      }
 		    },
 		    {
 		      breakpoint: 480,
 		      settings: {
 		        slidesToShow: 1,
-		        slidesToScroll: 1
+		        slidesToScroll: 1,
+		        row: 1,
 		      }
 		    }
 		]

@@ -412,12 +412,6 @@
 			text-overflow: ellipsis;
 		}
 	}
-	.banner2 .banner-content, .banner3 .banner-content {
-		left: 20px;
-	}
-	.banner2 .banner-content .text-1, .banner3 .banner-content .text-1 {
-		font-size: 21px;
-	}
 	#footer{
 		.contact{
 			margin-bottom: 6px;
@@ -435,7 +429,14 @@
 		}
 	}
 }
-
+@media (max-width: 991px) and (min-width: 768px){
+	.banner2 .banner-content, .banner3 .banner-content {
+		left: 20px;
+	}
+	.banner2 .banner-content .text-1, .banner3 .banner-content .text-1 {
+		font-size: 21px;
+	}
+}
 @media (max-width: 767px){
 	.banner2{
 		margin-bottom: 15px;
@@ -491,5 +492,31 @@
 		.jms-advsearch #searchbox #selector_cat {
 			width: 90px;
 		}
+		#ajax_advsearch{
+			padding-right: 90px;
+		}
+	}
+	.best_seller{
+		.jms-banner{
+			.banner-content p{
+				font-size: 8px !important;
+			}
+		}
+	}
+	.categories-carousel2-no-carousel .categories-wrapper .c_item-info {
+		padding: 10px 0px;
+	}
+	.banner2 .banner-content, .banner3 .banner-content {
+		left: 20px;
+	}
+	.banner2 .banner-content .text-1, .banner3 .banner-content .text-1 {
+		font-size: 16px;
+		max-width: 115px;
+	}
+	.banner3 .banner-content .text-2 span {
+		font-size: 16px;
+	}
+	div.banner2 .banner-content .text-2, div.banner3 .banner-content .text-2 {
+		font-size: 16px;
 	}
 }

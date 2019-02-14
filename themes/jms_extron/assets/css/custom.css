@@ -1002,7 +1002,7 @@ table td[class*="col-"], table table th[class*="col-"] {
   -o-transform: translateY(0px);
   transform: translateY(0px);*/
   visibility: visible;
-  z-index: 5000; }
+  z-index: 99999; }
 
 .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
   background: none;

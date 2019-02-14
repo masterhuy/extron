@@ -298,7 +298,7 @@ div.jms-megamenu .dropdown-menu::before{
     position: absolute;
     transform: rotate(45deg) translateX(-50%);
     opacity: 0;
-    z-index: 9999;
+    z-index: 999999;
 }
 .jms-megamenu .nav > li.open > a::after {
     opacity: 1;

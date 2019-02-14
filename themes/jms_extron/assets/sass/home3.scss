@@ -169,12 +169,15 @@
 		color: #000;
 	}
 }
-.ver_menu{
-	background: #ff4c65;
-	color: #fff;
-	border-radius: 0;
-	line-height: 55px;
+@media (min-width: 1200px){
+	.ver_menu{
+		background: #ff4c65;
+		color: #fff;
+		border-radius: 0;
+		line-height: 55px;
+	}
 }
+
 
 //slider
 .jms-slider-wrapper{
@@ -183,7 +186,7 @@
 		letter-spacing: 0;
 		strong{
 			font-weight: 900;
-			font-size: 40px;
+			font-size: 2.09vw;
 		}
 	}
 	.fs-pager-wrapper {
@@ -278,6 +281,25 @@
 	}
 	.child li{
 		padding-bottom: 6px;
+		a{
+			display: block;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			&:hover::before{
+				margin-left: 0;
+				opacity: 1;
+			}
+			&::before{
+				content: "\f227";
+				font-family: LineAwesome;
+				margin-left: -18px;
+				opacity: 0;
+				width: 18px;
+				transition: .4s all;
+				display: inline-block;
+			}
+		}
 	}
 }
 
@@ -320,6 +342,132 @@
 					}
 				}
 			}
+		}
+	}
+}
+
+@media (max-width: 1199px){
+	.jms-megamenu .nav > li {
+		padding: 0 12px;
+	}
+	.jmsflashsales-tab{
+		.tabpanel {
+			width: 25%;
+		}
+		.tab-content {
+			width: 75%;
+		}
+	}
+	 .megatab-carousel2 .owl-item.active + .owl-item.active .product-box::after {
+	    opacity: 1;
+	}
+}
+
+@media (max-width: 991px){
+	.header{
+		padding: 15px 0;
+		.container > .row{
+			display: block;
+		}
+		.left{
+			.addon-box{
+				display: flex;
+				justify-content: center;
+			}
+		}
+		.center{
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+		.right{
+			justify-content: center;
+		}
+		.cart-icon.type2{
+			float: none;
+		}
+	}
+	.jmsflashsales-tab .countdown-section .countdown-amount {
+		min-width: 40px;
+		line-height: 40px;
+	}
+	#footer .footer_b{
+		.text-right, .find-us{
+			text-align: center;
+		}
+		.text-center{
+			margin: 15px 0 25px;
+		}
+	}
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+	.banner-content {
+		top: 20px !important;
+	}
+	.banner1 .banner-content{
+		.text-1 {
+			font-size: 16px;
+		}
+		.text-2 {
+			font-size: 14px;
+		}
+	}
+	.banner2 .banner-content p, 
+	.banner3 .banner-content p {
+		font-size: 16px;
+	}
+	.big_save .addon-box ul{
+		margin-left: 20px;
+		li{
+			font-size: 16px;
+		}
+	}
+}
+
+@media (max-width: 767px){
+	.big_save .addon-box ul{
+		margin: 0;
+		text-align: center;
+		li.code{
+			margin: 0;
+			margin-top: 15px;
+		}
+	}
+	.banner1, .banner2{
+		margin-bottom: 15px;
+	}
+	.jmsflashsales-tab .tabpanel {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.jmsflashsales-tab .tab-content {
+		width: 100%;
+	}
+}
+
+@media (max-width: 481px){
+	.banner-content {
+		top: 20px !important;
+	}
+	.banner1 .banner-content{
+		.text-1 {
+			font-size: 16px;
+		}
+		.text-2 {
+			font-size: 14px;
+		}
+	}
+	.banner2 .banner-content p, 
+	.banner3 .banner-content p {
+		font-size: 16px;
+	}
+	.smartphone .addon-title h3,
+	.laptop .addon-title h3{
+		width: 50%;
+	}
+	.cates_tab{
+		.addon-title h3{
+			text-align: center;
 		}
 	}
 }
