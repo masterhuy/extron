@@ -363,6 +363,8 @@
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center; }
+  #mobile-vermegamenu {
+    width: 100%; }
   .menu {
     padding: 2px 0; }
   .view-all.link {
@@ -456,7 +458,6 @@
     height: 40px;
     margin-top: 15px; }
   .best_seller .categories-carousel2-no-carousel .categories-wrapper .c_item-info {
-    width: 100%;
     padding-right: 0;
     width: 100%; }
   .best_seller .categories-carousel2-no-carousel .block_category {

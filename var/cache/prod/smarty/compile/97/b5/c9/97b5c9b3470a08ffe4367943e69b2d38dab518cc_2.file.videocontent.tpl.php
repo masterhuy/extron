@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-28 23:31:26
+/* Smarty version 3.1.33, created on 2019-02-18 05:08:53
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\modules\jmsproductvideo\views\templates\hook\videocontent.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c4fd71e723006_64786519',
+  'unifunc' => 'content_5c6a8435109d56_23201274',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c4fd71e723006_64786519 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c6a8435109d56_23201274 (Smarty_Internal_Template $_smarty_tpl) {
 ?><style>
 	.jms-popup-wrap {
 		width : <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['video_width']->value, ENT_QUOTES, 'UTF-8');?>

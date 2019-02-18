@@ -78,7 +78,7 @@
         <div class="pb-right-column col-lg-6 col-md-6 col-sm-6 col-xs-12">
 			{block name='page_header_container'}
 				{block name='page_header'}
-					<h2  itemprop="name">{block name='page_title'}{$product.name}{/block}</h2>
+					<h2 itemprop="name">{block name='page_title'}{$product.name}{/block}</h2>
 				{/block}
 			{/block}
 			{block name='product_prices'}

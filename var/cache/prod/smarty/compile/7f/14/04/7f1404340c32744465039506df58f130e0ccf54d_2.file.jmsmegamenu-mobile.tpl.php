@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-14 05:25:42
+/* Smarty version 3.1.33, created on 2019-02-18 05:27:54
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\modules\jmsmegamenu\views\templates\hook\jmsmegamenu-mobile.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c654226442cd3_37308476',
+  'unifunc' => 'content_5c6a88aadc4da0_92120096',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c654226442cd3_37308476 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c6a88aadc4da0_92120096 (Smarty_Internal_Template $_smarty_tpl) {
 echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['menu_html']->value,'' ));?>
 
 <?php }

@@ -412,22 +412,6 @@
 			text-overflow: ellipsis;
 		}
 	}
-	#footer{
-		.contact{
-			margin-bottom: 6px;
-		}
-		.footer_m{
-			.container > .row{
-				display: block;
-			}
-			.center{
-				margin: 20px 0;
-			}
-			.layout-column {
-				text-align: center;
-			}
-		}
-	}
 }
 @media (max-width: 991px) and (min-width: 768px){
 	.banner2 .banner-content, .banner3 .banner-content {

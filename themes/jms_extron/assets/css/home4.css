@@ -382,3 +382,42 @@
       font-size: 16px; }
     .banner .banner-content .text-2 {
       font-size: 14px; } }
+
+@media (max-width: 767px) {
+  .banner1 {
+    margin-bottom: 15px; }
+  .jmsflashsales .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .jmsflashsales .title .flashsales-countdown {
+      margin-left: 0;
+      margin: 10px 0;
+      position: unset;
+      -webkit-transform: unset;
+      -ms-transform: unset;
+      transform: unset; } }
+
+@media (max-width: 481px) {
+  .banner .banner-content {
+    left: 20px; }
+    .banner .banner-content .text-1 {
+      font-size: 16px; }
+    .banner .banner-content .text-2 {
+      font-size: 14px; }
+  .header .jms-advsearch .input-group-addon.icon-drop-down {
+    width: 110px; }
+  .header .center .addon-box {
+    padding: 0; }
+  .intro p {
+    width: 100%;
+    padding: 0 25px; }
+  .product_carousel .layout-column:not(:last-child) {
+    margin-bottom: 30px; } }

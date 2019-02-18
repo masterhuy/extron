@@ -307,15 +307,7 @@
   .special_deal .product-link {
     white-space: nowrap;
     -o-text-overflow: ellipsis;
-    text-overflow: ellipsis; }
-  #footer .contact {
-    margin-bottom: 6px; }
-  #footer .footer_m .container > .row {
-    display: block; }
-  #footer .footer_m .center {
-    margin: 20px 0; }
-  #footer .footer_m .layout-column {
-    text-align: center; } }
+    text-overflow: ellipsis; } }
 
 @media (max-width: 991px) and (min-width: 768px) {
   .banner2 .banner-content, .banner3 .banner-content {

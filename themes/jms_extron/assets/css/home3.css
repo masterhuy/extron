@@ -315,6 +315,9 @@
   .jmsflashsales-tab .countdown-section .countdown-amount {
     min-width: 40px;
     line-height: 40px; }
+  #footer .footer_b #social_block ul li a {
+    margin-right: 0;
+    margin: 0 10px; }
   #footer .footer_b .text-right, #footer .footer_b .find-us {
     text-align: center; }
   #footer .footer_b .text-center {
