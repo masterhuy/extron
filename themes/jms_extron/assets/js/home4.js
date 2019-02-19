@@ -13,13 +13,11 @@ jQuery(document).ready(function($) {
 
 	$("#jms-vermegamenu-container").addClass('collapse');
 
-	// $(window).scroll(function () {
- //    	if ($(window).scrollTop() > 300){
-	// 		menu.addClass("fixed");
-	// 		$(".page-index #jms-vermegamenu-container").removeClass('in');
- //    	} else {
-	// 		menu.removeClass("fixed");
-	// 		$(".page-index #jms-vermegamenu-container").addClass('in');
- //    	}
- //    });
+	$(window).scroll(function () {
+    	if ($(window).scrollTop() > 300){
+			menu.addClass("fixed");
+    	} else {
+			menu.removeClass("fixed");
+    	}
+    });
 });

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-11 23:13:18
+/* Smarty version 3.1.33, created on 2019-02-18 22:59:35
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\modules\contactform\views\templates\widget\contactform.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c6247de77e4e8_50202537',
+  'unifunc' => 'content_5c6b7f271d4307_12837574',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7c7817f64f5d685a89f4689f4e07fe3fd87a377e' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_extron\\themes\\jms_extron\\modules\\contactform\\views\\templates\\widget\\contactform.tpl',
-      1 => 1549944794,
+      1 => 1550548467,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c6247de77e4e8_50202537 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c6b7f271d4307_12837574 (Smarty_Internal_Template $_smarty_tpl) {
 ?><section class="contact-form">
   <form action="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['contact'], ENT_QUOTES, 'UTF-8');?>
 " method="post" <?php if ($_smarty_tpl->tpl_vars['contact']->value['allow_file_upload']) {?>enctype="multipart/form-data"<?php }?>>
@@ -103,7 +103,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
       <?php }?>
 
       <?php if ($_smarty_tpl->tpl_vars['contact']->value['allow_file_upload']) {?>
-        <div class="form-group col-md-6 col-sx-12">
+        <div class="form-group col-md-12 col-sx-12">
             <input type="file" name="fileUpload" class="filestyle" data-buttonText="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Choose file','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
 ">
         </div>

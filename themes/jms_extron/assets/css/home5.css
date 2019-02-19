@@ -83,7 +83,8 @@
       letter-spacing: 0.5px; }
 
 .header {
-  padding: 23px 0; }
+  padding: 23px 0;
+  background: #fff; }
   .header .container > .row {
     display: -webkit-box;
     display: -ms-flexbox;

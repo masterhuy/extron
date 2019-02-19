@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-14 02:38:03
+/* Smarty version 3.1.33, created on 2019-02-19 02:08:31
   from 'D:\xamppp\htdocs\jms_extron\modules\jmsflashsales\views\templates\hook\list.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c651adbe24dc5_51042755',
+  'unifunc' => 'content_5c6bab6fdd66a0_45145259',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c651adbe24dc5_51042755 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c6bab6fdd66a0_45145259 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="panel"><h3><i class="icon-list-ul"></i> <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Item list','mod'=>'jmsflashsales'),$_smarty_tpl ) );?>
 
 	<span class="panel-heading-action">

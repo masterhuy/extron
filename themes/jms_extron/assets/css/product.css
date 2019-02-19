@@ -200,6 +200,7 @@
 	cursor: pointer;
 	margin-bottom: 13px;
 	width: 100%;
+    background: #fff;
 }
 .images-container .js-qv-mask {
 	white-space: nowrap;
@@ -901,21 +902,27 @@
 	.images-container .thumb-box {
 		height: 34.1vw;
 	}
-    .images-container .product-images > li.thumb-container > .thumb {
-        width: 82px;
-    }
 }
 @media(max-width:1199px){
+    .arrows.js-arrows i, .scroll-box-arrows i{
+        height: 37.5px;
+    }
 	div.products-list-in-row .content_price .price.new {
         font-size: 20px;
     }
 	.images-container .product-images > li.thumb-container > .thumb {
-		width: 99px;
+		width: 78px;
 	}
 }
 @media(max-width:991px){
+    #product-modal .modal-dialog{
+        width: 475px;
+    }
     .images-container .product-images > li.thumb-container > .thumb {
-        width: 104px;
+        width: 83px;
+    }
+    .arrows.js-arrows i, .scroll-box-arrows i {
+        height: 40px;
     }
     div.products-sort-order .dropdown-menu {
         right: 0;
@@ -993,11 +1000,14 @@
         margin-left: 0;
         display: block;
     }
+    .arrows.js-arrows i, .scroll-box-arrows i {
+        height: 51.5px;
+    }
 	.images-container .thumb-box {
-		height: 92.1vw;
+		height: 105px;
 	}
 	.images-container .product-images > li.thumb-container > .thumb {
-		width: 20.5vw;
+		
 	}
 	#more_info_block .tabs li a.active{
 		border-bottom:0 !important;
@@ -1008,9 +1018,6 @@
 	.product-quantity .add-to-cart{
 		padding:8px 16px;
 	}
-    .scroll-box-arrows.scroll {
-        bottom: 155px;
-    }
 }
 @media(max-width:320px){
 	.images-container .thumb-box {
@@ -1034,14 +1041,10 @@
 		font-size: 12px;
 	}
 	.images-container .product-images > li.thumb-container > .thumb {
-		width: 25vw;
+		width: 73px;
 	}
+    .arrows.js-arrows i, .scroll-box-arrows i {
+        height: 35px;
+    }
 }
 
-
-
-Available In Stock
-
-
-
-Out of Stock

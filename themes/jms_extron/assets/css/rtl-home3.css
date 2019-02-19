@@ -1,40 +1,32 @@
-.topbar .right .addon-box {
-  margin-right: 44px;
-  margin-left: 0;
+.jms-slider-wrapper .text-2 {
+  text-align: left;
 }
-.topbar .right .addon-box:not(:first-child)::before {
+.topbar .left ul li:not(:last-child) {
+  margin-left: 34px;
+  margin-right: 0;
+}
+.topbar .left ul li:not(:first-child)::before {
   right: -21px;
   left: auto;
 }
-.header .right .addon-box {
-  margin-right: 40px;
-  margin-left: 0;
+.jms-megamenu .nav > li:first-child {
+  padding-right: 0;
+  padding-left: 15px;
 }
-.header .right .addon-box:last-child {
-  margin-right: 40px;
+.menu .center {
+  text-align: right;
 }
-.header .right .addon-box:not(:last-child)::after {
-  left: -20px;
-  right: auto;
+#footer .footer_b .find-us {
+  text-align: right;
 }
-.intro .right p {
-  margin-left: 15px;
+#footer #social_block ul li a {
+  margin-left: 20px;
   margin-right: 0;
 }
-.intro .left p {
-  margin-right: 18px;
-  margin-left: 0;
-}
-.blog .blog-item .post-thumb {
-  margin-left: 30px;
+#footer #newsletter_block_left .newsletter-btn {
   margin-right: 0;
 }
-
-.newsletter #newsletter_block_left .textnews_h2 {
-  margin-left: 40px;
-  margin-right: 0;
-}
-.newsletter .newsletter-btn.btn-popup {
-  margin-right: 20px;
-  margin-left: 0;
+#footer #newsletter_block_left .text-footer > span {
+  padding-left: 15px;
+  padding-right: 0;
 }

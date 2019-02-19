@@ -2188,7 +2188,7 @@ li.product-flag {
   letter-spacing: 0;
   line-height: 26px;
 }
-.product-desc ul li::before{
+.product-desc ul li::before {
   content: "";
   width: 6px;
   height: 6px;
@@ -2196,8 +2196,7 @@ li.product-flag {
   background: #cbcbcb;
   position: absolute;
   left: -15px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 10px;
 }
 .product-price {
   display: none;

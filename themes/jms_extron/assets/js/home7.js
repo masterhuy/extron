@@ -9,16 +9,16 @@
 *  @Website: http://www.joommasters.com
 */
 jQuery(document).ready(function($) {
-	var menu = $(".jms-row.menu");
+	var header = $(".jms-row.header");
 	var cateTab = $(".cate_tab");
 
 	$("#jms-vermegamenu-container").addClass('collapse');
 
 	$(window).scroll(function () {
     	if ($(window).scrollTop() > 300){
-			menu.addClass("fixed");
+			header.addClass("fixed");
     	} else {
-			menu.removeClass("fixed");
+			header.removeClass("fixed");
     	}
     });
 

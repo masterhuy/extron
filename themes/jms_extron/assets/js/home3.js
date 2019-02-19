@@ -49,17 +49,19 @@ jQuery(function ($) {
 });
 	
 jQuery(document).ready(function($) {
-	var header = $(".jms-row.header");
+	var menu = $(".jms-row.menu");
 
 	$("#jms-vermegamenu-container").addClass('collapse');
 	$(".page-index #jms-vermegamenu-container").addClass('collapse in');
 
 	$(window).scroll(function () {
     	if ($(window).scrollTop() > 300){
-			header.addClass("fixed");
+			menu.addClass("fixed");
+			$(".page-index #jms-vermegamenu-container").removeClass('in');
 
     	} else {
-			header.removeClass("fixed");
+			menu.removeClass("fixed");
+			$(".page-index #jms-vermegamenu-container").addClass('in');
     	}
     });
 });

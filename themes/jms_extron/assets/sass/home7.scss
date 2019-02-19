@@ -92,6 +92,7 @@
 .header{
 	padding: 34px 0;
 	box-shadow: 0 0 5px rgba(0,0,0,0.1);
+	background: #fff;
 	.container > .row{
 		@include flexVCenter();
 	}
@@ -256,7 +257,7 @@
 		transform: translateY(-50%);
 		width: auto;
 		bottom: auto;
-		right: 70px;
+		right: 3.6vw;
 		a{
 			width: 5.105vw;
 			height: 5.73vw;
@@ -679,12 +680,14 @@
 	.product-carousel-col5, 
 	.product-carousel,
 	.product-carousel2-col3{
-		padding-top: 50px;
+		padding-top: 100px;
 	}
 	.categories-carousel2-no-carousel{
 		right: auto;
 		left: 15px;
 		top: 50px;
+		line-height: 35px;
+		text-align: left;
 		z-index: 999;
 		.block_category {
 			margin-left: 0;
@@ -711,6 +714,24 @@
 		}
 		.center .addon-box{
 			padding: 0;
+		}
+	}
+	.banner .banner-content {
+		left: 20px;
+		.text-1{
+			font-size: 16px;
+		}
+		.text-2{
+			font-size: 14px;
+			strong{
+				font-size: 14px;
+			}
+		}
+	}
+	.new_arrivals{
+		.product-link{
+			white-space: nowrap;
+			text-overflow: ellipsis;
 		}
 	}
 }

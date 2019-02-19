@@ -125,6 +125,7 @@
     border-color: #ff4c65; }
 
 .menu {
+  background: #fff;
   border-top: 1px solid #ebebeb; }
   .menu .container > .row {
     display: -webkit-box;

@@ -1,3 +1,25 @@
+@media (min-width: 992px) {
+  .jms-row.header.fixed,
+  .jms-row.menu.fixed {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    -webkit-box-shadow: 0 0 11px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.15);
+    z-index: 99999;
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    -webkit-animation-name: slideDown;
+    animation-name: slideDown;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+    margin-right: 0 !important; }
+  .home_2 .jms-row.header.fixed, .home_5 .jms-row.header.fixed, .home_6 .jms-row.header.fixed {
+    background: #fff;
+    padding: 5px 0; }
+  .home_6 .jms-row.header.fixed, .home_7 .jms-row.header.fixed {
+    padding: 10px 0; } }
+
 @-webkit-keyframes slideDown {
   0% {
     -webkit-transform: translateY(-100%);
@@ -513,8 +535,6 @@ a.wishlist_top {
     margin-bottom: 0; }
 
 @media (max-width: 1199px) {
-  #product .product-quantity .qty {
-    margin-right: 10px; }
   div.products-list-in-row .content_price {
     margin-bottom: 0;
     padding-bottom: 0;
@@ -529,6 +549,10 @@ a.wishlist_top {
     margin-right: 0; } }
 
 @media (max-width: 481px) {
+  div.jms-hotdeal.type2 .img-hotdeal, div.jms-hotdeal.type2 .product-info {
+    width: 100%; }
+  div.jms-hotdeal.type2 .product-box {
+    display: block; }
   div.jmsflashsales-tab2 .nav li {
     display: block; }
   div.flashsales-tab-carousel2 .product-miniature {
@@ -557,10 +581,6 @@ a.wishlist_top {
     padding: 9px 0; }
   div.product-add-to-cart .text {
     margin-right: 10px; }
-  div.product-quantity .input-group.bootstrap-touchspin {
-    min-width: 85px; }
-  div.product-quantity button.btn-touchspin {
-    width: 15px; }
   div#blockcart-modal.modal.in .modal-dialog {
     -webkit-transform: translate(0, 10%);
     -ms-transform: translate(0, 10%);
@@ -578,7 +598,10 @@ a.wishlist_top {
   div.products-list-in-row .product-preview .product_action {
     width: 100%; }
   div.products-list-in-row .product-preview .border {
-    display: block; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
   div.footer_t .contact .address {
     padding-right: 0; }
   div.footer_t .contact-info li.address {
@@ -683,10 +706,6 @@ a.wishlist_top {
     margin-right: 15px; }
   div.quickview .product-quantity .add-to-cart {
     padding: 12px 15px; }
-  #product .product-box .flexbox {
-    width: auto; }
-  #category .product-box .flexbox {
-    width: auto; }
   .ver_mobile {
     display: block; }
     .ver_mobile .container > .row {

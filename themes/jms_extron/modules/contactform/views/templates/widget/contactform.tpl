@@ -49,7 +49,7 @@
       {/if}
 
       {if $contact.allow_file_upload}
-        <div class="form-group col-md-6 col-sx-12">
+        <div class="form-group col-md-12 col-sx-12">
             <input type="file" name="fileUpload" class="filestyle" data-buttonText="{l s='Choose file' d='Shop.Theme.Actions'}">
         </div>
       {/if}

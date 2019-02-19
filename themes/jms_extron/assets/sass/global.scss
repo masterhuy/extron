@@ -1,20 +1,31 @@
 @import "mixin";
 @import "varians";
 
-// @media (min-width: 992px){
-// 	.jms-row.header.fixed,
-// 	.jms-row.menu.fixed{
-// 		top: 0;
-// 		position: fixed;
-// 		width: 100%;
-// 		box-shadow: 0 0 11px rgba(0,0,0,0.15);
-// 	  	z-index: 99999;
-// 	  	animation-duration: 0.8s;
-// 		animation-name: slideDown;
-// 		animation-timing-function: ease;
-// 		margin-right: 0 !important;
-// 	}
-// }
+@media (min-width: 992px){
+	.jms-row.header.fixed,
+	.jms-row.menu.fixed{
+		top: 0;
+		position: fixed;
+		width: 100%;
+		box-shadow: 0 0 11px rgba(0,0,0,0.15);
+	  	z-index: 99999;
+	  	animation-duration: 0.8s;
+		animation-name: slideDown;
+		animation-timing-function: ease;
+		margin-right: 0 !important;
+	}
+	.home_2, .home_5, .home_6{
+		.jms-row.header.fixed{
+			background: #fff;
+			padding: 5px 0;
+		}
+	}
+	.home_6, .home_7{
+		.jms-row.header.fixed{
+			padding: 10px 0;
+		}
+	}
+}
 
 @keyframes slideDown {
   0% {
@@ -600,11 +611,6 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 1199px){
-	#product{
-		.product-quantity .qty{
-			margin-right: 10px;
-		}
-	}
 	div.products-list-in-row .content_price {
 		margin-bottom: 0;
 		padding-bottom: 0;
@@ -624,6 +630,14 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 481px){
+	div.jms-hotdeal.type2{
+		.img-hotdeal, .product-info{
+			width: 100%;
+		}
+		.product-box{
+			display: block;
+		}
+	}
 	div.jmsflashsales-tab2 .nav li{
 		display: block;
 	}
@@ -662,14 +676,6 @@ a.wishlist_top{
 	div.product-add-to-cart .text {
 		margin-right: 10px;
 	}
-	div.product-quantity{
-		.input-group.bootstrap-touchspin {
-			min-width: 85px;
-		}
-		button.btn-touchspin {
-			width: 15px;
-		}
-	}
 	div#blockcart-modal.modal.in .modal-dialog {
 		transform: translate(0, 10%);
 	}
@@ -693,7 +699,7 @@ a.wishlist_top{
 				width: 100%;
 			}
 			.border{
-				display: block;
+				flex-direction: column;
 			}
 		}
 	}
@@ -841,17 +847,6 @@ a.wishlist_top{
 	}
 	div.quickview .product-quantity .add-to-cart{
 		padding: 12px 15px;
-	}
-
-	#product{
-		.product-box .flexbox {
-			width: auto;
-		}
-	}
-	#category{
-		.product-box .flexbox {
-			width: auto;
-		}
 	}
 	.ver_mobile{
 		display: block;

@@ -4,6 +4,7 @@
 #contact #right-column{
 	width: 33.33333333%;
 }
+
 #contact .block-categories,
 #contact .html_left,
 #contact .best-sellers_block_right{
@@ -31,7 +32,7 @@
 	margin-bottom: 50px;
 }
 #contact #wrapper #content-wrapper {
-	padding:0px 30px;
+	padding:0px 15px;
 }
 #contact #footer {
 	margin-top: 90px;
@@ -130,8 +131,16 @@
 	}
 }
 @media(max-width:767px) {
+	#contact #content-wrapper{
+		width: 100%;
+		margin-bottom: 50px;
+	}
+	#contact #right-column{
+		width: 100%;
+		padding: 0;
+	}
 	#contact #wrapper #content-wrapper {
-		padding: 0 15px;
+		padding: 0;
 	}
 	#contact #wrapper>.row {
 		margin-left:0;

@@ -170,9 +170,6 @@
 		padding-right: 15px;
 		width: 100%;
 	}
-	.html_left, .html_left img{
-		width:100%;
-	}
 	#product #content-wrapper, #category #content-wrapper {
 		padding-left: 15px;
 	}
@@ -184,6 +181,9 @@
 	}
 }
 @media (max-width: 767px){
+	.breadcrumb-inner ol li{
+		margin: 0 10px;
+	}
 	div#jms-vermegamenu-container{
 		max-width: calc(100% - 30px);
 	}
@@ -413,6 +413,9 @@
 
 }
 @media (max-width: 481px){
+	.html_left, .html_left img{
+		width:100%;
+	}
 	.header .right #jms_ajax_search #search_result {
 		right: 15px;
 		width: 290px;
