@@ -436,7 +436,7 @@ a.wishlist_top {
         background: url("../img/icon/right-hover-h6.png") no-repeat center; }
 
 #search #content .search-box {
-  width: 300px;
+  width: 290px;
   margin: 0 auto; }
 
 #more_info_block .panel.panel-default {
@@ -853,7 +853,7 @@ a.wishlist_top {
     padding: 0;
     width: 100%;
     border-bottom: 1px solid #eee;
-    background: transparent; }
+    background: url("../img/icon/search.png") no-repeat right; }
   #search_widget button {
     display: none; }
 
@@ -1616,6 +1616,43 @@ a.wishlist_top {
 
 #best-sales #search_widget, #best-sales .blog-widget {
   display: none; }
+
+.jms-slider-wrapper .countdown.is-countdown {
+  background: transparent;
+  margin: 0;
+  padding: 0; }
+
+.jms-slider-wrapper .countdown-row::before {
+  display: none; }
+
+.jms-slider-wrapper .countdown-section {
+  width: 3.4vw;
+  height: 3.1vw;
+  border: 2px solid #ff4c65;
+  border-radius: 3px;
+  text-align: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-right: 10px; }
+  .jms-slider-wrapper .countdown-section:not(:last-child)::after {
+    display: none; }
+  .jms-slider-wrapper .countdown-section .countdown-amount {
+    display: block;
+    font-weight: 700;
+    font-size: 1.2vw;
+    color: #000;
+    padding-top: 2px; }
+  .jms-slider-wrapper .countdown-section .countdown-period {
+    font-size: 0.7vw;
+    color: #555; }
 
 #form_wishlist .inputTxt {
   border: 1px solid #ebebeb;

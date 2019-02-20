@@ -508,7 +508,7 @@ a.wishlist_top{
 	}
 }
 #search #content .search-box {
-	width: 300px;
+	width: 290px;
 	margin: 0 auto;
 }
 #more_info_block{
@@ -1032,7 +1032,7 @@ a.wishlist_top{
 		padding: 0;
 		width: 100%;
 		border-bottom: 1px solid #eee;
-		background: transparent;
+		background: url("../img/icon/search.png") no-repeat right;
 	}
 	button{
 		display: none;
@@ -1943,6 +1943,43 @@ a.wishlist_top{
 #best-sales{
 	#search_widget, .blog-widget{
 		display: none;
+	}
+}
+
+//countdown slider
+.jms-slider-wrapper{
+	.countdown.is-countdown{
+		background: transparent;
+		margin: 0;
+		padding: 0;
+	}
+	.countdown-row::before {
+		display: none;
+	}
+	.countdown-section{
+		width: 3.4vw;
+		height: 3.1vw;
+		border: 2px solid #ff4c65;
+		border-radius: 3px;
+		text-align: center;
+		display: inline-flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-right: 10px;
+		&:not(:last-child)::after {
+			display: none;
+		}
+		.countdown-amount{
+			display: block;
+			font-weight: 700;
+			font-size: 1.2vw;
+			color: #000;
+			padding-top: 2px;
+		}
+		.countdown-period{
+			font-size: 0.7vw;
+			color: #555;
+		}
 	}
 }
 

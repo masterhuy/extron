@@ -272,19 +272,6 @@
 			white-space: nowrap;
 			text-overflow: ellipsis;
 			overflow: hidden;
-			&:hover::before{
-				margin-left: 0;
-				opacity: 1;
-			}
-			&::before{
-				content: "\f227";
-				font-family: LineAwesome;
-				margin-left: -18px;
-				opacity: 0;
-				width: 18px;
-				transition: .4s all;
-				display: inline-block;
-			}
 		}
 	}
 }

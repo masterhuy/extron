@@ -60,7 +60,7 @@
 #pagenotfound .small-text, #search .small-text {
 	font-size: 16px;
 	font-weight: 400;
-	color: #907459;
+	margin-bottom: 50px;
 }
 @media(max-width:767px) {
 	#search .page-content, #pagenotfound .page-content{

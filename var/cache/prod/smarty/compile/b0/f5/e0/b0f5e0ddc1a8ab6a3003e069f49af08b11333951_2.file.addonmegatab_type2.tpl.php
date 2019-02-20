@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-19 05:00:10
+/* Smarty version 3.1.33, created on 2019-02-20 05:24:04
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\modules\jmspagebuilder\views\templates\hook\addonmegatab_type2.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c6bd3aaab9c38_54280322',
+  'unifunc' => 'content_5c6d2ac43a6906_48257839',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product2.tpl' => 1,
   ),
 ),false)) {
-function content_5c6bd3aaab9c38_54280322 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c6d2ac43a6906_48257839 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
 var megtab2_items = <?php if ($_smarty_tpl->tpl_vars['cols']->value) {

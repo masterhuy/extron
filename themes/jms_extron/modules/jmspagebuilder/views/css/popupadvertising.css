@@ -64,21 +64,13 @@ border-radius: 30px;
 text-align: center;
 }
 .jms-popup {
-  padding: 0;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 700px;
   overflow: hidden;
-  margin-left: -395px;
-  margin-top: -311.5px;
-  border-radius: 0px;
-  text-align: left;
-  line-height: 30px;
-  max-width: 100%;
-  text-align: left;
   background: #fff;
-  transition-delay: 2s;
+  transition: unset !important;
 }
 .jms-popup .addon-title .text-1{
   font-size: 28px;
@@ -128,12 +120,6 @@ line-height: 1.64;
     text-align: center;
 	text-transform:uppercase;
 	font-size:24px;
-}
-.jms-popup-overlay > .jms-popup {
-  margin: 0 auto;
-  position: absolute;
-  left: calc(50% - 350px);
-  top: calc(50% - 255px);  
 }
 .jms-popup-overlay > .jms-popup img {
   width: auto;

@@ -39,9 +39,11 @@ var bp_itemsMobile = {if $cols_xs}{$cols_xs nofilter}{else}1{/if};
 <p class="addon-desc">{$addon_desc nofilter}</p>
 {/if}	
 {assign var="box_template" "{$addon_tpl_dir nofilter}productbox.tpl"}
-{if $banner_img1}
+
 <div class="banner-1 col-lg-6 col-md-6 col-xs-12">
-	<img src="{$root_url nofilter}{$banner_img1 nofilter}" alt="" class="img-responsive" />
+	{if $banner_img1}
+		<img src="{$root_url nofilter}{$banner_img1 nofilter}" alt="" class="img-responsive" />
+	{/if}
 	<div class="banner-content">
 	{if $banner_html1}
 		{$banner_html1 nofilter}
@@ -51,7 +53,7 @@ var bp_itemsMobile = {if $cols_xs}{$cols_xs nofilter}{else}1{/if};
 	{/if}
 	</div>
 </div>
-{/if}
+
 <div class="product-box col-lg-6 col-md-6 col-xs-12">
 	<div class="banner-product-carousel">	
 		{foreach from = $products_slides item = products_slide}

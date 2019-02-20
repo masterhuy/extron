@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-19 02:08:47
+/* Smarty version 3.1.33, created on 2019-02-20 05:02:28
   from 'D:\xamppp\htdocs\jms_extron\modules\welcome\views\contents\end.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c6bab7f2f8ac7_13105159',
+  'unifunc' => 'content_5c6d25b4d3b554_52051472',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c6bab7f2f8ac7_13105159 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c6d25b4d3b554_52051472 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div id="onboarding-welcome" class="modal-body">
     <div class="col-12">

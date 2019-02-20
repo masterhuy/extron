@@ -1,67 +1,65 @@
-.topbar .left span {
-  margin-left: 36px;
-  float: right;
+.topbar .left ul li:not(:last-child) {
+  margin-left: 34px;
   margin-right: 0;
 }
-.topbar .left span::after {
-  left: -21px;
-  top: 0;
-  right: auto;
-}
-.topbar .right .addon-box {
-  margin-right: 44px;
-  margin-left: 0;
-}
-.topbar .right .addon-box:not(:first-child)::before {
+.topbar .left ul li:not(:first-child)::before {
   right: -21px;
   left: auto;
 }
-.header .center .features {
-  padding-left: 320px;
-  padding-right: 22px;
-}
-.header .right .addon-box {
-  margin-right: 52px;
+.topbar .right .addon-box {
+  margin-right: 42px;
   margin-left: 0;
 }
-.header .right .addon-box:last-child {
-  margin-right: 52px;
+.topbar .right .addon-box:not(:first-child)::before {
+  right: -23px;
+  left: auto;
 }
-.header .right .addon-box:not(:last-child)::after {
-  left: -27px;
+.header .right .addon-box:not(:first-child) {
+  margin-right: 15px;
+  margin-left: 0;
+}
+.menu .jms-advsearch .input-group-addon.icon-drop-down {
+  left: 0;
   right: auto;
 }
-.addon-title h3 {
-  text-align: right !important;
-}
-.owl-theme .owl-controls {
-  right: auto;
-  left: 15px;
-}
-.owl-theme .owl-controls div {
-  margin-left: 0 !important;
-  margin-right: 5px !important;
-}
-.addon-title h3::after {
+.menu .jms-advsearch .input-group-addon.icon-drop-down::before {
   right: 0;
   left: auto;
 }
-
-.newsletter #newsletter_block_left .textnews_h2 {
-  margin-left: 40px;
+.menu #ajax_advsearch {
+  background: transparent url("../img/icon/search-h5.png") no-repeat 475px 13px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.menu #selector_cat {
+  background: url("../img/icon/icon-down.png") no-repeat 15px 23px;
+}
+.ver_menu img {
+  margin-left: 10px;
   margin-right: 0;
 }
-.newsletter .newsletter-btn.btn-popup {
-  margin-right: 20px;
+.menu .right ul li:not(:first-child) {
+  margin-right: 35px;
   margin-left: 0;
 }
-.blog .owl-theme .owl-controls {
-  right: auto;
-  left: 0;
+.jms-slider-wrapper .text-2 {
+  text-align: left;
 }
-.two_column .blog .owl-dots {
-  text-align: right;
+.categories-wrapper .child li a::before {
+  display: none;
 }
-.two_column .product-box .flexbox {
-  margin-left: 10px;
+.jmsflashsales-tab2 .countdown-section:not(:last-child) {
+  margin-left: 17px;
+  margin-right: 0;
+}
+#newsletter_block_left .textnews_h5 h3 {
+  margin-left: 50px;
+  margin-right: 0;
+}
+#newsletter_block_left .textnews_h5 > span {
+  margin-left: 57px;
+  margin-right: 0;
+}
+.footer_m .right{
+  text-align: left;
 }

@@ -1,11 +1,12 @@
-1550123612
-s:324:"HTTP/1.1 200 OK
+1550653306
+s:353:"HTTP/1.1 200 OK
 Server: nginx
-Date: Thu, 14 Feb 2019 03:53:34 GMT
+Date: Wed, 20 Feb 2019 07:01:49 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 15
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
 Access-Control-Allow-Origin: *
 X-UA-Compatible: IE=Edge,chrome=1
 Strict-Transport-Security: max-age=0

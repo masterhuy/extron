@@ -5887,6 +5887,7 @@ sup.required {
   font-family: LineAwesome;
   margin-left: -18px;
   opacity: 0;
+  color: #ff4c65;
   display: inline-block;
   width: 18px;
   transition: .4s all;

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-19 04:11:23
+/* Smarty version 3.1.33, created on 2019-02-20 05:23:17
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\modules\jmspagebuilder\views\templates\hook\addoncategoryshow2_nocarousel.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c6bc83b4208b6_24403751',
+  'unifunc' => 'content_5c6d2a9574d6d4_72130196',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c6bc83b4208b6_24403751 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c6d2a9574d6d4_72130196 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
 	var cs_no_items = <?php if ($_smarty_tpl->tpl_vars['cols']->value) {

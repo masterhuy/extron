@@ -238,19 +238,6 @@
       -o-text-overflow: ellipsis;
       text-overflow: ellipsis;
       overflow: hidden; }
-      .categories-wrapper .child li a:hover::before {
-        margin-left: 0;
-        opacity: 1; }
-      .categories-wrapper .child li a::before {
-        content: "\f227";
-        font-family: LineAwesome;
-        margin-left: -18px;
-        opacity: 0;
-        width: 18px;
-        -webkit-transition: .4s all;
-        -o-transition: .4s all;
-        transition: .4s all;
-        display: inline-block; }
 
 .jms-row.brand {
   background-color: #f7f7f7; }

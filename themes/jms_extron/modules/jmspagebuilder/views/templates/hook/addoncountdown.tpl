@@ -34,6 +34,7 @@
 	{if $html_content}
 		{$html_content nofilter}
 	{/if}
+	{$expire_time|escape:'html':'UTF-8'}
 	<div class="countdown">
 		{$expire_time|escape:'html':'UTF-8'}
 	</div>
@@ -41,3 +42,4 @@
 		<a href="{if $button_link}{$button_link|escape:'htmlall':'UTF-8'}{else}#{/if}"{if $target == 'new window'} target="_blank"{/if} class="btn-effect1">{$button_text|escape:'htmlall':'UTF-8'}</a>
 	{/if}
 </div>	
+

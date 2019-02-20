@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-01 03:47:35
+/* Smarty version 3.1.33, created on 2019-02-20 03:58:33
   from 'D:\xamppp\htdocs\jms_extron\modules\jmspagebuilder\views\templates\hook\addonbannerproduct.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c5407a702a762_69919435',
+  'unifunc' => 'content_5c6d16b9304893_75530330',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '150d774a6ccaf24700f2c5af96b009ce0b1c49f6' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_extron\\modules\\jmspagebuilder\\views\\templates\\hook\\addonbannerproduct.tpl',
-      1 => 1542078179,
+      1 => 1550653109,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product.tpl' => 1,
   ),
 ),false)) {
-function content_5c5407a702a762_69919435 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c6d16b9304893_75530330 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
 var bp_items = <?php if ($_smarty_tpl->tpl_vars['cols']->value) {
@@ -54,12 +54,14 @@ if ($_smarty_tpl->tpl_vars['addon_desc']->value) {?>
 <?php ob_start();
 echo $_smarty_tpl->tpl_vars['addon_tpl_dir']->value;
 $_prefixVariable1=ob_get_clean();
-$_smarty_tpl->_assignInScope('box_template', $_prefixVariable1."productbox.tpl");
-if ($_smarty_tpl->tpl_vars['banner_img1']->value) {?>
+$_smarty_tpl->_assignInScope('box_template', $_prefixVariable1."productbox.tpl");?>
+
 <div class="banner-1 col-lg-6 col-md-6 col-xs-12">
-	<img src="<?php echo $_smarty_tpl->tpl_vars['root_url']->value;
+	<?php if ($_smarty_tpl->tpl_vars['banner_img1']->value) {?>
+		<img src="<?php echo $_smarty_tpl->tpl_vars['root_url']->value;
 echo $_smarty_tpl->tpl_vars['banner_img1']->value;?>
 " alt="" class="img-responsive" />
+	<?php }?>
 	<div class="banner-content">
 	<?php if ($_smarty_tpl->tpl_vars['banner_html1']->value) {?>
 		<?php echo $_smarty_tpl->tpl_vars['banner_html1']->value;?>
@@ -72,7 +74,7 @@ echo $_smarty_tpl->tpl_vars['banner_img1']->value;?>
 	<?php }?>
 	</div>
 </div>
-<?php }?>
+
 <div class="product-box col-lg-6 col-md-6 col-xs-12">
 	<div class="banner-product-carousel">	
 		<?php

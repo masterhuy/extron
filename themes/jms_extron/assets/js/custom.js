@@ -790,10 +790,13 @@ jQuery(function ($) {
 		});
 	}
 
+	var rtl = false;
+	if ($("body").hasClass("rtl")) rtl = true;
 	$('.flashsales-slick').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         rows: 3,
+        rtl: rtl,
         responsive: [
 		    {
 		      breakpoint: 1199,
