@@ -468,6 +468,9 @@
 }
 
 @media (max-width: 481px){
+	.jms-advsearch #searchbox {
+	    border: 1px solid #ebebeb;
+	}
 	.menu{
 		.jms-advsearch .input-group-addon.input-group-search button {
 			width: 30px;

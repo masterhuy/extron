@@ -50,6 +50,7 @@
     color:#000;
     line-height:30px;	
 	overflow:auto;
+	border: 1px solid #e1e1e1;
 }
 select#jmsskin {
 	width:auto;

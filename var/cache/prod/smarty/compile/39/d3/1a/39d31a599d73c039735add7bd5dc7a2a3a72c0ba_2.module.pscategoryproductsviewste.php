@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-20 05:24:43
+/* Smarty version 3.1.33, created on 2019-02-21 02:24:15
   from 'module:pscategoryproductsviewste' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c6d2aeb85e905_11849441',
+  'unifunc' => 'content_5c6e521fdb3fe1_22449776',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product.tpl' => 1,
   ),
 ),false)) {
-function content_5c6d2aeb85e905_11849441 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c6e521fdb3fe1_22449776 (Smarty_Internal_Template $_smarty_tpl) {
 ?><section class="featured-products clearfix mt-3 addon-title">
   <h3>
     <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'related products','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>

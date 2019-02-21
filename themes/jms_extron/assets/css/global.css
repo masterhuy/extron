@@ -549,6 +549,8 @@ a.wishlist_top {
     margin-right: 0; } }
 
 @media (max-width: 481px) {
+  div.hotdeal-carousel .product-info {
+    padding: 0 15px 30px; }
   div.jms-hotdeal.type2 .img-hotdeal, div.jms-hotdeal.type2 .product-info {
     width: 100%; }
   div.jms-hotdeal.type2 .product-box {
@@ -568,7 +570,7 @@ a.wishlist_top {
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis; }
   form#searchbox #selector_cat {
-    padding-right: 38px;
+    padding-right: 58px;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis; }
   div.jms-tab .nav {
@@ -656,7 +658,7 @@ a.wishlist_top {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%); }
-  .service .feature-box {
+  div.feature-box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -666,9 +668,9 @@ a.wishlist_top {
     justify-content: center;
     text-align: center !important;
     padding: 10px 0; }
-    .service .feature-box i {
+    div.feature-box i {
       margin-right: 0 !important; }
-    .service .feature-box .include_content_s {
+    div.feature-box .include_content_s {
       margin-left: 0;
       margin-top: 10px; }
   .footer_t div.layout-column {
@@ -1019,6 +1021,9 @@ a.wishlist_top {
 
 .jms-banner .banner-content .btn-shopnow-banner {
   font-size: 13px; }
+  .jms-banner .banner-content .btn-shopnow-banner + img {
+    background: #ff4c65;
+    border-radius: 50%; }
 
 .banner_html {
   text-align: center;
@@ -1478,7 +1483,14 @@ a.wishlist_top {
     content: url("../img/icon/icon-left.png");
     position: relative;
     top: 2px;
-    left: 4px; }
+    left: 4px;
+    width: 16px;
+    height: 16px;
+    background: #ff4c65;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    border-radius: 50%; }
 
 .force-full-width .feature-icon span {
   display: none; }
@@ -1772,7 +1784,17 @@ a.wishlist_top {
     width: auto;
     padding: 0 17px 0 12px;
     text-transform: uppercase;
-    font-weight: 700; }
+    font-weight: 700;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .jms-hotdeal.type2 .product-preview button.cart-button.checking > .la, .jms-hotdeal.type2 .product-preview button.cart-button.checked > .la {
+      width: 22px;
+      height: 22px;
+      margin-right: 5px; }
   .jms-hotdeal.type2 .text-addcart, .jms-hotdeal.type2 .text-outofstock {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1949,6 +1971,33 @@ a.wishlist_top {
   .feature-box i {
     font-size: 48px;
     color: #ff4c65; }
+
+#newsletter_block_left .block_c_right form {
+  position: relative; }
+
+#newsletter_block_left .block_c_right .alert {
+  position: absolute;
+  margin: 0;
+  top: calc(100% + 10px);
+  z-index: 9; }
+  #newsletter_block_left .block_c_right .alert::before {
+    content: "";
+    left: 20px;
+    top: -6px;
+    background: #f2dede;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    z-index: 99; }
+
+#new-products #left-column #search_widget {
+  display: none; }
+
+#new-products .blog-widget {
+  display: none; }
 
 .menu .features .image img {
   width: 100%; }

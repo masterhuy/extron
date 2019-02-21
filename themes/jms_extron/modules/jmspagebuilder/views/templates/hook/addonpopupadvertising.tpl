@@ -24,7 +24,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 <div class="jms-popup-overlay" style="display:none;">
-	<div class="jms-popup">		
+	<div class="jms-popup" class="fadeInUp animated">		
 		{if $popup_title}
 		<h2>
 			{$popup_title|escape:'htmlall':'UTF-8'}

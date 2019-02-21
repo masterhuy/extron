@@ -1,9 +1,15 @@
 .page-not-found {
 	text-align: center;
 }
+.page-not-found .small-text{
+	margin-bottom: 50px;
+}
 .page-not-found .icon i{
 	font-size: 250px;
 	margin-bottom: 30px;
+}
+.page-not-found #search_widget{
+	max-width: 290px;
 }
 .page-not-found h3 {
 	text-transform: capitalize;

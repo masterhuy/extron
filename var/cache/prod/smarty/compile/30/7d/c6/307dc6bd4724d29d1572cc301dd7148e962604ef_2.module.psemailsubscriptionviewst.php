@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-20 05:24:06
+/* Smarty version 3.1.33, created on 2019-02-21 04:33:49
   from 'module:psemailsubscriptionviewst' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c6d2ac619f737_02185949',
+  'unifunc' => 'content_5c6e707d34f0c5_84339303',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '307dc6bd4724d29d1572cc301dd7148e962604ef' => 
     array (
       0 => 'module:psemailsubscriptionviewst',
-      1 => 1548053761,
+      1 => 1550715902,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c6d2ac619f737_02185949 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c6e707d34f0c5_84339303 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Block Newsletter module-->
 <div id="newsletter_block_left" class="block">	
 	<div class="block_content">
@@ -69,17 +69,18 @@ function content_5c6d2ac619f737_02185949 (Smarty_Internal_Template $_smarty_tpl)
 						</button>
 						<input type="hidden" name="action" value="0" />
 					</div>
+					<?php if ($_smarty_tpl->tpl_vars['msg']->value) {?>
+			    		<div class="alert <?php if ($_smarty_tpl->tpl_vars['nw_error']->value) {?>alert-danger<?php } else { ?>alert-success<?php }?>">
+			        		<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['msg']->value, ENT_QUOTES, 'UTF-8');?>
+
+			   			</div>
+					<?php }?>
 				</form>
 			</div>
-       </div>
+      	</div>
 	</div>
 </div>
-<?php if ($_smarty_tpl->tpl_vars['msg']->value) {?>
-    <div class="alert <?php if ($_smarty_tpl->tpl_vars['nw_error']->value) {?>alert-danger<?php } else { ?>alert-success<?php }?>">
-        <?php echo htmlspecialchars($_smarty_tpl->tpl_vars['msg']->value, ENT_QUOTES, 'UTF-8');?>
 
-    </div>
-<?php }?>
 
 
 

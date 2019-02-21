@@ -57,20 +57,21 @@
 }
 .jms-popup .alert.alert-danger{
   position: absolute;
-width: 100%;
-padding: 0;
-bottom: -42px;
-border-radius: 30px;
-text-align: center;
+  width: 100%;
+  padding: 0;
+  bottom: -42px;
+  border-radius: 30px;
+  text-align: center;
 }
 .jms-popup {
+  width: 530px;
+  height: 550px;
   top: 50% !important;
   left: 50% !important;
   transform: translate(-50%, -50%);
   position: absolute;
   overflow: hidden;
   background: #fff;
-  transition: unset !important;
 }
 .jms-popup .addon-title .text-1{
   font-size: 28px;

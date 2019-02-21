@@ -80,16 +80,17 @@
 						</button>
 						<input type="hidden" name="action" value="0" />
 					</div>
+					{if $msg}
+			    		<div class="alert {if $nw_error}alert-danger{else}alert-success{/if}">
+			        		{$msg}
+			   			</div>
+					{/if}
 				</form>
 			</div>
-       </div>
+      	</div>
 	</div>
 </div>
-{if $msg}
-    <div class="alert {if $nw_error}alert-danger{else}alert-success{/if}">
-        {$msg}
-    </div>
-{/if}
+
 
 
 

@@ -1436,10 +1436,10 @@ ul#order_step li {
 
 .cart-wrap .remove_link {
   float: left;
+  margin-left: 38px;
 }
 .cart-wrap .remove_link .fa {
   font-size: 17px;
-  margin-left: 46px;
   padding-top: 6px;
 }
 .remove-from-cart{

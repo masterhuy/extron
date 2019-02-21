@@ -148,7 +148,7 @@
   .menu .jms-megamenu .nav > li:first-child {
     padding-left: 0; }
   .menu .jms-megamenu .nav > li > a {
-    color: #fff; }
+    color: #fff !important; }
   .menu .center {
     position: unset;
     text-align: left; }

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-20 04:58:00
+/* Smarty version 3.1.33, created on 2019-02-21 02:29:45
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\templates\customer\_partials\login-form.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c6d24a868eeb2_56947298',
+  'unifunc' => 'content_5c6e5369051876_15841874',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:_partials/form-errors.tpl' => 1,
   ),
 ),false)) {
-function content_5c6d24a868eeb2_56947298 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c6e5369051876_15841874 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 $_smarty_tpl->_subTemplateRender('file:_partials/form-errors.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('errors'=>$_smarty_tpl->tpl_vars['errors']->value['']), 0, false);
@@ -33,7 +33,7 @@ $_smarty_tpl->_subTemplateRender('file:_partials/form-errors.tpl', $_smarty_tpl-
 
   <section>
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_17315381155c6d24a867f4b5_39638167', 'form_fields');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12287609245c6e536903a172_64371095', 'form_fields');
 ?>
 
     <div class="forgot-password">
@@ -53,14 +53,14 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_17315381155c6d24a8
   <footer class="form-footer text-xs-center clearfix">
     <input type="hidden" name="submitLogin" value="1">
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_700266305c6d24a868b035_49789178', 'form_buttons');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8316664295c6e536904d9f1_93853499', 'form_buttons');
 ?>
 
   </footer>
 </form>
 <?php }
 /* {block 'form_field'} */
-class Block_15990253135c6d24a867f4b2_38550718 extends Smarty_Internal_Block
+class Block_7788892495c6e536903dff8_46369232 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -72,16 +72,16 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'form_field'} */
 /* {block 'form_fields'} */
-class Block_17315381155c6d24a867f4b5_39638167 extends Smarty_Internal_Block
+class Block_12287609245c6e536903a172_64371095 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'form_fields' => 
   array (
-    0 => 'Block_17315381155c6d24a867f4b5_39638167',
+    0 => 'Block_12287609245c6e536903a172_64371095',
   ),
   'form_field' => 
   array (
-    0 => 'Block_15990253135c6d24a867f4b2_38550718',
+    0 => 'Block_7788892495c6e536903dff8_46369232',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -93,7 +93,7 @@ if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['field']->value) {
 ?>
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15990253135c6d24a867f4b2_38550718', 'form_field', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7788892495c6e536903dff8_46369232', 'form_field', $this->tplIndex);
 ?>
 
       <?php
@@ -105,12 +105,12 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 }
 /* {/block 'form_fields'} */
 /* {block 'form_buttons'} */
-class Block_700266305c6d24a868b035_49789178 extends Smarty_Internal_Block
+class Block_8316664295c6e536904d9f1_93853499 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'form_buttons' => 
   array (
-    0 => 'Block_700266305c6d24a868b035_49789178',
+    0 => 'Block_8316664295c6e536904d9f1_93853499',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
