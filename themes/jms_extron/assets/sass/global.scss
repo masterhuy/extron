@@ -1076,6 +1076,9 @@ a.wishlist_top{
 				overflow: hidden;
 				color: #000;
 				display: block;
+				&:hover{
+					color: $active;
+				}
 			}
 			.post-created {
 				margin: 0;

@@ -6020,7 +6020,19 @@ sup.required {
   right: -22px;
   top: 1px;
 }
-
+.block-contact.links.wrapper {
+  display: none;
+}
+.stButton{
+  margin-left: 0 !important;
+}
+#zoom_01{
+  width: 100% !important;
+  height: auto !important;
+}
+.rtl .zoomWindow{
+  right: 100% !important;
+}
 
 a,
 button,

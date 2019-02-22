@@ -1,13 +1,13 @@
 
 [{shop_url}] 
 
-Bonjour {firstname} {lastname}, 
+Hi {firstname} {lastname}, 
 
-{employee} souhaite vous transférer cette discussion. 
+{employee} wanted to forward this discussion to you. 
 
-HISTORIQUE DE LA DISCUSSION : {messages}
+DISCUSSION HISTORY: {messages}
 
-{employee} a ajouté "{comment}" 		 
+{employee} added "{comment}" 		 
 
 {shop_name} [{shop_url}] powered by
 PrestaShop(tm) [http://www.prestashop.com/] 

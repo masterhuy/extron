@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-20 05:31:09
+/* Smarty version 3.1.33, created on 2019-02-22 03:59:18
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\templates\checkout\_partials\steps\checkout-step.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c6d2c6d4578f4_10765880',
+  'unifunc' => 'content_5c6fb9e69b2f15_02267207',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c6d2c6d4578f4_10765880 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c6fb9e69b2f15_02267207 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -41,7 +41,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 		</h1>
 		<div class="content">
 			<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1358173355c6d2c6d453a70_30422840', 'step_content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5222645495c6fb9e69af096_38466310', 'step_content');
 ?>
 
 		</div>
@@ -49,12 +49,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1358173355c6d2c6d4
 </section>
 <?php }
 /* {block 'step_content'} */
-class Block_1358173355c6d2c6d453a70_30422840 extends Smarty_Internal_Block
+class Block_5222645495c6fb9e69af096_38466310 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'step_content' => 
   array (
-    0 => 'Block_1358173355c6d2c6d453a70_30422840',
+    0 => 'Block_5222645495c6fb9e69af096_38466310',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

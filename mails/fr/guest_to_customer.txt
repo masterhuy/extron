@@ -1,17 +1,16 @@
 
 [{shop_url}] 
 
-Bonjour {firstname} {lastname}, 
+Hi {firstname} {lastname}, 
 
-Votre compte invité sur {shop_name} a été transformé en compte
-client. 
+Your guest account for {shop_name} was converted to a customer
+account. 
 
-ADRESSE E-MAIL : {email} 		 
+E-MAIL ADDRESS: {email} 		 
 
-Conservez ces informations confidentielles. 
+Please be careful when sharing these login details with others. 
 
-Vous pouvez accéder à votre compte sur notre site Internet :
-{shop_url} 
+You can access your customer account on our shop: {shop_url} 
 
 {shop_name} [{shop_url}] powered by
 PrestaShop(tm) [http://www.prestashop.com/] 

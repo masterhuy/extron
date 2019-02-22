@@ -1,7 +1,7 @@
 
 [{shop_url}] 
 
-Bonjour {firstname} {lastname}, 
+Hi {firstname} {lastname}, 
 
 {message} 
 

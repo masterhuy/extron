@@ -1,10 +1,10 @@
 
 [{shop_url}] 
 
-Bonjour, 
+Hi, 
 
-En remerciement pour votre inscription à notre newsletter nous
-avons le plaisir de vous offrir un bon de réduction : {discount} 
+Regarding your newsletter subscription, we are pleased to offer
+you the following voucher: {discount} 
 
 {shop_name} [{shop_url}] powered by
 PrestaShop(tm) [http://www.prestashop.com/] 

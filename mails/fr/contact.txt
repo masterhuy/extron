@@ -1,15 +1,15 @@
 
 [{shop_url}] 
 
-Message de la part d'un client de {shop_name} 
+Message from a {shop_name} customer 
 
-ADRESSE E-MAIL DU CLIENT : {email}
+CUSTOMER E-MAIL ADDRESS: {email}
 
-MESSAGE DU CLIENT : {message}
+CUSTOMER MESSAGE: {message}
 
-COMMANDE # : {order_name}
+ORDER ID: {order_name}
 
-PIÈCE JOINTE : {attached_file} 		 
+ATTACHED FILE: {attached_file} 		 
 
 {shop_name} [{shop_url}] powered by
 PrestaShop(tm) [http://www.prestashop.com/] 

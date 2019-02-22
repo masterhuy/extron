@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-21 04:24:42
+/* Smarty version 3.1.33, created on 2019-02-22 04:03:02
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\modules\jmspagebuilder\views\templates\hook\addonpopupadvertising.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c6e6e5a65b393_27386870',
+  'unifunc' => 'content_5c6fbac6bc1950_50974153',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c6e6e5a65b393_27386870 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c6fbac6bc1950_50974153 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jms-popup-overlay" style="display:none;">
 	<div class="jms-popup" class="fadeInUp animated">		
 		<?php if ($_smarty_tpl->tpl_vars['popup_title']->value) {?>

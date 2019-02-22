@@ -1816,3 +1816,33 @@ img.attachment-widget.wp-post-image.img-responsive {
 .pagination li {
   margin: 0 6px 0 0;
 }
+#selector_cat {
+  background: url("../img/icon/icon-down.png") no-repeat 15px 23px;
+}
+.products-list-in-row .product-preview button.cart-button {
+  padding-right: 5px;
+  padding-left: 0;
+}
+.products-list-in-row .product-preview button.cart-button .text-addcart span {
+  padding-right: 3px;
+  padding-left: 0;
+}
+.products-list-in-row .addToWishlist {
+  margin-right: 18px;
+  margin-left: 0;
+}
+#search_widget input {
+  background: url("../img/icon/search.png") no-repeat left;
+}
+#product .owl-theme .owl-controls {
+  left: 0;
+  right: auto;
+}
+#promo-code .btn-add {
+  margin-right: 7px;
+  margin-left: 0;
+}
+#woorebought-popup {
+  right: 20px;
+  left: auto !important;
+}

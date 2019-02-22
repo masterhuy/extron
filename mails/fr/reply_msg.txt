@@ -1,14 +1,13 @@
 
 [{shop_url}] 
 
-Bonjour {firstname} {lastname}, 
+Hi {firstname} {lastname}, 
 
 {reply} 
 
-Veuillez ne pas répondre directement à ce message, nous ne
-recevrons pas votre réponse. 
+Please do not reply directly to this email, we will not receive it. 
 
-Pour répondre, veuillez utiliser le lien suivant : {link}
+In order to reply, please use the following link: {link}
 [{link}] 
 
 {shop_name} [{shop_url}] powered by

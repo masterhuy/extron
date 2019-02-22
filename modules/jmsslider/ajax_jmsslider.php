@@ -13,7 +13,11 @@
 include_once('../../config/config.inc.php');
 include_once('../../init.php');
 include_once('jmsslider.php');
+$module = new Jmsslider();
 
+if (!Tools::isSubmit('secure_key') || Tools::getValue('secure_key') != $module->secure_key) {
+   die(1);
+}
 
 $context = Context::getContext();
 $slides = array();

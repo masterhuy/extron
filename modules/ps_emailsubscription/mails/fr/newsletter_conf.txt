@@ -1,9 +1,9 @@
 
 [{shop_url}] 
 
-Bonjour, 
+Hi, 
 
-MERCI DE VOUS ÊTRE INSCRIT À NOTRE NEWSLETTER. 
+THANK YOU FOR SUBSCRIBING TO OUR NEWSLETTER. 
 
 {shop_name} [{shop_url}] powered by
 PrestaShop(tm) [http://www.prestashop.com/] 

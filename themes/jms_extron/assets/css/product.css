@@ -107,6 +107,9 @@
 .images-container .product-images > li.thumb-container {
     display: inline;
 }
+.images-container .product-images > a.thumb-container {
+    display: inline;
+}
 .images-container .product-images > li.thumb-container > .thumb {
     margin-right: 11px;
     width: 100px;
@@ -407,6 +410,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 0;
 }
 .product-quantity input#quantity_wanted {
     width: 54px;

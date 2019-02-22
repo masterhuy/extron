@@ -309,7 +309,7 @@ $(document).ready(function () {
 		id_slide = $('#id_slide').val();
 		title_text_new = $('#title_text_new').val();
 		layer_text_new = $('#text_layer_new').val();
-		url = $('#site_url').val() + 'modules/jmsslider/ajax_jmsslider.php?action=addLayer';
+		url = $('#site_url').val() + 'modules/jmsslider/ajax_jmsslider.php?action=addLayer&secure_key=' + $('#secure_key').val();
 		$.ajax({
 			type : "POST",
 			url : url,
@@ -332,7 +332,7 @@ $(document).ready(function () {
 			id_slide = $('#id_slide').val();
 			title_text_new = $('#title_text_new').val();
 			layer_text_new = $('#text_layer_new').val();
-			url = $('#site_url').val() + 'modules/jmsslider/ajax_jmsslider.php?action=addLayer';
+			url = $('#site_url').val() + 'modules/jmsslider/ajax_jmsslider.php?action=addLayer&secure_key=' + $('#secure_key').val();
 			$.ajax({
 				type : "POST",
 				url : url,
@@ -377,7 +377,7 @@ $(document).ready(function () {
 		id_slide = $('#id_slide').val();
 		title_image_new = $('#title_image_new').val();
 		layer_image_new = $('#data_s_image').val();
-		url = $('#site_url').val() + 'modules/jmsslider/ajax_jmsslider.php?action=addLayer&data_type=image&id_slide=' + id_slide;
+		url = $('#site_url').val() + 'modules/jmsslider/ajax_jmsslider.php?action=addLayer&data_type=image&id_slide=' + id_slide + '&secure_key=' + $('#secure_key').val();
 		var input = document.getElementById('data_image');
 		var file = input.files[0];
 		if (input.files[0] && !Validate(this)) {
@@ -415,7 +415,7 @@ $(document).ready(function () {
 			id_slide = $('#id_slide').val();
 			title_image_new = $('#title_image_new').val();
 			layer_image_new = $('#data_s_image').val();
-			url = $('#site_url').val() + 'modules/jmsslider/ajax_jmsslider.php?action=addLayer&data_type=image&id_slide=' + id_slide;
+			url = $('#site_url').val() + 'modules/jmsslider/ajax_jmsslider.php?action=addLayer&data_type=image&id_slide=' + id_slide + '&secure_key=' + $('#secure_key').val();
 			var input = document.getElementById('data_image');
 			var file = input.files[0];
 			if (input.files[0] && !Validate(this)) {
@@ -452,7 +452,7 @@ $(document).ready(function () {
 		id_slide = $('#id_slide').val();
 		title_video_new = $('#title_video_new').val();
 		layer_video_new = $('#data_video_new').val();
-		url = $('#site_url').val() + 'modules/jmsslider/ajax_jmsslider.php?action=addLayer';
+		url = $('#site_url').val() + 'modules/jmsslider/ajax_jmsslider.php?action=addLayer&secure_key=' + $('#secure_key').val();
 		$.ajax({
 			type : "POST",
 			url : url,
@@ -474,7 +474,7 @@ $(document).ready(function () {
 			id_slide = $('#id_slide').val();
 			title_video_new = $('#title_video_new').val();
 			layer_video_new = $('#data_video_new').val();
-			url = $('#site_url').val() + 'modules/jmsslider/ajax_jmsslider.php?action=addLayer';
+			url = $('#site_url').val() + 'modules/jmsslider/ajax_jmsslider.php?action=addLayer&secure_key=' + $('#secure_key').val();
 			$.ajax({
 				type : "POST",
 				url : url,
@@ -489,15 +489,15 @@ $(document).ready(function () {
 			});
 			return false;
 		}
-		
+
 	});
-	
+
 	//delete layer
 	$('.delete_layer').click(function () {
 		if (confirm('Are your sure delete this layer?')) {
 			lstr = $(this).parents('.layer').attr('id');
 			lId = lstr.substring(7, 20);
-			url = $('#site_url').val() + 'modules/jmsslider/ajax_jmsslider.php?action=deleteLayer';
+			url = $('#site_url').val() + 'modules/jmsslider/ajax_jmsslider.php?action=deleteLayer&secure_key=' + $('#secure_key').val();
 			// return false;
 			$.ajax({
 				type : "POST",
@@ -553,16 +553,16 @@ $(document).ready(function () {
 	}); //end delete layer
 
 		var _mheight = $("#frame_layer").height();
-		var _mwidth = $("#frame_layer").width();						
-		$('.tp-caption').draggable({						
+		var _mwidth = $("#frame_layer").width();
+		$('.tp-caption').draggable({
 			stop: function(event, ui) {
 				// Show dropped position.
-				strId = $(this).attr('id');		
-				currentId = strId.substring(8, 20);				
+				strId = $(this).attr('id');
+				currentId = strId.substring(8, 20);
 				var Stoppos = $(this).position();
-				$('#data_x_' + currentId).val(Math.round(Stoppos.left));							
-				$('#data_y_' + currentId).val(Math.round(Stoppos.top));		
-						
+				$('#data_x_' + currentId).val(Math.round(Stoppos.left));
+				$('#data_y_' + currentId).val(Math.round(Stoppos.top));
+
 			}
 		});
 		$('.tp-caption').resizable({
@@ -573,10 +573,10 @@ $(document).ready(function () {
 			// containment: 'children',
 			stop: function(event, ui) {
 				// Show dropped position.
-				strId = $(this).attr('id');		
-				currentId = strId.substring(8, 20);				
+				strId = $(this).attr('id');
+				currentId = strId.substring(8, 20);
 				var Stoppos = $(this).position();
-				$('#data_width_' + currentId).val(Math.round($(this).width()));							
+				$('#data_width_' + currentId).val(Math.round($(this).width()));
 				$('#data_height_' + currentId).val(Math.round($(this).height()));
 			}
 		});
@@ -584,5 +584,5 @@ $(document).ready(function () {
 		$('.toogle').click(function(e){
 			$('.wrap-slider').toggle(200);
 		});
-	
+
 });

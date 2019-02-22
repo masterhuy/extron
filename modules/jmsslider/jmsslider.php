@@ -475,7 +475,8 @@ class Jmsslider extends Module
             array(
                 'slides'=>$slides,
                 'link' => $this->context->link,
-                'root_url' => $root_url
+                'root_url' => $root_url,
+                'secure_key' => $this->secure_key
                 )
         );
         return $this->display(__FILE__, 'listslides.tpl');
@@ -578,6 +579,7 @@ class Jmsslider extends Module
                 'layers' => $layers,
                 'link' => $this->context->link,
                 'root_url' => $root_url,
+                'secure_key' => $this->secure_key
                 )
         );
         return $this->display(__FILE__, 'listlayers.tpl');

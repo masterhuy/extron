@@ -1,19 +1,18 @@
 
 [{shop_url}] 
 
-Bonjour {firstname} {lastname},
+Hi {firstname} {lastname},
 
-Votre commande a été expédiée 
+Your order has been shipped 
 
-Votre commande ayant la référence {order_name} vient d'être
-expédiée.
+Your order with the reference {order_name} has been shipped.
 
-Merci d'avoir effectué vos achats sur {shop_name}! 		 
+Thank you for shopping with {shop_name}! 		 
 
-Vous pouvez accéder à tout moment au suivi de votre commande et
-télécharger votre facture dans "Historique des commandes"
-[{history_url}] de la rubrique "Mon compte"
-[{my_account_url}] sur notre site. 
+You can review your order and download your invoice from the
+"Order history" [{history_url}] section of your
+customer account by clicking "My account"
+[{my_account_url}] on our shop. 
 
 {shop_name} [{shop_url}] powered by
 PrestaShop(tm) [http://www.prestashop.com/] 

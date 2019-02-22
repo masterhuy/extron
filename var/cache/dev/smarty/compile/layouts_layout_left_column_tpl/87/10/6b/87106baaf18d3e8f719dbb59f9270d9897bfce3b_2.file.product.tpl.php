@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-18 05:02:42
+/* Smarty version 3.1.33, created on 2019-02-21 21:11:45
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\templates\catalog\product.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c41a44237a673_93893177',
+  'unifunc' => 'content_5c6f5a611d56b7_47798043',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '87106baaf18d3e8f719dbb59f9270d9897bfce3b' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_extron\\themes\\jms_extron\\templates\\catalog\\product.tpl',
-      1 => 1546847038,
+      1 => 1549942626,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c41a44237a673_93893177 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c6f5a611d56b7_47798043 (Smarty_Internal_Template $_smarty_tpl) {
 ?> 
 <?php if ($_smarty_tpl->tpl_vars['sidebar']->value == 'left') {?> 
 	<?php $_smarty_tpl->_assignInScope('layout', "layouts/layout-left-column.tpl");

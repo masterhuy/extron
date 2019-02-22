@@ -1,11 +1,11 @@
 
 [{shop_url}] 
 
-Bonjour 
+Hello 
 
-Voici un E-MAIL de test de votre boutique. 
+This is a TEST E-MAIL from your shop.
 
-Si vous parvenez à lire ceci, le test a réussi!. 
+If you can read this, the test was successful!. 
 
 {shop_name} [{shop_url}] powered by
 PrestaShop(tm) [http://www.prestashop.com/] 

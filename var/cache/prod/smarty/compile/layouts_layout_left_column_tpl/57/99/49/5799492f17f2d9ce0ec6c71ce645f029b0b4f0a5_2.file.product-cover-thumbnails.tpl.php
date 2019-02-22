@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-21 02:24:15
+/* Smarty version 3.1.33, created on 2019-02-22 04:36:43
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\templates\catalog\_partials\product-cover-thumbnails.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c6e521f7b0d83_49923114',
+  'unifunc' => 'content_5c6fc2ab2b2c71_26018124',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5799492f17f2d9ce0ec6c71ce645f029b0b4f0a5' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_extron\\themes\\jms_extron\\templates\\catalog\\_partials\\product-cover-thumbnails.tpl',
-      1 => 1546847038,
+      1 => 1550819780,
       2 => 'file',
     ),
   ),
@@ -20,18 +20,18 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c6e521f7b0d83_49923114 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c6fc2ab2b2c71_26018124 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
 <div class="images-container">
   <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_17645407905c6e521f79d4f0_79767637', 'product_cover');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6377947275c6fc2ab29f3f4_02366685', 'product_cover');
 ?>
 
 
   <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18580610635c6e521f7a5207_39252406', 'product_images');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1996138755c6fc2ab2a3272_91458728', 'product_images');
 ?>
 
 </div>
@@ -39,57 +39,56 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18580610635c6e521f
 
 <?php }
 /* {block 'product_cover'} */
-class Block_17645407905c6e521f79d4f0_79767637 extends Smarty_Internal_Block
+class Block_6377947275c6fc2ab29f3f4_02366685 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_cover' => 
   array (
-    0 => 'Block_17645407905c6e521f79d4f0_79767637',
+    0 => 'Block_6377947275c6fc2ab29f3f4_02366685',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
     <div class="product-cover">
-      <img class="js-qv-product-cover" src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['cover']['bySize']['large_default']['url'], ENT_QUOTES, 'UTF-8');?>
+      <img id="zoom_01" class="js-qv-product-cover" src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['cover']['bySize']['large_default']['url'], ENT_QUOTES, 'UTF-8');?>
 " alt="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['cover']['legend'], ENT_QUOTES, 'UTF-8');?>
 " title="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['cover']['legend'], ENT_QUOTES, 'UTF-8');?>
 " style="width:100%;" itemprop="image">
-      <div class="layer hidden-sm-down" data-toggle="modal" data-target="#product-modal">
-        <i class="material-icons zoom-in">&#xE8FF;</i>
-      </div>
     </div>
   <?php
 }
 }
 /* {/block 'product_cover'} */
 /* {block 'product_images'} */
-class Block_18580610635c6e521f7a5207_39252406 extends Smarty_Internal_Block
+class Block_1996138755c6fc2ab2a3272_91458728 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_images' => 
   array (
-    0 => 'Block_18580610635c6e521f7a5207_39252406',
+    0 => 'Block_1996138755c6fc2ab2a3272_91458728',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
     <div class="js-qv-mask mask">
-      <ul class="product-images js-qv-product-images">
+      <ul id="gal1" class="product-images js-qv-product-images">
         <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['product']->value['images'], 'image');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['image']->value) {
 ?>
-          <li class="thumb-container">
+          <li class="thumb-container" data-image="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['image']->value['bySize']['large_default']['url'], ENT_QUOTES, 'UTF-8');?>
+" data-zoom-image="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['image']->value['bySize']['large_default']['url'], ENT_QUOTES, 'UTF-8');?>
+"> 
             <img
               class="thumb js-thumb <?php if ($_smarty_tpl->tpl_vars['image']->value['id_image'] == $_smarty_tpl->tpl_vars['product']->value['cover']['id_image']) {?> selected <?php }?>"
               data-image-medium-src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['image']->value['bySize']['medium_default']['url'], ENT_QUOTES, 'UTF-8');?>
 "
               data-image-large-src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['image']->value['bySize']['large_default']['url'], ENT_QUOTES, 'UTF-8');?>
 "
-              src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['image']->value['bySize']['home_default']['url'], ENT_QUOTES, 'UTF-8');?>
+              src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['image']->value['bySize']['large_default']['url'], ENT_QUOTES, 'UTF-8');?>
 "
               alt="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['image']->value['legend'], ENT_QUOTES, 'UTF-8');?>
 "

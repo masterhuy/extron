@@ -1,10 +1,9 @@
 
 [{shop_url}] 
 
-Bonjour {firstname} {lastname}, 
+Hi {firstname} {lastname}, 
 
-ATTENTION : vous avez reçu un nouveau message d'alerte dans votre
-back-office.
+WARNING: you have received a new log alert in your Back Office.
 
 You can check for it in the "TOOLS" > "LOGS" section of your Back
 Office. 		 

@@ -889,6 +889,8 @@ a.wishlist_top {
       overflow: hidden;
       color: #000;
       display: block; }
+      .blog-widget .item-post .left .post-title:hover {
+        color: #ff4c65; }
     .blog-widget .item-post .left .post-created {
       margin: 0;
       font-size: 13px; }

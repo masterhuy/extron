@@ -1,9 +1,9 @@
 
 [{shop_url}] 
 
-Bonjour {firstname} {lastname}, 
+Hi {firstname} {lastname}, 
 
-Le fichier {filename} a bien été importé dans votre boutique. 
+The file {filename} has been successfully imported to your shop. 
 
 {shop_name} [{shop_url}] powered by
 PrestaShop(tm) [http://www.prestashop.com/] 

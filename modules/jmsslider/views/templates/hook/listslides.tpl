@@ -15,8 +15,8 @@
                     opacity: 0.6,
                     cursor: "move",
                     update: function() {
-                        var order = $(this).sortable("serialize") + "&action=updateSlidesOrdering";                     
-                        $.post("{$root_url nofilter}modules/jmsslider/ajax_jmsslider.php?" + order);
+                        var order = $(this).sortable("serialize") + "&action=updateSlidesOrdering";
+                        $.post("{$root_url nofilter}modules/jmsslider/ajax_jmsslider.php?" + order + '&secure_key=' + '{$secure_key nofilter}');
                         }
                     });
                 $mySlides.hover(function() {
@@ -26,27 +26,27 @@
                     $(this).css("cursor","auto");
                 });
             });
-</script>			
+</script>
 <div class="panel">
 	<h3>
 	<span title="" data-toggle="tooltip" class="label-tooltip toogle" data-original-title="Click to Toggle" data-html="true">
 		<i class="icon-list-ul"></i> {l s='Slides list' d='Modules.JmsSlider'}
 	</span>
-	
+
 	<span class="panel-heading-action">
 		<a  href="{$link->getAdminLink('AdminModules') nofilter}&configure=jmsslider&addSlide=1" class="btn btn-default btn-success" id="addSlide" title="{l s='Add Slide' d='Modules.JmsSlider'}">
 			<i class="icon-plus"></i>
 		</a>
-		
+
 	</span>
 	</h3>
 	<script>
 	$(document).ready(function(){
 		$('.toogle').click(function(e){
 			$('#slidesContent').toggle(200);
-		});				
+		});
 	});
-				
+
 	</script>
 	<div id="slidesContent">
 		<div id="slides">
@@ -66,7 +66,7 @@
 						{else}
 						<i>{l s='All Language' d='Modules.JmsSlider'}</i>
 						{/if}
-					</div>					
+					</div>
 					<div class="col-md-2">
 						<div class="btn-group-action pull-right">
 							<a class="btn btn-default"
@@ -78,7 +78,7 @@
 					</div>
 					<div class="col-md-4">
 						<div class="btn-group-action pull-right">
-							
+
 							<a class="btn btn-default" href="{$link->getAdminLink('AdminModules') nofilter}&configure=jmsslider&copySlide=1&id_slide={$slide.id_slide nofilter}">
 								<i class="icon-copy"></i>
 								{l s='Duplicate' d='Modules.JmsSlider'}

@@ -405,7 +405,6 @@ h4.heading {
 }
 #module-jmsblog-category #main, #module-jmsblog-post #main, #module-jmsblog-categories #main ,
 #module-jmsblog-tag #main, #module-jmsblog-archive #main {
-    padding: 0 15px;
     width: 100%;
 }
 #module-jmsblog-category  .page-content.card-block, #module-jmsblog-post .page-content.card-block,

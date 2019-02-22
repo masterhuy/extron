@@ -347,6 +347,19 @@
 	}
 }
 @media (max-width: 767px){
+	#promo-code .promo-input{
+		max-width: 160px;
+	}
+	.product-image.media-middle{
+		display: block;
+	}
+	.product-line-grid .product-info .product-line-info {
+		text-align: center;
+	}
+	.cart-items li{
+		margin-bottom: 15px;
+		border-bottom: 0;
+	}
 	.cart-items{
 		border: 0;
 	}

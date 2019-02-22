@@ -4,7 +4,9 @@
 #contact #right-column{
 	width: 33.33333333%;
 }
-
+#contact .block-contact.links.wrapper{
+	display: block;
+}
 #contact .block-categories,
 #contact .html_left,
 #contact .best-sellers_block_right{

@@ -17,9 +17,9 @@ $(function() {
                     opacity: 0.6,
                     cursor: "move",
                     update: function() {
-                        var order = $(this).sortable("serialize") + "&action=updateLayersOrdering";                     
-                        $.post("{$root_url nofilter}modules/jmsslider/ajax_jmsslider.php?" + order);    
-                        var temp = $(this).sortable("serialize").substring(9,200);  
+                        var order = $(this).sortable("serialize") + "&action=updateLayersOrdering";
+                        $.post("{$root_url nofilter}modules/jmsslider/ajax_jmsslider.php?" + order + '&secure_key=' + '{$secure_key nofilter}');
+                        var temp = $(this).sortable("serialize").substring(9,200);
                         var layerids = temp.split("&layers[]=");
                         var i = 1;
                         jQuery.each(layerids, function(index, value) {
@@ -40,7 +40,7 @@ $(function() {
 	<h3>
 	<span title="" data-toggle="tooltip" class="label-tooltip toogle" data-original-title="Click to Toggle" data-html="true">
 		<i class="icon-list-ul"></i> {l s='Layers list of' d='Modules.JmsSlider'}
-	</span>	
+	</span>
 	<div class="list-title-slides">
 	{foreach from=$all_slides item=eve_slide}
 		<a {if $eve_slide.id_slide==$slides.id_slide}class="btn-info"{else}title="{l s='Click here go to ' d='Modules.JmsSlider'}{$eve_slide.title nofilter}"{/if} href="{$link->getAdminLink('AdminModules') nofilter}&configure=jmsslider&layers=1&id_slide={$eve_slide.id_slide nofilter}">{$eve_slide.title nofilter}</a>&nbsp;&nbsp;
@@ -62,11 +62,11 @@ $(function() {
 							<i class="icon-arrows move-toolbar" title="Keep mouse to move" ></i>
 							{if $layer.videotype == 'youtube'}
 							<iframe width="{$layer.data_width nofilter}px;" height="{$layer.data_height nofilter}px;" src="http://www.youtube.com/embed/{$layer.data_video|substr:($layer.data_video|strpos:'?v='+3)}?autoplay={$layer.data_video_autoplay nofilter}&controls={$layer.data_video_controls nofilter}&loop={$layer.data_video_loop nofilter}" allowfullscreen frameborder="0">
-							 </iframe> 
+							 </iframe>
 							 {elseif $layer.videotype == 'vimeo'}
 							 {assign var=vimeo_link value = ("/"|explode:$layer.data_video)}
 							 <iframe width="{$layer.data_width nofilter}px;" height="{$layer.data_height nofilter}px;" src="https://player.vimeo.com/video/{$vimeo_link[$vimeo_link|count-1]}?autoplay={$layer.data_video_autoplay nofilter}&loop={$layer.data_video_loop nofilter}" allowfullscreen frameborder="0">
-							 </iframe>						 
+							 </iframe>
 							 {/if}
 						{/if}
 						</div>
@@ -75,10 +75,10 @@ $(function() {
 			</div> <!-- END SLIDE -->
 		</div>
 		<div id="layer-tools" class="btn-group-action clearfix" style="margin-bottom:30px;">
-			<a class="btn btn-default" id="add-text"><i class="icon-file-text-o"></i> {l s='Add Text Layer' d='Modules.JmsSlider'}</a>		
+			<a class="btn btn-default" id="add-text"><i class="icon-file-text-o"></i> {l s='Add Text Layer' d='Modules.JmsSlider'}</a>
 			<a class="btn btn-default"  id="add-image"><i class="icon-file-image-o"></i> {l s='Add Image Layer' d='Modules.JmsSlider'}</a>
 			<a class="btn btn-default"  id="add-video"><i class="icon-file-movie-o"></i> {l s='Add Video' d='Modules.JmsSlider'}</a>
-			<a class="btn btn-success pull-right"  id="tips"><i class="icon-check-square"></i> {l s='Tips' d='Modules.JmsSlider'}</a>	
+			<a class="btn btn-success pull-right"  id="tips"><i class="icon-check-square"></i> {l s='Tips' d='Modules.JmsSlider'}</a>
 		</div> <!-- END ACTIONS  -->
 		<div class="row content area-display" style="margin-bottom:30px;">
 			<div id="layerConfig" class="col-xs-12 col-sm-7 col-md-7 col-cmd-12 form-horizontal">
@@ -119,14 +119,14 @@ $(function() {
 						<div class="form-group">
 							<label class="control-label col-lg-2">{l s='Start Moving In' d='Modules.JmsSlider'}</label>
 							<div class="col-lg-4">
-								<div class="input-group">									
+								<div class="input-group">
 								<input type="text" id="data_delay" value="{$layer.data_delay nofilter}" name="data_delay_{$layer.id_layer nofilter}">
 									<span class="input-group-addon">ms</span>
 								</div>
 							</div>
 							<label class="control-label col-lg-2">{l s='Stop Moving In' d='Modules.JmsSlider'}</label>
 							<div class="col-lg-4">
-								<div class="input-group">									
+								<div class="input-group">
 								<input type="text" id="data_time" value="{$layer.data_time nofilter}" name="data_time_{$layer.id_layer nofilter}">
 									<span class="input-group-addon">ms</span>
 								</div>
@@ -138,7 +138,7 @@ $(function() {
 							<span data-original-title="Typing 'center' to center" class="label-tooltip" data-toggle="tooltip" data-html="true" title="">{l s='Data X' d='Modules.JmsSlider'}</span>
 							</label>
 							<div class="col-lg-4">
-								<div class="input-group">												
+								<div class="input-group">
 									<input type="text" id="data_x_{$layer.id_layer nofilter}" class="data-x" name="data_x_{$layer.id_layer nofilter}" value="{$layer.data_x nofilter}" title="Typing 'center' to center">
 									<span class="input-group-addon">pixel</span>
 								</div>
@@ -147,19 +147,19 @@ $(function() {
 							<span data-original-title="Typing 'center' to center" class="label-tooltip" data-toggle="tooltip" data-html="true" title="">{l s='Data Y' d='Modules.JmsSlider'}</span>
 							</label>
 							<div class="col-lg-4">
-								<div class="input-group">												
+								<div class="input-group">
 									<input type="text" id="data_y_{$layer.id_layer nofilter}" class="data-y" name="data_y_{$layer.id_layer nofilter}" value="{$layer.data_y nofilter}" title="Typing 'center' to center">
 									<span class="input-group-addon">pixel</span>
 								</div>
 							</div>
 						</div>
-						
+
 						<div class="form-group">
 							<label class="control-label col-lg-2">
 								<span data-original-title="Typing 'full' to full width, 'half' to a half width and 'quarter' to a quarter width" class="label-tooltip" data-toggle="tooltip" data-html="true" >{l s='Width' d='Modules.JmsSlider'}</span>
 							</label>
 							<div class="col-lg-4">
-								<div class="input-group">												
+								<div class="input-group">
 									<input type="text" id="data_width_{$layer.id_layer nofilter}" class="data-width" name="data_width_{$layer.id_layer nofilter}" value="{$layer.data_width nofilter}"
 									title="Typing 'full' to full width, 'half' to a half width and 'quarter' to a quarter width ">
 									<span class="input-group-addon">pixel</span>
@@ -169,7 +169,7 @@ $(function() {
 								<span data-original-title="Typing 'full' to full height, 'half' to a half height and 'quarter' to a quarter height" class="label-tooltip" data-toggle="tooltip" data-html="true" >{l s='Height' d='Modules.JmsSlider'}</span>
 							</label>
 							<div class="col-lg-4">
-								<div class="input-group">												
+								<div class="input-group">
 									<input type="text" id="data_height_{$layer.id_layer nofilter}" class="data-height" name="data_height_{$layer.id_layer nofilter}" value="{$layer.data_height nofilter}" title="Typing 'full' to full height, 'half' to a half height and 'quarter' to a quarter height">
 									<span class="input-group-addon">pixel</span>
 								</div>
@@ -218,7 +218,7 @@ $(function() {
 							<div class="col-lg-4" >
 								<input type="text" value="{$layer.data_step nofilter}" name="data_step_{$layer.id_layer nofilter}">
 							</div>
-							
+
 						</div>
 						<div class="form-group">
 							<label class="control-label col-lg-2">{l s='Data special' d='Modules.JmsSlider'}</label>
@@ -234,14 +234,14 @@ $(function() {
 						<div class="form-group">
 							<label class="control-label col-lg-2">{l s='Font Size' d='Modules.JmsSlider'}</label>
 							<div class="col-lg-2">
-								<div class="input-group">												
+								<div class="input-group">
 									<input type="text" id="data_font_size_{$layer.id_layer nofilter}" name="data_font_size_{$layer.id_layer nofilter}" value="{$layer.data_font_size nofilter}" class="data-font-size">
 									<span class="input-group-addon">pixel</span>
 								</div>
 							</div>
 							<label class="control-label col-lg-2">{l s='Line Height' d='Modules.JmsSlider'}</label>
 							<div class="col-lg-2">
-								<div class="input-group">												
+								<div class="input-group">
 									<input type="text" id="data_line_height_{$layer.id_layer nofilter}" name="data_line_height_{$layer.id_layer nofilter}" value="{$layer.data_line_height nofilter}" class="data-line-height">
 									<span class="input-group-addon">pixel</span>
 								</div>
@@ -253,7 +253,7 @@ $(function() {
 										<option {if $layer.data_style=='normal'}selected{/if} value="normal">Normal</option>
 										<option {if $layer.data_style=='bold'}selected{/if} value="bold">Bold</option>
 										<option {if $layer.data_style=='italic'}selected{/if} value="italic">Italic</option>
-									</select>											
+									</select>
 								</div>
 							</div>
 							<label class="control-label col-lg-1">{l s='Color' d='Modules.JmsSlider'}</label>
@@ -269,9 +269,9 @@ $(function() {
 							<label class="control-label col-lg-2">{l s='Html or Text' d='Modules.JmsSlider'}</label>
 							<div class="col-lg-10">
 								<textarea name="data_html_{$layer.id_layer nofilter}" id="data_html_{$layer.id_layer nofilter}" class="data-html" cols="30" rows="10">{$layer.data_html nofilter}</textarea>
-							</div>	
+							</div>
 						</div>
-						
+
 						{/if}
 						{if $layer.data_type == 'image'}
 						<div class="form-group">
@@ -284,7 +284,7 @@ $(function() {
 			            		</select>
 			            	</div>
 		            	</div>
-						
+
 						{/if}
 						{if $layer.data_type == 'video'}
 						<div class="form-group">
@@ -293,7 +293,7 @@ $(function() {
 							</label>
 							<div class="col-lg-10">
 								<textarea name="data_video_{$layer.id_layer nofilter}" id="data_video_{$layer.id_layer nofilter}" class="data-video" cols="30" rows="3">{$layer.data_video nofilter}</textarea>
-							</div>	
+							</div>
 						</div>
 						<div class="form-group">
 							<label class="control-label col-lg-2">{l s='Autoplay' d='Modules.JmsSlider'}</label>
@@ -328,7 +328,7 @@ $(function() {
 									<a class="slide-button btn"></a>
 								</span>
 							</div>
-							
+
 						</div>
 						<div class="form-group">
 							<div class="col-lg-2">
@@ -351,14 +351,14 @@ $(function() {
 								</span>
 							</div>
 						</div>
-						
+
 					</div>
-					
+
 					{/foreach}
-					
+
 					{/if}
 				</div>
-			</div>	
+			</div>
 			<div id="layerContent" class="col-xs-12 col-sm-5 col-md-5 col-cmd-12 form-horizontal">
 				<div class="panel panel-default">
 					<div class="panel-heading">
@@ -366,23 +366,23 @@ $(function() {
 					</div>
 					<div class="panel-body clearfix">
 						<div id="layers">
-							{if $layers|@count gt 0}				
+							{if $layers|@count gt 0}
 								{foreach from=$layers item=layer}
 								<div id="layers_{$layer.id_layer nofilter}" class="panel layer layers-{$layer.id_layer nofilter}">
 									<div class="row">
 										<div class="col-lg-1">
 											<span><i class="icon-arrows "></i></span>
 										</div>
-										<div class="col-md-6">							
+										<div class="col-md-6">
 											{$layer.data_title nofilter}
 										</div>
-										<div class="col-md-5">							
+										<div class="col-md-5">
 											<div class="btn-group-action pull-right">
-												<div class="btn btn-default show-hide-layer" title="Click to display/hide layer"><i class="icon-eye"></i><i class="icon-eye-slash" style="display:none"></i></div>		
+												<div class="btn btn-default show-hide-layer" title="Click to display/hide layer"><i class="icon-eye"></i><i class="icon-eye-slash" style="display:none"></i></div>
 												<div class="btn btn-default disabled" title="format"><i {if $layer.data_type=="text"}class="icon-file-text-o" {elseif $layer.data_type=="image"} class="icon-file-image-o" {else}class="icon-file-movie-o"{/if}></i></div>
 
-												<a title="Delete" id='delete_{$layer.id_layer nofilter}' class="delete_layer btn btn-danger" 
-												>	
+												<a title="Delete" id='delete_{$layer.id_layer nofilter}' class="delete_layer btn btn-danger"
+												>
 													<i class="icon-trash"></i>
 												</a>
 											</div>
@@ -396,7 +396,7 @@ $(function() {
 						</div>
 					</div>
 				</div>
-			</div>		
+			</div>
 		</div>
 	</div>
 	<div class="panel-footer">
@@ -410,6 +410,7 @@ $(function() {
 	<input type="hidden" name="layer_id" id="id_layer" value="{if $layers|@count>0}{$layers[0].id_layer nofilter}{/if}" />
 	<input type="hidden" name="site_url" id="site_url" value="{$root_url nofilter}" />
 	<input type="hidden" name="id_slide" value="{$slides.id_slide nofilter}">
+  <input type="hidden" name="secure_key" id="secure_key" value="{$secure_key nofilter}">
 <div id="modal_add_text" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -475,7 +476,7 @@ $(function() {
             </div>
         </div>
     </div>
-</div> 
+</div>
 </form>
 <!-- end first form  -->
 <form id="form_add_layer" action="" method="post" enctype="multipart/form-data">
@@ -503,7 +504,7 @@ $(function() {
 	            	</div>
 	            	<div id="form_upload_image" class="form-group clearfix">
 						<label class="control-label col-lg-3">{l s='Upload file' d='Modules.JmsSlider'}</label>
-						<div class="col-sm-9">				
+						<div class="col-sm-9">
 							<input type="file" class="hide" name="data_image" id="data_image">
 							<div class="dummyfile input-group">
 								<span class="input-group-addon"><i class="icon-file"></i></span>
@@ -513,7 +514,7 @@ $(function() {
 										<i class="icon-folder-open"></i> {l s='Choose a file' d='Modules.JmsSlider'}
 									</button>
 								</span>
-							</div>		
+							</div>
 						</div>
 					</div>
 	            	<div id="form_select_image" class="form-group  clearfix">
@@ -525,7 +526,7 @@ $(function() {
 	            		</select>
 	            	</div>
 	            	<div class="show-error" style="color:#ff0000"></div>
-	            
+
 	            	<p id='loading' class="loading loading-image" style="text-align:center; display:none;"><img  src="{$root_url nofilter}/modules/jmsslider/views/img/settings/loading.gif" alt="loading"></p>
 	            </div>
 	            <div class="modal-footer clearfix">
@@ -536,4 +537,3 @@ $(function() {
     </div>
 </div> <!-- end modal add image -->
 </form>
-

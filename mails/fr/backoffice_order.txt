@@ -1,12 +1,12 @@
 
 [{shop_url}] 
 
-Bonjour {firstname} {lastname}, 
+Hi {firstname} {lastname}, 
 
-Une nouvelle commande a été générée à votre demande. 
+A new order has been generated on your behalf. 
 
-Veuillez vous rendre sur {order_link}
-[{order_link}] pour finaliser votre paiement. 		 
+Please go on {order_link} [{order_link}] to
+finalize the payment. 		 
 
 {shop_name} [{shop_url}] powered by
 PrestaShop(tm) [http://www.prestashop.com/] 
