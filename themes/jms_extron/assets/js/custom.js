@@ -21,9 +21,10 @@
 	$('#mobile-vermegamenu').addClass('collapse');
 	
 	//initiate the plugin and pass the id of the div containing gallery images
-    $("#zoom_01").elevateZoom({ gallery: 'gal1', cursor: 'pointer', galleryActiveClass: 'active', imageCrossfade: true, loadingIcon: 'http://www.elevateweb.co.uk/spinner.gif' });
+    $("#zoom_01").elevateZoom({ gallery: 'gal1', cursor: 'pointer', galleryActiveClass: 'active', imageCrossfade: true});
     //pass the images to Fancybox
     $("#zoom_01").bind("click", function (e) { var ez = $('#zoom_01').data('elevateZoom'); $.fancybox(ez.getGalleryList()); return false; });
+
 });
 $(window).load(function(){
 	if($('.slider').length > 0)
@@ -1088,6 +1089,4 @@ function initMap() {
 				map: maps[i]
 			});
 		}
-	
-	
 }

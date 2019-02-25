@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-20 03:04:54
+/* Smarty version 3.1.33, created on 2019-02-25 03:19:12
   from 'D:\xamppp\htdocs\jms_extron\modules\jmsslider\views\templates\hook\listslides.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c6d0a263ac0f5_20274649',
+  'unifunc' => 'content_5c73a500b15d01_81454237',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c184f46a1935142bb7e9e1ee4d4fbc53dfeba59f' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_extron\\modules\\jmsslider\\views\\templates\\hook\\listslides.tpl',
-      1 => 1542078179,
+      1 => 1550743145,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c6d0a263ac0f5_20274649 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c73a500b15d01_81454237 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="text/javascript">
             $(function() {
@@ -29,9 +29,10 @@ echo '<script'; ?>
                     opacity: 0.6,
                     cursor: "move",
                     update: function() {
-                        var order = $(this).sortable("serialize") + "&action=updateSlidesOrdering";                     
+                        var order = $(this).sortable("serialize") + "&action=updateSlidesOrdering";
                         $.post("<?php echo $_smarty_tpl->tpl_vars['root_url']->value;?>
-modules/jmsslider/ajax_jmsslider.php?" + order);
+modules/jmsslider/ajax_jmsslider.php?" + order + '&secure_key=' + '<?php echo $_smarty_tpl->tpl_vars['secure_key']->value;?>
+');
                         }
                     });
                 $mySlides.hover(function() {
@@ -42,21 +43,21 @@ modules/jmsslider/ajax_jmsslider.php?" + order);
                 });
             });
 <?php echo '</script'; ?>
->			
+>
 <div class="panel">
 	<h3>
 	<span title="" data-toggle="tooltip" class="label-tooltip toogle" data-original-title="Click to Toggle" data-html="true">
 		<i class="icon-list-ul"></i> <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Slides list','d'=>'Modules.JmsSlider'),$_smarty_tpl ) );?>
 
 	</span>
-	
+
 	<span class="panel-heading-action">
 		<a  href="<?php echo $_smarty_tpl->tpl_vars['link']->value->getAdminLink('AdminModules');?>
 &configure=jmsslider&addSlide=1" class="btn btn-default btn-success" id="addSlide" title="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Add Slide','d'=>'Modules.JmsSlider'),$_smarty_tpl ) );?>
 ">
 			<i class="icon-plus"></i>
 		</a>
-		
+
 	</span>
 	</h3>
 	<?php echo '<script'; ?>
@@ -64,9 +65,9 @@ modules/jmsslider/ajax_jmsslider.php?" + order);
 	$(document).ready(function(){
 		$('.toogle').click(function(e){
 			$('#slidesContent').toggle(200);
-		});				
+		});
 	});
-				
+
 	<?php echo '</script'; ?>
 >
 	<div id="slidesContent">
@@ -97,7 +98,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['slide']->value) {
 						<i><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'All Language','d'=>'Modules.JmsSlider'),$_smarty_tpl ) );?>
 </i>
 						<?php }?>
-					</div>					
+					</div>
 					<div class="col-md-2">
 						<div class="btn-group-action pull-right">
 							<a class="btn btn-default"
@@ -112,7 +113,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['slide']->value) {
 					</div>
 					<div class="col-md-4">
 						<div class="btn-group-action pull-right">
-							
+
 							<a class="btn btn-default" href="<?php echo $_smarty_tpl->tpl_vars['link']->value->getAdminLink('AdminModules');?>
 &configure=jmsslider&copySlide=1&id_slide=<?php echo $_smarty_tpl->tpl_vars['slide']->value['id_slide'];?>
 ">
@@ -156,5 +157,6 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 			<?php }?>
 		</div>
 	</div>
-</div><?php }
+</div>
+<?php }
 }

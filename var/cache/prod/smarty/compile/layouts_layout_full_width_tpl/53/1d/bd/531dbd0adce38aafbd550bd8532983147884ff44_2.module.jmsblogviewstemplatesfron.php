@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-22 03:24:27
+/* Smarty version 3.1.33, created on 2019-02-25 04:50:08
   from 'module:jmsblogviewstemplatesfron' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c6fb1bbbd76b7_06451300',
+  'unifunc' => 'content_5c73ba505f8835_42850826',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '531dbd0adce38aafbd550bd8532983147884ff44' => 
     array (
       0 => 'module:jmsblogviewstemplatesfron',
-      1 => 1548816289,
+      1 => 1551081040,
       2 => 'module',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:modules/jmsblog/views/templates/front/comment_facebook.tpl' => 1,
   ),
 ),false)) {
-function content_5c6fb1bbbd76b7_06451300 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c73ba505f8835_42850826 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 if ($_smarty_tpl->tpl_vars['sidebar']->value == 'left') {?> 
@@ -33,7 +33,7 @@ if ($_smarty_tpl->tpl_vars['sidebar']->value == 'left') {?>
 }?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4101494705c6fb1bbb71da1_86123367', "page_content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10537137145c73ba50560283_16627344', "page_content");
 ?>
 
 
@@ -41,12 +41,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4101494705c6fb1bbb
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'page.tpl');
 }
 /* {block "page_content"} */
-class Block_4101494705c6fb1bbb71da1_86123367 extends Smarty_Internal_Block
+class Block_10537137145c73ba50560283_16627344 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_content' => 
   array (
-    0 => 'Block_4101494705c6fb1bbb71da1_86123367',
+    0 => 'Block_10537137145c73ba50560283_16627344',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

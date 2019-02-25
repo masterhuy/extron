@@ -2279,9 +2279,6 @@ li.product-flag {
 
 .products-sort-order.dropdown i {
   font-size: 13px;
-  position: absolute;
-  right: 0;
-  top: 10px;
   cursor: pointer; }
 
 .products-sort-order .dropdown-menu {
@@ -6029,10 +6026,15 @@ sup.required {
 #zoom_01{
   width: 100% !important;
   height: auto !important;
+  position: static !important;
 }
 .rtl .zoomWindow{
   right: 100% !important;
 }
+.fancybox-overlay-fixed{
+  z-index: 99999;
+}
+
 
 a,
 button,

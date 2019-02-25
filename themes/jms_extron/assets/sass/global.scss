@@ -1173,6 +1173,7 @@ a.wishlist_top{
 .product-cover{
 	position: relative;
 	border: 1px solid #ebebeb;
+	overflow: hidden;
 }
 #product{
 	.product-cover{
@@ -1778,13 +1779,13 @@ a.wishlist_top{
   	margin-left: 70px;
   }
   &::after{
-  	content: url("../img/icon/icon-left.png");
+  	content: "";
 	position: relative;
+	background: #ff4c65 url("../img/icon/icon-left.png") no-repeat center;
 	top: 2px;
 	left: 4px;
 	width: 16px;
 	height: 16px;
-	background: #ff4c65;
 	display: inline-flex;
 	border-radius: 50%;
   }

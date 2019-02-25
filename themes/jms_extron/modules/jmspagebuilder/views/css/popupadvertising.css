@@ -3,6 +3,12 @@
   text-align: center;
   padding: 52px 40px 0 40px;
 }
+.jms-popup-content #newsletter_block_left .block_c_right .alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
 .jms-popup-content h2{
   font-family: Roboto;
   font-size: 22px;

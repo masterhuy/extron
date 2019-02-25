@@ -418,7 +418,7 @@
     font-size: 17px;
     line-height: 1.65; }
 
-.brand {
+.jms-row.brand {
   margin-top: 70px;
   display: inline-block;
   width: 100%;
@@ -426,7 +426,7 @@
   float: right;
   position: relative;
   z-index: 2; }
-  .brand::before {
+  .jms-row.brand::before {
     content: "";
     position: absolute;
     width: 1000%;

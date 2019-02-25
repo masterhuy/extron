@@ -275,6 +275,8 @@
     font-size: 29px;
     color: #000;
     margin-bottom: 8px; }
+    .banner1 .banner-content .text-1 .fw-black {
+      color: #ff4c65; }
   .banner1 .banner-content .text-2 {
     font-size: 26px;
     color: #000;
