@@ -47,7 +47,7 @@
 		<div class="tab-content">
 			{foreach from=$products item=cat_products key=k}
 				{if !empty($cat_products)}
-				<div class="tab-pane {if $k == 0}active{/if}" id="category-{$k}">	
+				<div class="tab-pane fade {if $k == 0}in active{/if}" id="category-{$k}">	
 					<div class="flashsales-tab-carousel2">
 						{foreach from = $cat_products item = product key=k}	
 							<div class="item ajax_block_product">		

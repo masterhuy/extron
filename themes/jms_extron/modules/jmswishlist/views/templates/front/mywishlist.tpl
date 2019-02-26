@@ -91,18 +91,18 @@
 						<td class="wishlist_default">
 							{if isset($wishlists[i].default) && $wishlists[i].default == 1}
 								<p class="is_wish_list_default">
-									<i class="icon icon-check-square"></i>
+									<i class="la la-check-square"></i>
 								</p>
 							{else}
 								<a href="#" onclick="javascript:event.preventDefault();(WishlistDefault('wishlist_{$wishlists[i].id_wishlist|intval}', '{$wishlists[i].id_wishlist|intval}'));">
-									<i class="icon icon-square"></i>
+									<i class="la la-square-o"></i>
 								</a>
 							{/if}
 						</td>
 						<td class="wishlist_delete">
 							<a class="icon" href="#" onclick="javascript:event.preventDefault();return (WishlistDelete('wishlist_{$wishlists[i].id_wishlist|intval}', '{$wishlists[i].id_wishlist|intval}', '{l s='Do you really want to delete this wishlist ?' mod='blockwishlist' js=1}'));">
-										<i class="fa fa-remove"></i>
-									</a>
+								<i class="fa fa-remove"></i>
+							</a>
 						</td>
 					</tr>
 				{/section}

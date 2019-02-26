@@ -16,6 +16,6 @@ if (!\class_exists(appProdProjectContainer::class, false)) {
 
 return new \ContainerRgytars\appProdProjectContainer(array(
     'container.build_hash' => 'Rgytars',
-    'container.build_id' => 'abc128e1',
-    'container.build_time' => 1550811107,
+    'container.build_id' => '2aabb85a',
+    'container.build_time' => 1551174772,
 ), __DIR__.\DIRECTORY_SEPARATOR.'ContainerRgytars');

@@ -415,3 +415,9 @@ li.product-flag {
 .jms-popup .btn-popup {
   background: #593c1f;
 }
+.jms-hotdeal.type2 > .label::before {
+  border-top-color: #593c1f;
+}
+.jms-hotdeal.type2 > .label::after {
+  border-right-color: #593c1f;
+}

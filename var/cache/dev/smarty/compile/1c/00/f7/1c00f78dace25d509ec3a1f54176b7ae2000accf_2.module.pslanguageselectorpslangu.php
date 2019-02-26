@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-21 21:12:42
+/* Smarty version 3.1.33, created on 2019-02-26 04:35:21
   from 'module:pslanguageselectorpslangu' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c6f5a9aa08b98_27406167',
+  'unifunc' => 'content_5c7508593e5be4_12983491',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c6f5a9aa08b98_27406167 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c7508593e5be4_12983491 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin D:\xamppp\htdocs\jms_extron/themes/jms_extron/modules/ps_languageselector/ps_languageselector.tpl --><!-- Block languages module -->
 <?php if (count($_smarty_tpl->tpl_vars['languages']->value) > 1) {?>
 	<div class="btn-group compact-hidden languages-info type1">

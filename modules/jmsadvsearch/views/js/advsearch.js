@@ -9,29 +9,19 @@
 *  @Website: http://www.joommasters.com
 */
 $(document).ready(function() {
-	$('#selector_cat').click(function(event){
-		var id_cat_search = $('#selector_cat').find(":selected").val();		
+	$('#selector_cat').on('change', function(){
+		var id_cat_search = $(this).val();		
+		var search_key = $( "#ajax_advsearch" ).val();
+		get_search_ajax(search_key, id_cat_search);
 	});
 	var timer;
 	$( "#ajax_advsearch" ).keyup(function() {
-		var id_cat_search = $('#selector_cat').find(":selected").val();		
+		var id_cat_search = $('#selector_cat').val();		
+		//alert(id_cat_search);
 		var search_key = $( "#ajax_advsearch" ).val();		
 		clearTimeout(timer);
 		timer = setTimeout(function() {					
-			$.ajax({
-				type: 'GET',
-				url: prestashop.urls.base_url + 'modules/jmsadvsearch/ajax_search.php',
-				headers: { "cache-control": "no-cache" },
-				async: true,
-				data: 'search_key=' + search_key + '&id_category=' + id_cat_search,
-				success: function(data)
-				{		
-					$('#advsearch_result').html(data);
-				}
-			}) .done(function( msg ) {
-				$( "#advsearch_result" ).html(msg);
-			});
-			
+			get_search_ajax(search_key, id_cat_search);
 		}, 1000);
 	})	
 	$('html').click(function() {
@@ -43,3 +33,19 @@ $(document).ready(function() {
 	});
 
 });
+
+function get_search_ajax (key_word, cat_id) {
+	$.ajax({
+		type: 'GET',
+		url: prestashop.urls.base_url + 'modules/jmsadvsearch/ajax_search.php',
+		headers: { "cache-control": "no-cache" },
+		async: true,
+		data: 'search_key=' + key_word + '&id_category=' + cat_id,
+		success: function(data)
+		{		
+			$('#advsearch_result').html(data);
+		}
+	}) .done(function( msg ) {
+		$( "#advsearch_result" ).html(msg);
+	});
+}

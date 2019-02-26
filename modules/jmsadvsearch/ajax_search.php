@@ -22,7 +22,7 @@ if (!$context) {
 $currency = $context->currency;
 $result_products = array();
 $advsearch = new JmsAdvSearch();
-$id_cat_search = Tools::getValue('cat_id');
+$id_cat_search = Tools::getValue('id_category');
 
 $products = array();
 $link = $context->link;
@@ -61,6 +61,7 @@ if ($nbr >= 3) {
     }
     $products = $result_products;
     $context->smarty->assign(array(
+        'id_cat_search' => $id_cat_search,
         'products'  => $products,
         'link'  => $context->link,
         'count_product' => Configuration::get('JMS_ADVSEARCH_COUNT'),

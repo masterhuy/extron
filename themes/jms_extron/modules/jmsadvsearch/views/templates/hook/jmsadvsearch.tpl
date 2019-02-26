@@ -7,10 +7,10 @@
 *}
 <div class="jms-advsearch">
 	<form method="get" action="{$link->getPageLink('search') nofilter}" class="input-group" id="searchbox">
-			<input type="hidden" name="fc" value="module" />
-			<input type="hidden" name="module" value="jmsadvsearch" />
-			<input type="hidden" name="controller" value="search" />
-			<input type="hidden" name="order" value="product.position.asc" />			
+		<input type="hidden" name="fc" value="module" />
+		<input type="hidden" name="module" value="jmsadvsearch" />
+		<input type="hidden" name="controller" value="search" />
+		<input type="hidden" name="order" value="product.position.asc" />			
 		<div class="input-group keyword-group">
 			<div class="input-group-addon icon-drop-down">
 				<select name="id_category" id="selector_cat">

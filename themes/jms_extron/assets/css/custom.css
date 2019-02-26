@@ -2236,7 +2236,6 @@ li.product-flag {
 .featured-products {
   margin-top: 47px;
 }
-
 /*==================================================
 =            Product List          =
 ==================================================*/
@@ -2247,7 +2246,10 @@ li.product-flag {
   font-family: Roboto;
   font-size: 13px;
 }
-
+.products-sort-order .select-title {
+  display: flex;
+  align-items: center;
+}
 .inlude_sort_by {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -2290,6 +2292,7 @@ li.product-flag {
   display: block;
   background: #fff;
   border-radius: 5px;
+  top: calc(100% + 10px);
 }
   .products-sort-order .dropdown-menu a {
     display: block;
@@ -3094,6 +3097,9 @@ ul.footer_links {
   height: 35px;
   border-radius: 3px;
   padding: 0 10px;
+}
+.is_wish_list_default {
+  margin-bottom: 0;
 }
 .wlp_bought {
   display: block;
@@ -6033,6 +6039,9 @@ sup.required {
 }
 .fancybox-overlay-fixed{
   z-index: 99999;
+}
+.fancybox-margin {
+  margin-right: 0 !important;
 }
 
 

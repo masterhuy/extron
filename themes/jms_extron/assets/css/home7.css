@@ -631,6 +631,8 @@
     margin-bottom: 20px; } }
 
 @media (max-width: 481px) {
+  div.fs-pager-wrapper a.active {
+    width: auto; }
   .header .jms-advsearch .input-group-addon.icon-drop-down {
     width: 110px; }
   .header .center .addon-box {

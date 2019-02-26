@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-25 04:34:08
+/* Smarty version 3.1.33, created on 2019-02-26 05:25:53
   from 'D:\xamppp\htdocs\jms_extron\modules\jmsadvsearch\views\templates\hook\ajax_search_result.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c73b6901186d5_85365326',
+  'unifunc' => 'content_5c751431a136b1_30624384',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4c305993ccddf55b21af1cd1368563ad9209453d' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_extron\\modules\\jmsadvsearch\\views\\templates\\hook\\ajax_search_result.tpl',
-      1 => 1548905232,
+      1 => 1551172515,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c73b6901186d5_85365326 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c751431a136b1_30624384 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="result_div">
 <?php if ($_smarty_tpl->tpl_vars['products']->value) {?>
@@ -34,10 +34,11 @@ foreach ($_from as $_smarty_tpl->tpl_vars['product']->value) {
 		<div class="item">
 		<?php if ($_smarty_tpl->tpl_vars['show_image']->value) {?>
 			<div class="left-img">
+				<?php $_smarty_tpl->_assignInScope('defaultImage', Product::getCover($_smarty_tpl->tpl_vars['product']->value['id_product']));?>
 				<a href="<?php echo $_smarty_tpl->tpl_vars['product']->value['link'];?>
 " title="<?php echo $_smarty_tpl->tpl_vars['product']->value['name'];?>
 " class="product_image">
-				<img src="<?php echo $_smarty_tpl->tpl_vars['link']->value->getImageLink($_smarty_tpl->tpl_vars['product']->value['link_rewrite'],$_smarty_tpl->tpl_vars['product']->value['id_image'],'home_default');?>
+					<img src="<?php echo $_smarty_tpl->tpl_vars['link']->value->getImageLink($_smarty_tpl->tpl_vars['product']->value['link_rewrite'],$_smarty_tpl->tpl_vars['defaultImage']->value['id_image'],'home_default');?>
 " alt="<?php echo $_smarty_tpl->tpl_vars['product']->value['name'];?>
 " />
 				</a>

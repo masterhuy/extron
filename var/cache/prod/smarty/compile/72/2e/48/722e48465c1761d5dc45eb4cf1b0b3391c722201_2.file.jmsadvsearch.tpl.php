@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-25 05:29:03
+/* Smarty version 3.1.33, created on 2019-02-26 05:25:56
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\modules\jmsadvsearch\views\templates\hook\jmsadvsearch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c73c36f845f54_85009103',
+  'unifunc' => 'content_5c75143415d058_99580819',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '722e48465c1761d5dc45eb4cf1b0b3391c722201' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_extron\\themes\\jms_extron\\modules\\jmsadvsearch\\views\\templates\\hook\\jmsadvsearch.tpl',
-      1 => 1546855314,
+      1 => 1551174933,
       2 => 'file',
     ),
   ),
@@ -20,14 +20,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c73c36f845f54_85009103 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c75143415d058_99580819 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jms-advsearch">
 	<form method="get" action="<?php echo $_smarty_tpl->tpl_vars['link']->value->getPageLink('search');?>
 " class="input-group" id="searchbox">
-			<input type="hidden" name="fc" value="module" />
-			<input type="hidden" name="module" value="jmsadvsearch" />
-			<input type="hidden" name="controller" value="search" />
-			<input type="hidden" name="order" value="product.position.asc" />			
+		<input type="hidden" name="fc" value="module" />
+		<input type="hidden" name="module" value="jmsadvsearch" />
+		<input type="hidden" name="controller" value="search" />
+		<input type="hidden" name="order" value="product.position.asc" />			
 		<div class="input-group keyword-group">
 			<div class="input-group-addon icon-drop-down">
 				<select name="id_category" id="selector_cat">

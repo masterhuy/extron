@@ -3,7 +3,7 @@
   array (
     'database_host' => '127.0.0.1',
     'database_port' => '',
-    'database_name' => 'jms_extron',
+    'database_name' => 'jms_extron2',
     'database_user' => 'root',
     'database_password' => '',
     'database_prefix' => 'jms_',

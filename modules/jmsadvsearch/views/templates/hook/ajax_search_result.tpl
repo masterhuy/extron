@@ -30,8 +30,9 @@
 		<div class="item">
 		{if $show_image}
 			<div class="left-img">
+				{assign var='defaultImage' value=Product::getCover($product.id_product)}
 				<a href="{$product.link nofilter}" title="{$product.name nofilter}" class="product_image">
-				<img src="{$link->getImageLink($product.link_rewrite, $product.id_image, 'home_default') nofilter}" alt="{$product.name nofilter}" />
+					<img src="{$link->getImageLink($product.link_rewrite, $defaultImage.id_image, 'home_default') nofilter}" alt="{$product.name nofilter}" />
 				</a>
 			</div>
 		{/if}

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-25 03:24:43
+/* Smarty version 3.1.33, created on 2019-02-26 05:01:09
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\modules\jmsflashsales\views\templates\hook\jmsflashsales-tab2.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c73a64b1977d5_38795116',
+  'unifunc' => 'content_5c750e65db3213_89705249',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '44cb61376e3bdf31c416d0651d4b190fc4b5504b' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_extron\\themes\\jms_extron\\modules\\jmsflashsales\\views\\templates\\hook\\jmsflashsales-tab2.tpl',
-      1 => 1549005885,
+      1 => 1551154561,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:catalog/_partials/miniatures/product_flashsale_tab2.tpl' => 1,
   ),
 ),false)) {
-function content_5c73a64b1977d5_38795116 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c750e65db3213_89705249 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="jmsflashsales-tab2">
 	<div class="tabpanel">
 		<div class="addon-title">
@@ -61,7 +61,7 @@ if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars['cat_products']->value) {
 ?>
 				<?php if (!empty($_smarty_tpl->tpl_vars['cat_products']->value)) {?>
-				<div class="tab-pane <?php if ($_smarty_tpl->tpl_vars['k']->value == 0) {?>active<?php }?>" id="category-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['k']->value, ENT_QUOTES, 'UTF-8');?>
+				<div class="tab-pane fade <?php if ($_smarty_tpl->tpl_vars['k']->value == 0) {?>in active<?php }?>" id="category-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['k']->value, ENT_QUOTES, 'UTF-8');?>
 ">	
 					<div class="flashsales-tab-carousel2">
 						<?php

@@ -381,7 +381,7 @@ class JmsAdvSearch extends Module implements WidgetInterface
         OR p.`upc` LIKE \'%'.pSQL($query).'%\'
         OR p.`reference` LIKE \'%'.pSQL($query).'%\'
         OR p.`supplier_reference` LIKE \'%'.pSQL($query).'%\'
-        OR  p.`id_product` IN (SELECT id_product FROM '._DB_PREFIX_.'product_supplier sp WHERE `product_supplier_reference` LIKE \'%'.pSQL($query).'%\')
+        OR p.`id_product` IN (SELECT id_product FROM '._DB_PREFIX_.'product_supplier sp WHERE `product_supplier_reference` LIKE \'%'.pSQL($query).'%\')
         )';
         $sql->groupBy('`id_product`');
         $sql->orderBy('pl.`name` ASC');
