@@ -15,9 +15,9 @@
  */
 
 require_once(_PS_ROOT_DIR_.'/modules/jmsadvsearch/jmsadvsearch.php');
- use PrestaShop\PrestaShop\Core\Product\Search\ProductSearchQuery;
- use PrestaShop\PrestaShop\Core\Product\Search\SortOrder;
- use PrestaShop\PrestaShop\Adapter\Search\SearchProductSearchProvider;
+use PrestaShop\PrestaShop\Core\Product\Search\ProductSearchQuery;
+use PrestaShop\PrestaShop\Core\Product\Search\SortOrder;
+use PrestaShop\PrestaShop\Adapter\Search\SearchProductSearchProvider;
 class JMSAdvSearchSearchModuleFrontController extends ProductListingFrontController
 {
     public $instant_search;
@@ -51,7 +51,6 @@ class JMSAdvSearchSearchModuleFrontController extends ProductListingFrontControl
 		   ->setIdCategory($this->search_tag)
            ->setSearchString($this->search_string)           
         ;
-
          return $query;
      }
 

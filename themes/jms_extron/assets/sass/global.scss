@@ -610,6 +610,11 @@ a.wishlist_top{
 		margin-bottom: 0;
 	}
 }
+@media (max-width: 1366px){
+	.fancybox-margin {
+	    margin-right: 0 !important;
+	}
+}
 @media (max-width: 1199px){
 	div.products-list-in-row .content_price {
 		margin-bottom: 0;
@@ -2351,17 +2356,6 @@ a.wishlist_top{
 			margin: 0;
 			top: calc(100% + 10px);
 			z-index: 9;
-			&::before{
-				content: "";
-				left: 20px;
-				top: -6px;
-				background: #f2dede;
-				width: 8px;
-				height: 8px;
-				position: absolute;
-				transform: rotate(45deg);
-				z-index: 99;
-			}
 		}
 	}
 }

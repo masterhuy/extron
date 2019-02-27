@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-26 05:19:33
+/* Smarty version 3.1.33, created on 2019-02-27 03:04:59
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\templates\errors\not-found.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c7512b5d8d1d3_33083985',
+  'unifunc' => 'content_5c7644ab453a69_30208004',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c7512b5d8d1d3_33083985 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c7644ab453a69_30208004 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -31,24 +31,24 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 </p>
 	<div class="search-box">
 	 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_17409383465c7512b5d8d1d1_49522366', 'search');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14979400575c7644ab44fbe1_43305095', 'search');
 ?>
 
 
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_17645604335c7512b5d8d1d5_55549158', 'hook_not_found');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10186854815c7644ab453a66_13911814', 'hook_not_found');
 ?>
 
 	</div>
 </section>
 <?php }
 /* {block 'search'} */
-class Block_17409383465c7512b5d8d1d1_49522366 extends Smarty_Internal_Block
+class Block_14979400575c7644ab44fbe1_43305095 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'search' => 
   array (
-    0 => 'Block_17409383465c7512b5d8d1d1_49522366',
+    0 => 'Block_14979400575c7644ab44fbe1_43305095',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -61,12 +61,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'search'} */
 /* {block 'hook_not_found'} */
-class Block_17645604335c7512b5d8d1d5_55549158 extends Smarty_Internal_Block
+class Block_10186854815c7644ab453a66_13911814 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'hook_not_found' => 
   array (
-    0 => 'Block_17645604335c7512b5d8d1d5_55549158',
+    0 => 'Block_10186854815c7644ab453a66_13911814',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

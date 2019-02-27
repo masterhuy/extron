@@ -154,7 +154,7 @@ line-height: 1.64;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 99998;
+  z-index: 99999;
 }
 .dontshow {
   margin-top: 31px;
