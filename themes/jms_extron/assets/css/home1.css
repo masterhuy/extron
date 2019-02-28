@@ -269,8 +269,27 @@
     display: inline-block;
     border-radius: 3px; }
 
-.best_seller .categoryname {
+.jms-row.best_seller .product-carousel2 {
+  padding-top: 39px; }
+  .jms-row.best_seller .product-carousel2 .owl-item .flex-box.product-box::after {
+    height: 155px; }
+
+.jms-row.best_seller .product-box .flexbox {
+  width: 57%; }
+
+.jms-row.best_seller .product-preview .flexbox + .product-info {
+  width: 43%;
+  padding-left: 0;
+  padding-right: 25px; }
+
+.jms-row.best_seller .categoryname {
   display: none; }
+
+.cat-name-no-cs {
+  font-family: PT Sans; }
+
+.categories-carousel2-no-carousel .categories-wrapper .c_item-info {
+  padding-right: 0; }
 
 #newsletter_block_left {
   padding: 0 100px; }

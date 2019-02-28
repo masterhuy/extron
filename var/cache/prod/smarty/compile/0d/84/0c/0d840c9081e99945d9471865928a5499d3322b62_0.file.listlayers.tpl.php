@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-20 03:42:14
+/* Smarty version 3.1.33, created on 2019-02-27 23:02:47
   from 'D:\xamppp\htdocs\jms_extron\modules\jmsslider\views\templates\hook\listlayers.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c6d12e6bcac69_69078070',
+  'unifunc' => 'content_5c775d672138d1_83437470',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0d840c9081e99945d9471865928a5499d3322b62' => 
     array (
       0 => 'D:\\xamppp\\htdocs\\jms_extron\\modules\\jmsslider\\views\\templates\\hook\\listlayers.tpl',
-      1 => 1542078179,
+      1 => 1550743145,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c6d12e6bcac69_69078070 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c775d672138d1_83437470 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'D:\\xamppp\\htdocs\\jms_extron\\vendor\\smarty\\smarty\\libs\\plugins\\function.math.php','function'=>'smarty_function_math',),));
 ?>
 
@@ -34,10 +34,11 @@ $(function() {
                     opacity: 0.6,
                     cursor: "move",
                     update: function() {
-                        var order = $(this).sortable("serialize") + "&action=updateLayersOrdering";                     
+                        var order = $(this).sortable("serialize") + "&action=updateLayersOrdering";
                         $.post("<?php echo $_smarty_tpl->tpl_vars['root_url']->value;?>
-modules/jmsslider/ajax_jmsslider.php?" + order);    
-                        var temp = $(this).sortable("serialize").substring(9,200);  
+modules/jmsslider/ajax_jmsslider.php?" + order + '&secure_key=' + '<?php echo $_smarty_tpl->tpl_vars['secure_key']->value;?>
+');
+                        var temp = $(this).sortable("serialize").substring(9,200);
                         var layerids = temp.split("&layers[]=");
                         var i = 1;
                         jQuery.each(layerids, function(index, value) {
@@ -60,7 +61,7 @@ modules/jmsslider/ajax_jmsslider.php?" + order);
 	<span title="" data-toggle="tooltip" class="label-tooltip toogle" data-original-title="Click to Toggle" data-html="true">
 		<i class="icon-list-ul"></i> <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Layers list of','d'=>'Modules.JmsSlider'),$_smarty_tpl ) );?>
 
-	</span>	
+	</span>
 	<div class="list-title-slides">
 	<?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['all_slides']->value, 'eve_slide');
@@ -123,7 +124,7 @@ px;" src="http://www.youtube.com/embed/<?php echo substr($_smarty_tpl->tpl_vars[
 &controls=<?php echo $_smarty_tpl->tpl_vars['layer']->value['data_video_controls'];?>
 &loop=<?php echo $_smarty_tpl->tpl_vars['layer']->value['data_video_loop'];?>
 " allowfullscreen frameborder="0">
-							 </iframe> 
+							 </iframe>
 							 <?php } elseif ($_smarty_tpl->tpl_vars['layer']->value['videotype'] == 'vimeo') {?>
 							 <?php $_smarty_tpl->_assignInScope('vimeo_link', (explode("/",$_smarty_tpl->tpl_vars['layer']->value['data_video'])));?>
 							 <iframe width="<?php echo $_smarty_tpl->tpl_vars['layer']->value['data_width'];?>
@@ -132,7 +133,7 @@ px;" src="https://player.vimeo.com/video/<?php echo $_smarty_tpl->tpl_vars['vime
 ?autoplay=<?php echo $_smarty_tpl->tpl_vars['layer']->value['data_video_autoplay'];?>
 &loop=<?php echo $_smarty_tpl->tpl_vars['layer']->value['data_video_loop'];?>
 " allowfullscreen frameborder="0">
-							 </iframe>						 
+							 </iframe>
 							 <?php }?>
 						<?php }?>
 						</div>
@@ -145,13 +146,13 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 		</div>
 		<div id="layer-tools" class="btn-group-action clearfix" style="margin-bottom:30px;">
 			<a class="btn btn-default" id="add-text"><i class="icon-file-text-o"></i> <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Add Text Layer','d'=>'Modules.JmsSlider'),$_smarty_tpl ) );?>
-</a>		
+</a>
 			<a class="btn btn-default"  id="add-image"><i class="icon-file-image-o"></i> <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Add Image Layer','d'=>'Modules.JmsSlider'),$_smarty_tpl ) );?>
 </a>
 			<a class="btn btn-default"  id="add-video"><i class="icon-file-movie-o"></i> <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Add Video','d'=>'Modules.JmsSlider'),$_smarty_tpl ) );?>
 </a>
 			<a class="btn btn-success pull-right"  id="tips"><i class="icon-check-square"></i> <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Tips','d'=>'Modules.JmsSlider'),$_smarty_tpl ) );?>
-</a>	
+</a>
 		</div> <!-- END ACTIONS  -->
 		<div class="row content area-display" style="margin-bottom:30px;">
 			<div id="layerConfig" class="col-xs-12 col-sm-7 col-md-7 col-cmd-12 form-horizontal">
@@ -213,7 +214,7 @@ _off">No</label>
 							<label class="control-label col-lg-2"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Start Moving In','d'=>'Modules.JmsSlider'),$_smarty_tpl ) );?>
 </label>
 							<div class="col-lg-4">
-								<div class="input-group">									
+								<div class="input-group">
 								<input type="text" id="data_delay" value="<?php echo $_smarty_tpl->tpl_vars['layer']->value['data_delay'];?>
 " name="data_delay_<?php echo $_smarty_tpl->tpl_vars['layer']->value['id_layer'];?>
 ">
@@ -223,7 +224,7 @@ _off">No</label>
 							<label class="control-label col-lg-2"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Stop Moving In','d'=>'Modules.JmsSlider'),$_smarty_tpl ) );?>
 </label>
 							<div class="col-lg-4">
-								<div class="input-group">									
+								<div class="input-group">
 								<input type="text" id="data_time" value="<?php echo $_smarty_tpl->tpl_vars['layer']->value['data_time'];?>
 " name="data_time_<?php echo $_smarty_tpl->tpl_vars['layer']->value['id_layer'];?>
 ">
@@ -238,7 +239,7 @@ _off">No</label>
 </span>
 							</label>
 							<div class="col-lg-4">
-								<div class="input-group">												
+								<div class="input-group">
 									<input type="text" id="data_x_<?php echo $_smarty_tpl->tpl_vars['layer']->value['id_layer'];?>
 " class="data-x" name="data_x_<?php echo $_smarty_tpl->tpl_vars['layer']->value['id_layer'];?>
 " value="<?php echo $_smarty_tpl->tpl_vars['layer']->value['data_x'];?>
@@ -251,7 +252,7 @@ _off">No</label>
 </span>
 							</label>
 							<div class="col-lg-4">
-								<div class="input-group">												
+								<div class="input-group">
 									<input type="text" id="data_y_<?php echo $_smarty_tpl->tpl_vars['layer']->value['id_layer'];?>
 " class="data-y" name="data_y_<?php echo $_smarty_tpl->tpl_vars['layer']->value['id_layer'];?>
 " value="<?php echo $_smarty_tpl->tpl_vars['layer']->value['data_y'];?>
@@ -260,14 +261,14 @@ _off">No</label>
 								</div>
 							</div>
 						</div>
-						
+
 						<div class="form-group">
 							<label class="control-label col-lg-2">
 								<span data-original-title="Typing 'full' to full width, 'half' to a half width and 'quarter' to a quarter width" class="label-tooltip" data-toggle="tooltip" data-html="true" ><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Width','d'=>'Modules.JmsSlider'),$_smarty_tpl ) );?>
 </span>
 							</label>
 							<div class="col-lg-4">
-								<div class="input-group">												
+								<div class="input-group">
 									<input type="text" id="data_width_<?php echo $_smarty_tpl->tpl_vars['layer']->value['id_layer'];?>
 " class="data-width" name="data_width_<?php echo $_smarty_tpl->tpl_vars['layer']->value['id_layer'];?>
 " value="<?php echo $_smarty_tpl->tpl_vars['layer']->value['data_width'];?>
@@ -281,7 +282,7 @@ _off">No</label>
 </span>
 							</label>
 							<div class="col-lg-4">
-								<div class="input-group">												
+								<div class="input-group">
 									<input type="text" id="data_height_<?php echo $_smarty_tpl->tpl_vars['layer']->value['id_layer'];?>
 " class="data-height" name="data_height_<?php echo $_smarty_tpl->tpl_vars['layer']->value['id_layer'];?>
 " value="<?php echo $_smarty_tpl->tpl_vars['layer']->value['data_height'];?>
@@ -380,7 +381,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 " name="data_step_<?php echo $_smarty_tpl->tpl_vars['layer']->value['id_layer'];?>
 ">
 							</div>
-							
+
 						</div>
 						<div class="form-group">
 							<label class="control-label col-lg-2"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Data special','d'=>'Modules.JmsSlider'),$_smarty_tpl ) );?>
@@ -408,7 +409,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 							<label class="control-label col-lg-2"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Font Size','d'=>'Modules.JmsSlider'),$_smarty_tpl ) );?>
 </label>
 							<div class="col-lg-2">
-								<div class="input-group">												
+								<div class="input-group">
 									<input type="text" id="data_font_size_<?php echo $_smarty_tpl->tpl_vars['layer']->value['id_layer'];?>
 " name="data_font_size_<?php echo $_smarty_tpl->tpl_vars['layer']->value['id_layer'];?>
 " value="<?php echo $_smarty_tpl->tpl_vars['layer']->value['data_font_size'];?>
@@ -419,7 +420,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 							<label class="control-label col-lg-2"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Line Height','d'=>'Modules.JmsSlider'),$_smarty_tpl ) );?>
 </label>
 							<div class="col-lg-2">
-								<div class="input-group">												
+								<div class="input-group">
 									<input type="text" id="data_line_height_<?php echo $_smarty_tpl->tpl_vars['layer']->value['id_layer'];?>
 " name="data_line_height_<?php echo $_smarty_tpl->tpl_vars['layer']->value['id_layer'];?>
 " value="<?php echo $_smarty_tpl->tpl_vars['layer']->value['data_line_height'];?>
@@ -437,7 +438,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 										<option <?php if ($_smarty_tpl->tpl_vars['layer']->value['data_style'] == 'normal') {?>selected<?php }?> value="normal">Normal</option>
 										<option <?php if ($_smarty_tpl->tpl_vars['layer']->value['data_style'] == 'bold') {?>selected<?php }?> value="bold">Bold</option>
 										<option <?php if ($_smarty_tpl->tpl_vars['layer']->value['data_style'] == 'italic') {?>selected<?php }?> value="italic">Italic</option>
-									</select>											
+									</select>
 								</div>
 							</div>
 							<label class="control-label col-lg-1"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Color','d'=>'Modules.JmsSlider'),$_smarty_tpl ) );?>
@@ -461,9 +462,9 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 " id="data_html_<?php echo $_smarty_tpl->tpl_vars['layer']->value['id_layer'];?>
 " class="data-html" cols="30" rows="10"><?php echo $_smarty_tpl->tpl_vars['layer']->value['data_html'];?>
 </textarea>
-							</div>	
+							</div>
 						</div>
-						
+
 						<?php }?>
 						<?php if ($_smarty_tpl->tpl_vars['layer']->value['data_type'] == 'image') {?>
 						<div class="form-group">
@@ -491,7 +492,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 			            		</select>
 			            	</div>
 		            	</div>
-						
+
 						<?php }?>
 						<?php if ($_smarty_tpl->tpl_vars['layer']->value['data_type'] == 'video') {?>
 						<div class="form-group">
@@ -504,7 +505,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 " id="data_video_<?php echo $_smarty_tpl->tpl_vars['layer']->value['id_layer'];?>
 " class="data-video" cols="30" rows="3"><?php echo $_smarty_tpl->tpl_vars['layer']->value['data_video'];?>
 </textarea>
-							</div>	
+							</div>
 						</div>
 						<div class="form-group">
 							<label class="control-label col-lg-2"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Autoplay','d'=>'Modules.JmsSlider'),$_smarty_tpl ) );?>
@@ -560,7 +561,7 @@ _off">No</label>
 									<a class="slide-button btn"></a>
 								</span>
 							</div>
-							
+
 						</div>
 						<div class="form-group">
 							<div class="col-lg-2">
@@ -594,17 +595,17 @@ _off">No</label>
 								</span>
 							</div>
 						</div>
-						
+
 					</div>
-					
+
 					<?php
 }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-					
+
 					<?php }?>
 				</div>
-			</div>	
+			</div>
 			<div id="layerContent" class="col-xs-12 col-sm-5 col-md-5 col-cmd-12 form-horizontal">
 				<div class="panel panel-default">
 					<div class="panel-heading">
@@ -613,7 +614,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 					</div>
 					<div class="panel-body clearfix">
 						<div id="layers">
-							<?php if (count($_smarty_tpl->tpl_vars['layers']->value) > 0) {?>				
+							<?php if (count($_smarty_tpl->tpl_vars['layers']->value) > 0) {?>
 								<?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['layers']->value, 'layer');
 if ($_from !== null) {
@@ -626,18 +627,18 @@ foreach ($_from as $_smarty_tpl->tpl_vars['layer']->value) {
 										<div class="col-lg-1">
 											<span><i class="icon-arrows "></i></span>
 										</div>
-										<div class="col-md-6">							
+										<div class="col-md-6">
 											<?php echo $_smarty_tpl->tpl_vars['layer']->value['data_title'];?>
 
 										</div>
-										<div class="col-md-5">							
+										<div class="col-md-5">
 											<div class="btn-group-action pull-right">
-												<div class="btn btn-default show-hide-layer" title="Click to display/hide layer"><i class="icon-eye"></i><i class="icon-eye-slash" style="display:none"></i></div>		
+												<div class="btn btn-default show-hide-layer" title="Click to display/hide layer"><i class="icon-eye"></i><i class="icon-eye-slash" style="display:none"></i></div>
 												<div class="btn btn-default disabled" title="format"><i <?php if ($_smarty_tpl->tpl_vars['layer']->value['data_type'] == "text") {?>class="icon-file-text-o" <?php } elseif ($_smarty_tpl->tpl_vars['layer']->value['data_type'] == "image") {?> class="icon-file-image-o" <?php } else { ?>class="icon-file-movie-o"<?php }?>></i></div>
 
 												<a title="Delete" id='delete_<?php echo $_smarty_tpl->tpl_vars['layer']->value['id_layer'];?>
-' class="delete_layer btn btn-danger" 
-												>	
+' class="delete_layer btn btn-danger"
+												>
 													<i class="icon-trash"></i>
 												</a>
 											</div>
@@ -655,7 +656,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 						</div>
 					</div>
 				</div>
-			</div>		
+			</div>
 		</div>
 	</div>
 	<div class="panel-footer">
@@ -677,6 +678,8 @@ echo $_smarty_tpl->tpl_vars['layers']->value[0]['id_layer'];
 	<input type="hidden" name="site_url" id="site_url" value="<?php echo $_smarty_tpl->tpl_vars['root_url']->value;?>
 " />
 	<input type="hidden" name="id_slide" value="<?php echo $_smarty_tpl->tpl_vars['slides']->value['id_slide'];?>
+">
+  <input type="hidden" name="secure_key" id="secure_key" value="<?php echo $_smarty_tpl->tpl_vars['secure_key']->value;?>
 ">
 <div id="modal_add_text" class="modal fade">
     <div class="modal-dialog">
@@ -757,7 +760,7 @@ echo $_smarty_tpl->tpl_vars['layers']->value[0]['id_layer'];
             </div>
         </div>
     </div>
-</div> 
+</div>
 </form>
 <!-- end first form  -->
 <form id="form_add_layer" action="" method="post" enctype="multipart/form-data">
@@ -791,7 +794,7 @@ echo $_smarty_tpl->tpl_vars['layers']->value[0]['id_layer'];
 	            	<div id="form_upload_image" class="form-group clearfix">
 						<label class="control-label col-lg-3"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Upload file','d'=>'Modules.JmsSlider'),$_smarty_tpl ) );?>
 </label>
-						<div class="col-sm-9">				
+						<div class="col-sm-9">
 							<input type="file" class="hide" name="data_image" id="data_image">
 							<div class="dummyfile input-group">
 								<span class="input-group-addon"><i class="icon-file"></i></span>
@@ -802,7 +805,7 @@ echo $_smarty_tpl->tpl_vars['layers']->value[0]['id_layer'];
 
 									</button>
 								</span>
-							</div>		
+							</div>
 						</div>
 					</div>
 	            	<div id="form_select_image" class="form-group  clearfix">
@@ -824,7 +827,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 	            		</select>
 	            	</div>
 	            	<div class="show-error" style="color:#ff0000"></div>
-	            
+
 	            	<p id='loading' class="loading loading-image" style="text-align:center; display:none;"><img  src="<?php echo $_smarty_tpl->tpl_vars['root_url']->value;?>
 /modules/jmsslider/views/img/settings/loading.gif" alt="loading"></p>
 	            </div>
@@ -836,6 +839,5 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     </div>
 </div> <!-- end modal add image -->
 </form>
-
 <?php }
 }

@@ -9,10 +9,10 @@
 		margin-bottom: 0;
 	}
 	#_desktop_user_info{
-		.type1, .type2{
+		.type1, .type3{
 			display: none;
 		}
-		.type3{
+		.type2{
 			display: block;
 		}
 	}
@@ -62,7 +62,7 @@
 					content: "";
 					height: 18px;
 					width: 1px;
-					background: #2d2d2d;
+					background: #35485a;
 					position: absolute;
 					left: -21px;
 					top: 50%;
@@ -89,7 +89,7 @@
 				content: "";
 				height: 18px;
 				width: 1px;
-				background: #2d2d2d;
+				background: #35485a;
 				position: absolute;
 				left: -23px;
 				top: 50%;

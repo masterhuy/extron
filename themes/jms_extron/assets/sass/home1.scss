@@ -324,8 +324,30 @@
 	}
 }
 
-.best_seller .categoryname{
-	display: none;
+.jms-row.best_seller{
+	.product-carousel2{
+		padding-top: 39px;
+		.owl-item .flex-box.product-box::after{
+			height: 155px;
+		}
+	}
+	.product-box .flexbox {
+		width: 57%;
+	}
+	.product-preview .flexbox + .product-info{
+		width: 43%;
+		padding-left: 0;
+		padding-right: 25px;
+	}
+	.categoryname{
+		display: none;
+	}
+}
+.cat-name-no-cs{
+	font-family: PT Sans;
+}
+.categories-carousel2-no-carousel .categories-wrapper .c_item-info {
+	padding-right: 0;
 }
 
 //newsletter

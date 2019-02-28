@@ -1628,9 +1628,6 @@ img.attachment-widget.wp-post-image.img-responsive {
   flex-direction: row-reverse;
   align-items: center;
 }
-.categories-wrapper .child li a::before {
-  content: "\f226";
-}
 .categories-carousel2-no-carousel {
   text-align: left;
   left: 15px;
@@ -1665,9 +1662,6 @@ img.attachment-widget.wp-post-image.img-responsive {
   border-radius: 3px 0px 0px 3px;
   margin-right: -3px;
   margin-left: 0
-}
-.footer_t ul li a::before {
-  content: "\f226";
 }
 @media (min-width: 992px){
   #footer .company {
@@ -1843,6 +1837,14 @@ img.attachment-widget.wp-post-image.img-responsive {
   margin-left: 0;
 }
 #woorebought-popup {
-  right: 20px;
+  right: 20px !important;
   left: auto !important;
+}
+.footer_t ul li a:hover {
+  padding-left: 0;
+  padding-right: 5px;
+}
+.jms-megamenu .mega-nav li > a:hover {
+  padding-left: 30px;
+  padding-right: 35px;
 }

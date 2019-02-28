@@ -120,6 +120,9 @@ div.jms-megamenu .dropdown-menu::before{
     text-transform: capitalize;
     letter-spacing: 0.3px;
 }
+.jms-megamenu .mega-nav li > a:hover{
+    padding-left: 35px;
+}
 .jms-megamenu .mega-nav li:last-child > a:hover {
     border: medium none;
 }
@@ -324,6 +327,9 @@ div.jms-megamenu .dropdown-menu::before{
     padding: 0;
     margin-bottom: 2px;
     letter-spacing: 0;
+}
+.jms-megamenu .nav > .item-fullwidth .mega-nav li > a:hover{
+    padding-left: 5px;
 }
 .jms-megamenu .home img:hover {
     top: -3px;

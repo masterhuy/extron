@@ -22,6 +22,10 @@
       line-height: 50px; }
   .topbar p {
     margin-bottom: 0; }
+  .topbar #_desktop_user_info .type1, .topbar #_desktop_user_info .type3 {
+    display: none; }
+  .topbar #_desktop_user_info .type2 {
+    display: block; }
   .topbar .languages-info.type1, .topbar .languages-info.type3, .topbar .languages-info.type4 {
     display: none; }
   .topbar .languages-info.type2 {
@@ -74,6 +78,9 @@
           transform: translateY(-50%); }
     .topbar .right .title {
       letter-spacing: 0.5px; }
+
+.jms-megamenu .nav > li > a {
+  color: #000; }
 
 .header {
   padding: 34px 0;

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-27 03:33:25
+/* Smarty version 3.1.33, created on 2019-02-27 23:58:56
   from 'D:\xamppp\htdocs\jms_extron\themes\jms_extron\templates\catalog\listing\search.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c764b55b651c5_19422395',
+  'unifunc' => 'content_5c776a907cc612_29982212',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c764b55b651c5_19422395 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c776a907cc612_29982212 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>

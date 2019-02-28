@@ -31,6 +31,14 @@
 	p{
 		margin-bottom: 0;
 	}
+	#_desktop_user_info{
+		.type1, .type3{
+			display: none;
+		}
+		.type2{
+			display: block;
+		}
+	}
 	.languages-info{
 		&.type1, &.type3, &.type4{
 			display: none;
@@ -86,6 +94,9 @@
 			letter-spacing: 0.5px;
 		}
 	}
+}
+.jms-megamenu .nav > li > a{
+	color: #000;
 }
 
 //header

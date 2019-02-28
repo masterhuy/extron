@@ -1663,7 +1663,6 @@ ul#order_step li {
   }
 
   .cat-name-no-cs{
-    font-family: Roboto;
     display: block;
     margin-bottom: 0;
   }
@@ -2426,8 +2425,7 @@ li.product-flag {
   display: flex;
   align-items: center;
   display: -ms-flexbox;
-  display: -webkit-flex;
-  margin-bottom: 30px; }
+  display: -webkit-flex; }
   .products-list-in-row .product-preview .product-info {
     border-top: 0 none;
     clear: unset;
@@ -5884,19 +5882,8 @@ sup.required {
 .footer_t ul li a{
   position: relative;
 }
-.footer_t ul li a:hover::before{
-  opacity: 1;
-  margin-left: 0;
-}
-.footer_t ul li a::before {
-  content: "\f227";
-  font-family: LineAwesome;
-  margin-left: -18px;
-  opacity: 0;
-  color: #ff4c65;
-  display: inline-block;
-  width: 18px;
-  transition: .4s all;
+.footer_t ul li a:hover{
+  padding-left: 5px;
 }
 #social_block a {
   font-size: 15px;

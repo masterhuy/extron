@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-02-26 21:36:32
+/* Smarty version 3.1.33, created on 2019-02-27 23:55:44
   from 'D:\xamppp\htdocs\jms_extron\modules\ps_mbo\views\templates\admin\modal.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c75f7b01a25e0_01590817',
+  'unifunc' => 'content_5c7769d01f7d62_84011504',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c75f7b01a25e0_01590817 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c7769d01f7d62_84011504 (Smarty_Internal_Template $_smarty_tpl) {
 ?> 
 <div class="modal fade" id="modules_list_container">
 	<div class="modal-dialog">

@@ -84,6 +84,9 @@
 		padding-right: 0;
 	}
 }
+.jms-megamenu .nav > li > a{
+	color: #000;
+}
 #header{
 	margin-bottom: 30px;
 }
@@ -117,10 +120,11 @@
 		padding-left: 18px;
 	}
 	.jms-advsearch{
+		border: 2px solid $active;
+		border-radius: 3px;
 		#searchbox{
 			width: 714px;
-			border-radius: 3px;
-			border-color: $active;
+			border: 0;
 			#selector_cat{
 				width: 195px;
 			}
@@ -142,7 +146,7 @@
 			&::before{
 				content: "";
 				position: absolute;
-				height: 100%;
+				height: 46px;
 				left: 0px;
 				width: 1px;
 				background: #ebebeb;

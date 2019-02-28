@@ -1937,10 +1937,10 @@ a.wishlist_top {
   .ver_menu img {
     position: absolute;
     right: 20px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%); }
+    top: 16px; }
+
+.home_3 .ver_menu img {
+  top: 18px; }
 
 .buy-theme {
   font-family: Roboto;
@@ -1999,6 +1999,12 @@ a.wishlist_top {
 
 .google_plusone_iframe_widget {
   width: auto !important; }
+
+.jms-row.topbar .left ul li {
+  letter-spacing: 0; }
+
+.jms-row.topbar .right .title {
+  letter-spacing: 0; }
 
 #_desktop_user_info .type1, #_desktop_user_info .type2 {
   display: none; }

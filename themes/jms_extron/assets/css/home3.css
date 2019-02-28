@@ -3,9 +3,9 @@
   background-color: #000; }
   .topbar p {
     margin-bottom: 0; }
-  .topbar #_desktop_user_info .type1, .topbar #_desktop_user_info .type2 {
+  .topbar #_desktop_user_info .type1, .topbar #_desktop_user_info .type3 {
     display: none; }
-  .topbar #_desktop_user_info .type3 {
+  .topbar #_desktop_user_info .type2 {
     display: block; }
   .topbar .languages-info.type1, .topbar .languages-info.type3, .topbar .languages-info.type4 {
     display: none; }

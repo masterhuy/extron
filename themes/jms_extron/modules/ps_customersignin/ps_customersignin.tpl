@@ -26,7 +26,7 @@
 	<div class="user-info btn-group compact-hidden type1 ">
 		{if $logged} 
 		  	<a class="btn-name dropdown-toggle" data-toggle="dropdown" href="{$my_account_url}" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" rel="nofollow" target="_blank">      
-		   		<i class="storm-user"></i>
+		   		<i class="la la-user"></i>
 		  	</a>
 		  	<ul role="menu" class="dropdown-menu">
 		  		<li><a>{$customerName}</a></li>
@@ -37,7 +37,7 @@
 			</ul>
 		{else}   
 			<a href="{$link->getPageLink('my-account', true)}" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" class="account dropdown-toggle" data-toggle="dropdown" rel="nofollow">
-				<i class="storm-user"></i>
+				<i class="la la-user"></i>
 			</a>
 			<ul role="menu" class="dropdown-menu">
 				<li><a href="{$link->getPageLink('my-account', true)}" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='My Account' d='Shop.Theme.CustomerAccount'} </a></li>		
@@ -49,24 +49,22 @@
 	</div>
     <div class="user-info btn-group compact-hidden type2">
 	    {if $logged} 
-		  	<a href="{$my_account_url}" title="{l s='Log in to your customer account' d='Shop.Theme.CustomerAccount'}" rel="nofollow" class="logout2 hidden-sm-down btn-xs">
-	      		<span class="title hidden-sm-down">{$customerName}</span>
-	      	</a>
-	      	<ul>	
+		 	<a class="title btn-name account btn-xs dropdown-toggle" data-toggle="dropdown" href="{$my_account_url}"  title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" rel="nofollow">
+		    	<span>{$customerName}</span>
+		  	</a>	
+	      	<ul role="menu" class="dropdown-menu">
+	      		<li><a>{$customerName}</a></li>
+				<li><a href="{$link->getPageLink('my-account', true)}" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='Account' d='Shop.Theme.CustomerAccount'} </a></li>		
 				<li><a href="{$link->getPageLink('order', true)}" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='Checkout' d='Shop.Theme.CustomerAccount'} </a></li>
-		  		<li><a class="logout" href="{$logout_url}" rel="nofollow">{l s='Log out' d='Shop.Theme.Actions'}</a></li>
+		  		<li><a class="logout" href="{$logout_url}" rel="nofollow" >{l s='Log out' d='Shop.Theme.Actions'}</a></li>
 		  	</ul>
 	    {else}   
-		  	<a href="{$my_account_url}" title="{l s='Log in to your customer account' d='Shop.Theme.CustomerAccount'}" rel="nofollow"  class="logout2 hidden-sm-down  btn-xs dropdown-toggle" data-toggle="dropdown">
-	      		<span class="title hidden-sm-down">{l s='Login/Register' d='Shop.Theme.Actions'}</span>
-	      	</a>
-		  	<ul>
-				<li><a href="{$link->getPageLink('my-account', true)}" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='Account'  d='Shop.Theme.CustomerAccount'} </a></li>		
-				<li><a href="{$link->getPageLink('order', true)}" title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" class="account" rel="nofollow">{l s='Checkout' d='Shop.Theme.CustomerAccount'} </a></li>
-			</ul> 
+		  	<a href="{$link->getPageLink('my-account', true)}" title="{l s='Login/Register' d='Shop.Theme.CustomerAccount'}" class="account title" rel="nofollow">
+		  		<span>{l s='My Account' d='Shop.Theme.Actions'}</span>
+		  	</a>
 	    {/if}
-	 </div>
-	 <div class="user-info btn-group compact-hidden type3">
+	</div>
+	<div class="user-info btn-group compact-hidden type3">
 		{if $logged} 
 		 	<a class="title btn-name account btn-xs dropdown-toggle" data-toggle="dropdown" href="{$my_account_url}"  title="{l s='View my customer account' d='Shop.Theme.CustomerAccount'}" rel="nofollow">
 		    	<span>{$customerName}</span>
@@ -82,6 +80,6 @@
 		  		<span>{l s='Login/Register' d='Shop.Theme.Actions'}</span>
 		  	</a>
 	    {/if}
-	 </div>
+	</div>
 </div>
 

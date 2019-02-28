@@ -71,6 +71,9 @@
   .header .jms-megamenu .nav > li:last-child {
     padding-right: 0; }
 
+.jms-megamenu .nav > li > a {
+  color: #000; }
+
 #header {
   margin-bottom: 30px; }
 
@@ -101,32 +104,32 @@
   background: transparent;
   padding-left: 18px; }
 
-.menu .jms-advsearch #searchbox {
-  width: 714px;
-  border-radius: 3px;
-  border-color: #ff4c65; }
-  .menu .jms-advsearch #searchbox #selector_cat {
-    width: 195px; }
-
-.menu .jms-advsearch .input-group-addon.icon-drop-down {
-  position: absolute;
-  right: 0;
-  width: 195px; }
-  .menu .jms-advsearch .input-group-addon.icon-drop-down::before {
-    right: auto;
-    left: 0; }
-
-.menu .jms-advsearch .input-group-addon.input-group-search {
-  left: 0; }
-  .menu .jms-advsearch .input-group-addon.input-group-search button {
-    width: 47px; }
-  .menu .jms-advsearch .input-group-addon.input-group-search::before {
-    content: "";
+.menu .jms-advsearch {
+  border: 2px solid #ff4c65;
+  border-radius: 3px; }
+  .menu .jms-advsearch #searchbox {
+    width: 714px;
+    border: 0; }
+    .menu .jms-advsearch #searchbox #selector_cat {
+      width: 195px; }
+  .menu .jms-advsearch .input-group-addon.icon-drop-down {
     position: absolute;
-    height: 100%;
-    left: 0px;
-    width: 1px;
-    background: #ebebeb; }
+    right: 0;
+    width: 195px; }
+    .menu .jms-advsearch .input-group-addon.icon-drop-down::before {
+      right: auto;
+      left: 0; }
+  .menu .jms-advsearch .input-group-addon.input-group-search {
+    left: 0; }
+    .menu .jms-advsearch .input-group-addon.input-group-search button {
+      width: 47px; }
+    .menu .jms-advsearch .input-group-addon.input-group-search::before {
+      content: "";
+      position: absolute;
+      height: 46px;
+      left: 0px;
+      width: 1px;
+      background: #ebebeb; }
 
 .jms-megamenu .dropdown-menu {
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
