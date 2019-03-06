@@ -2437,10 +2437,10 @@ li.product-flag {
   display: none;
 }
 .products-list-in-row .preview{
-  width: 30%;
+  width: 33%;
 }
 .products-list-in-row .product-info{
-  width: 70%;
+  width: 67%;
 }
 .products-list-in-row .product-description p {
   line-height: 1.88;

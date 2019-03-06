@@ -719,6 +719,9 @@
 }
 
 @media (max-width: 481px){
+	.product-carousel2-col3 .product-preview .flexbox + .product-info {
+		margin-top: 0;
+	}
 	div.fs-pager-wrapper a.active {
 		width: auto;
 	}

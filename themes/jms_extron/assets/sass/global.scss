@@ -635,6 +635,12 @@ a.wishlist_top{
 	}
 }
 @media (max-width: 481px){
+	.jms-row.banner_html ul li {
+		padding: 0 20px;
+	}
+	div.fs-pager-wrapper a, div.fs-custom-pager-wrapper a{
+		margin: 0 2px;
+	}
 	div.hotdeal-carousel .product-info {
 		padding: 0 15px 30px;
 	}

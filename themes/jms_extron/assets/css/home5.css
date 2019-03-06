@@ -406,11 +406,9 @@
     background: #001930; }
   .ver_menu img {
     position: absolute;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    margin: 0;
-    right: 0; }
+    right: 0;
+    margin-right: 0;
+    top: 21px; }
   .view-all.link {
     margin-left: 20px; }
   .categories-carousel2-no-carousel .block_category {

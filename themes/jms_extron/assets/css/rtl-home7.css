@@ -52,6 +52,10 @@
 .jms-hotdeal > .label::before {
   display: none;
 }
+.jms-hotdeal.type2 > .label::before {
+  display: block !important;
+  right: auto;
+}
 .category-custom-carousel2 .jms-banner::after {
   left: 0;
   right: auto;

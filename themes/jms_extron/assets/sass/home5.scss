@@ -467,11 +467,11 @@
 	.ver_mobile{
 		background: #001930;
 	}
-	.ver_menu img{
+	.ver_menu img {
 		position: absolute;
-		transform: translateY(-50%);
-		margin: 0;
 		right: 0;
+		margin-right: 0;
+		top: 21px;
 	}
 	.view-all.link {
 		margin-left: 20px;

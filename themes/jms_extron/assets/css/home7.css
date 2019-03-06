@@ -638,6 +638,8 @@
     margin-bottom: 20px; } }
 
 @media (max-width: 481px) {
+  .product-carousel2-col3 .product-preview .flexbox + .product-info {
+    margin-top: 0; }
   div.fs-pager-wrapper a.active {
     width: auto; }
   .header .jms-advsearch .input-group-addon.icon-drop-down {

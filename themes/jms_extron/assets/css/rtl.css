@@ -1840,6 +1840,14 @@ img.attachment-widget.wp-post-image.img-responsive {
   right: 20px !important;
   left: auto !important;
 }
+#woorebought-popup {
+  padding-left: 25px;
+  padding-right: 0;
+}
+#woorebought-popup #popup-close {
+  left: 5px;
+  right: auto;
+}
 .footer_t ul li a:hover {
   padding-left: 0;
   padding-right: 5px;
@@ -1847,4 +1855,7 @@ img.attachment-widget.wp-post-image.img-responsive {
 .jms-megamenu .mega-nav li > a:hover {
   padding-left: 30px;
   padding-right: 35px;
+}
+.alert.alert-normal .close{
+  float: left;
 }
